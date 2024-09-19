@@ -1,0 +1,29 @@
+BuildBot project: Test_Linux
+Linux version: v6.11-t5
+Commit hash: 44869e04da67a231e00991cb9ca3800c2c474bfa
+
+Testing: bd9576 PMIC
+Test results: bd9576: PASSED
+
+Testing: bd71847 PMIC
+Voltage run failed: Regulator buck3, Range: 0, Volt register value: 0x0: Received: 900000, Expected: 700000
+Voltage run failed: Regulator buck3, Range: 0, Volt register value: 0x3: Received: 900000, Expected: 1000000
+Voltage run failed: Regulator buck3, Range: 0, Volt register value: 0x5: Received: 1050000, Expected: 1100000
+Voltage run failed: Regulator buck3, Range: 0, Volt register value: 0x7: Received: 1200000, Expected: 1350000
+Voltage run failed: Regulator buck3, Range: 64, Volt register value: 0x1: Received: 800000, Expected: 600000
+Voltage run failed: Regulator buck3, Range: 64, Volt register value: 0x3: Received: 900000, Expected: 700000
+Test results: bd71847: FAILED
+
+Testing: bd71828 PMIC
+Test results: bd71828: PASSED
+
+Testing: bd96801 PMIC
+Test results: bd96801: PASSED
+
+Testing: bd71837 PMIC
+Regulator 'buck1' enable failed!
+Test results: bd71837: FAILED
+
+Git bisect state: failed
+44869e04da67a231e00991cb9ca3800c2c474bfa was both good and bad
+
