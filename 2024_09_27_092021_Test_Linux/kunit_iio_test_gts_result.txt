@@ -1,0 +1,72 @@
+Kunit test result: iio_test_gts FAILED: Found 'not ok' in the Kunit dmesg prints.
+
+[   64.767929] KTAP version 1
+[   64.767978] 1..1
+[   64.768001]     KTAP version 1
+[   64.768014]     # Subtest: iio-gain-time-scale
+[   64.768031]     # module: iio_test_gts
+[   64.768045]     1..6
+[   64.772812] PM: Cannot get wkup_m3_ipc handle
+[   64.794364]     ok 1 test_init_iio_gts_invalid
+[   64.795693] PM: Cannot get wkup_m3_ipc handle
+[   64.824464]     ok 2 test_iio_gts_find_gain_for_scale_using_time
+[   64.826169] PM: Cannot get wkup_m3_ipc handle
+[   64.844768]     ok 3 test_iio_gts_find_new_gain_sel_by_old_gain_time
+[   64.849863] PM: Cannot get wkup_m3_ipc handle
+[   64.865282] PM: Cannot get wkup_m3_ipc handle
+[   64.894383]     ok 4 test_iio_find_closest_gain_low
+[   64.895759] PM: Cannot get wkup_m3_ipc handle
+[   64.924384]     ok 5 test_iio_gts_total_gain_to_scale
+[   64.927071]     # test_iio_gts_avail_test: EXPECTATION FAILED at drivers/iio/test/iio-test-gts.c:403
+                   Expected -22 == ret, but
+                       ret == 0 (0x0)
+[   64.927141]     # test_iio_gts_avail_test: EXPECTATION FAILED at drivers/iio/test/iio-test-gts.c:403
+                   Expected -22 == ret, but
+                       ret == 0 (0x0)
+[   64.927174]     # test_iio_gts_avail_test: EXPECTATION FAILED at drivers/iio/test/iio-test-gts.c:403
+                   Expected -22 == ret, but
+                       ret == 0 (0x0)
+[   64.927207]     # test_iio_gts_avail_test: EXPECTATION FAILED at drivers/iio/test/iio-test-gts.c:403
+                   Expected -22 == ret, but
+                       ret == 0 (0x0)
+[   64.927237]     # test_iio_gts_avail_test: EXPECTATION FAILED at drivers/iio/test/iio-test-gts.c:403
+                   Expected -22 == ret, but
+                       ret == 0 (0x0)
+[   64.927269]     # test_iio_gts_avail_test: EXPECTATION FAILED at drivers/iio/test/iio-test-gts.c:403
+                   Expected -22 == ret, but
+                       ret == 0 (0x0)
+[   64.927299]     # test_iio_gts_avail_test: EXPECTATION FAILED at drivers/iio/test/iio-test-gts.c:403
+                   Expected -22 == ret, but
+                       ret == 0 (0x0)
+[   64.927330]     # test_iio_gts_avail_test: EXPECTATION FAILED at drivers/iio/test/iio-test-gts.c:403
+                   Expected -22 == ret, but
+                       ret == 0 (0x0)
+[   64.927361]     # test_iio_gts_avail_test: EXPECTATION FAILED at drivers/iio/test/iio-test-gts.c:403
+                   Expected -22 == ret, but
+                       ret == 0 (0x0)
+[   64.927392]     # test_iio_gts_avail_test: EXPECTATION FAILED at drivers/iio/test/iio-test-gts.c:403
+                   Expected -22 == ret, but
+                       ret == 0 (0x0)
+[   64.927422]     # test_iio_gts_avail_test: EXPECTATION FAILED at drivers/iio/test/iio-test-gts.c:403
+                   Expected -22 == ret, but
+                       ret == 0 (0x0)
+[   64.927454]     # test_iio_gts_avail_test: EXPECTATION FAILED at drivers/iio/test/iio-test-gts.c:403
+                   Expected -22 == ret, but
+                       ret == 0 (0x0)
+[   64.927484]     # test_iio_gts_avail_test: EXPECTATION FAILED at drivers/iio/test/iio-test-gts.c:403
+                   Expected -22 == ret, but
+                       ret == 0 (0x0)
+[   64.927515]     # test_iio_gts_avail_test: EXPECTATION FAILED at drivers/iio/test/iio-test-gts.c:403
+                   Expected -22 == ret, but
+                       ret == 0 (0x0)
+[   64.927546]     # test_iio_gts_avail_test: EXPECTATION FAILED at drivers/iio/test/iio-test-gts.c:403
+                   Expected -22 == ret, but
+                       ret == 0 (0x0)
+[   64.927577]     # test_iio_gts_avail_test: EXPECTATION FAILED at drivers/iio/test/iio-test-gts.c:403
+                   Expected -22 == ret, but
+                       ret == 0 (0x0)
+[   64.931218] PM: Cannot get wkup_m3_ipc handle
+[   64.952293]     not ok 6 test_iio_gts_avail_test
+[   64.952348] # iio-gain-time-scale: pass:5 fail:1 skip:0 total:6
+[   64.952366] # Totals: pass:5 fail:1 skip:0 total:6
+[   64.952378] not ok 1 iio-gain-time-scale
