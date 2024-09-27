@@ -1,0 +1,42 @@
+Kunit test result: test_linear_ranges FAILED: Found 'not ok' in the Kunit dmesg prints.
+
+[   54.555285] KTAP version 1
+[   54.555334] 1..1
+[   54.555357]     KTAP version 1
+[   54.555369]     # Subtest: linear-ranges-test
+[   54.555386]     # module: test_linear_ranges
+[   54.555400]     1..4
+[   54.556284]     ok 1 range_test_get_value_amount
+[   54.556785]     ok 2 range_test_get_selector_high
+[   54.557209]     ok 3 range_test_get_selector_low
+[   54.557418]     # range_test_get_value: EXPECTATION FAILED at lib/test_linear_ranges.c:122
+                   Expected -22 == ret, but
+                       ret == 0 (0x0)
+[   54.557469]     # range_test_get_value: EXPECTATION FAILED at lib/test_linear_ranges.c:122
+                   Expected -22 == ret, but
+                       ret == 0 (0x0)
+[   54.557509]     # range_test_get_value: EXPECTATION FAILED at lib/test_linear_ranges.c:122
+                   Expected -22 == ret, but
+                       ret == 0 (0x0)
+[   54.557548]     # range_test_get_value: EXPECTATION FAILED at lib/test_linear_ranges.c:122
+                   Expected -22 == ret, but
+                       ret == 0 (0x0)
+[   54.557586]     # range_test_get_value: EXPECTATION FAILED at lib/test_linear_ranges.c:122
+                   Expected -22 == ret, but
+                       ret == 0 (0x0)
+[   54.557624]     # range_test_get_value: EXPECTATION FAILED at lib/test_linear_ranges.c:128
+                   Expected -22 == ret, but
+                       ret == 0 (0x0)
+[   54.557662]     # range_test_get_value: EXPECTATION FAILED at lib/test_linear_ranges.c:128
+                   Expected -22 == ret, but
+                       ret == 0 (0x0)
+[   54.557699]     # range_test_get_value: EXPECTATION FAILED at lib/test_linear_ranges.c:128
+                   Expected -22 == ret, but
+                       ret == 0 (0x0)
+[   54.557736]     # range_test_get_value: EXPECTATION FAILED at lib/test_linear_ranges.c:128
+                   Expected -22 == ret, but
+                       ret == 0 (0x0)
+[   54.558034]     not ok 4 range_test_get_value
+[   54.558058] # linear-ranges-test: pass:3 fail:1 skip:0 total:4
+[   54.558074] # Totals: pass:3 fail:1 skip:0 total:4
+[   54.558088] not ok 1 linear-ranges-test
