@@ -1,0 +1,816 @@
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 6.11.0-g1c5903bb178f (user01@drvtest01) (arm-linux-gnueabihf-gcc (Linaro GCC 6.4-2017.11) 6.4.1 20171012, GNU ld (Linaro_Binutils-2017.11) 2.27.0.20161229) #3 SMP Fri Sep 27 09:31:50 EEST 2024
+[    0.000000] CPU: ARMv7 Processor [413fc082] revision 2 (ARMv7), cr=10c5387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] OF: fdt: Machine model: TI AM335x BeagleBone Black
+[    0.000000] Memory policy: Data cache writeback
+[    0.000000] cma: Reserved 16 MiB at 0x9e800000 on node -1
+[    0.000000] Zone ranges:
+[    0.000000]   Normal   [mem 0x0000000080000000-0x000000009fdfffff]
+[    0.000000]   HighMem  empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000080000000-0x000000009fdfffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000080000000-0x000000009fdfffff]
+[    0.000000] CPU: All CPU(s) started in SVC mode.
+[    0.000000] AM335X ES2.1 (sgx neon)
+[    0.000000] percpu: Embedded 17 pages/cpu s39628 r8192 d21812 u69632
+[    0.000000] pcpu-alloc: s39628 r8192 d21812 u69632 alloc=17*4096
+[    0.000000] pcpu-alloc: [0] 0 
+[    0.000000] Kernel command line: console=ttyO0,115200n8 root=/dev/nfs rw nfsroot=192.168.255.126:/home/user01/nfs,nfsvers=3 ip=192.168.255.2:192.168.255.126::255.255.255.0:bbb1:eth0 nfsrootdebug
+[    0.000000] Unknown kernel command line parameters "nfsrootdebug", will be passed to user space.
+[    0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes, linear)
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 130560
+[    0.000000] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] trace event string verifier disabled
+[    0.000000] rcu: Hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU event tracing is enabled.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=2 to nr_cpu_ids=1.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[    0.000000] NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+[    0.000000] IRQ: Found an INTC at 0x(ptrval) (revision 5.0) with 128 interrupts
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] TI gptimer clocksource: always-on /ocp/interconnect@44c00000/segment@200000/target-module@31000
+[    0.000002] sched_clock: 32 bits at 24MHz, resolution 41ns, wraps every 89478484971ns
+[    0.000027] clocksource: dmtimer: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 79635851949 ns
+[    0.000505] TI gptimer clockevent: 24000000 Hz at /ocp/interconnect@48000000/segment@0/target-module@40000
+[    0.002140] Console: colour dummy device 80x30
+[    0.002208] WARNING: Your 'console=ttyO0' has been replaced by 'ttyS0'
+[    0.002218] This ensures that you still see kernel messages. Please
+[    0.002224] update your kernel commandline.
+[    0.002269] Calibrating delay loop... 996.14 BogoMIPS (lpj=4980736)
+[    0.090562] CPU: Testing write buffer coherency: ok
+[    0.090668] CPU0: Spectre v2: using BPIALL workaround
+[    0.090681] pid_max: default: 32768 minimum: 301
+[    0.090808] LSM: initializing lsm=capability
+[    0.090977] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+[    0.091000] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+[    0.092536] CPU0: thread -1, cpu 0, socket -1, mpidr 0
+[    0.094250] Setting up static identity map for 0x80100000 - 0x80100078
+[    0.094555] rcu: Hierarchical SRCU implementation.
+[    0.094569] rcu: 	Max phase no-delay instances is 1000.
+[    0.096236] smp: Bringing up secondary CPUs ...
+[    0.096295] smp: Brought up 1 node, 1 CPU
+[    0.096310] SMP: Total of 1 processors activated (996.14 BogoMIPS).
+[    0.096324] CPU: All CPU(s) started in SVC mode.
+[    0.096522] Memory: 480876K/522240K available (11264K kernel code, 1197K rwdata, 2856K rodata, 1024K init, 297K bss, 23344K reserved, 16384K cma-reserved, 0K highmem)
+[    0.097322] devtmpfs: initialized
+[    0.113718] VFP support v0.3: implementor 41 architecture 3 part 30 variant c rev 3
+[    0.114079] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.114115] futex hash table entries: 256 (order: 2, 16384 bytes, linear)
+[    0.115380] pinctrl core: initialized pinctrl subsystem
+[    0.118108] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.121100] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.122072] audit: initializing netlink subsys (disabled)
+[    0.123442] thermal_sys: Registered thermal governor 'fair_share'
+[    0.123463] thermal_sys: Registered thermal governor 'step_wise'
+[    0.123474] thermal_sys: Registered thermal governor 'user_space'
+[    0.123587] audit: type=2000 audit(0.120:1): state=initialized audit_enabled=0 res=1
+[    0.123658] cpuidle: using governor menu
+[    0.142759] No ATAGs?
+[    0.142792] hw-breakpoint: debug architecture 0x4 unsupported.
+[    0.145697] kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+[    0.164005] iommu: Default domain type: Translated
+[    0.164032] iommu: DMA domain TLB invalidation policy: strict mode
+[    0.165624] reg-fixed-voltage fixedregulator0: using DT '/fixedregulator0' for '(default)' GPIO lookup
+[    0.165684] of_get_named_gpiod_flags: can't parse 'gpios' property of node '/fixedregulator0[0]'
+[    0.165714] of_get_named_gpiod_flags: can't parse 'gpio' property of node '/fixedregulator0[0]'
+[    0.165734] reg-fixed-voltage fixedregulator0: using lookup tables for GPIO lookup
+[    0.165746] reg-fixed-voltage fixedregulator0: No GPIO consumer (default) found
+[    0.171392] SCSI subsystem initialized
+[    0.181028] libata version 3.00 loaded.
+[    0.181401] pps_core: LinuxPPS API ver. 1 registered
+[    0.181416] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.181441] PTP clock support registered
+[    0.183361] vgaarb: loaded
+[    0.183752] clocksource: Switched to clocksource dmtimer
+[    0.184341] VFS: Disk quotas dquot_6.6.0
+[    0.184387] VFS: Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+[    0.209798] NET: Registered PF_INET protocol family
+[    0.210158] IP idents hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.211554] tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 4096 bytes, linear)
+[    0.211594] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.211613] TCP established hash table entries: 4096 (order: 2, 16384 bytes, linear)
+[    0.211658] TCP bind hash table entries: 4096 (order: 4, 65536 bytes, linear)
+[    0.211759] TCP: Hash tables configured (established 4096 bind 4096)
+[    0.211879] UDP hash table entries: 256 (order: 1, 8192 bytes, linear)
+[    0.211909] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes, linear)
+[    0.212088] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.224708] RPC: Registered named UNIX socket transport module.
+[    0.224738] RPC: Registered udp transport module.
+[    0.224746] RPC: Registered tcp transport module.
+[    0.224752] RPC: Registered tcp-with-tls transport module.
+[    0.224759] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.224785] PCI: CLS 0 bytes, default 64
+[    0.226227] Initialise system trusted keyrings
+[    0.227310] workingset: timestamp_bits=14 max_order=17 bucket_order=3
+[    0.228575] NFS: Registering the id_resolver key type
+[    0.228645] Key type id_resolver registered
+[    0.228655] Key type id_legacy registered
+[    0.228706] jffs2: version 2.2. (NAND) (SUMMARY)  © 2001-2006 Red Hat, Inc.
+[    0.229156] Key type asymmetric registered
+[    0.229174] Asymmetric key parser 'x509' registered
+[    0.229242] io scheduler mq-deadline registered
+[    0.229255] io scheduler kyber registered
+[    0.229323] io scheduler bfq registered
+[    0.244238] Serial: 8250/16550 driver, 6 ports, IRQ sharing enabled
+[    0.307150] brd: module loaded
+[    0.318322] loop: module loaded
+[    0.319257] mtdoops: mtd device (mtddev=name/number) must be supplied
+[    0.335141] mdio_bus fixed-0: using lookup tables for GPIO lookup
+[    0.335173] mdio_bus fixed-0: No GPIO consumer reset found
+[    0.336576] i2c_dev: i2c /dev entries driver
+[    0.337547] cpuidle: enable-method property 'ti,am3352' found operations
+[    0.337996] sdhci: Secure Digital Host Controller Interface driver
+[    0.338009] sdhci: Copyright(c) Pierre Ossman
+[    0.338183] sdhci-pltfm: SDHCI platform and OF driver helper
+[    0.338493] ledtrig-cpu: registered to indicate activity on CPUs
+[    0.339435] Initializing XFRM netlink socket
+[    0.339564] NET: Registered PF_INET6 protocol family
+[    0.341396] Segment Routing with IPv6
+[    0.341495] In-situ OAM (IOAM) with IPv6
+[    0.341593] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    0.342533] NET: Registered PF_PACKET protocol family
+[    0.342573] NET: Registered PF_KEY protocol family
+[    0.342693] Key type dns_resolver registered
+[    0.342960] ThumbEE CPU extension supported.
+[    0.342985] Registering SWP/SWPB emulation handler
+[    0.343512] omap_voltage_late_init: Voltage driver support not added
+[    0.344073] SmartReflex Class3 initialized
+[    0.364650] Loading compiled-in X.509 certificates
+[    0.423230] gpiochip_find_base_unlocked: found new base at 512
+[    0.431641] platform 44e10800.pinmux: Fixed dependency cycle(s) with /ocp/interconnect@44c00000/segment@200000/target-module@10000/scm@0/pinmux@800/clkout2-pins
+[    0.432209] pinctrl-single 44e10800.pinmux: 142 pins, size 568
+[    0.437557] ti-sysc 44e31000.target-module: probe with driver ti-sysc failed with error -16
+[    0.473496] ti-sysc 48040000.target-module: probe with driver ti-sysc failed with error -16
+[    0.484610] gpiochip_find_base_unlocked: found new base at 512
+[    0.484725] gpio gpiochip0: (gpio-0-31): created GPIO range 0->7 ==> 44e10800.pinmux PIN 0->7
+[    0.484748] gpio gpiochip0: (gpio-0-31): created GPIO range 8->11 ==> 44e10800.pinmux PIN 90->93
+[    0.484767] gpio gpiochip0: (gpio-0-31): created GPIO range 12->27 ==> 44e10800.pinmux PIN 12->27
+[    0.484783] gpio gpiochip0: (gpio-0-31): created GPIO range 28->31 ==> 44e10800.pinmux PIN 30->33
+[    0.514132] gpio gpiochip0: (gpio-0-31): added GPIO chardev (254:0)
+[    0.514317] gpio gpiochip0: registered GPIOs 512 to 543 on gpio-0-31
+[    0.514405] OMAP GPIO hardware version 0.1
+[    0.537257] i2c i2c-2: using DT '/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0' for 'scl' GPIO lookup
+[    0.537359] of_get_named_gpiod_flags: can't parse 'scl-gpios' property of node '/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0[0]'
+[    0.537408] of_get_named_gpiod_flags: can't parse 'scl-gpio' property of node '/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0[0]'
+[    0.537447] i2c i2c-2: using lookup tables for GPIO lookup
+[    0.537460] i2c i2c-2: No GPIO consumer scl found
+[    0.537483] i2c i2c-2: using DT '/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0' for 'sda' GPIO lookup
+[    0.537521] of_get_named_gpiod_flags: can't parse 'sda-gpios' property of node '/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0[0]'
+[    0.537561] of_get_named_gpiod_flags: can't parse 'sda-gpio' property of node '/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0[0]'
+[    0.537595] i2c i2c-2: using lookup tables for GPIO lookup
+[    0.537604] i2c i2c-2: No GPIO consumer sda found
+[    0.538306] omap_i2c 4819c000.i2c: bus 2 rev0.11 at 100 kHz
+[    0.543541] gpiochip_find_base_unlocked: found new base at 544
+[    0.543651] gpio gpiochip1: (gpio-32-63): created GPIO range 0->17 ==> 44e10800.pinmux PIN 34->51
+[    0.543674] gpio gpiochip1: (gpio-32-63): created GPIO range 18->21 ==> 44e10800.pinmux PIN 77->80
+[    0.543691] gpio gpiochip1: (gpio-32-63): created GPIO range 22->31 ==> 44e10800.pinmux PIN 56->65
+[    0.558402] gpio gpiochip1: (gpio-32-63): added GPIO chardev (254:1)
+[    0.558565] gpio gpiochip1: registered GPIOs 544 to 575 on gpio-32-63
+[    0.560752] gpiochip_find_base_unlocked: found new base at 576
+[    0.560869] gpio gpiochip2: (gpio-64-95): created GPIO range 0->4 ==> 44e10800.pinmux PIN 66->70
+[    0.560891] gpio gpiochip2: (gpio-64-95): created GPIO range 5->6 ==> 44e10800.pinmux PIN 98->99
+[    0.560908] gpio gpiochip2: (gpio-64-95): created GPIO range 7->8 ==> 44e10800.pinmux PIN 75->76
+[    0.560926] gpio gpiochip2: (gpio-64-95): created GPIO range 13->13 ==> 44e10800.pinmux PIN 141->141
+[    0.560944] gpio gpiochip2: (gpio-64-95): created GPIO range 14->21 ==> 44e10800.pinmux PIN 100->107
+[    0.561543] gpio gpiochip2: (gpio-64-95): added GPIO chardev (254:2)
+[    0.561688] gpio gpiochip2: registered GPIOs 576 to 607 on gpio-64-95
+[    0.567364] 48000000.interconnect:segment@200000:target-module@0:mpu@0:fck: device ID is greater than 24
+[    0.571431] platform 4830e000.lcdc: Fixed dependency cycle(s) with /ocp/interconnect@44c00000/segment@200000/target-module@b000/i2c@0/tda19988@70
+[    0.580776] mdio_bus 4a101000.mdio: using DT '/ocp/interconnect@4a000000/segment@0/target-module@100000/switch@0/mdio@1000' for 'reset' GPIO lookup
+[    0.580858] of_get_named_gpiod_flags: can't parse 'reset-gpios' property of node '/ocp/interconnect@4a000000/segment@0/target-module@100000/switch@0/mdio@1000[0]'
+[    0.580909] of_get_named_gpiod_flags: can't parse 'reset-gpio' property of node '/ocp/interconnect@4a000000/segment@0/target-module@100000/switch@0/mdio@1000[0]'
+[    0.580959] mdio_bus 4a101000.mdio: using lookup tables for GPIO lookup
+[    0.580971] mdio_bus 4a101000.mdio: No GPIO consumer reset found
+[    0.582438] sdhci-omap 481d8000.mmc: using DT '/ocp/interconnect@48000000/segment@100000/target-module@d8000/mmc@0' for 'wp' GPIO lookup
+[    0.582507] of_get_named_gpiod_flags: can't parse 'wp-gpios' property of node '/ocp/interconnect@48000000/segment@100000/target-module@d8000/mmc@0[0]'
+[    0.582553] of_get_named_gpiod_flags: can't parse 'wp-gpio' property of node '/ocp/interconnect@48000000/segment@100000/target-module@d8000/mmc@0[0]'
+[    0.582591] sdhci-omap 481d8000.mmc: using lookup tables for GPIO lookup
+[    0.582603] sdhci-omap 481d8000.mmc: No GPIO consumer wp found
+[    0.582806] sdhci-omap 481d8000.mmc: supply pbias not found, using dummy regulator
+[    0.583274] sdhci-omap 481d8000.mmc: supply vqmmc not found, using dummy regulator
+[    0.655559] davinci_mdio 4a101000.mdio: davinci mdio revision 1.6, bus freq 1000000
+[    0.676123] mdio_bus 4a101000.mdio:00: using DT '/ocp/interconnect@4a000000/segment@0/target-module@100000/switch@0/mdio@1000/ethernet-phy@0' for 'reset' GPIO lookup
+[    0.676232] of_get_named_gpiod_flags: parsed 'reset-gpios' property of node '/ocp/interconnect@4a000000/segment@0/target-module@100000/switch@0/mdio@1000/ethernet-phy@0[0]' - status (0)
+[    0.676403] gpio gpiochip0: Persistence not supported for GPIO 8
+[    0.771286] davinci_mdio 4a101000.mdio: phy[0]: device 4a101000.mdio:00, driver SMSC LAN8710/LAN8720
+[    0.771930] cpsw-switch 4a100000.switch: initialized cpsw ale version 1.4
+[    0.771955] cpsw-switch 4a100000.switch: ALE Table size 1024
+[    0.772266] cpsw-switch 4a100000.switch: cpts: overflow check period 500 (jiffies)
+[    0.772291] cpsw-switch 4a100000.switch: CPTS: ref_clk_freq:250000000 calc_mult:2147483648 calc_shift:29 error:0 nsec/sec
+[    0.772401] cpsw-switch 4a100000.switch: Detected MACID = 18:2c:65:25:41:ce
+[    0.774393] cpsw-switch 4a100000.switch: initialized (regs 0x4a100000, pool size 256) hw_ver:0019010C 1.12 (0)
+[    0.785333] debugfs: Directory '49000000.dma' with parent 'dmaengine' already present!
+[    0.785382] edma 49000000.dma: TI EDMA DMA engine driver
+[    0.825379] target-module@4b000000:target-module@140000:pmu@0:fck: device ID is greater than 24
+[    0.847516] hw perfevents: enabled with armv7_cortex_a8 PMU driver, 5 counters available
+[    0.848415] gpio-clk clk_mcasp0: using DT '/clk_mcasp0' for 'enable' GPIO lookup
+[    0.848488] of_get_named_gpiod_flags: parsed 'enable-gpios' property of node '/clk_mcasp0[0]' - status (0)
+[    0.848535] gpio gpiochip0: Persistence not supported for GPIO 27
+[    0.849348] gpiochip_find_base_unlocked: found new base at 608
+[    0.849467] gpio gpiochip3: (gpio-96-127): created GPIO range 0->7 ==> 44e10800.pinmux PIN 82->89
+[    0.849490] gpio gpiochip3: (gpio-96-127): created GPIO range 8->11 ==> 44e10800.pinmux PIN 52->55
+[    0.849508] gpio gpiochip3: (gpio-96-127): created GPIO range 12->15 ==> 44e10800.pinmux PIN 94->97
+[    0.849525] gpio gpiochip3: (gpio-96-127): created GPIO range 16->17 ==> 44e10800.pinmux PIN 71->72
+[    0.849542] gpio gpiochip3: (gpio-96-127): created GPIO range 18->18 ==> 44e10800.pinmux PIN 135->135
+[    0.849561] gpio gpiochip3: (gpio-96-127): created GPIO range 19->20 ==> 44e10800.pinmux PIN 108->109
+[    0.849579] gpio gpiochip3: (gpio-96-127): created GPIO range 21->21 ==> 44e10800.pinmux PIN 73->73
+[    0.849598] gpio gpiochip3: (gpio-96-127): created GPIO range 22->23 ==> 44e10800.pinmux PIN 8->9
+[    0.849617] gpio gpiochip3: (gpio-96-127): created GPIO range 26->27 ==> 44e10800.pinmux PIN 10->11
+[    0.849636] gpio gpiochip3: (gpio-96-127): created GPIO range 28->28 ==> 44e10800.pinmux PIN 74->74
+[    0.849656] gpio gpiochip3: (gpio-96-127): created GPIO range 29->29 ==> 44e10800.pinmux PIN 81->81
+[    0.849676] gpio gpiochip3: (gpio-96-127): created GPIO range 30->31 ==> 44e10800.pinmux PIN 28->29
+[    0.850886] gpio gpiochip3: (gpio-96-127): added GPIO chardev (254:3)
+[    0.851037] gpio gpiochip3: registered GPIOs 608 to 639 on gpio-96-127
+[    0.858315] l3-aon-clkctrl:0000:0: failed to disable
+[    0.858926] omap8250 44e09000.serial: using DT '/ocp/interconnect@44c00000/segment@200000/target-module@9000/serial@0' for 'rs485-term' GPIO lookup
+[    0.858997] of_get_named_gpiod_flags: can't parse 'rs485-term-gpios' property of node '/ocp/interconnect@44c00000/segment@200000/target-module@9000/serial@0[0]'
+[    0.859045] of_get_named_gpiod_flags: can't parse 'rs485-term-gpio' property of node '/ocp/interconnect@44c00000/segment@200000/target-module@9000/serial@0[0]'
+[    0.859084] omap8250 44e09000.serial: using lookup tables for GPIO lookup
+[    0.859096] omap8250 44e09000.serial: No GPIO consumer rs485-term found
+[    0.859108] omap8250 44e09000.serial: using DT '/ocp/interconnect@44c00000/segment@200000/target-module@9000/serial@0' for 'rs485-rx-during-tx' GPIO lookup
+[    0.859147] of_get_named_gpiod_flags: can't parse 'rs485-rx-during-tx-gpios' property of node '/ocp/interconnect@44c00000/segment@200000/target-module@9000/serial@0[0]'
+[    0.859187] of_get_named_gpiod_flags: can't parse 'rs485-rx-during-tx-gpio' property of node '/ocp/interconnect@44c00000/segment@200000/target-module@9000/serial@0[0]'
+[    0.859222] omap8250 44e09000.serial: using lookup tables for GPIO lookup
+[    0.859232] omap8250 44e09000.serial: No GPIO consumer rs485-rx-during-tx found
+[    0.859624] 44e09000.serial: ttyS0 at MMIO 0x44e09000 (irq = 34, base_baud = 3000000) is a 8250
+[    0.859709] printk: legacy console [ttyS0] enabled
+[    2.096141] i2c i2c-0: using DT '/ocp/interconnect@44c00000/segment@200000/target-module@b000/i2c@0' for 'scl' GPIO lookup
+[    2.096228] of_get_named_gpiod_flags: can't parse 'scl-gpios' property of node '/ocp/interconnect@44c00000/segment@200000/target-module@b000/i2c@0[0]'
+[    2.096278] of_get_named_gpiod_flags: can't parse 'scl-gpio' property of node '/ocp/interconnect@44c00000/segment@200000/target-module@b000/i2c@0[0]'
+[    2.096319] i2c i2c-0: using lookup tables for GPIO lookup
+[    2.096333] i2c i2c-0: No GPIO consumer scl found
+[    2.096359] i2c i2c-0: using DT '/ocp/interconnect@44c00000/segment@200000/target-module@b000/i2c@0' for 'sda' GPIO lookup
+[    2.096399] of_get_named_gpiod_flags: can't parse 'sda-gpios' property of node '/ocp/interconnect@44c00000/segment@200000/target-module@b000/i2c@0[0]'
+[    2.096440] of_get_named_gpiod_flags: can't parse 'sda-gpio' property of node '/ocp/interconnect@44c00000/segment@200000/target-module@b000/i2c@0[0]'
+[    2.096477] i2c i2c-0: using lookup tables for GPIO lookup
+[    2.096488] i2c i2c-0: No GPIO consumer sda found
+[    2.135579] tps65217-pmic: Failed to locate of_node [id: -1]
+[    2.141652] tps65217-bl: Failed to locate of_node [id: -1]
+[    2.162518] tps65217 0-0024: TPS65217 ID 0xe version 1.2
+[    2.168712] platform 4830e000.lcdc: Fixed dependency cycle(s) with /ocp/interconnect@44c00000/segment@200000/target-module@b000/i2c@0/tda19988@70
+[    2.182135] i2c 0-0070: Fixed dependency cycle(s) with /ocp/interconnect@48000000/segment@300000/target-module@e000/lcdc@0
+[    2.193544] omap_i2c 44e0b000.i2c: bus 0 rev0.11 at 400 kHz
+[    2.201712] sdhci-omap 48060000.mmc: using DT '/ocp/interconnect@48000000/segment@0/target-module@60000/mmc@0' for 'cd' GPIO lookup
+[    2.201823] of_get_named_gpiod_flags: parsed 'cd-gpios' property of node '/ocp/interconnect@48000000/segment@0/target-module@60000/mmc@0[0]' - status (0)
+[    2.201891] gpio gpiochip3: Persistence not supported for GPIO 6
+[    2.201913] omap_gpio 44e07000.gpio: Could not set line 6 debounce to 200000 microseconds (-22)
+[    2.210830] sdhci-omap 48060000.mmc: Got CD GPIO
+[    2.215533] sdhci-omap 48060000.mmc: using DT '/ocp/interconnect@48000000/segment@0/target-module@60000/mmc@0' for 'wp' GPIO lookup
+[    2.215584] of_get_named_gpiod_flags: can't parse 'wp-gpios' property of node '/ocp/interconnect@48000000/segment@0/target-module@60000/mmc@0[0]'
+[    2.215629] of_get_named_gpiod_flags: can't parse 'wp-gpio' property of node '/ocp/interconnect@48000000/segment@0/target-module@60000/mmc@0[0]'
+[    2.215670] sdhci-omap 48060000.mmc: using lookup tables for GPIO lookup
+[    2.215684] sdhci-omap 48060000.mmc: No GPIO consumer wp found
+[    2.215897] sdhci-omap 48060000.mmc: supply pbias not found, using dummy regulator
+[    2.225029] sdhci-omap 481d8000.mmc: using DT '/ocp/interconnect@48000000/segment@100000/target-module@d8000/mmc@0' for 'wp' GPIO lookup
+[    2.225108] of_get_named_gpiod_flags: can't parse 'wp-gpios' property of node '/ocp/interconnect@48000000/segment@100000/target-module@d8000/mmc@0[0]'
+[    2.225159] of_get_named_gpiod_flags: can't parse 'wp-gpio' property of node '/ocp/interconnect@48000000/segment@100000/target-module@d8000/mmc@0[0]'
+[    2.225201] sdhci-omap 481d8000.mmc: using lookup tables for GPIO lookup
+[    2.225214] sdhci-omap 481d8000.mmc: No GPIO consumer wp found
+[    2.226004] sdhci-omap 48060000.mmc: supply vqmmc not found, using dummy regulator
+[    2.235198] sdhci-omap 481d8000.mmc: supply pbias not found, using dummy regulator
+[    2.243204] sdhci-omap 481d8000.mmc: supply vqmmc not found, using dummy regulator
+[    2.282110] mmc1: SDHCI controller on 481d8000.mmc [481d8000.mmc] using External DMA
+[    2.290579] mmc0: SDHCI controller on 48060000.mmc [48060000.mmc] using External DMA
+[    2.299349] cpsw-switch 4a100000.switch: starting ndev. mode: dual_mac
+[    2.343157] mmc0: new high speed SDHC card at address 59b4
+[    2.350273] mmcblk0: mmc0:59b4 USD   14.9 GiB
+[    2.357944]  mmcblk0: p1 p2
+[    2.365168] mmc1: new high speed MMC card at address 0001
+[    2.371854] mmcblk1: mmc1:0001 MK2704 3.53 GiB
+[    2.379443]  mmcblk1: p1
+[    2.383109] mmcblk1boot0: mmc1:0001 MK2704 2.00 MiB
+[    2.390404] mmcblk1boot1: mmc1:0001 MK2704 2.00 MiB
+[    2.397652] mmcblk1rpmb: mmc1:0001 MK2704 512 KiB, chardev (250:0)
+[    2.404457] SMSC LAN8710/LAN8720 4a101000.mdio:00: attached PHY driver (mii_bus:phy_addr=4a101000.mdio:00, irq=POLL)
+[    5.524494] cpsw-switch 4a100000.switch eth0: Link is Up - 100Mbps/Full - flow control off
+[    5.563979] IP-Config: Complete:
+[    5.567256]      device=eth0, hwaddr=18:2c:65:25:41:ce, ipaddr=192.168.255.2, mask=255.255.255.0, gw=255.255.255.255
+[    5.577921]      host=bbb1, domain=, nis-domain=(none)
+[    5.583088]      bootserver=192.168.255.126, rootserver=192.168.255.126, rootpath=
+[    5.583505] clk: Disabling unused clocks
+[    5.595357] PM: genpd: Disabling unused power domains
+[    5.600474] KTAP version 1
+[    5.603196] 1..0
+[    5.628045] VFS: Mounted root (nfs filesystem) on device 0:17.
+[    5.635114] devtmpfs: mounted
+[    5.639797] Freeing unused kernel image (initmem) memory: 1024K
+[    5.646745] Run /sbin/init as init process
+[    5.650877]   with arguments:
+[    5.650889]     /sbin/init
+[    5.650898]     nfsrootdebug
+[    5.650907]   with environment:
+[    5.650916]     HOME=/
+[    5.650925]     TERM=linux
+[    6.331389] systemd[1]: System time before build time, advancing clock.
+[    7.803773] random: crng init done
+[    7.874121] systemd[1]: systemd 232 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN)
+[    7.893061] systemd[1]: Detected architecture arm.
+[    7.936630] systemd[1]: Set hostname to <arm>.
+[    9.023075] systemd[1]: Listening on udev Kernel Socket.
+[    9.055687] systemd[1]: Listening on /dev/initctl Compatibility Named Pipe.
+[    9.094777] systemd[1]: Listening on Journal Audit Socket.
+[    9.135785] systemd[1]: Listening on Journal Socket (/dev/log).
+[    9.174578] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[    9.214534] systemd[1]: Listening on Journal Socket.
+[    9.254121] systemd[1]: Reached target Remote File Systems.
+[   11.332527] systemd-journald[91]: Received request to flush runtime journal from PID 1
+[   14.171429] leds-gpio leds: using DT '/leds/led2' for '(default)' GPIO lookup
+[   14.171542] of_get_named_gpiod_flags: parsed 'gpios' property of node '/leds/led2[0]' - status (0)
+[   14.171600] gpio gpiochip0: Persistence not supported for GPIO 21
+[   14.171616] gpio-533 (?): no flags found for GPIO (default)
+[   14.232744] leds-gpio leds: using DT '/leds/led3' for '(default)' GPIO lookup
+[   14.232855] of_get_named_gpiod_flags: parsed 'gpios' property of node '/leds/led3[0]' - status (0)
+[   14.232911] gpio gpiochip0: Persistence not supported for GPIO 22
+[   14.232926] gpio-534 (?): no flags found for GPIO (default)
+[   14.259629] leds-gpio leds: using DT '/leds/led4' for '(default)' GPIO lookup
+[   14.259729] of_get_named_gpiod_flags: parsed 'gpios' property of node '/leds/led4[0]' - status (0)
+[   14.259781] gpio gpiochip0: Persistence not supported for GPIO 23
+[   14.259796] gpio-535 (?): no flags found for GPIO (default)
+[   14.292525] leds-gpio leds: using DT '/leds/led5' for '(default)' GPIO lookup
+[   14.292778] of_get_named_gpiod_flags: parsed 'gpios' property of node '/leds/led5[0]' - status (0)
+[   14.292840] gpio gpiochip0: Persistence not supported for GPIO 24
+[   14.292856] gpio-536 (?): no flags found for GPIO (default)
+[   14.698851] remoteproc remoteproc0: wkup_m3 is available
+[   14.773531] omap_rtc 44e3e000.rtc: registered as rtc0
+[   14.778947] omap_rtc 44e3e000.rtc: setting system clock to 2000-01-01T00:00:00 UTC (946684800)
+[   14.787756] omap_rtc 44e3e000.rtc: using DT '/ocp/interconnect@44c00000/segment@200000/target-module@3e000/rtc@0' for 'wp' GPIO lookup
+[   14.787830] of_get_named_gpiod_flags: can't parse 'wp-gpios' property of node '/ocp/interconnect@44c00000/segment@200000/target-module@3e000/rtc@0[0]'
+[   14.787884] of_get_named_gpiod_flags: can't parse 'wp-gpio' property of node '/ocp/interconnect@44c00000/segment@200000/target-module@3e000/rtc@0[0]'
+[   14.787926] omap_rtc 44e3e000.rtc: using lookup tables for GPIO lookup
+[   14.787941] omap_rtc 44e3e000.rtc: No GPIO consumer wp found
+[   15.396846] am335x-phy-driver 47401300.usb-phy: using DT '/ocp/target-module@47400000/usb-phy@1300' for 'reset' GPIO lookup
+[   15.396940] of_get_named_gpiod_flags: can't parse 'reset-gpios' property of node '/ocp/target-module@47400000/usb-phy@1300[0]'
+[   15.396985] of_get_named_gpiod_flags: can't parse 'reset-gpio' property of node '/ocp/target-module@47400000/usb-phy@1300[0]'
+[   15.397025] am335x-phy-driver 47401300.usb-phy: using lookup tables for GPIO lookup
+[   15.397041] am335x-phy-driver 47401300.usb-phy: No GPIO consumer reset found
+[   15.397055] am335x-phy-driver 47401300.usb-phy: using DT '/ocp/target-module@47400000/usb-phy@1300' for 'vbus-detect' GPIO lookup
+[   15.397086] of_get_named_gpiod_flags: can't parse 'vbus-detect-gpios' property of node '/ocp/target-module@47400000/usb-phy@1300[0]'
+[   15.397119] of_get_named_gpiod_flags: can't parse 'vbus-detect-gpio' property of node '/ocp/target-module@47400000/usb-phy@1300[0]'
+[   15.397147] am335x-phy-driver 47401300.usb-phy: using lookup tables for GPIO lookup
+[   15.397159] am335x-phy-driver 47401300.usb-phy: No GPIO consumer vbus-detect found
+[   15.397307] am335x-phy-driver 47401300.usb-phy: dummy supplies not allowed for exclusive requests (id=vbus)
+[   15.437605] usbcore: registered new interface driver usbfs
+[   15.443266] usbcore: registered new interface driver hub
+[   15.448972] usbcore: registered new device driver usb
+[   15.465817] at24 2-0054: supply vcc not found, using dummy regulator
+[   15.608962] am335x-phy-driver 47401b00.usb-phy: using DT '/ocp/target-module@47400000/usb-phy@1b00' for 'reset' GPIO lookup
+[   15.609062] of_get_named_gpiod_flags: can't parse 'reset-gpios' property of node '/ocp/target-module@47400000/usb-phy@1b00[0]'
+[   15.609105] of_get_named_gpiod_flags: can't parse 'reset-gpio' property of node '/ocp/target-module@47400000/usb-phy@1b00[0]'
+[   15.609145] am335x-phy-driver 47401b00.usb-phy: using lookup tables for GPIO lookup
+[   15.609160] am335x-phy-driver 47401b00.usb-phy: No GPIO consumer reset found
+[   15.609174] am335x-phy-driver 47401b00.usb-phy: using DT '/ocp/target-module@47400000/usb-phy@1b00' for 'vbus-detect' GPIO lookup
+[   15.609207] of_get_named_gpiod_flags: can't parse 'vbus-detect-gpios' property of node '/ocp/target-module@47400000/usb-phy@1b00[0]'
+[   15.609240] of_get_named_gpiod_flags: can't parse 'vbus-detect-gpio' property of node '/ocp/target-module@47400000/usb-phy@1b00[0]'
+[   15.609267] am335x-phy-driver 47401b00.usb-phy: using lookup tables for GPIO lookup
+[   15.609280] am335x-phy-driver 47401b00.usb-phy: No GPIO consumer vbus-detect found
+[   15.609426] am335x-phy-driver 47401b00.usb-phy: dummy supplies not allowed for exclusive requests (id=vbus)
+[   15.627150] at24 2-0055: supply vcc not found, using dummy regulator
+[   15.754751] at24 2-0056: supply vcc not found, using dummy regulator
+[   15.905261] at24 2-0057: supply vcc not found, using dummy regulator
+[   16.056417] at24 0-0050: using DT '/ocp/interconnect@44c00000/segment@200000/target-module@b000/i2c@0/baseboard_eeprom@50' for 'wp' GPIO lookup
+[   16.056618] of_get_named_gpiod_flags: can't parse 'wp-gpios' property of node '/ocp/interconnect@44c00000/segment@200000/target-module@b000/i2c@0/baseboard_eeprom@50[0]'
+[   16.056729] of_get_named_gpiod_flags: can't parse 'wp-gpio' property of node '/ocp/interconnect@44c00000/segment@200000/target-module@b000/i2c@0/baseboard_eeprom@50[0]'
+[   16.056782] at24 0-0050: using lookup tables for GPIO lookup
+[   16.056836] at24 0-0050: No GPIO consumer wp found
+[   16.057236] at24 0-0050: 32768 byte 24c256 EEPROM, writable, 1 bytes/write
+[   16.105955] tps6521x_pwrbutton tps65217-pwrbutton: DMA mask not set
+[   16.207662] input: tps65217_pwrbutton as /devices/platform/ocp/44c00000.interconnect/44c00000.interconnect:segment@200000/44e0b000.target-module/44e0b000.i2c/i2c-0/0-0024/tps65217-pwrbutton/input/input0
+[   16.433977] wkup_m3_ipc 44e11324.wkup_m3_ipc: IPC Request for A8->M3 Channel failed! -517
+[   16.538905] wkup_m3_ipc 44e11324.wkup_m3_ipc: IPC Request for A8->M3 Channel failed! -517
+[   16.662271] omap_wdt: OMAP Watchdog Timer Rev 0x01: initial timeout 60 sec
+[   16.678228] musb-hdrc musb-hdrc.1: MUSB HDRC host driver
+[   16.683641] musb-hdrc musb-hdrc.1: new USB bus registered, assigned bus number 1
+[   16.709313] wkup_m3_ipc 44e11324.wkup_m3_ipc: IPC Request for A8->M3 Channel failed! -517
+[   16.885381] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.11
+[   16.893896] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   16.901164] usb usb1: Product: MUSB HDRC host driver
+[   16.906349] usb usb1: Manufacturer: Linux 6.11.0-g1c5903bb178f musb-hcd
+[   16.913005] usb usb1: SerialNumber: musb-hdrc.1
+[   17.086017] hub 1-0:1.0: USB hub found
+[   17.145770] hub 1-0:1.0: 1 port detected
+[   17.196756] wkup_m3_ipc 44e11324.wkup_m3_ipc: IPC Request for A8->M3 Channel failed! -517
+[   17.311055] wkup_m3_ipc 44e11324.wkup_m3_ipc: IPC Request for A8->M3 Channel failed! -517
+[   17.374591] tda998x 0-0070: found TDA19988
+[   17.535036] wkup_m3_ipc 44e11324.wkup_m3_ipc: IPC Request for A8->M3 Channel failed! -517
+[   17.739812] omap-mailbox 480c8000.mailbox: omap mailbox rev 0x400
+[   17.839483] remoteproc remoteproc0: powering up wkup_m3
+[   18.075900] remoteproc remoteproc0: Direct firmware load for am335x-pm-firmware.elf failed with error -2
+[   18.085724] remoteproc remoteproc0: request_firmware failed: -2
+[   18.091689] wkup_m3_ipc 44e11324.wkup_m3_ipc: rproc_boot failed
+[   20.075250] tilcdc 4830e000.lcdc: bound 0-0070 (ops tda998x_driver_exit [tda998x])
+[   20.094884] omap_rng 48310000.rng: Random Number Generator ver. 20
+[   20.179025] [drm] Initialized tilcdc 1.0.0 for 4830e000.lcdc on minor 0
+[   20.215490] tilcdc 4830e000.lcdc: [drm] Cannot find any crtc or sizes
+[   20.254234] tilcdc 4830e000.lcdc: [drm] Cannot find any crtc or sizes
+[   21.196216] PM: Cannot get wkup_m3_ipc handle
+[   21.370975] omap-sham 53100000.sham: hw accel on OMAP rev 4.3
+[   21.480664] omap-aes 53500000.aes: OMAP AES hw accel rev: 3.2
+[   21.587923] omap-sham 53100000.sham: will run requests pump with realtime priority
+[   21.596702] PM: Cannot get wkup_m3_ipc handle
+[   21.646368] omap-aes 53500000.aes: will run requests pump with realtime priority
+[   21.689419] PM: Cannot get wkup_m3_ipc handle
+[   23.948589] Bluetooth: Core ver 2.22
+[   23.952420] NET: Registered PF_BLUETOOTH protocol family
+[   23.957978] Bluetooth: HCI device and connection manager initialized
+[   23.964458] Bluetooth: HCI socket layer initialized
+[   23.969373] Bluetooth: L2CAP socket layer initialized
+[   23.974530] Bluetooth: SCO socket layer initialized
+[   25.406869] PM: Cannot get wkup_m3_ipc handle
+[   25.412649] asoc-simple-card sound: using DT '/sound' for 'simple-audio-card,hp-det' GPIO lookup
+[   25.412718] of_get_named_gpiod_flags: can't parse 'simple-audio-card,hp-det-gpios' property of node '/sound[0]'
+[   25.412753] of_get_named_gpiod_flags: can't parse 'simple-audio-card,hp-det-gpio' property of node '/sound[0]'
+[   25.412780] asoc-simple-card sound: using lookup tables for GPIO lookup
+[   25.412796] asoc-simple-card sound: No GPIO consumer simple-audio-card,hp-det found
+[   25.412810] asoc-simple-card sound: using DT '/sound' for 'simple-audio-card,mic-det' GPIO lookup
+[   25.412834] of_get_named_gpiod_flags: can't parse 'simple-audio-card,mic-det-gpios' property of node '/sound[0]'
+[   25.412860] of_get_named_gpiod_flags: can't parse 'simple-audio-card,mic-det-gpio' property of node '/sound[0]'
+[   25.412880] asoc-simple-card sound: using lookup tables for GPIO lookup
+[   25.412892] asoc-simple-card sound: No GPIO consumer simple-audio-card,mic-det found
+[   25.539534] PM: Cannot get wkup_m3_ipc handle
+[   27.479348] userial_init: registered 8 ttyGS* devices
+[   27.762069] rndis_register: configNr = 0
+[   27.871042] udc musb-hdrc.0: binding gadget driver [g_multi]
+[   27.871136] configfs-gadget.g_multi gadget.0: adding 'rndis'/e16ee762 to config 'c'/21d1bcba
+[   27.872254] configfs-gadget.g_multi gadget.0: HOST MAC 1c:ba:8c:a2:ed:6c
+[   27.879261] configfs-gadget.g_multi gadget.0: MAC 1c:ba:8c:a2:ed:70
+[   27.885661] rndis_set_param_medium: 0 0
+[   27.885681] configfs-gadget.g_multi gadget.0: RNDIS: IN/ep1in OUT/ep1out NOTIFY/ep2in
+[   27.885698] configfs-gadget.g_multi gadget.0: adding 'cdc_ethernet'/c38a49b0 to config 'c'/21d1bcba
+[   27.886638] configfs-gadget.g_multi gadget.0: HOST MAC 1c:ba:8c:a2:ed:6c
+[   27.893399] configfs-gadget.g_multi gadget.0: MAC 1c:ba:8c:a2:ed:6d
+[   27.899815] configfs-gadget.g_multi gadget.0: CDC Ethernet: IN/ep3in OUT/ep2out NOTIFY/ep4in
+[   27.899836] configfs-gadget.g_multi gadget.0: adding 'acm'/5d797b1e to config 'c'/21d1bcba
+[   27.899870] configfs-gadget.g_multi gadget.0: acm ttyGS0: IN/ep5in OUT/ep3out NOTIFY/ep6in
+[   27.903699] PM: Cannot get wkup_m3_ipc handle
+[   29.168563] configfs-gadget.g_multi gadget.0: eth_open
+[   29.844162] configfs-gadget.g_multi gadget.0: stop stats: rx/tx 0/0, errs 0/0
+[   34.586961] gs_open: ttyGS0 (3ce26815,6932f122)
+[   34.587117] gs_close: ttyGS0 (3ce26815,6932f122) ...
+[   34.587141] gs_close: ttyGS0 (3ce26815,6932f122) done!
+[   34.588804] gs_open: ttyGS0 (3ce26815,f374229a)
+[   34.588920] gs_close: ttyGS0 (3ce26815,f374229a) ...
+[   34.588940] gs_close: ttyGS0 (3ce26815,f374229a) done!
+[   34.736211] gs_open: ttyGS0 (0a864656,aa1dc4fd)
+[   34.736454] gs_close: ttyGS0 (0a864656,aa1dc4fd) ...
+[   34.736486] gs_close: ttyGS0 (0a864656,aa1dc4fd) done!
+[   34.739541] gs_open: ttyGS0 (0a864656,f374229a)
+[   52.774367] mva_overlay: loading out-of-tree module taints kernel.
+[   52.775085] mva_overlay_init: Hello Peeps
+[   52.775127] create_sysfs_for_overlays: sysfs created
+[   56.564480] overlay_modify_store: got overlay data (pos=0, size=4096
+[   56.564541] overlay_modify_store: pos 0
+[   56.564564] overlay_modify_store: Copying data to buf[0-4095]
+[   56.564588] overlay_modify_store: got overlay data (pos=4096, size=177
+[   56.564601] overlay_modify_store: Writing 4273 byte overlay
+[   56.565734] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pinctrl-0
+[   56.565802] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/clock-frequency
+[   56.565838] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/status
+[   56.566176] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/osc
+[   56.566239] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/bdpmic
+[   56.566297] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/buck1
+[   56.566351] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/buck2
+[   56.566410] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/buck3
+[   56.566467] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/buck4
+[   56.566520] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/buck5
+[   56.566573] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/ldo1
+[   56.566626] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/ldo2
+[   56.566679] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/ldo3
+[   56.566731] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/ldo4
+[   56.566783] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/ldo5
+[   56.566836] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/ldo6
+[   56.566888] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/ldo7
+[   56.566939] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/boost
+[   56.566971] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/clktest
+[   56.567004] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /__symbols__/gpiotest
+[   56.599158] PM: Cannot get wkup_m3_ipc handle
+[   56.729565] PM: Cannot get wkup_m3_ipc handle
+[   56.812427] PM: Cannot get wkup_m3_ipc handle
+[   56.860326] gpiochip_find_base_unlocked: found new base at 640
+[   56.877448] gpio gpiochip4: (bd71815): added GPIO chardev (254:4)
+[   56.877674] gpio gpiochip4: registered GPIOs 640 to 640 on bd71815
+[   56.878853] PM: Cannot get wkup_m3_ipc handle
+[   56.892623] bd70528-rtc bd71815-rtc.6.auto: registered as rtc1
+[   56.894100] PM: Cannot get wkup_m3_ipc handle
+[   56.910303] bd7181x-pmic bd71815-pmic.2.auto: using DT '/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/bd71815@4b' for 'rohm,vsel' GPIO lookup
+[   56.910420] of_get_named_gpiod_flags: can't parse 'rohm,vsel-gpios' property of node '/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/bd71815@4b[0]'
+[   56.910482] of_get_named_gpiod_flags: can't parse 'rohm,vsel-gpio' property of node '/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/bd71815@4b[0]'
+[   56.910531] bd7181x-pmic bd71815-pmic.2.auto: No GPIO consumer rohm,vsel found
+[   57.056528] PM: Cannot get wkup_m3_ipc handle
+[   62.529738] mva_test_init: Hello Peeps
+[   62.712990] bd71815-gpio-test gpouser: using DT '/gpouser' for 'my' GPIO lookup
+[   62.713106] of_get_named_gpiod_flags: parsed 'my-gpios' property of node '/gpouser[0]' - status (0)
+[   62.713157] gpio gpiochip4: Persistence not supported for GPIO 0
+[   62.718832] sysfs: cannot create duplicate filename '/kernel/mva_test'
+[   62.718882] CPU: 0 UID: 0 PID: 648 Comm: insmod Tainted: G           O       6.11.0-g1c5903bb178f #3
+[   62.718908] Tainted: [O]=OOT_MODULE
+[   62.718916] Hardware name: Generic AM33XX (Flattened Device Tree)
+[   62.718928] Call trace: 
+[   62.718947]  unwind_backtrace from show_stack+0x10/0x14
+[   62.718999]  show_stack from dump_stack_lvl+0x50/0x64
+[   62.719023]  dump_stack_lvl from sysfs_warn_dup+0x50/0x64
+[   62.719055]  sysfs_warn_dup from sysfs_create_dir_ns+0xd4/0xf8
+[   62.719080]  sysfs_create_dir_ns from kobject_add_internal+0xc4/0x300
+[   62.719118]  kobject_add_internal from kobject_add+0x58/0xc8
+[   62.719145]  kobject_add from kobject_create_and_add+0x44/0x88
+[   62.719171]  kobject_create_and_add from bd71815_gpio_probe+0x3c/0xbc [bd71815_gpio_test]
+[   62.719259]  bd71815_gpio_probe [bd71815_gpio_test] from platform_probe+0x7c/0xc0
+[   62.719305]  platform_probe from really_probe+0x148/0x3a4
+[   62.719331]  really_probe from __driver_probe_device+0x98/0x1d0
+[   62.719355]  __driver_probe_device from driver_probe_device+0x2c/0xd4
+[   62.719379]  driver_probe_device from __driver_attach+0xf8/0x184
+[   62.719401]  __driver_attach from bus_for_each_dev+0x60/0xb8
+[   62.719424]  bus_for_each_dev from bus_add_driver+0xd4/0x220
+[   62.719445]  bus_add_driver from driver_register+0x7c/0x114
+[   62.719468]  driver_register from do_one_initcall+0x40/0x25c
+[   62.719495]  do_one_initcall from do_init_module+0x48/0x1d8
+[   62.719523]  do_init_module from load_module+0x1d64/0x1e00
+[   62.719561]  load_module from init_module_from_file+0x90/0xc8
+[   62.719588]  init_module_from_file from sys_finit_module+0x210/0x320
+[   62.719615]  sys_finit_module from ret_fast_syscall+0x0/0x58
+[   62.719637] Exception stack(0xe0475fa8 to 0xe0475ff0)
+[   62.719656] 5fa0:                   c090f500 00000000 00000003 00466294 00000000 be924c20
+[   62.719670] 5fc0: c090f500 00000000 00477e1c 0000017b 00000000 00000000 00477770 00000000
+[   62.719683] 5fe0: be924bc8 be924bb8 0045d5bb b6f01012
+[   62.719697] kobject: kobject_add_internal failed for mva_test with -EEXIST, don't try to register things with the same name in the same directory.
+[   62.719710] kobject: kobject_create_and_add: kobject_add error: -17
+[   62.719733] bd71815-gpio-test gpouser: probe with driver bd71815-gpio-test failed with error -22
+[   62.873320] mva_test_probe: Hello Peeps
+[   62.873491] clk_get(&pdev->dev, "bd71815-32k-out"); did not work
+[   62.873519] clk_get(NULL, "bd71815-32k-out"); did not work
+[   62.873554] YAY clk_get(&pdev->dev, NULL); did work
+[   62.877321] PM: Cannot get wkup_m3_ipc handle
+[   92.492262] buck1_en_store: YaY!, Regulator 'buck1' enabled
+[   94.692422] buck2_en_store: YaY!, Regulator 'buck2' enabled
+[   96.792804] buck3_en_store: YaY!, Regulator 'buck3' enabled
+[   99.053625] buck4_en_store: YaY!, Regulator 'buck4' enabled
+[  101.292754] buck5_en_store: YaY!, Regulator 'buck5' enabled
+[  103.500468] buck6_en_store: YaY!, Regulator 'ldo1' enabled
+[  105.593018] buck7_en_store: YaY!, Regulator 'ldo2' enabled
+[  107.734890] buck8_en_store: YaY!, Regulator 'ldo3' enabled
+[  109.952462] buck9_en_store: YaY!, Regulator 'ldo4' enabled
+[  112.265836] buck10_en_store: YaY!, Regulator 'ldo5' enabled
+[  114.491813] wled_en_store: YaY!, Regulator 'wled' enabled
+[  116.143475] wled_en_store: YaY!, Regulator 'wled' disabled
+[  122.602576] b1: Calling: regulator_set_voltage(800000,800000)
+[  122.603469] YaY!, Regulator 'buck1' voltage set to 800000
+[  122.912316] b1: Calling: regulator_set_voltage(825000,825000)
+[  122.913011] YaY!, Regulator 'buck1' voltage set to 825000
+[  123.205894] b1: Calling: regulator_set_voltage(850000,850000)
+[  123.206472] YaY!, Regulator 'buck1' voltage set to 850000
+[  123.532730] b1: Calling: regulator_set_voltage(875000,875000)
+[  123.533423] YaY!, Regulator 'buck1' voltage set to 875000
+[  123.900765] b1: Calling: regulator_set_voltage(900000,900000)
+[  123.901341] YaY!, Regulator 'buck1' voltage set to 900000
+[  124.205472] b1: Calling: regulator_set_voltage(925000,925000)
+[  124.206043] YaY!, Regulator 'buck1' voltage set to 925000
+[  124.542455] b1: Calling: regulator_set_voltage(950000,950000)
+[  124.543153] YaY!, Regulator 'buck1' voltage set to 950000
+[  124.892457] b1: Calling: regulator_set_voltage(975000,975000)
+[  124.893148] YaY!, Regulator 'buck1' voltage set to 975000
+[  125.252520] b1: Calling: regulator_set_voltage(1000000,1000000)
+[  125.253215] YaY!, Regulator 'buck1' voltage set to 1000000
+[  125.605736] b1: Calling: regulator_set_voltage(1025000,1025000)
+[  125.606299] YaY!, Regulator 'buck1' voltage set to 1025000
+[  125.942623] b1: Calling: regulator_set_voltage(1050000,1050000)
+[  125.943312] YaY!, Regulator 'buck1' voltage set to 1050000
+[  126.312237] b1: Calling: regulator_set_voltage(1075000,1075000)
+[  126.312928] YaY!, Regulator 'buck1' voltage set to 1075000
+[  126.632379] b1: Calling: regulator_set_voltage(1100000,1100000)
+[  126.633076] YaY!, Regulator 'buck1' voltage set to 1100000
+[  126.972080] b1: Calling: regulator_set_voltage(1125000,1125000)
+[  126.972773] YaY!, Regulator 'buck1' voltage set to 1125000
+[  127.282534] b1: Calling: regulator_set_voltage(1150000,1150000)
+[  127.283227] YaY!, Regulator 'buck1' voltage set to 1150000
+[  127.592253] b1: Calling: regulator_set_voltage(1175000,1175000)
+[  127.592839] YaY!, Regulator 'buck1' voltage set to 1175000
+[  127.902922] b1: Calling: regulator_set_voltage(1200000,1200000)
+[  127.903584] YaY!, Regulator 'buck1' voltage set to 1200000
+[  128.292715] b1: Calling: regulator_set_voltage(1225000,1225000)
+[  128.293401] YaY!, Regulator 'buck1' voltage set to 1225000
+[  128.623378] b1: Calling: regulator_set_voltage(1250000,1250000)
+[  128.626269] YaY!, Regulator 'buck1' voltage set to 1250000
+[  128.945597] b1: Calling: regulator_set_voltage(1275000,1275000)
+[  128.946173] YaY!, Regulator 'buck1' voltage set to 1275000
+[  129.272228] b1: Calling: regulator_set_voltage(1300000,1300000)
+[  129.272921] YaY!, Regulator 'buck1' voltage set to 1300000
+[  129.544196] b1: Calling: regulator_set_voltage(1325000,1325000)
+[  129.544769] YaY!, Regulator 'buck1' voltage set to 1325000
+[  129.844909] b1: Calling: regulator_set_voltage(1350000,1350000)
+[  129.845456] YaY!, Regulator 'buck1' voltage set to 1350000
+[  130.153009] b1: Calling: regulator_set_voltage(1375000,1375000)
+[  130.153700] YaY!, Regulator 'buck1' voltage set to 1375000
+[  130.502862] b1: Calling: regulator_set_voltage(1400000,1400000)
+[  130.503557] YaY!, Regulator 'buck1' voltage set to 1400000
+[  130.852153] b1: Calling: regulator_set_voltage(1425000,1425000)
+[  130.852848] YaY!, Regulator 'buck1' voltage set to 1425000
+[  131.162842] b1: Calling: regulator_set_voltage(1450000,1450000)
+[  131.163545] YaY!, Regulator 'buck1' voltage set to 1450000
+[  131.481433] b1: Calling: regulator_set_voltage(1475000,1475000)
+[  131.482010] YaY!, Regulator 'buck1' voltage set to 1475000
+[  131.782521] b1: Calling: regulator_set_voltage(1500000,1500000)
+[  131.783232] YaY!, Regulator 'buck1' voltage set to 1500000
+[  132.122289] b1: Calling: regulator_set_voltage(1525000,1525000)
+[  132.123082] YaY!, Regulator 'buck1' voltage set to 1525000
+[  132.472664] b1: Calling: regulator_set_voltage(1550000,1550000)
+[  132.473355] YaY!, Regulator 'buck1' voltage set to 1550000
+[  132.792462] b1: Calling: regulator_set_voltage(1575000,1575000)
+[  132.793166] YaY!, Regulator 'buck1' voltage set to 1575000
+[  133.146089] b1: Calling: regulator_set_voltage(1600000,1600000)
+[  133.146672] YaY!, Regulator 'buck1' voltage set to 1600000
+[  133.545738] b1: Calling: regulator_set_voltage(1625000,1625000)
+[  133.546319] YaY!, Regulator 'buck1' voltage set to 1625000
+[  133.872602] b1: Calling: regulator_set_voltage(1650000,1650000)
+[  133.873301] YaY!, Regulator 'buck1' voltage set to 1650000
+[  134.174800] b1: Calling: regulator_set_voltage(1675000,1675000)
+[  134.175376] YaY!, Regulator 'buck1' voltage set to 1675000
+[  134.493646] b1: Calling: regulator_set_voltage(1700000,1700000)
+[  134.494511] YaY!, Regulator 'buck1' voltage set to 1700000
+[  134.832273] b1: Calling: regulator_set_voltage(1725000,1725000)
+[  134.832964] YaY!, Regulator 'buck1' voltage set to 1725000
+[  135.175592] b1: Calling: regulator_set_voltage(1750000,1750000)
+[  135.176156] YaY!, Regulator 'buck1' voltage set to 1750000
+[  135.522116] b1: Calling: regulator_set_voltage(1775000,1775000)
+[  135.522819] YaY!, Regulator 'buck1' voltage set to 1775000
+[  135.852581] b1: Calling: regulator_set_voltage(1800000,1800000)
+[  135.853275] YaY!, Regulator 'buck1' voltage set to 1800000
+[  136.180388] b1: Calling: regulator_set_voltage(1825000,1825000)
+[  136.183017] YaY!, Regulator 'buck1' voltage set to 1825000
+[  136.482255] b1: Calling: regulator_set_voltage(1850000,1850000)
+[  136.482952] YaY!, Regulator 'buck1' voltage set to 1850000
+[  136.842723] b1: Calling: regulator_set_voltage(1875000,1875000)
+[  136.843413] YaY!, Regulator 'buck1' voltage set to 1875000
+[  137.210691] b1: Calling: regulator_set_voltage(1900000,1900000)
+[  137.211327] YaY!, Regulator 'buck1' voltage set to 1900000
+[  137.522566] b1: Calling: regulator_set_voltage(1925000,1925000)
+[  137.523254] YaY!, Regulator 'buck1' voltage set to 1925000
+[  137.875999] b1: Calling: regulator_set_voltage(1950000,1950000)
+[  137.876581] YaY!, Regulator 'buck1' voltage set to 1950000
+[  138.192739] b1: Calling: regulator_set_voltage(1975000,1975000)
+[  138.193432] YaY!, Regulator 'buck1' voltage set to 1975000
+[  138.522561] b1: Calling: regulator_set_voltage(2000000,2000000)
+[  138.523247] YaY!, Regulator 'buck1' voltage set to 2000000
+[  139.544513] b2: Calling: regulator_set_voltage(800000,800000)
+[  139.545366] YaY!, Regulator 'buck2' voltage set to 800000
+[  139.897671] b2: Calling: regulator_set_voltage(825000,825000)
+[  139.898186] YaY!, Regulator 'buck2' voltage set to 825000
+[  140.231675] b2: Calling: regulator_set_voltage(850000,850000)
+[  140.232366] YaY!, Regulator 'buck2' voltage set to 850000
+[  140.532438] b2: Calling: regulator_set_voltage(875000,875000)
+[  140.533134] YaY!, Regulator 'buck2' voltage set to 875000
+[  140.883053] b2: Calling: regulator_set_voltage(900000,900000)
+[  140.883947] YaY!, Regulator 'buck2' voltage set to 900000
+[  141.286470] b2: Calling: regulator_set_voltage(925000,925000)
+[  141.287066] YaY!, Regulator 'buck2' voltage set to 925000
+[  141.662507] b2: Calling: regulator_set_voltage(950000,950000)
+[  141.663207] YaY!, Regulator 'buck2' voltage set to 950000
+[  141.915204] b2: Calling: regulator_set_voltage(975000,975000)
+[  141.915754] YaY!, Regulator 'buck2' voltage set to 975000
+[  142.232655] b2: Calling: regulator_set_voltage(1000000,1000000)
+[  142.233350] YaY!, Regulator 'buck2' voltage set to 1000000
+[  142.552083] b2: Calling: regulator_set_voltage(1025000,1025000)
+[  142.552776] YaY!, Regulator 'buck2' voltage set to 1025000
+[  142.892540] b2: Calling: regulator_set_voltage(1050000,1050000)
+[  142.893236] YaY!, Regulator 'buck2' voltage set to 1050000
+[  143.163122] b2: Calling: regulator_set_voltage(1075000,1075000)
+[  143.164307] YaY!, Regulator 'buck2' voltage set to 1075000
+[  143.502472] b2: Calling: regulator_set_voltage(1100000,1100000)
+[  143.503161] YaY!, Regulator 'buck2' voltage set to 1100000
+[  143.821794] b2: Calling: regulator_set_voltage(1125000,1125000)
+[  143.822655] YaY!, Regulator 'buck2' voltage set to 1125000
+[  144.162935] b2: Calling: regulator_set_voltage(1150000,1150000)
+[  144.163625] YaY!, Regulator 'buck2' voltage set to 1150000
+[  144.502496] b2: Calling: regulator_set_voltage(1175000,1175000)
+[  144.503189] YaY!, Regulator 'buck2' voltage set to 1175000
+[  144.825804] b2: Calling: regulator_set_voltage(1200000,1200000)
+[  144.826379] YaY!, Regulator 'buck2' voltage set to 1200000
+[  145.152962] b2: Calling: regulator_set_voltage(1225000,1225000)
+[  145.153692] YaY!, Regulator 'buck2' voltage set to 1225000
+[  145.462037] b2: Calling: regulator_set_voltage(1250000,1250000)
+[  145.462731] YaY!, Regulator 'buck2' voltage set to 1250000
+[  145.830528] b2: Calling: regulator_set_voltage(1275000,1275000)
+[  145.831093] YaY!, Regulator 'buck2' voltage set to 1275000
+[  146.155907] b2: Calling: regulator_set_voltage(1300000,1300000)
+[  146.156490] YaY!, Regulator 'buck2' voltage set to 1300000
+[  146.483570] b2: Calling: regulator_set_voltage(1325000,1325000)
+[  146.484946] YaY!, Regulator 'buck2' voltage set to 1325000
+[  146.828060] b2: Calling: regulator_set_voltage(1350000,1350000)
+[  146.828598] YaY!, Regulator 'buck2' voltage set to 1350000
+[  147.164943] b2: Calling: regulator_set_voltage(1375000,1375000)
+[  147.165536] YaY!, Regulator 'buck2' voltage set to 1375000
+[  147.512362] b2: Calling: regulator_set_voltage(1400000,1400000)
+[  147.513059] YaY!, Regulator 'buck2' voltage set to 1400000
+[  147.835596] b2: Calling: regulator_set_voltage(1425000,1425000)
+[  147.836172] YaY!, Regulator 'buck2' voltage set to 1425000
+[  148.103292] b2: Calling: regulator_set_voltage(1450000,1450000)
+[  148.104116] YaY!, Regulator 'buck2' voltage set to 1450000
+[  148.443711] b2: Calling: regulator_set_voltage(1475000,1475000)
+[  148.444627] YaY!, Regulator 'buck2' voltage set to 1475000
+[  148.784010] b2: Calling: regulator_set_voltage(1500000,1500000)
+[  148.784699] YaY!, Regulator 'buck2' voltage set to 1500000
+[  149.172339] b2: Calling: regulator_set_voltage(1525000,1525000)
+[  149.173040] YaY!, Regulator 'buck2' voltage set to 1525000
+[  149.473035] b2: Calling: regulator_set_voltage(1550000,1550000)
+[  149.473983] YaY!, Regulator 'buck2' voltage set to 1550000
+[  149.785613] b2: Calling: regulator_set_voltage(1575000,1575000)
+[  149.786209] YaY!, Regulator 'buck2' voltage set to 1575000
+[  150.145678] b2: Calling: regulator_set_voltage(1600000,1600000)
+[  150.146256] YaY!, Regulator 'buck2' voltage set to 1600000
+[  150.492047] b2: Calling: regulator_set_voltage(1625000,1625000)
+[  150.492742] YaY!, Regulator 'buck2' voltage set to 1625000
+[  150.792504] b2: Calling: regulator_set_voltage(1650000,1650000)
+[  150.793214] YaY!, Regulator 'buck2' voltage set to 1650000
+[  151.155752] b2: Calling: regulator_set_voltage(1675000,1675000)
+[  151.156329] YaY!, Regulator 'buck2' voltage set to 1675000
+[  151.482367] b2: Calling: regulator_set_voltage(1700000,1700000)
+[  151.483064] YaY!, Regulator 'buck2' voltage set to 1700000
+[  151.792463] b2: Calling: regulator_set_voltage(1725000,1725000)
+[  151.793172] YaY!, Regulator 'buck2' voltage set to 1725000
+[  152.093376] b2: Calling: regulator_set_voltage(1750000,1750000)
+[  152.096317] YaY!, Regulator 'buck2' voltage set to 1750000
+[  152.432604] b2: Calling: regulator_set_voltage(1775000,1775000)
+[  152.433298] YaY!, Regulator 'buck2' voltage set to 1775000
+[  152.785585] b2: Calling: regulator_set_voltage(1800000,1800000)
+[  152.786155] YaY!, Regulator 'buck2' voltage set to 1800000
+[  153.145678] b2: Calling: regulator_set_voltage(1825000,1825000)
+[  153.146262] YaY!, Regulator 'buck2' voltage set to 1825000
+[  153.482286] b2: Calling: regulator_set_voltage(1850000,1850000)
+[  153.482980] YaY!, Regulator 'buck2' voltage set to 1850000
+[  153.822714] b2: Calling: regulator_set_voltage(1875000,1875000)
+[  153.823401] YaY!, Regulator 'buck2' voltage set to 1875000
+[  154.212864] b2: Calling: regulator_set_voltage(1900000,1900000)
+[  154.213550] YaY!, Regulator 'buck2' voltage set to 1900000
+[  154.562613] b2: Calling: regulator_set_voltage(1925000,1925000)
+[  154.563308] YaY!, Regulator 'buck2' voltage set to 1925000
+[  154.885783] b2: Calling: regulator_set_voltage(1950000,1950000)
+[  154.886360] YaY!, Regulator 'buck2' voltage set to 1950000
+[  155.203700] b2: Calling: regulator_set_voltage(1975000,1975000)
+[  155.204613] YaY!, Regulator 'buck2' voltage set to 1975000
+[  155.483373] b2: Calling: regulator_set_voltage(2000000,2000000)
+[  155.485995] YaY!, Regulator 'buck2' voltage set to 2000000
+[  156.522421] b3: Calling: regulator_set_voltage(1200000,1200000)
+[  156.523107] YaY!, Regulator 'buck3' voltage set to 1200000
+[  157.833094] b3: Calling: regulator_set_voltage(1250000,1250000)
+[  158.913957] Failed to set voltage (1250000), limit (1250000) error(-110)
+[  160.364221] b3: Calling: regulator_set_voltage(1300000,1300000)
+[  162.593882] Failed to set voltage (1300000), limit (1300000) error(-110)
+[  164.012849] b3: Calling: regulator_set_voltage(1350000,1350000)
+[  166.193898] Failed to set voltage (1350000), limit (1350000) error(-110)
+[  167.605300] b3: Calling: regulator_set_voltage(1400000,1400000)
+[  169.793913] Failed to set voltage (1400000), limit (1400000) error(-110)
+[  171.232592] b3: Calling: regulator_set_voltage(1450000,1450000)
+[  173.473882] Failed to set voltage (1450000), limit (1450000) error(-110)
+[  174.892578] b3: Calling: regulator_set_voltage(1500000,1500000)
+[  177.074150] Failed to set voltage (1500000), limit (1500000) error(-110)
+[  178.482481] b3: Calling: regulator_set_voltage(1550000,1550000)
+[  180.673882] Failed to set voltage (1550000), limit (1550000) error(-110)
+[  182.073316] b3: Calling: regulator_set_voltage(1600000,1600000)
+[  184.273881] Failed to set voltage (1600000), limit (1600000) error(-110)
+[  185.725550] b3: Calling: regulator_set_voltage(1650000,1650000)
+[  187.953890] Failed to set voltage (1650000), limit (1650000) error(-110)
+[  189.411908] b3: Calling: regulator_set_voltage(1700000,1700000)
+[  191.633883] Failed to set voltage (1700000), limit (1700000) error(-110)
+[  193.052472] b3: Calling: regulator_set_voltage(1750000,1750000)
+[  195.233890] Failed to set voltage (1750000), limit (1750000) error(-110)
+[  196.658008] b3: Calling: regulator_set_voltage(1800000,1800000)
+[  198.913889] Failed to set voltage (1800000), limit (1800000) error(-110)
+[  200.332809] b3: Calling: regulator_set_voltage(1850000,1850000)
+[  202.513894] Failed to set voltage (1850000), limit (1850000) error(-110)
+[  203.932446] b3: Calling: regulator_set_voltage(1900000,1900000)
+[  206.113902] Failed to set voltage (1900000), limit (1900000) error(-110)
+[  207.512747] b3: Calling: regulator_set_voltage(1950000,1950000)
+[  209.713902] Failed to set voltage (1950000), limit (1950000) error(-110)
+[  211.132615] b3: Calling: regulator_set_voltage(2000000,2000000)
+[  213.313995] Failed to set voltage (2000000), limit (2000000) error(-110)
+[  214.742226] b3: Calling: regulator_set_voltage(2050000,2050000)
+[  216.993879] Failed to set voltage (2050000), limit (2050000) error(-110)
+[  218.402445] b3: Calling: regulator_set_voltage(2100000,2100000)
+[  220.593882] Failed to set voltage (2100000), limit (2100000) error(-110)
+[  222.022787] b3: Calling: regulator_set_voltage(2150000,2150000)
+[  224.273888] Failed to set voltage (2150000), limit (2150000) error(-110)
+[  225.676004] b3: Calling: regulator_set_voltage(2200000,2200000)
+[  227.873898] Failed to set voltage (2200000), limit (2200000) error(-110)
+[  229.272430] b3: Calling: regulator_set_voltage(2250000,2250000)
+[  231.473907] Failed to set voltage (2250000), limit (2250000) error(-110)
+[  232.893418] b3: Calling: regulator_set_voltage(2300000,2300000)
+[  235.073898] Failed to set voltage (2300000), limit (2300000) error(-110)
+[  236.482509] b3: Calling: regulator_set_voltage(2350000,2350000)
+[  238.673986] Failed to set voltage (2350000), limit (2350000) error(-110)
+[  240.118067] b3: Calling: regulator_set_voltage(2400000,2400000)
+[  242.353877] Failed to set voltage (2400000), limit (2400000) error(-110)
+[  243.742904] b3: Calling: regulator_set_voltage(2450000,2450000)
+[  245.953888] Failed to set voltage (2450000), limit (2450000) error(-110)
+[  247.405813] b3: Calling: regulator_set_voltage(2500000,2500000)
+[  249.633883] Failed to set voltage (2500000), limit (2500000) error(-110)
+[  250.962070] b3: Calling: regulator_set_voltage(2550000,2550000)
+[  253.153887] Failed to set voltage (2550000), limit (2550000) error(-110)
+[  254.582741] b3: Calling: regulator_set_voltage(2600000,2600000)
+[  256.833889] Failed to set voltage (2600000), limit (2600000) error(-110)
+[  258.281953] b3: Calling: regulator_set_voltage(2650000,2650000)
+[  260.513890] Failed to set voltage (2650000), limit (2650000) error(-110)
+[  261.967089] b3: Calling: regulator_set_voltage(2700000,2700000)
+[  264.193873] Failed to set voltage (2700000), limit (2700000) error(-110)
