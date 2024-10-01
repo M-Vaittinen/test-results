@@ -1,0 +1,21 @@
+BuildBot project: linux-stable
+Linux version: v6.11.1
+Commit hash: 7424ab40896c2af234a185e13529fbc048835d24
+
+Building kernel failed!
+stderr:
+
+make[6]: *** No rule to make target 'firmware/am335x-pm-firmware.elf', needed by 'drivers/base/firmware_loader/builtin/am335x-pm-firmware.elf.gen.o'.  Stop.
+make[6]: *** Waiting for unfinished jobs....
+make[5]: *** [scripts/Makefile.build:485: drivers/base/firmware_loader/builtin] Error 2
+make[4]: *** [scripts/Makefile.build:485: drivers/base/firmware_loader] Error 2
+make[3]: *** [scripts/Makefile.build:485: drivers/base] Error 2
+make[3]: *** Waiting for unfinished jobs....
+make[2]: *** [scripts/Makefile.build:485: drivers] Error 2
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [/home/user01/Linux-Driver-Testing/buildbot/worker_root/worker1/linux-stable_linux-6_11_y/build/Makefile:1926: .] Error 2
+make: *** [Makefile:224: __sub-make] Error 2
+
+Git bisect state: cannot_start
+status: waiting for good commit(s), bad commit known
+
