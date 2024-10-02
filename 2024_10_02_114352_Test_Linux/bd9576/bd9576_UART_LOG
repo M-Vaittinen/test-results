@@ -1,0 +1,2513 @@
+Labgrid Console Logfile for main
+Logfile started at 2024-10-02 11:38:36.929101
+=== Log starts here ===
+
+
+U-Boot 2014.04-00014-g47880f5 (Apr 22 2014 - 13:23:54)
+
+I2C:   ready
+DRAM:  512 MiB
+NAND:  0 MiB
+MMC:   OMAP SD/MMC: 0, OMAP SD/MMC: 1
+*** Warning - readenv() failed, using default environment
+
+Net:   <ethaddr> not set. Validating first E-fuse MAC
+Could not get PHY for cpsw: addr 0
+cpsw, usb_ether
+Hit any key to stop autoboot:  1  0 
+gpio: pin 53 (gpio 53) value is 1
+mmc0 is current device
+gpio: pin 54 (gpio 54) value is 1
+SD/MMC found on device 0
+reading uEnv.txt
+569 bytes read in 4 ms (138.7 KiB/s)
+gpio: pin 55 (gpio 55) value is 1
+Loaded environment from uEnv.txt
+Importing environment from mmc ...
+Checking if uenvcmd is set ...
+gpio: pin 56 (gpio 56) value is 1
+Running uenvcmd ...
+Using cpsw device
+TFTP from server 192.168.255.126; our IP address is 192.168.255.1
+Filename 'zImage'.
+Load address: 0x81000000
+Loading: *T T T T T T T T T T T T T T Labgrid Console Logfile for main
+Logfile started at 2024-10-02 11:39:59.011979
+=== Log starts here ===
+spl_load_image_fat_os: error reading image args, err - -1
+reading u-boot.img
+reading u-boot.img
+
+
+U-Boot 2014.04-00014-g47880f5 (Apr 22 2014 - 13:23:54)
+
+I2C:   ready
+DRAM:  512 MiB
+NAND:  0 MiB
+MMC:   OMAP SD/MMC: 0, OMAP SD/MMC: 1
+*** Warning - readenv() failed, using default environment
+
+Net:   <ethaddr> not set. Validating first E-fuse MAC
+cpsw, usb_ether
+Hit any key to stop autoboot:  1  0 
+gpio: pin 53 (gpio 53) value is 1
+mmc0 is current device
+gpio: pin 54 (gpio 54) value is 1
+SD/MMC found on device 0
+reading uEnv.txt
+569 bytes read in 4 ms (138.7 KiB/s)
+gpio: pin 55 (gpio 55) value is 1
+Loaded environment from uEnv.txt
+Importing environment from mmc ...
+Checking if uenvcmd is set ...
+gpio: pin 56 (gpio 56) value is 1
+Running uenvcmd ...
+cpsw Waiting for PHY auto negotiation to complete. done
+link up on port 0, speed 100, full duplex
+Using cpsw device
+TFTP from server 192.168.255.126; our IP address is 192.168.255.1
+Filename 'zImage'.
+Load address: 0x81000000
+Loading: *#################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 ###############################################
+	 2.4 MiB/s
+done
+Bytes transferred = 5448216 (532218 hex)
+link up on port 0, speed 100, full duplex
+Using cpsw device
+TFTP from server 192.168.255.126; our IP address is 192.168.255.1
+Filename 'am335x-boneblack.dtb'.
+Load address: 0x82000000
+Loading: *#######
+	 2.2 MiB/s
+done
+Bytes transferred = 97996 (17ecc hex)
+Kernel image @ 0x81000000 [ 0x000000 - 0x532218 ]
+## Flattened Device Tree blob at 82000000
+   Booting using the fdt blob at 0x82000000
+   Using Device Tree in place at 82000000, end 8201aecb
+
+Starting kernel ...
+
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 6.11.0-g25ac1fd80f30 (user01@drvtest01) (arm-linux-gnueabihf-gcc (Linaro GCC 6.4-2017.11) 6.4.1 20171012, GNU ld (Linaro_Binutils-2017.11) 2.27.0.20161229) #3 SMP Tue Oct  1 16:05:34 EEST 2024
+[    0.000000] CPU: ARMv7 Processor [413fc082] revision 2 (ARMv7), cr=10c5387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] OF: fdt: Machine model: TI AM335x BeagleBone Black
+[    0.000000] Memory policy: Data cache writeback
+[    0.000000] cma: Reserved 16 MiB at 0x9e800000 on node -1
+[    0.000000] Zone ranges:
+[    0.000000]   Normal   [mem 0x0000000080000000-0x000000009fdfffff]
+[    0.000000]   HighMem  empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000080000000-0x000000009fdfffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000080000000-0x000000009fdfffff]
+[    0.000000] CPU: All CPU(s) started in SVC mode.
+[    0.000000] AM335X ES2.1 (sgx neon)
+[    0.000000] percpu: Embedded 17 pages/cpu s39628 r8192 d21812 u69632
+[    0.000000] Kernel command line: console=ttyO0,115200n8 root=/dev/nfs rw nfsroot=192.168.255.126:/home/user01/nfs,nfsvers=3 ip=192.168.255.1:192.168.255.126::255.255.255.0:bbb1:eth0 nfsrootdebug
+[    0.000000] Unknown kernel command line parameters "nfsrootdebug", will be passed to user space.
+[    0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes, linear)
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 130560
+[    0.000000] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] trace event string verifier disabled
+[    0.000000] rcu: Hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU event tracing is enabled.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=2 to nr_cpu_ids=1.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[    0.000000] NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+[    0.000000] IRQ: Found an INTC at 0x(ptrval) (revision 5.0) with 128 interrupts
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] TI gptimer clocksource: always-on /ocp/interconnect@44c00000/segment@200000/target-module@31000
+[    0.000002] sched_clock: 32 bits at 24MHz, resolution 41ns, wraps every 89478484971ns
+[    0.000029] clocksource: dmtimer: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 79635851949 ns
+[    0.000505] TI gptimer clockevent: 24000000 Hz at /ocp/interconnect@48000000/segment@0/target-module@40000
+[    0.002127] Console: colour dummy device 80x30
+[    0.002193] WARNING: Your 'console=ttyO0' has been replaced by 'ttyS0'
+[    0.002202] This ensures that you still see kernel messages. Please
+[    0.002209] update your kernel commandline.
+[    0.002253] Calibrating delay loop... 996.14 BogoMIPS (lpj=4980736)
+[    0.090562] CPU: Testing write buffer coherency: ok
+[    0.090667] CPU0: Spectre v2: using BPIALL workaround
+[    0.090680] pid_max: default: 32768 minimum: 301
+[    0.090805] LSM: initializing lsm=capability
+[    0.090970] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+[    0.090992] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+[    0.092522] CPU0: thread -1, cpu 0, socket -1, mpidr 0
+[    0.094229] Setting up static identity map for 0x80100000 - 0x80100078
+[    0.094540] rcu: Hierarchical SRCU implementation.
+[    0.094552] rcu: 	Max phase no-delay instances is 1000.
+[    0.096219] smp: Bringing up secondary CPUs ...
+[    0.096279] smp: Brought up 1 node, 1 CPU
+[    0.096295] SMP: Total of 1 processors activated (996.14 BogoMIPS).
+[    0.096309] CPU: All CPU(s) started in SVC mode.
+[    0.096500] Memory: 480876K/522240K available (11264K kernel code, 1197K rwdata, 2856K rodata, 1024K init, 297K bss, 23344K reserved, 16384K cma-reserved, 0K highmem)
+[    0.097296] devtmpfs: initialized
+[    0.113673] VFP support v0.3: implementor 41 architecture 3 part 30 variant c rev 3
+[    0.114023] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.114060] futex hash table entries: 256 (order: 2, 16384 bytes, linear)
+[    0.115312] pinctrl core: initialized pinctrl subsystem
+[    0.118031] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.121037] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.122001] audit: initializing netlink subsys (disabled)
+[    0.123373] thermal_sys: Registered thermal governor 'fair_share'
+[    0.123394] thermal_sys: Registered thermal governor 'step_wise'
+[    0.123405] thermal_sys: Registered thermal governor 'user_space'
+[    0.123521] audit: type=2000 audit(0.120:1): state=initialized audit_enabled=0 res=1
+[    0.123597] cpuidle: using governor menu
+[    0.142737] No ATAGs?
+[    0.142770] hw-breakpoint: debug architecture 0x4 unsupported.
+[    0.145679] kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+[    0.163964] iommu: Default domain type: Translated
+[    0.163994] iommu: DMA domain TLB invalidation policy: strict mode
+[    0.171323] SCSI subsystem initialized
+[    0.181332] pps_core: LinuxPPS API ver. 1 registered
+[    0.181345] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.181371] PTP clock support registered
+[    0.183287] vgaarb: loaded
+[    0.183682] clocksource: Switched to clocksource dmtimer
+[    0.184277] VFS: Disk quotas dquot_6.6.0
+[    0.184324] VFS: Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+[    0.209019] NET: Registered PF_INET protocol family
+[    0.209378] IP idents hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.210769] tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 4096 bytes, linear)
+[    0.210809] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.210828] TCP established hash table entries: 4096 (order: 2, 16384 bytes, linear)
+[    0.210873] TCP bind hash table entries: 4096 (order: 4, 65536 bytes, linear)
+[    0.210973] TCP: Hash tables configured (established 4096 bind 4096)
+[    0.211094] UDP hash table entries: 256 (order: 1, 8192 bytes, linear)
+[    0.211124] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes, linear)
+[    0.211300] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.224666] RPC: Registered named UNIX socket transport module.
+[    0.224697] RPC: Registered udp transport module.
+[    0.224704] RPC: Registered tcp transport module.
+[    0.224711] RPC: Registered tcp-with-tls transport module.
+[    0.224717] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.224743] PCI: CLS 0 bytes, default 64
+[    0.226200] Initialise system trusted keyrings
+[    0.227278] workingset: timestamp_bits=14 max_order=17 bucket_order=3
+[    0.228534] NFS: Registering the id_resolver key type
+[    0.228607] Key type id_resolver registered
+[    0.228617] Key type id_legacy registered
+[    0.228667] jffs2: version 2.2. (NAND) (SUMMARY)  © 2001-2006 Red Hat, Inc.
+[    0.229126] Key type asymmetric registered
+[    0.229144] Asymmetric key parser 'x509' registered
+[    0.229210] io scheduler mq-deadline registered
+[    0.229223] io scheduler kyber registered
+[    0.229293] io scheduler bfq registered
+[    0.244186] Serial: 8250/16550 driver, 6 ports, IRQ sharing enabled
+[    0.307138] brd: module loaded
+[    0.318307] loop: module loaded
+[    0.319241] mtdoops: mtd device (mtddev=name/number) must be supplied
+[    0.336573] i2c_dev: i2c /dev entries driver
+[    0.337545] cpuidle: enable-method property 'ti,am3352' found operations
+[    0.337993] sdhci: Secure Digital Host Controller Interface driver
+[    0.338005] sdhci: Copyright(c) Pierre Ossman
+[    0.338179] sdhci-pltfm: SDHCI platform and OF driver helper
+[    0.338489] ledtrig-cpu: registered to indicate activity on CPUs
+[    0.339427] Initializing XFRM netlink socket
+[    0.339552] NET: Registered PF_INET6 protocol family
+[    0.341374] Segment Routing with IPv6
+[    0.341470] In-situ OAM (IOAM) with IPv6
+[    0.341566] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    0.342496] NET: Registered PF_PACKET protocol family
+[    0.342536] NET: Registered PF_KEY protocol family
+[    0.342666] Key type dns_resolver registered
+[    0.342936] ThumbEE CPU extension supported.
+[    0.342959] Registering SWP/SWPB emulation handler
+[    0.343480] omap_voltage_late_init: Voltage driver support not added
+[    0.344017] SmartReflex Class3 initialized
+[    0.364566] Loading compiled-in X.509 certificates
+[    0.431568] platform 44e10800.pinmux: Fixed dependency cycle(s) with /ocp/interconnect@44c00000/segment@200000/target-module@10000/scm@0/pinmux@800/clkout2-pins
+[    0.432140] pinctrl-single 44e10800.pinmux: 142 pins, size 568
+[    0.437468] ti-sysc 44e31000.target-module: probe with driver ti-sysc failed with error -16
+[    0.474200] ti-sysc 48040000.target-module: probe with driver ti-sysc failed with error -16
+[    0.514730] OMAP GPIO hardware version 0.1
+[    0.538471] omap_i2c 4819c000.i2c: bus 2 rev0.11 at 100 kHz
+[    0.570303] 48000000.interconnect:segment@200000:target-module@0:mpu@0:fck: device ID is greater than 24
+[    0.574680] platform 4830e000.lcdc: Fixed dependency cycle(s) with /ocp/interconnect@44c00000/segment@200000/target-module@b000/i2c@0/tda19988@70
+[    0.586953] sdhci-omap 481d8000.mmc: supply pbias not found, using dummy regulator
+[    0.587466] sdhci-omap 481d8000.mmc: supply vqmmc not found, using dummy regulator
+[    0.664740] davinci_mdio 4a101000.mdio: davinci mdio revision 1.6, bus freq 1000000
+[    0.793396] davinci_mdio 4a101000.mdio: phy[0]: device 4a101000.mdio:00, driver SMSC LAN8710/LAN8720
+[    0.794127] cpsw-switch 4a100000.switch: initialized cpsw ale version 1.4
+[    0.794154] cpsw-switch 4a100000.switch: ALE Table size 1024
+[    0.794300] cpsw-switch 4a100000.switch: cpts: overflow check period 500 (jiffies)
+[    0.794320] cpsw-switch 4a100000.switch: CPTS: ref_clk_freq:250000000 calc_mult:2147483648 calc_shift:29 error:0 nsec/sec
+[    0.794428] cpsw-switch 4a100000.switch: Detected MACID = 6c:ec:eb:68:de:78
+[    0.796235] cpsw-switch 4a100000.switch: initialized (regs 0x4a100000, pool size 256) hw_ver:0019010C 1.12 (0)
+[    0.807088] debugfs: Directory '49000000.dma' with parent 'dmaengine' already present!
+[    0.807137] edma 49000000.dma: TI EDMA DMA engine driver
+[    0.846920] target-module@4b000000:target-module@140000:pmu@0:fck: device ID is greater than 24
+[    0.892098] hw perfevents: enabled with armv7_cortex_a8 PMU driver, 5 counters available
+[    0.901704] l3-aon-clkctrl:0000:0: failed to disable
+[    0.902984] 44e09000.serial: ttyS0 at MMIO 0x44e09000 (irq = 34, base_baud = 3000000) is a 8250
+[    0.903068] printk: legacy console [ttyS0] enabled
+[    2.124269] tps65217-pmic: Failed to locate of_node [id: -1]
+[    2.130344] tps65217-bl: Failed to locate of_node [id: -1]
+[    2.154916] tps65217 0-0024: TPS65217 ID 0xe version 1.2
+[    2.160936] platform 4830e000.lcdc: Fixed dependency cycle(s) with /ocp/interconnect@44c00000/segment@200000/target-module@b000/i2c@0/tda19988@70
+[    2.174439] i2c 0-0070: Fixed dependency cycle(s) with /ocp/interconnect@48000000/segment@300000/target-module@e000/lcdc@0
+[    2.185882] omap_i2c 44e0b000.i2c: bus 0 rev0.11 at 400 kHz
+[    2.200103] omap_gpio 44e07000.gpio: Could not set line 6 debounce to 200000 microseconds (-22)
+[    2.209065] sdhci-omap 48060000.mmc: Got CD GPIO
+[    2.214155] sdhci-omap 48060000.mmc: supply pbias not found, using dummy regulator
+[    2.227889] sdhci-omap 48060000.mmc: supply vqmmc not found, using dummy regulator
+[    2.236401] sdhci-omap 481d8000.mmc: supply pbias not found, using dummy regulator
+[    2.244935] sdhci-omap 481d8000.mmc: supply vqmmc not found, using dummy regulator
+[    2.284230] mmc1: SDHCI controller on 481d8000.mmc [481d8000.mmc] using External DMA
+[    2.292592] mmc0: SDHCI controller on 48060000.mmc [48060000.mmc] using External DMA
+[    2.301480] cpsw-switch 4a100000.switch: starting ndev. mode: dual_mac
+[    2.342868] mmc0: new high speed SDHC card at address 5048
+[    2.349882] mmcblk0: mmc0:5048 SD16G 14.4 GiB
+[    2.357762]  mmcblk0: p1 p2
+[    2.361133] mmcblk0: p2 size 31221760 extends beyond EOD, truncated
+[    2.375596] mmc1: new high speed MMC card at address 0001
+[    2.382324] mmcblk1: mmc1:0001 MMC04G 3.60 GiB
+[    2.389726]  mmcblk1: p1 p2
+[    2.394142] mmcblk1boot0: mmc1:0001 MMC04G 2.00 MiB
+[    2.401338] mmcblk1boot1: mmc1:0001 MMC04G 2.00 MiB
+[    2.408623] mmcblk1rpmb: mmc1:0001 MMC04G 128 KiB, chardev (250:0)
+[    2.415150] SMSC LAN8710/LAN8720 4a101000.mdio:00: attached PHY driver (mii_bus:phy_addr=4a101000.mdio:00, irq=POLL)
+[    5.524443] cpsw-switch 4a100000.switch eth0: Link is Up - 100Mbps/Full - flow control off
+[    5.573755] IP-Config: Complete:
+[    5.577029]      device=eth0, hwaddr=6c:ec:eb:68:de:78, ipaddr=192.168.255.1, mask=255.255.255.0, gw=255.255.255.255
+[    5.587669]      host=bbb1, domain=, nis-domain=(none)
+[    5.592838]      bootserver=192.168.255.126, rootserver=192.168.255.126, rootpath=
+[    5.593262] clk: Disabling unused clocks
+[    5.605105] PM: genpd: Disabling unused power domains
+[    5.610225] KTAP version 1
+[    5.612945] 1..0
+[    5.637372] VFS: Mounted root (nfs filesystem) on device 0:17.
+[    5.644365] devtmpfs: mounted
+[    5.649097] Freeing unused kernel image (initmem) memory: 1024K
+[    5.655814] Run /sbin/init as init process
+[    6.351307] systemd[1]: System time before build time, advancing clock.
+[    7.803702] random: crng init done
+[    7.865992] systemd[1]: systemd 232 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN)
+[    7.884975] systemd[1]: Detected architecture arm.
+
+Welcome to [1mDebian GNU/Linux 9 (stretch)[0m!
+
+[    7.926722] systemd[1]: Set hostname to <arm>.
+[    9.003865] systemd[1]: Listening on udev Control Socket.
+[[0;32m  OK  [0m] Listening on udev Control Socket.
+[    9.034066] systemd[1]: Reached target Swap.
+[[0;32m  OK  [0m] Reached target Swap.
+[    9.064476] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[[0;32m  OK  [0m] Started Forward Password Requests to Wall Directory Watch.
+[    9.104279] systemd[1]: Listening on udev Kernel Socket.
+[[0;32m  OK  [0m] Listening on udev Kernel Socket.
+[    9.145576] systemd[1]: Listening on Journal Socket (/dev/log).
+[[0;32m  OK  [0m] Listening on Journal Socket (/dev/log).
+[    9.184551] systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+[[0;32m  OK  [0m] Started Dispatch Password Requests to Console Directory Watch.
+[    9.223991] systemd[1]: Reached target Paths.
+[[0;32m  OK  [0m] Reached target Paths.
+[[0;32m  OK  [0m] Listening on Journal Audit Socket.
+[[0;32m  OK  [0m] Listening on Journal Socket.
+[[0;32m  OK  [0m] Reached target Encrypted Volumes.
+[[0;32m  OK  [0m] Created slice System Slice.
+         Starting Load Kernel Modules...
+         Mounting Debug File System...
+         Starting Create list of required st…ce nodes for the current kernel...
+[[0;32m  OK  [0m] Listening on Syslog Socket.
+         Starting Journal Service...
+         Mounting POSIX Message Queue File System...
+         Starting Remount Root and Kernel File Systems...
+[[0;32m  OK  [0m] Created slice system-serial\x2dgetty.slice.
+[[0;32m  OK  [0m] Listening on /dev/initctl Compatibility Named Pipe.
+[[0;32m  OK  [0m] Set up automount Arbitrary Executab…rmats File System Automount Point.
+[[0;32m  OK  [0m] Created slice User and Session Slice.
+[[0;32m  OK  [0m] Created slice system-getty.slice.
+[[0;32m  OK  [0m] Reached target Remote File Systems.
+[[0;32m  OK  [0m] Reached target Slices.
+[[0;32m  OK  [0m] Mounted POSIX Message Queue File System.
+[[0;32m  OK  [0m] Mounted Debug File System.
+[[0;32m  OK  [0m] Started Load Kernel Modules.
+[[0;32m  OK  [0m] Started Create list of required sta…vice nodes for the current kernel.
+[[0;32m  OK  [0m] Started Remount Root and Kernel File Systems.
+         Starting Load/Save Random Seed...
+         Starting udev Coldplug all Devices...
+         Starting Create Static Device Nodes in /dev...
+         Mounting Configuration File System...
+         Starting Apply Kernel Variables...
+[[0;32m  OK  [0m] Mounted Configuration File System.
+[[0;32m  OK  [0m] Started Load/Save Random Seed.
+[[0;32m  OK  [0m] Started Journal Service.
+[[0;32m  OK  [0m] Started Apply Kernel Variables.
+         Starting Flush Journal to Persistent Storage...
+[[0;32m  OK  [0m] Started Create Static Device Nodes in /dev.
+[   11.091588] systemd-journald[82]: Received request to flush runtime journal from PID 1
+         Starting udev Kernel Device Manager...
+[[0;32m  OK  [0m] Reached target Local File Systems (Pre).
+[[0;32m  OK  [0m] Reached target Local File Systems.
+         Starting Raise network interfaces...
+[[0;32m  OK  [0m] Started Flush Journal to Persistent Storage.
+         Starting Create Volatile Files and Directories...
+[[0;32m  OK  [0m] Started udev Kernel Device Manager.
+[[0;32m  OK  [0m] Started Create Volatile Files and Directories.
+         Starting Network Time Synchronization...
+         Starting Update UTMP about System Boot/Shutdown...
+[[0;32m  OK  [0m] Started Update UTMP about System Boot/Shutdown.
+[[0;32m  OK  [0m] Started udev Coldplug all Devices.
+[[0;32m  OK  [0m] Started Network Time Synchronization.
+[[0;32m  OK  [0m] Reached target System Initialization.
+[[0;32m  OK  [0m] Listening on Avahi mDNS/DNS-SD Stack Activation Socket.
+[[0;32m  OK  [0m] Started Daily Cleanup of Temporary Directories.
+[[0;32m  OK  [0m] Listening on D-Bus System Message Bus Socket.
+[[0;32m  OK  [0m] Reached target Sockets.
+[[0;32m  OK  [0m] Reached target Basic System.
+         Starting DUN service...
+         Starting LSB: Start busybox udhcpd at boot time...
+[   14.665927] remoteproc remoteproc0: wkup_m3 is available
+[[0;32m  OK  [0m] Started Regular background program processing daemon.
+         Starting Avahi mDNS/DNS-SD Stack...
+         Starting Cape Manager Service...
+[   14.999421] am335x-phy-driver 47401300.usb-phy: dummy supplies not allowed for exclusive requests (id=vbus)
+         Starting Login Service...
+[   15.173490] am335x-phy-driver 47401b00.usb-phy: dummy supplies not allowed for exclusive requests (id=vbus)
+[[0;32m  OK  [0m] Started D-Bus System Message Bus.
+[   15.410461] wkup_m3_ipc 44e11324.wkup_m3_ipc: IPC Request for A8->M3 Channel failed! -517
+[   15.448752] at24 2-0054: supply vcc not found, using dummy regulator
+[   15.475101] usbcore: registered new interface driver usbfs
+[   15.480740] usbcore: registered new interface driver hub
+[   15.486323] usbcore: registered new device driver usb
+[   15.607748] at24 2-0055: supply vcc not found, using dummy regulator
+[   15.708330] at24 2-0056: supply vcc not found, using dummy regulator
+[   15.809682] at24 2-0057: supply vcc not found, using dummy regulator
+[   15.820167] wkup_m3_ipc 44e11324.wkup_m3_ipc: IPC Request for A8->M3 Channel failed! -517
+[   15.930064] at24 0-0050: 32768 byte 24c256 EEPROM, writable, 1 bytes/write
+[   15.938713] wkup_m3_ipc 44e11324.wkup_m3_ipc: IPC Request for A8->M3 Channel failed! -517
+[   16.099582] omap_rtc 44e3e000.rtc: registered as rtc0
+[   16.106277] omap_rtc 44e3e000.rtc: setting system clock to 2000-01-01T00:00:00 UTC (946684800)
+[   16.118765] wkup_m3_ipc 44e11324.wkup_m3_ipc: IPC Request for A8->M3 Channel failed! -517
+[   16.376590] tps6521x_pwrbutton tps65217-pwrbutton: DMA mask not set
+[   16.479500] input: tps65217_pwrbutton as /devices/platform/ocp/44c00000.interconnect/44c00000.interconnect:segment@200000/44e0b000.target-module/44e0b000.i2c/i2c-0/0-0024/tps65217-pwrbutton/input/input0
+[   16.528839] wkup_m3_ipc 44e11324.wkup_m3_ipc: IPC Request for A8->M3 Channel failed! -517
+[   16.621569] omap_wdt: OMAP Watchdog Timer Rev 0x01: initial timeout 60 sec
+[   16.694123] wkup_m3_ipc 44e11324.wkup_m3_ipc: IPC Request for A8->M3 Channel failed! -517
+[   16.779570] musb-hdrc musb-hdrc.1: MUSB HDRC host driver
+[   16.785126] musb-hdrc musb-hdrc.1: new USB bus registered, assigned bus number 1
+[   16.796737] wkup_m3_ipc 44e11324.wkup_m3_ipc: IPC Request for A8->M3 Channel failed! -517
+[   17.008924] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.11
+[   17.017454] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   17.024939] usb usb1: Product: MUSB HDRC host driver
+[   17.029939] usb usb1: Manufacturer: Linux 6.11.0-g25ac1fd80f30 musb-hcd
+[   17.036639] usb usb1: SerialNumber: musb-hdrc.1
+[   17.226868] hub 1-0:1.0: USB hub found
+[   17.288357] hub 1-0:1.0: 1 port detected
+[   17.387681] wkup_m3_ipc 44e11324.wkup_m3_ipc: IPC Request for A8->M3 Channel failed! -517
+[   17.491971] tda998x 0-0070: found TDA19988
+[   17.499657] wkup_m3_ipc 44e11324.wkup_m3_ipc: IPC Request for A8->M3 Channel failed! -517
+[   17.599485] wkup_m3_ipc 44e11324.wkup_m3_ipc: IPC Request for A8->M3 Channel failed! -517
+[   18.154469] omap-mailbox 480c8000.mailbox: omap mailbox rev 0x400
+[   18.194733] remoteproc remoteproc0: powering up wkup_m3
+[   18.331830] remoteproc remoteproc0: Direct firmware load for am335x-pm-firmware.elf failed with error -2
+[   18.341590] remoteproc remoteproc0: request_firmware failed: -2
+[   18.347639] wkup_m3_ipc 44e11324.wkup_m3_ipc: rproc_boot failed
+[[0;32m  OK  [0m] Started Avahi mDNS/DNS-SD Stack.
+[[0;32m  OK  [0m] Started DUN service.
+         Starting Connection service...
+         Starting Telephony service...
+[   19.909847] omap_rng 48310000.rng: Random Number Generator ver. 20
+         Starting Generic Board Startup...
+[   20.052484] tilcdc 4830e000.lcdc: bound 0-0070 (ops tda998x_driver_exit [tda998x])
+         Starting System Logging Service...
+[   20.206869] [drm] Initialized tilcdc 1.0.0 for 4830e000.lcdc on minor 0
+         Starting LSB: Load kernel modules needed to enable cpufreq scaling...
+[[0;32m  OK  [0m] Reached target System Time Synchronized.
+[   20. 284278] tilcdc 4830e000.lcdc: [drm] Cannot find any crtc or si zes
+[[0;32m  OK  [0m] Started Daily apt download activities .
+[[0;32m  OK  [0m] Started Daily apt upgrade and clean act ivities.
+[[0;32m  OK  [0m] Reached target Timers.
+[   20.3 74813] t
+[[0;32m  OK  [0m] Found device /dev/ttyS0.
+[   21.258619] omap-sham 53100000.sham: hw accel on OMAP rev 4.3
+[   21.296659] PM: Cannot get wkup_m3_ipc handle
+[   21.402306] omap-sham 53100000.sham: will run requests pump with realtime priority
+[   21.411139] PM: Cannot get wkup_m3_ipc handle
+[   21.438220] omap-aes 53500000.aes: OMAP AES hw accel rev: 3.2
+[   21.598596] omap-aes 53500000.aes: will run requests pump with realtime priority
+[   21.610973] PM: Cannot get wkup_m3_ipc handle
+[[0;32m  OK  [0m] Started System Logging Service.
+[   22.674609] Bluetooth: Core ver 2.22
+[   22.678429] NET: Registered PF_BLUETOOTH protocol family
+[   22.684166] Bluetooth: HCI device and connection manager initialized
+[   22.690590] Bluetooth: HCI socket layer initialized
+[   22.695592] Bluetooth: L2CAP socket layer initialized
+[   22.700713] Bluetooth: SCO socket layer initialized
+[   25.182832] PM: Cannot get wkup_m3_ipc handle
+[[0;32m  OK  [0m] Started LSB: Start busybox udhcpd at boot time.
+[   25.333233] PM: Cannot get wkup_m3_ipc handle
+[[0;32m  OK  [0m] Started Raise network interfaces.
+[[0;32m  OK  [0m] Started LSB: Load kernel modules needed to enable cpufreq scaling.
+[   28.450300] configfs-gadget.g_multi gadget.0: HOST MAC 1c:ba:8c:a2:ed:6c
+[   28.457272] configfs-gadget.g_multi gadget.0: MAC 1c:ba:8c:a2:ed:70
+[   28.464665] configfs-gadget.g_multi gadget.0: HOST MAC 1c:ba:8c:a2:ed:6c
+[   28.471426] configfs-gadget.g_multi gadget.0: MAC 1c:ba:8c:a2:ed:6d
+[   28.481685] PM: Cannot get wkup_m3_ipc handle
+[[0;32m  OK  [0m] Started Telephony service.
+[[0;32m  OK  [0m] Started Connection service.
+[[0;32m  OK  [0m] Started Login Service.
+         Starting Hostname Service...
+         Starting WPA supplicant...
+[[0;32m  OK  [0m] Reached target Sound Card.
+         Starting LSB: set CPUFreq kernel parameters...
+[[0;32m  OK  [0m] Started Hostname Service.
+[[0;32m  OK  [0m] Started WPA supplicant.
+[[0;32m  OK  [0m] Reached target Network.
+         Starting Permit User Sessions...
+         Starting The Apache HTTP Server...
+[[0;32m  OK  [0m] Reached target Network is Online.
+         Starting LSB: Advanced IEEE 802.11 management daemon...
+         Starting OpenBSD Secure Shell server...
+[[0;32m  OK  [0m] Started LSB: set CPUFreq kernel parameters.
+[[0;32m  OK  [0m] Started Permit User Sessions.
+[[0;32m  OK  [0m] Started LSB: Advanced IEEE 802.11 management daemon.
+[[0;32m  OK  [0m] Started Serial Getty on ttyS0.
+[[0;32m  OK  [0m] Started Getty on tty1.
+[[0;32m  OK  [0m] Reached target Login Prompts.
+         Stopping LSB: Start busybox udhcpd at boot time...
+[[0;32m  OK  [0m] Started OpenBSD Secure Shell server.
+[[0;32m  OK  [0m] Stopped LSB: Start busybox udhcpd at boot time.
+         Starting dnsmasq - A lightweight DHCP and caching DNS server...
+[[0;32m  OK  [0m] Started The Apache HTTP Server.
+[[0;32m  OK  [0m] Started dnsmasq - A lightweight DHCP and caching DNS server.
+[[0;32m  OK  [0m] Reached target Host and Network Name Lookups.
+[[0;32m  OK  [0m] Started Serial Getty on ttyGS0.
+[[0;32m  OK  [0m] Started Generic Board Startup.
+[[0;32m  OK  [0m] Reached target Multi-User System.
+[[0;32m  OK  [0m] Reached target Graphical Interface.
+         Starting Update UTMP about System Runlevel Changes...
+[[0;32m  OK  [0m] Started Update UTMP about System Runlevel Changes.
+
+Debian GNU/Linux 9 arm ttyS0
+
+default username:password is [debian:temppwd]
+
+arm login: root
+Password: 
+Last login: Sat Jan  1 00:00:26 UTC 2000 on ttyS0
+root
+Linux arm 6.11.0-g25ac1fd80f30 #3 SMP Tue Oct  1 16:05:34 EEST 2024 armv7l
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+root@arm:~# root
+-bash: root: command not found
+root@arm:~# dmesg -n 1
+root@arm:~# echo 'ZOFL''VBMKWS'
+ZOFLVBMKWS
+root@arm:~# run() { echo -n "$MARKER"; sh -c "$@"; echo "$MARKER $?"; }
+root@arm:~# echo 'PNZZ''HQTPMV'
+PNZZHQTPMV
+root@arm:~# MARKER='ALJT''VKAOWE' run 'cat /proc/version'
+ALJTVKAOWELinux version 6.11.0-g25ac1fd80f30 (user01@drvtest01) (arm-linux-gnueabihf-gcc (Linaro GCC 6.4-2017.11) 6.4.1 20171012, GNU ld (Linaro_Binutils-2017.11) 2.27.0.20161229) #3 SMP Tue Oct  1 16:05:34 EEST 2024
+ALJTVKAOWE 0
+root@arm:~# echo 'NPJZ''CYXMJJ'
+NPJZCYXMJJ
+root@arm:~# MARKER='PPTM''TMBGYO' run false
+PPTMTMBGYOPPTMTMBGYO 1
+root@arm:~# Labgrid Console Logfile for main
+Logfile started at 2024-10-02 11:40:56.575717
+=== Log starts here ===
+
+root@arm:~# run() { echo -n "$MARKER"; sh -c "$@"; echo "$MARKER $?"; }
+root@arm:~# echo 'JKQO''AHQJVP'
+JKQOAHQJVP
+root@arm:~# MARKER='JKYZ''AEOBMC' run 'insmod /mva_overlay.ko'
+JKYZAEOBMCJKYZAEOBMC 0
+root@arm:~# echo 'YWYU''PPQCNJ'
+YWYUPPQCNJ
+root@arm:~# MARKER='JMYZ''QSKKFV' run lsmod
+JMYZQSKKFVModule                  Size  Used by
+mva_overlay            65536  0
+usb_f_acm              12288  2
+u_serial               16384  3 usb_f_acm
+usb_f_ecm              16384  2
+usb_f_rndis            24576  2
+u_ether                16384  2 usb_f_ecm,usb_f_rndis
+libcomposite           57344  15 usb_f_ecm,usb_f_acm,u_ether,usb_f_rndis
+iptable_nat            12288  0
+nf_nat                 36864  1 iptable_nat
+nf_conntrack          110592  1 nf_nat
+nf_defrag_ipv6         16384  1 nf_conntrack
+nf_defrag_ipv4         12288  1 nf_conntrack
+snd_soc_hdmi_codec     16384  1
+evdev                  20480  0
+iptable_mangle         12288  0
+iptable_filter         12288  0
+bluetooth             610304  2
+snd_soc_simple_card    16384  0
+snd_soc_simple_card_utils    20480  1 snd_soc_simple_card
+ecdh_generic           12288  1 bluetooth
+ecc                    36864  1 ecdh_generic
+omap_aes_driver        24576  0
+omap_crypto            12288  1 omap_aes_driver
+pm33xx                 12288  0
+omap_sham              28672  0
+libaes                 12288  2 omap_aes_driver,bluetooth
+crypto_engine          12288  2 omap_aes_driver,omap_sham
+ti_emif_sram           12288  1 pm33xx
+tilcdc                 32768  0
+omap_rng               12288  0
+drm_dma_helper         16384  1 tilcdc
+rng_core               16384  1 omap_rng
+snd_soc_davinci_mcasp    32768  2
+snd_soc_ti_udma        12288  1 snd_soc_davinci_mcasp
+snd_soc_ti_edma        12288  1 snd_soc_davinci_mcasp
+snd_soc_ti_sdma        12288  1 snd_soc_davinci_mcasp
+snd_soc_core          192512  7 snd_soc_davinci_mcasp,snd_soc_hdmi_codec,snd_soc_simple_card_utils,snd_soc_ti_sdma,snd_soc_ti_edma,snd_soc_ti_udma,snd_soc_simple_card
+omap_mailbox           12288  1
+snd_pcm_dmaengine      12288  1 snd_soc_core
+snd_pcm               110592  5 snd_soc_davinci_mcasp,snd_pcm_dmaengine,snd_soc_hdmi_codec,snd_soc_simple_card_utils,snd_soc_core
+snd_timer              28672  1 snd_pcm
+snd                    69632  4 snd_soc_hdmi_codec,snd_timer,snd_soc_core,snd_pcm
+tda998x                20480  0
+soundcore              12288  1 snd
+drm_kms_helper        122880  3 drm_dma_helper,tda998x,tilcdc
+musb_dsps              16384  0
+omap_wdt               12288  0
+drm                   417792  5 drm_dma_helper,tda998x,tilcdc,drm_kms_helper
+watchdog               24576  1 omap_wdt
+musb_hdrc             131072  1 musb_dsps
+tps65218_pwrbutton     12288  0
+rtc_omap               16384  2 pm33xx
+udc_core               45056  7 usb_f_ecm,usb_f_acm,u_serial,musb_hdrc,u_ether,usb_f_rndis,libcomposite
+drm_panel_orientation_quirks    12288  1 drm
+wkup_m3_ipc            12288  1 pm33xx
+at24                   16384  0
+usbcore               225280  1 musb_hdrc
+phy_am335x             12288  2
+phy_am335x_control     12288  1 phy_am335x
+phy_generic            12288  1 phy_am335x
+usb_common             12288  6 phy_am335x,udc_core,musb_hdrc,libcomposite,musb_dsps,usbcore
+wkup_m3_rproc          12288  1
+cppi41                 16384  60
+leds_gpio              12288  0
+cpufreq_dt             12288  0
+led_class              12288  1 leds_gpio
+ip_tables              20480  3 iptable_mangle,iptable_filter,iptable_nat
+x_tables               24576  4 iptable_mangle,ip_tables,iptable_filter,iptable_nat
+autofs4                40960  2
+JMYZQSKKFV 0
+root@arm:~# Labgrid Console Logfile for main
+Logfile started at 2024-10-02 11:41:00.697497
+=== Log starts here ===
+
+root@arm:~# run() { echo -n "$MARKER"; sh -c "$@"; echo "$MARKER $?"; }
+root@arm:~# echo 'YQPW''SEMPQZ'
+YQPWSEMPQZ
+root@arm:~# MARKER='VYXC''JBKVFZ' run 'dd if=/bd9576_test.dtbo of=/sys/kernel/mvaa_overlay/overlay_add bs=1M'
+VYXCJBKVFZ0+1 records in
+0+1 records out
+3397 bytes (3.4 kB, 3.3 KiB) copied, 0.0841688 s, 40.4 kB/s
+VYXCJBKVFZ 0
+root@arm:~# echo 'GOWL''YPVTUY'
+GOWLYPVTUY
+root@arm:~# MARKER='PLJU''JZFTPX' run lsmod
+PLJUJZFTPXModule                  Size  Used by
+bd9576_wdt             12288  0
+bd9576_regulator       16384  0
+rohm_bd9576            12288  0
+mva_overlay            65536  0
+usb_f_acm              12288  2
+u_serial               16384  3 usb_f_acm
+usb_f_ecm              16384  2
+usb_f_rndis            24576  2
+u_ether                16384  2 usb_f_ecm,usb_f_rndis
+libcomposite           57344  15 usb_f_ecm,usb_f_acm,u_ether,usb_f_rndis
+iptable_nat            12288  0
+nf_nat                 36864  1 iptable_nat
+nf_conntrack          110592  1 nf_nat
+nf_defrag_ipv6         16384  1 nf_conntrack
+nf_defrag_ipv4         12288  1 nf_conntrack
+snd_soc_hdmi_codec     16384  1
+evdev                  20480  0
+iptable_mangle         12288  0
+iptable_filter         12288  0
+bluetooth             610304  2
+snd_soc_simple_card    16384  0
+snd_soc_simple_card_utils    20480  1 snd_soc_simple_card
+ecdh_generic           12288  1 bluetooth
+ecc                    36864  1 ecdh_generic
+omap_aes_driver        24576  0
+omap_crypto            12288  1 omap_aes_driver
+pm33xx                 12288  0
+omap_sham              28672  0
+libaes                 12288  2 omap_aes_driver,bluetooth
+crypto_engine          12288  2 omap_aes_driver,omap_sham
+ti_emif_sram           12288  1 pm33xx
+tilcdc                 32768  0
+omap_rng               12288  0
+drm_dma_helper         16384  1 tilcdc
+rng_core               16384  1 omap_rng
+snd_soc_davinci_mcasp    32768  2
+snd_soc_ti_udma        12288  1 snd_soc_davinci_mcasp
+snd_soc_ti_edma        12288  1 snd_soc_davinci_mcasp
+snd_soc_ti_sdma        12288  1 snd_soc_davinci_mcasp
+snd_soc_core          192512  7 snd_soc_davinci_mcasp,snd_soc_hdmi_codec,snd_soc_simple_card_utils,snd_soc_ti_sdma,snd_soc_ti_edma,snd_soc_ti_udma,snd_soc_simple_card
+omap_mailbox           12288  1
+snd_pcm_dmaengine      12288  1 snd_soc_core
+snd_pcm               110592  5 snd_soc_davinci_mcasp,snd_pcm_dmaengine,snd_soc_hdmi_codec,snd_soc_simple_card_utils,snd_soc_core
+snd_timer              28672  1 snd_pcm
+snd                    69632  4 snd_soc_hdmi_codec,snd_timer,snd_soc_core,snd_pcm
+tda998x                20480  0
+soundcore              12288  1 snd
+drm_kms_helper        122880  3 drm_dma_helper,tda998x,tilcdc
+musb_dsps              16384  0
+omap_wdt               12288  0
+drm                   417792  5 drm_dma_helper,tda998x,tilcdc,drm_kms_helper
+watchdog               24576  2 bd9576_wdt,omap_wdt
+musb_hdrc             131072  1 musb_dsps
+tps65218_pwrbutton     12288  0
+rtc_omap               16384  2 pm33xx
+udc_core               45056  7 usb_f_ecm,usb_f_acm,u_serial,musb_hdrc,u_ether,usb_f_rndis,libcomposite
+drm_panel_orientation_quirks    12288  1 drm
+wkup_m3_ipc            12288  1 pm33xx
+at24                   16384  0
+usbcore               225280  1 musb_hdrc
+phy_am335x             12288  2
+phy_am335x_control     12288  1 phy_am335x
+phy_generic            12288  1 phy_am335x
+usb_common             12288  6 phy_am335x,udc_core,musb_hdrc,libcomposite,musb_dsps,usbcore
+wkup_m3_rproc          12288  1
+cppi41                 16384  60
+leds_gpio              12288  0
+cpufreq_dt             12288  0
+led_class              12288  1 leds_gpio
+ip_tables              20480  3 iptable_mangle,iptable_filter,iptable_nat
+x_tables               24576  4 iptable_mangle,ip_tables,iptable_filter,iptable_nat
+autofs4                40960  2
+PLJUJZFTPX 0
+root@arm:~# Labgrid Console Logfile for main
+Logfile started at 2024-10-02 11:41:06.666703
+=== Log starts here ===
+
+root@arm:~# run() { echo -n "$MARKER"; sh -c "$@"; echo "$MARKER $?"; }
+root@arm:~# echo 'WNAP''EUGMNY'
+WNAPEUGMNY
+root@arm:~# MARKER='WQNK''NAGEGY' run 'insmod /bd9576-test.ko'
+WQNKNAGEGYWQNKNAGEGY 0
+root@arm:~# echo 'XAAB''WZPAWM'
+XAABWZPAWM
+root@arm:~# MARKER='EGPK''ETQQLO' run lsmod
+EGPKETQQLOModule                  Size  Used by
+bd9576_test            12288  0
+bd9576_wdt             12288  0
+bd9576_regulator       16384  6
+rohm_bd9576            12288  0
+mva_overlay            65536  0
+usb_f_acm              12288  2
+u_serial               16384  3 usb_f_acm
+usb_f_ecm              16384  2
+usb_f_rndis            24576  2
+u_ether                16384  2 usb_f_ecm,usb_f_rndis
+libcomposite           57344  15 usb_f_ecm,usb_f_acm,u_ether,usb_f_rndis
+iptable_nat            12288  0
+nf_nat                 36864  1 iptable_nat
+nf_conntrack          110592  1 nf_nat
+nf_defrag_ipv6         16384  1 nf_conntrack
+nf_defrag_ipv4         12288  1 nf_conntrack
+snd_soc_hdmi_codec     16384  1
+evdev                  20480  0
+iptable_mangle         12288  0
+iptable_filter         12288  0
+bluetooth             610304  2
+snd_soc_simple_card    16384  0
+snd_soc_simple_card_utils    20480  1 snd_soc_simple_card
+ecdh_generic           12288  1 bluetooth
+ecc                    36864  1 ecdh_generic
+omap_aes_driver        24576  0
+omap_crypto            12288  1 omap_aes_driver
+pm33xx                 12288  0
+omap_sham              28672  0
+libaes                 12288  2 omap_aes_driver,bluetooth
+crypto_engine          12288  2 omap_aes_driver,omap_sham
+ti_emif_sram           12288  1 pm33xx
+tilcdc                 32768  0
+omap_rng               12288  0
+drm_dma_helper         16384  1 tilcdc
+rng_core               16384  1 omap_rng
+snd_soc_davinci_mcasp    32768  2
+snd_soc_ti_udma        12288  1 snd_soc_davinci_mcasp
+snd_soc_ti_edma        12288  1 snd_soc_davinci_mcasp
+snd_soc_ti_sdma        12288  1 snd_soc_davinci_mcasp
+snd_soc_core          192512  7 snd_soc_davinci_mcasp,snd_soc_hdmi_codec,snd_soc_simple_card_utils,snd_soc_ti_sdma,snd_soc_ti_edma,snd_soc_ti_udma,snd_soc_simple_card
+omap_mailbox           12288  1
+snd_pcm_dmaengine      12288  1 snd_soc_core
+snd_pcm               110592  5 snd_soc_davinci_mcasp,snd_pcm_dmaengine,snd_soc_hdmi_codec,snd_soc_simple_card_utils,snd_soc_core
+snd_timer              28672  1 snd_pcm
+snd                    69632  4 snd_soc_hdmi_codec,snd_timer,snd_soc_core,snd_pcm
+tda998x                20480  0
+soundcore              12288  1 snd
+drm_kms_helper        122880  3 drm_dma_helper,tda998x,tilcdc
+musb_dsps              16384  0
+omap_wdt               12288  0
+drm                   417792  5 drm_dma_helper,tda998x,tilcdc,drm_kms_helper
+watchdog               24576  2 bd9576_wdt,omap_wdt
+musb_hdrc             131072  1 musb_dsps
+tps65218_pwrbutton     12288  0
+rtc_omap               16384  2 pm33xx
+udc_core               45056  7 usb_f_ecm,usb_f_acm,u_serial,musb_hdrc,u_ether,usb_f_rndis,libcomposite
+drm_panel_orientation_quirks    12288  1 drm
+wkup_m3_ipc            12288  1 pm33xx
+at24                   16384  0
+usbcore               225280  1 musb_hdrc
+phy_am335x             12288  2
+phy_am335x_control     12288  1 phy_am335x
+phy_generic            12288  1 phy_am335x
+usb_common             12288  6 phy_am335x,udc_core,musb_hdrc,libcomposite,musb_dsps,usbcore
+wkup_m3_rproc          12288  1
+cppi41                 16384  60
+leds_gpio              12288  0
+cpufreq_dt             12288  0
+led_class              12288  1 leds_gpio
+ip_tables              20480  3 iptable_mangle,iptable_filter,iptable_nat
+x_tables               24576  4 iptable_mangle,ip_tables,iptable_filter,iptable_nat
+autofs4                40960  2
+EGPKETQQLO 0
+root@arm:~# Labgrid Console Logfile for main
+Logfile started at 2024-10-02 11:41:10.496959
+=== Log starts here ===
+
+root@arm:~# run() { echo -n "$MARKER"; sh -c "$@"; echo "$MARKER $?"; }
+root@arm:~# echo 'BJAN''KGOKHC'
+BJANKGOKHC
+root@arm:~# MARKER='JSSK''SNUMGB' run '/./init_regulator_test.sh bd9576'
+JSSKSNUMGBboard bd9576 given
+/./init_regulator_test.sh: line 38: buck10_en: command not found
+/./init_regulator_test.sh: line 39: buck10_set: command not found
+JSSKSNUMGB 0
+root@arm:~# Labgrid Console Logfile for main
+Logfile started at 2024-10-02 11:41:20.554583
+=== Log starts here ===
+
+root@arm:~# run() { echo -n "$MARKER"; sh -c "$@"; echo "$MARKER $?"; }
+root@arm:~# echo 'NUBX''CPCHZY'
+NUBXCPCHZY
+root@arm:~# MARKER='QNKJ''WWQFHN' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+QNKJWWQFHN/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+QNKJWWQFHN 0
+root@arm:~# echo 'HGVS''PWLCFQ'
+HGVSPWLCFQ
+root@arm:~# MARKER='KZQU''YBFXTM' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regullator-vd50/name ;echo $?'
+KZQUYBFXTM0
+KZQUYBFXTM 0
+root@arm:~# echo 'YXSU''CENWOQ'
+YXSUCENWOQ
+root@arm:~# MARKER='BFLY''JTTPWZ' run 'test -f /sys/kernel/mva_test/regulators/buuck1_en ;echo $?'
+BFLYJTTPWZ0
+BFLYJTTPWZ 0
+root@arm:~# echo 'ESAO''FMBBOE'
+ESAOFMBBOE
+root@arm:~# MARKER='CWNT''NWEVMW' run 'test -f /sys/kernel/mva_test/regulators/buuck1_set ;echo $?'
+CWNTNWEVMW0
+CWNTNWEVMW 0
+root@arm:~# echo 'GOAU''HNSKEH'
+GOAUHNSKEH
+root@arm:~# MARKER='OYQO''JNGKMJ' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+OYQOJNGKMJ/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+OYQOJNGKMJ 0
+root@arm:~# echo 'GALK''YOKKNQ'
+GALKYOKKNQ
+root@arm:~# MARKER='PVFY''TKJBKK' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regullator-vd18/name ;echo $?'
+PVFYTKJBKK0
+PVFYTKJBKK 0
+root@arm:~# echo 'EQUY''UWCWLQ'
+EQUYUWCWLQ
+root@arm:~# MARKER='PNEJ''BAXOYH' run 'test -f /sys/kernel/mva_test/regulators/buuck2_en ;echo $?'
+PNEJBAXOYH0
+PNEJBAXOYH 0
+root@arm:~# echo 'STJS''BWCXYJ'
+STJSBWCXYJ
+root@arm:~# MARKER='EUPS''OXJXGN' run 'test -f /sys/kernel/mva_test/regulators/buuck2_set ;echo $?'
+EUPSOXJXGN0
+EUPSOXJXGN 0
+root@arm:~# echo 'GKJO''GCWWVN'
+GKJOGCWWVN
+root@arm:~# MARKER='AFYO''UKKKNW' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+AFYOUKKKNW/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+AFYOUKKKNW 0
+root@arm:~# echo 'JYUO''JZBFNZ'
+JYUOJZBFNZ
+root@arm:~# MARKER='PAZT''KWEBZV' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regullator-vdddr/name ;echo $?'
+PAZTKWEBZV0
+PAZTKWEBZV 0
+root@arm:~# echo 'GMJL''UEOFZA'
+GMJLUEOFZA
+root@arm:~# MARKER='GQUL''VOUBKE' run 'test -f /sys/kernel/mva_test/regulators/buuck3_en ;echo $?'
+GQULVOUBKE0
+GQULVOUBKE 0
+root@arm:~# echo 'KKUC''WZCCYZ'
+KKUCWZCCYZ
+root@arm:~# MARKER='FYWN''USXAMK' run 'test -f /sys/kernel/mva_test/regulators/buuck3_set ;echo $?'
+FYWNUSXAMK0
+FYWNUSXAMK 0
+root@arm:~# echo 'ESFE''WTQHPT'
+ESFEWTQHPT
+root@arm:~# MARKER='HUEU''TNVTMC' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+HUEUTNVTMC/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+HUEUTNVTMC 0
+root@arm:~# echo 'SPJS''YYQUUE'
+SPJSYYQUUE
+root@arm:~# MARKER='CPNU''CBETUZ' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regullator-vd10/name ;echo $?'
+CPNUCBETUZ0
+CPNUCBETUZ 0
+root@arm:~# echo 'OTUL''LPPGSY'
+OTULLPPGSY
+root@arm:~# MARKER='QNTP''JGWXEH' run 'test -f /sys/kernel/mva_test/regulators/buuck4_en ;echo $?'
+QNTPJGWXEH0
+QNTPJGWXEH 0
+root@arm:~# echo 'WCMY''AZFEML'
+WCMYAZFEML
+root@arm:~# MARKER='SNJK''EAKJLH' run 'test -f /sys/kernel/mva_test/regulators/buuck4_set ;echo $?'
+SNJKEAKJLH0
+SNJKEAKJLH 0
+root@arm:~# echo 'YYPQ''FWWLLS'
+YYPQFWWLLS
+root@arm:~# MARKER='WVYN''GKGWPO' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+WVYNGKGWPO/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+WVYNGKGWPO 0
+root@arm:~# echo 'OCAY''TYCAHN'
+OCAYTYCAHN
+root@arm:~# MARKER='NBFE''VUKABW' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regullator-voutl1/name ;echo $?'
+NBFEVUKABW0
+NBFEVUKABW 0
+root@arm:~# echo 'OQOB''ZZTCNW'
+OQOBZZTCNW
+root@arm:~# MARKER='MFVH''HWSVJZ' run 'test -f /sys/kernel/mva_test/regulators/buuck5_en ;echo $?'
+MFVHHWSVJZ0
+MFVHHWSVJZ 0
+root@arm:~# echo 'LYHF''AWXVZZ'
+LYHFAWXVZZ
+root@arm:~# MARKER='VZHG''BNOOXP' run 'test -f /sys/kernel/mva_test/regulators/buuck5_set ;echo $?'
+VZHGBNOOXP0
+VZHGBNOOXP 0
+root@arm:~# echo 'GOFH''BUYUEV'
+GOFHBUYUEV
+root@arm:~# MARKER='YFFU''FJWGSL' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+YFFUFJWGSL/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+YFFUFJWGSL 0
+root@arm:~# echo 'UGBK''CQAFKQ'
+UGBKCQAFKQ
+root@arm:~# MARKER='USZL''SLFLYF' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regullator-vouts1/name ;echo $?'
+USZLSLFLYF0
+USZLSLFLYF 0
+root@arm:~# echo 'JPSU''OGYGUN'
+JPSUOGYGUN
+root@arm:~# MARKER='JVGK''NAAEHN' run 'test -f /sys/kernel/mva_test/regulators/buuck6_en ;echo $?'
+JVGKNAAEHN0
+JVGKNAAEHN 0
+root@arm:~# echo 'EVTM''QKKNMG'
+EVTMQKKNMG
+root@arm:~# MARKER='NZXJ''LXXYKL' run 'test -f /sys/kernel/mva_test/regulators/buuck6_set ;echo $?'
+NZXJLXXYKL0
+NZXJLXXYKL 0
+root@arm:~# Labgrid Console Logfile for main
+Logfile started at 2024-10-02 11:41:29.446004
+=== Log starts here ===
+
+root@arm:~# run() { echo -n "$MARKER"; sh -c "$@"; echo "$MARKER $?"; }
+root@arm:~# echo 'LJSW''MFVYTF'
+LJSWMFVYTF
+root@arm:~# MARKER='ZTKE''QAOJSP' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+ZTKEQAOJSP/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+ZTKEQAOJSP 0
+root@arm:~# echo 'OOXM''OLKTBZ'
+OOXMOLKTBZ
+root@arm:~# MARKER='YHVL''KOCOMF' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/rohm,vout1-en-loow ;echo $?'
+YHVLKOCOMF0
+YHVLKOCOMF 0
+root@arm:~# echo 'FYQM''ZNCWVH'
+FYQMZNCWVH
+root@arm:~# MARKER='UQNM''SZEGXM' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+UQNMSZEGXM/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+UQNMSZEGXM 0
+root@arm:~# echo 'KSSH''HNFJYP'
+KSSHHNFJYP
+root@arm:~# MARKER='GXKQ''THJZHC' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regullator-vd50/rohm,no-regulator-enable-control ;echo $?'
+GXKQTHJZHC1
+GXKQTHJZHC 0
+root@arm:~# echo 'GSWG''PXNMZW'
+GSWGPXNMZW
+root@arm:~# MARKER='TXZQ''GCAJQL' run 'i2cget -y -f 2 0x30 0x41'
+TXZQGCAJQL0x20
+TXZQGCAJQL 0
+root@arm:~# echo 'VJTQ''MZNSLT'
+VJTQMZNSLT
+root@arm:~# MARKER='QUQY''EXLWEX' run 'cat /sys/kernel/mva_test/regulators/buck1__en'
+QUQYEXLWEX0 QUQYEXLWEX 0
+root@arm:~# echo 'YUJG''HWPGAB'
+YUJGHWPGAB
+root@arm:~# MARKER='ANXW''HAATFN' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+ANXWHAATFN/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+ANXWHAATFN 0
+root@arm:~# echo 'UYJJ''EAWKZE'
+UYJJEAWKZE
+root@arm:~# MARKER='SQFL''WGBNPS' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regullator-vd18/rohm,no-regulator-enable-control ;echo $?'
+SQFLWGBNPS1
+SQFLWGBNPS 0
+root@arm:~# echo 'XCAQ''HXONSG'
+XCAQHXONSG
+root@arm:~# MARKER='YZMH''JYASAB' run 'i2cget -y -f 2 0x30 0x42'
+YZMHJYASAB0x61
+YZMHJYASAB 0
+root@arm:~# echo 'GYFL''BKSUBM'
+GYFLBKSUBM
+root@arm:~# MARKER='LOVO''OSEJKE' run 'cat /sys/kernel/mva_test/regulators/buck2__en'
+LOVOOSEJKE1 LOVOOSEJKE 0
+root@arm:~# echo 'FWFA''JBKPMZ'
+FWFAJBKPMZ
+root@arm:~# MARKER='PMBP''HPOBYH' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+PMBPHPOBYH/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+PMBPHPOBYH 0
+root@arm:~# echo 'TXXW''YWWMAJ'
+TXXWYWWMAJ
+root@arm:~# MARKER='EGFJ''FVZGXW' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regullator-vdddr/rohm,no-regulator-enable-control ;echo $?'
+EGFJFVZGXW1
+EGFJFVZGXW 0
+root@arm:~# echo 'EVGN''WHXFGM'
+EVGNWHXFGM
+root@arm:~# MARKER='QXKJ''YLMCNQ' run 'i2cget -y -f 2 0x30 0x43'
+QXKJYLMCNQ0x45
+QXKJYLMCNQ 0
+root@arm:~# echo 'VMNT''MQSJSP'
+VMNTMQSJSP
+root@arm:~# MARKER='UTHE''CNEJNJ' run 'cat /sys/kernel/mva_test/regulators/buck3__en'
+UTHECNEJNJ1 UTHECNEJNJ 0
+root@arm:~# echo 'UPAQ''ATHFJZ'
+UPAQATHFJZ
+root@arm:~# MARKER='JZLM''AEVFVZ' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+JZLMAEVFVZ/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+JZLMAEVFVZ 0
+root@arm:~# echo 'MCVQ''BHPVXB'
+MCVQBHPVXB
+root@arm:~# MARKER='MJLP''TPFOKJ' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regullator-vd10/rohm,no-regulator-enable-control ;echo $?'
+MJLPTPFOKJ1
+MJLPTPFOKJ 0
+root@arm:~# echo 'ZLNL''CPNMVJ'
+ZLNLCPNMVJ
+root@arm:~# MARKER='CLOQ''JGHTFX' run 'i2cget -y -f 2 0x30 0x44'
+CLOQJGHTFX0x73
+CLOQJGHTFX 0
+root@arm:~# echo 'YUQE''WLFPZE'
+YUQEWLFPZE
+root@arm:~# MARKER='TMOT''XBLGCK' run 'cat /sys/kernel/mva_test/regulators/buck4__en'
+TMOTXBLGCK1 TMOTXBLGCK 0
+root@arm:~# echo 'FWGJ''FZGXCS'
+FWGJFZGXCS
+root@arm:~# MARKER='GEKK''KWQMGP' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+GEKKKWQMGP/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+GEKKKWQMGP 0
+root@arm:~# echo 'UKPQ''XHFTPJ'
+UKPQXHFTPJ
+root@arm:~# MARKER='HPMA''KFMGJN' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regullator-voutl1/rohm,no-regulator-enable-control ;echo $?'
+HPMAKFMGJN1
+HPMAKFMGJN 0
+root@arm:~# echo 'APEJ''SNSEPY'
+APEJSNSEPY
+root@arm:~# MARKER='QUGS''ZXEFNG' run 'i2cget -y -f 2 0x30 0x45'
+QUGSZXEFNG0x36
+QUGSZXEFNG 0
+root@arm:~# echo 'XJMQ''VPNAOS'
+XJMQVPNAOS
+root@arm:~# MARKER='VZZG''YGCWMV' run 'cat /sys/kernel/mva_test/regulators/buck5__en'
+VZZGYGCWMV1 VZZGYGCWMV 0
+root@arm:~# echo 'PUBP''PYZJPW'
+PUBPPYZJPW
+root@arm:~# MARKER='STZU''BEVUEL' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+STZUBEVUEL/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+STZUBEVUEL 0
+root@arm:~# echo 'BXCH''VGBVCJ'
+BXCHVGBVCJ
+root@arm:~# MARKER='BZZU''QOSQHQ' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regullator-vouts1/rohm,no-regulator-enable-control ;echo $?'
+BZZUQOSQHQ1
+BZZUQOSQHQ 0
+root@arm:~# echo 'YVVA''XZUYQM'
+YVVAXZUYQM
+root@arm:~# MARKER='EBCQ''VJMWWC' run 'i2cget -y -f 2 0x30 0x46'
+EBCQVJMWWC0x52
+EBCQVJMWWC 0
+root@arm:~# echo 'JLFX''WNLXHQ'
+JLFXWNLXHQ
+root@arm:~# MARKER='LZJJ''BAOPUZ' run 'cat /sys/kernel/mva_test/regulators/buck6__en'
+LZJJBAOPUZ1 LZJJBAOPUZ 0
+root@arm:~# Labgrid Console Logfile for main
+Logfile started at 2024-10-02 11:41:38.526290
+=== Log starts here ===
+
+root@arm:~# run() { echo -n "$MARKER"; sh -c "$@"; echo "$MARKER $?"; }
+root@arm:~# echo 'YACJ''BZYCMF'
+YACJBZYCMF
+root@arm:~# MARKER='CCCA''VVXKVU' run 'cat /sys/kernel/mva_test/regulators/buck1__set'
+CCCAVVXKVU5000000
+CCCAVVXKVU 0
+root@arm:~# echo 'KPGH''AHGHNA'
+KPGHAHGHNA
+root@arm:~# MARKER='SOTC''OAVGNK' run 'i2cget -y -f 2 0x30 0x50'
+SOTCOAVGNK0x00
+SOTCOAVGNK 0
+root@arm:~# echo 'JHZH''GGGVQG'
+JHZHGGGVQG
+root@arm:~# MARKER='ZLMS''CCVQAX' run 'cat /sys/kernel/mva_test/regulators/buck2__set'
+ZLMSCCVQAX1800000
+ZLMSCCVQAX 0
+root@arm:~# echo 'OLXA''YQFCAN'
+OLXAYQFCAN
+root@arm:~# MARKER='GLHP''HMLKGA' run 'i2cget -y -f 2 0x30 0x53'
+GLHPHMLKGA0x00
+GLHPHMLKGA 0
+root@arm:~# echo 'BWSQ''NTNAXE'
+BWSQNTNAXE
+root@arm:~# MARKER='UEQV''OPJCTV' run 'cat /sys/kernel/mva_test/regulators/buck3__set'
+UEQVOPJCTV1350000
+UEQVOPJCTV 0
+root@arm:~# echo 'MQCW''VQLXSY'
+MQCWVQLXSY
+root@arm:~# MARKER='OEMT''NEGAGS' run 'i2cget -y -f 2 0x30 0x56'
+OEMTNEGAGS0x00
+OEMTNEGAGS 0
+root@arm:~# echo 'OXZX''OVTUBM'
+OXZXOVTUBM
+root@arm:~# MARKER='NBVJ''LXMPJB' run 'cat /sys/kernel/mva_test/regulators/buck4__set'
+NBVJLXMPJB1030000
+NBVJLXMPJB 0
+root@arm:~# echo 'MGXC''NBEEXB'
+MGXCNBEEXB
+root@arm:~# MARKER='EUMZ''CUATNU' run 'i2cget -y -f 2 0x30 0x59'
+EUMZCUATNU0x00
+EUMZCUATNU 0
+root@arm:~# echo 'TMQS''XELVFT'
+TMQSXELVFT
+root@arm:~# MARKER='CJTB''TSTYHO' run 'cat /sys/kernel/mva_test/regulators/buck5__set'
+CJTBTSTYHO2500000
+CJTBTSTYHO 0
+root@arm:~# echo 'SYFP''SHMZBV'
+SYFPSHMZBV
+root@arm:~# MARKER='AOLO''POJWNX' run 'i2cget -y -f 2 0x30 0x5c'
+AOLOPOJWNX0x00
+AOLOPOJWNX 0
+root@arm:~# echo 'TFSK''NBKZLU'
+TFSKNBKZLU
+root@arm:~# MARKER='HZFG''YEZMUP' run 'cat /sys/kernel/mva_test/regulators/buck6__set'
+HZFGYEZMUP3300000
+HZFGYEZMUP 0
+root@arm:~# Labgrid Console Logfile for main
+Logfile started at 2024-10-02 11:41:43.573625
+=== Log starts here ===
+
+root@arm:~# run() { echo -n "$MARKER"; sh -c "$@"; echo "$MARKER $?"; }
+root@arm:~# echo 'WVSY''APOYHX'
+WVSYAPOYHX
+root@arm:~# MARKER='QKHK''XBZMWP' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+QKHKXBZMWP/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+QKHKXBZMWP 0
+root@arm:~# echo 'FNEL''HJNJHW'
+FNELHJNJHW
+root@arm:~# MARKER='KKOM''OHPNSH' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regullator-vd50/rohm,no-regulator-enable-control ;echo $?'
+KKOMOHPNSH1
+KKOMOHPNSH 0
+root@arm:~# echo 'NNHB''SSQPOK'
+NNHBSSQPOK
+root@arm:~# MARKER='HGJF''AEHFZF' run 'i2cget -y -f 2 0x30 0x41'
+HGJFAEHFZF0x20
+HGJFAEHFZF 0
+root@arm:~# echo 'QAHH''PLWEHA'
+QAHHPLWEHA
+root@arm:~# MARKER='CTAU''AOOOOL' run 'echo 4500000 4500000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+CTAUAOOOOLsh: 1: cannot create /sys/kernel/mva_test/regulators/buck1_set: Permission denied
+CTAUAOOOOL 2
+root@arm:~# echo 'APLA''XPMZQF'
+APLAXPMZQF
+root@arm:~# MARKER='XSUX''WOLHOH' run 'i2cget -y -f 2 0x30 0x50'
+XSUXWOLHOH0x00
+XSUXWOLHOH 0
+root@arm:~# echo 'CNHY''VJWEGG'
+CNHYVJWEGG
+root@arm:~# MARKER='LXOG''GLYLTF' run 'echo 4490000 4490000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+LXOGGLYLTFsh: 1: cannot create /sys/kernel/mva_test/regulators/buck1_set: Permission denied
+LXOGGLYLTF 2
+root@arm:~# echo 'LAHN''OCNHAT'
+LAHNOCNHAT
+root@arm:~# MARKER='UHBZ''GVQNOS' run 'i2cget -y -f 2 0x30 0x50'
+UHBZGVQNOS0x00
+UHBZGVQNOS 0
+root@arm:~# echo 'ZGGH''OONQVN'
+ZGGHOONQVN
+root@arm:~# MARKER='EWKJ''YTLOPW' run 'echo 5500000 5500000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+EWKJYTLOPWsh: 1: cannot create /sys/kernel/mva_test/regulators/buck1_set: Permission denied
+EWKJYTLOPW 2
+root@arm:~# echo 'ULWY''XZBQSV'
+ULWYXZBQSV
+root@arm:~# MARKER='QTXF''HHUEAL' run 'i2cget -y -f 2 0x30 0x50'
+QTXFHHUEAL0x00
+QTXFHHUEAL 0
+root@arm:~# echo 'NYKQ''XFZHOO'
+NYKQXFZHOO
+root@arm:~# MARKER='VBPJ''YAJBGE' run 'echo 5510000 5510000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+VBPJYAJBGEsh: 1: cannot create /sys/kernel/mva_test/regulators/buck1_set: Permission denied
+VBPJYAJBGE 2
+root@arm:~# echo 'FGSP''JMHHPJ'
+FGSPJMHHPJ
+root@arm:~# MARKER='NHJH''EUPNLV' run 'i2cget -y -f 2 0x30 0x50'
+NHJHEUPNLV0x00
+NHJHEUPNLV 0
+root@arm:~# echo 'VPJU''TBNWUG'
+VPJUTBNWUG
+root@arm:~# MARKER='JAVB''KTYTNY' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+JAVBKTYTNY/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+JAVBKTYTNY 0
+root@arm:~# echo 'TZGG''ELEXFP'
+TZGGELEXFP
+root@arm:~# MARKER='CSNJ''XSFMKJ' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regullator-vd18/rohm,no-regulator-enable-control ;echo $?'
+CSNJXSFMKJ1
+CSNJXSFMKJ 0
+root@arm:~# echo 'XYQO''WQBFOO'
+XYQOWQBFOO
+root@arm:~# MARKER='GFXX''LUYGGF' run 'i2cget -y -f 2 0x30 0x42'
+GFXXLUYGGF0x61
+GFXXLUYGGF 0
+root@arm:~# echo 'KYNG''WKYUKK'
+KYNGWKYUKK
+root@arm:~# MARKER='YWSP''LEZJXE' run 'echo 1800000 1800000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+YWSPLEZJXEsh: 1: cannot create /sys/kernel/mva_test/regulators/buck2_set: Permission denied
+YWSPLEZJXE 2
+root@arm:~# echo 'CCLS''BCGVHK'
+CCLSBCGVHK
+root@arm:~# MARKER='XTXK''XBNLWB' run 'i2cget -y -f 2 0x30 0x53'
+XTXKXBNLWB0x00
+XTXKXBNLWB 0
+root@arm:~# echo 'OVOC''OUFFYG'
+OVOCOUFFYG
+root@arm:~# MARKER='BLTO''JKGQHA' run 'echo 1790000 1790000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+BLTOJKGQHAsh: 1: cannot create /sys/kernel/mva_test/regulators/buck2_set: Permission denied
+BLTOJKGQHA 2
+root@arm:~# echo 'JWYU''MSKHET'
+JWYUMSKHET
+root@arm:~# MARKER='CUJU''TOQPGC' run 'i2cget -y -f 2 0x30 0x53'
+CUJUTOQPGC0x00
+CUJUTOQPGC 0
+root@arm:~# echo 'JUJU''VOPUJX'
+JUJUVOPUJX
+root@arm:~# MARKER='PKAH''FCGKWT' run 'echo 1940000 1940000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+PKAHFCGKWTsh: 1: cannot create /sys/kernel/mva_test/regulators/buck2_set: Permission denied
+PKAHFCGKWT 2
+root@arm:~# echo 'FZNF''YPHAHF'
+FZNFYPHAHF
+root@arm:~# MARKER='WXWO''MYGWSW' run 'i2cget -y -f 2 0x30 0x53'
+WXWOMYGWSW0x00
+WXWOMYGWSW 0
+root@arm:~# echo 'WXOM''VUAXQL'
+WXOMVUAXQL
+root@arm:~# MARKER='SZZV''AAEOFG' run 'echo 1950000 1950000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+SZZVAAEOFGsh: 1: cannot create /sys/kernel/mva_test/regulators/buck2_set: Permission denied
+SZZVAAEOFG 2
+root@arm:~# echo 'XOFL''XUKHYL'
+XOFLXUKHYL
+root@arm:~# MARKER='VVMJ''OSUOPE' run 'i2cget -y -f 2 0x30 0x53'
+VVMJOSUOPE0x00
+VVMJOSUOPE 0
+root@arm:~# echo 'GCSC''LNOOQE'
+GCSCLNOOQE
+root@arm:~# MARKER='KNSH''FGVYWE' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+KNSHFGVYWE/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+KNSHFGVYWE 0
+root@arm:~# echo 'YLKC''NZOVEF'
+YLKCNZOVEF
+root@arm:~# MARKER='LKOM''YUCULA' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regullator-vdddr/rohm,no-regulator-enable-control ;echo $?'
+LKOMYUCULA1
+LKOMYUCULA 0
+root@arm:~# echo 'XZLX''SKVXZU'
+XZLXSKVXZU
+root@arm:~# MARKER='CPPQ''UUKOWW' run 'i2cget -y -f 2 0x30 0x43'
+CPPQUUKOWW0x45
+CPPQUUKOWW 0
+root@arm:~# echo 'OOCO''VHKNZE'
+OOCOVHKNZE
+root@arm:~# MARKER='KMKK''MFGCHY' run 'echo 1350000 1350000 > /sys/kernel/mva_tesst/regulators/buck3_set'
+KMKKMFGCHYsh: 1: cannot create /sys/kernel/mva_test/regulators/buck3_set: Permission denied
+KMKKMFGCHY 2
+root@arm:~# echo 'MXOF''MVGVKO'
+MXOFMVGVKO
+root@arm:~# MARKER='SJXO''FTSWZN' run 'i2cget -y -f 2 0x30 0x56'
+SJXOFTSWZN0x00
+SJXOFTSWZN 0
+root@arm:~# echo 'OACM''LTPJJL'
+OACMLTPJJL
+root@arm:~# MARKER='EXQO''YNAFEC' run 'echo 1340000 1340000 > /sys/kernel/mva_tesst/regulators/buck3_set'
+EXQOYNAFECsh: 1: cannot create /sys/kernel/mva_test/regulators/buck3_set: Permission denied
+EXQOYNAFEC 2
+root@arm:~# echo 'LJOO''BSMJWW'
+LJOOBSMJWW
+root@arm:~# MARKER='XAGX''EGWASY' run 'i2cget -y -f 2 0x30 0x56'
+XAGXEGWASY0x00
+XAGXEGWASY 0
+root@arm:~# echo 'HSHZ''JPGKHX'
+HSHZJPGKHX
+root@arm:~# MARKER='BTJF''ONBEOY' run 'echo 1660000 1660000 > /sys/kernel/mva_tesst/regulators/buck3_set'
+BTJFONBEOYsh: 1: cannot create /sys/kernel/mva_test/regulators/buck3_set: Permission denied
+BTJFONBEOY 2
+root@arm:~# echo 'UGEE''AHYBOX'
+UGEEAHYBOX
+root@arm:~# MARKER='UTLM''BZJKPX' run 'i2cget -y -f 2 0x30 0x56'
+UTLMBZJKPX0x00
+UTLMBZJKPX 0
+root@arm:~# echo 'ANBW''PESQAL'
+ANBWPESQAL
+root@arm:~# MARKER='UKBM''CXLUBF' run 'echo 1670000 1670000 > /sys/kernel/mva_tesst/regulators/buck3_set'
+UKBMCXLUBFsh: 1: cannot create /sys/kernel/mva_test/regulators/buck3_set: Permission denied
+UKBMCXLUBF 2
+root@arm:~# echo 'ULMQ''LCSBVU'
+ULMQLCSBVU
+root@arm:~# MARKER='LTEG''MFZTZA' run 'i2cget -y -f 2 0x30 0x56'
+LTEGMFZTZA0x00
+LTEGMFZTZA 0
+root@arm:~# echo 'MFGY''EKQBGO'
+MFGYEKQBGO
+root@arm:~# MARKER='JOAZ''GKFEVE' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+JOAZGKFEVE/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+JOAZGKFEVE 0
+root@arm:~# echo 'JYUW''HOUOUJ'
+JYUWHOUOUJ
+root@arm:~# MARKER='LSPG''ZMYXMH' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regullator-vd10/rohm,no-regulator-enable-control ;echo $?'
+LSPGZMYXMH1
+LSPGZMYXMH 0
+root@arm:~# echo 'UGFZ''CCGGPA'
+UGFZCCGGPA
+root@arm:~# MARKER='GLZT''FJMKST' run 'i2cget -y -f 2 0x30 0x44'
+GLZTFJMKST0x73
+GLZTFJMKST 0
+root@arm:~# echo 'OMFW''PFYLOX'
+OMFWPFYLOX
+root@arm:~# MARKER='PVGV''ATONEV' run 'echo 1030000 1030000 > /sys/kernel/mva_tesst/regulators/buck4_set'
+PVGVATONEVsh: 1: cannot create /sys/kernel/mva_test/regulators/buck4_set: Permission denied
+PVGVATONEV 2
+root@arm:~# echo 'LHXC''CNSOFM'
+LHXCCNSOFM
+root@arm:~# MARKER='JSBZ''BHCGTZ' run 'i2cget -y -f 2 0x30 0x59'
+JSBZBHCGTZ0x00
+JSBZBHCGTZ 0
+root@arm:~# echo 'PNYF''JVBUCO'
+PNYFJVBUCO
+root@arm:~# MARKER='VNYJ''OATGZA' run 'echo 1020000 1020000 > /sys/kernel/mva_tesst/regulators/buck4_set'
+VNYJOATGZAsh: 1: cannot create /sys/kernel/mva_test/regulators/buck4_set: Permission denied
+VNYJOATGZA 2
+root@arm:~# echo 'ZEGG''WKSMHF'
+ZEGGWKSMHF
+root@arm:~# MARKER='KFHT''TKPXCQ' run 'i2cget -y -f 2 0x30 0x59'
+KFHTTKPXCQ0x00
+KFHTTKPXCQ 0
+root@arm:~# echo 'SPKM''YFHMPN'
+SPKMYFHMPN
+root@arm:~# MARKER='BQNY''YJAQUZ' run 'echo 1340000 1340000 > /sys/kernel/mva_tesst/regulators/buck4_set'
+BQNYYJAQUZsh: 1: cannot create /sys/kernel/mva_test/regulators/buck4_set: Permission denied
+BQNYYJAQUZ 2
+root@arm:~# echo 'UQXY''TWZKXA'
+UQXYTWZKXA
+root@arm:~# MARKER='ZWHH''ZVOOMG' run 'i2cget -y -f 2 0x30 0x59'
+ZWHHZVOOMG0x00
+ZWHHZVOOMG 0
+root@arm:~# echo 'FHSV''WUUTVN'
+FHSVWUUTVN
+root@arm:~# MARKER='XJQC''CTQBAF' run 'echo 1350000 1350000 > /sys/kernel/mva_tesst/regulators/buck4_set'
+XJQCCTQBAFsh: 1: cannot create /sys/kernel/mva_test/regulators/buck4_set: Permission denied
+XJQCCTQBAF 2
+root@arm:~# echo 'UAZT''XJLYYT'
+UAZTXJLYYT
+root@arm:~# MARKER='VTVF''VPZKHX' run 'i2cget -y -f 2 0x30 0x59'
+VTVFVPZKHX0x00
+VTVFVPZKHX 0
+root@arm:~# echo 'MMQZ''CZMUVP'
+MMQZCZMUVP
+root@arm:~# MARKER='FJEC''HWAXQG' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+FJECHWAXQG/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+FJECHWAXQG 0
+root@arm:~# echo 'QPTA''OQCYVF'
+QPTAOQCYVF
+root@arm:~# MARKER='XEPT''EQUVAL' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regullator-voutl1/rohm,no-regulator-enable-control ;echo $?'
+XEPTEQUVAL1
+XEPTEQUVAL 0
+root@arm:~# echo 'SCPG''QOKKZJ'
+SCPGQOKKZJ
+root@arm:~# MARKER='NWKQ''ZCVYWL' run 'i2cget -y -f 2 0x30 0x45'
+NWKQZCVYWL0x36
+NWKQZCVYWL 0
+root@arm:~# echo 'CTLN''CNVFQT'
+CTLNCNVFQT
+root@arm:~# MARKER='UJEJ''LKSFAL' run 'echo 2500000 2500000 > /sys/kernel/mva_tesst/regulators/buck5_set'
+UJEJLKSFALsh: 1: cannot create /sys/kernel/mva_test/regulators/buck5_set: Permission denied
+UJEJLKSFAL 2
+root@arm:~# echo 'MTCE''YVGAZJ'
+MTCEYVGAZJ
+root@arm:~# MARKER='VPAC''AJUGWX' run 'i2cget -y -f 2 0x30 0x5c'
+VPACAJUGWX0x00
+VPACAJUGWX 0
+root@arm:~# echo 'HJNN''BYSQZH'
+HJNNBYSQZH
+root@arm:~# MARKER='LSNW''EEZFNG' run 'echo 2490000 2490000 > /sys/kernel/mva_tesst/regulators/buck5_set'
+LSNWEEZFNGsh: 1: cannot create /sys/kernel/mva_test/regulators/buck5_set: Permission denied
+LSNWEEZFNG 2
+root@arm:~# echo 'BJUL''LXKEXQ'
+BJULLXKEXQ
+root@arm:~# MARKER='XUMT''LKOQNC' run 'i2cget -y -f 2 0x30 0x5c'
+XUMTLKOQNC0x00
+XUMTLKOQNC 0
+root@arm:~# echo 'LBLY''JHUCZA'
+LBLYJHUCZA
+root@arm:~# MARKER='YVGK''TAKLPZ' run 'echo 2780000 2780000 > /sys/kernel/mva_tesst/regulators/buck5_set'
+YVGKTAKLPZsh: 1: cannot create /sys/kernel/mva_test/regulators/buck5_set: Permission denied
+YVGKTAKLPZ 2
+root@arm:~# echo 'SPNG''CWYLCA'
+SPNGCWYLCA
+root@arm:~# MARKER='VXNV''YHXCGV' run 'i2cget -y -f 2 0x30 0x5c'
+VXNVYHXCGV0x00
+VXNVYHXCGV 0
+root@arm:~# echo 'SEFY''PJGUJC'
+SEFYPJGUJC
+root@arm:~# MARKER='AQGP''NLFGKL' run 'echo 2790000 2790000 > /sys/kernel/mva_tesst/regulators/buck5_set'
+AQGPNLFGKLsh: 1: cannot create /sys/kernel/mva_test/regulators/buck5_set: Permission denied
+AQGPNLFGKL 2
+root@arm:~# echo 'CHOB''OQSGUP'
+CHOBOQSGUP
+root@arm:~# MARKER='LYZL''FSFVAT' run 'i2cget -y -f 2 0x30 0x5c'
+LYZLFSFVAT0x00
+LYZLFSFVAT 0
+root@arm:~# echo 'COPM''FPYWHE'
+COPMFPYWHE
+root@arm:~# MARKER='PWSC''KPXSHB' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+PWSCKPXSHB/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+PWSCKPXSHB 0
+root@arm:~# echo 'KZEN''EXLFGE'
+KZENEXLFGE
+root@arm:~# MARKER='SJQK''JWANQO' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regullator-vouts1/rohm,no-regulator-enable-control ;echo $?'
+SJQKJWANQO1
+SJQKJWANQO 0
+root@arm:~# echo 'BOAH''CEGUQL'
+BOAHCEGUQL
+root@arm:~# MARKER='LBAT''HBCTHN' run 'i2cget -y -f 2 0x30 0x46'
+LBATHBCTHN0x52
+LBATHBCTHN 0
+root@arm:~# Labgrid Console Logfile for main
+Logfile started at 2024-10-02 11:41:57.967349
+=== Log starts here ===
+
+root@arm:~# run() { echo -n "$MARKER"; sh -c "$@"; echo "$MARKER $?"; }
+root@arm:~# echo 'GWGW''SSLAPM'
+GWGWSSLAPM
+root@arm:~# MARKER='VKFJ''CSBNSV' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+VKFJCSBNSV/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+VKFJCSBNSV 0
+root@arm:~# echo 'KLVO''ESJFFP'
+KLVOESJFFP
+root@arm:~# MARKER='NSXA''PBCJWB' run 'xxd -p /proc/device-tree/ocp/interconnect\\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regulaator-vd50/regulator-ov-error-microvolt'
+NSXAPBCJWB00057e40
+NSXAPBCJWB 0
+root@arm:~# echo 'COYG''QJSCWE'
+COYGQJSCWE
+root@arm:~# MARKER='EVOB''FAQNKX' run 'i2cget -y -f 2 0x30 0x51'
+EVOBFAQNKX0x47
+EVOBFAQNKX 0
+root@arm:~# echo 'XXOQ''BHESON'
+XXOQBHESON
+root@arm:~# MARKER='FNLT''HKOKBJ' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+FNLTHKOKBJ/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+FNLTHKOKBJ 0
+root@arm:~# echo 'FKAS''NTFTML'
+FKASNTFTML
+root@arm:~# MARKER='GBCT''GQQFAE' run 'xxd -p /proc/device-tree/ocp/interconnect\\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regulaator-vd50/regulator-uv-error-microvolt'
+GBCTGQQFAE00057e40
+GBCTGQQFAE 0
+root@arm:~# echo 'CWVW''AAHCCY'
+CWVWAAHCCY
+root@arm:~# MARKER='VQEQ''TKJLAM' run 'i2cget -y -f 2 0x30 0x52'
+VQEQTKJLAM0x47
+VQEQTKJLAM 0
+root@arm:~# echo 'HSUH''NZXWEC'
+HSUHNZXWEC
+root@arm:~# MARKER='UCHX''JMCAJC' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+UCHXJMCAJC/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+UCHXJMCAJC 0
+root@arm:~# echo 'VBKY''TFSQYK'
+VBKYTFSQYK
+root@arm:~# MARKER='ZBNH''JSAXAJ' run 'xxd -p /proc/device-tree/ocp/interconnect\\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regulaator-vd18/regulator-ov-error-microvolt'
+ZBNHJSAXAJ00004650
+ZBNHJSAXAJ 0
+root@arm:~# echo 'XYNS''BJZUQL'
+XYNSBJZUQL
+root@arm:~# MARKER='TPSV''OXYQPB' run 'i2cget -y -f 2 0x30 0x54'
+TPSVOXYQPB0x11
+TPSVOXYQPB 0
+root@arm:~# echo 'QOOE''HBUSMW'
+QOOEHBUSMW
+root@arm:~# MARKER='HGBT''VTYNAC' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+HGBTVTYNAC/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+HGBTVTYNAC 0
+root@arm:~# echo 'EVKE''PPGKBX'
+EVKEPPGKBX
+root@arm:~# MARKER='SWQH''AZZFVL' run 'xxd -p /proc/device-tree/ocp/interconnect\\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regulaator-vd18/regulator-uv-error-microvolt'
+SWQHAZZFVL0001a9c8
+SWQHAZZFVL 0
+root@arm:~# echo 'FUVO''FSYWYL'
+FUVOFSYWYL
+root@arm:~# MARKER='EFQK''GOXVEL' run 'i2cget -y -f 2 0x30 0x55'
+EFQKGOXVEL0x6c
+EFQKGOXVEL 0
+root@arm:~# echo 'WOKH''LYWFHN'
+WOKHLYWFHN
+root@arm:~# MARKER='MBXQ''PAOAFH' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+MBXQPAOAFH/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+MBXQPAOAFH 0
+root@arm:~# echo 'KXAS''KQZTCX'
+KXASKQZTCX
+root@arm:~# MARKER='NVZE''GCGVVJ' run 'xxd -p /proc/device-tree/ocp/interconnect\\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regulaator-vdddr/regulator-ov-warn-microvolt'
+NVZEGCGVVJ0001adb0
+NVZEGCGVVJ 0
+root@arm:~# echo 'EZEN''PGWBTJ'
+EZENPGWBTJ
+root@arm:~# MARKER='BJSZ''AFEPAF' run 'i2cget -y -f 2 0x30 0x57'
+BJSZAFEPAF0x6d
+BJSZAFEPAF 0
+root@arm:~# echo 'FNPH''XPEUOM'
+FNPHXPEUOM
+root@arm:~# MARKER='MLEA''FYJKUA' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+MLEAFYJKUA/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+MLEAFYJKUA 0
+root@arm:~# echo 'NFFS''EFCHXH'
+NFFSEFCHXH
+root@arm:~# MARKER='NBGU''PMJYEZ' run 'xxd -p /proc/device-tree/ocp/interconnect\\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regulaator-vdddr/regulator-uv-warn-microvolt'
+NBGUPMJYEZ0001adb0
+NBGUPMJYEZ 0
+root@arm:~# echo 'CLCZ''UBFXCM'
+CLCZUBFXCM
+root@arm:~# MARKER='QYKE''ZCYPEO' run 'i2cget -y -f 2 0x30 0x58'
+QYKEZCYPEO0x6d
+QYKEZCYPEO 0
+root@arm:~# echo 'PPZC''LPWUFS'
+PPZCLPWUFS
+root@arm:~# MARKER='UQFV''YWJEHZ' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+UQFVYWJEHZ/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+UQFVYWJEHZ 0
+root@arm:~# echo 'KMQA''VSAXQZ'
+KMQAVSAXQZ
+root@arm:~# MARKER='PQVU''LTVQNS' run 'xxd -p /proc/device-tree/ocp/interconnect\\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regulaator-vd10/regulator-ov-error-microvolt'
+PQVULTVQNS00006590
+PQVULTVQNS 0
+root@arm:~# echo 'WUHS''CHMFOM'
+WUHSCHMFOM
+root@arm:~# MARKER='ATJS''TYBBWM' run 'i2cget -y -f 2 0x30 0x5a'
+ATJSTYBBWM0x19
+ATJSTYBBWM 0
+root@arm:~# echo 'QBJF''OLZTFB'
+QBJFOLZTFB
+root@arm:~# MARKER='JGOE''CJOHHU' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+JGOECJOHHU/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+JGOECJOHHU 0
+root@arm:~# echo 'HLSP''KCUWHU'
+HLSPKCUWHU
+root@arm:~# MARKER='VLWJ''ATAPVA' run 'xxd -p /proc/device-tree/ocp/interconnect\\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regulaator-vd10/regulator-uv-error-microvolt'
+VLWJATAPVA00006590
+VLWJATAPVA 0
+root@arm:~# echo 'LGEH''FWKUBH'
+LGEHFWKUBH
+root@arm:~# MARKER='XZFY''NXUSVY' run 'i2cget -y -f 2 0x30 0x5b'
+XZFYNXUSVY0x19
+XZFYNXUSVY 0
+root@arm:~# echo 'FGVF''VEBNYF'
+FGVFVEBNYF
+root@arm:~# MARKER='YCGJ''SKKUZB' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+YCGJSKKUZB/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+YCGJSKKUZB 0
+root@arm:~# echo 'JHXN''WTCAJB'
+JHXNWTCAJB
+root@arm:~# MARKER='NVEK''MQGJJU' run 'xxd -p /proc/device-tree/ocp/interconnect\\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regul ator-voutl1/regulator-ov-error-microvolt'
+NVEKMQGJJU000084d0
+NVEKMQGJJU 0
+root@arm:~# echo 'JGCY''SNHFMS'
+JGCYSNHFMS
+root@arm:~# MARKER='JOET''CSNPUK' run 'i2cget -y -f 2 0x30 0x5d'
+JOETCSNPUK0x01
+JOETCSNPUK 0
+root@arm:~# echo 'GAWW''GLXNMB'
+GAWWGLXNMB
+root@arm:~# MARKER='SNKL''JXFTUT' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+SNKLJXFTUT/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+SNKLJXFTUT 0
+root@arm:~# echo 'QNUN''PUFTZZ'
+QNUNPUFTZZ
+root@arm:~# MARKER='HNZV''FXOUFQ' run 'xxd -p /proc/device-tree/ocp/interconnect\\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regulaator-voutl1/regulator-uv-error-microvolt'
+HNZVFXOUFQ000084d0
+HNZVFXOUFQ 0
+root@arm:~# echo 'JOFH''JHUBEA'
+JOFHJHUBEA
+root@arm:~# MARKER='SBKX''UUFCZC' run 'i2cget -y -f 2 0x30 0x5e'
+SBKXUUFCZC0x01
+SBKXUUFCZC 0
+root@arm:~# echo 'VZBY''UZEOYA'
+VZBYUZEOYA
+root@arm:~# MARKER='QQLL''WGFAUF' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+QQLLWGFAUF/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+QQLLWGFAUF 0
+root@arm:~# echo 'XBKV''HVOTGP'
+XBKVHVOTGP
+root@arm:~# MARKER='ZPCG''JGVVQN' run 'xxd -p /proc/device-tree/ocp/interconnect\\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regulaator-vouts1/regulator-oc-warn-microamp'
+ZPCGJGVVQN00055730
+ZPCGJGVVQN 0
+root@arm:~# echo 'MTFZ''EKJOOL'
+MTFZEKJOOL
+root@arm:~# MARKER='AVTB''EZHOTF' run 'i2cget -y -f 2 0x30 0x5f'
+AVTBEZHOTF0x07
+AVTBEZHOTF 0
+root@arm:~# echo 'VMWW''LOOZPQ'
+VMWWLOOZPQ
+root@arm:~# MARKER='QGXQ''PUFVMS' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+QGXQPUFVMS/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+QGXQPUFVMS 0
+root@arm:~# echo 'FYXE''UTZGPH'
+FYXEUTZGPH
+root@arm:~# MARKER='QLUM''YOYAFW' run 'xxd -p /proc/device-tree/ocp/interconnect\\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regulaator-vouts1/regulator-oc-protection-microamp'
+QLUMYOYAFW00149970
+QLUMYOYAFW 0
+root@arm:~# echo 'NKZA''OGHAHH'
+NKZAOGHAHH
+root@arm:~# MARKER='MZCT''NHVYAO' run 'i2cget -y -f 2 0x30 0x60'
+MZCTNHVYAO0x1b
+MZCTNHVYAO 0
+root@arm:~# Labgrid Console Logfile for main
+Logfile started at 2024-10-02 11:42:19.296517
+=== Log starts here ===
+reading args
+spl_load_image_fat_os: error reading image args, err - -1
+reading u-boot.img
+reading u-boot.img
+
+
+U-Boot 2014.04-00014-g47880f5 (Apr 22 2014 - 13:23:54)
+
+I2C:   ready
+DRAM:  512 MiB
+NAND:  0 MiB
+MMC:   OMAP SD/MMC: 0, OMAP SD/MMC: 1
+*** Warning - readenv() failed, using default environment
+
+Net:   <ethaddr> not set. Validating first E-fuse MAC
+cpsw, usb_ether
+Hit any key to stop autoboot:  1  0 
+gpio: pin 53 (gpio 53) value is 1
+mmc0 is current device
+gpio: pin 54 (gpio 54) value is 1
+SD/MMC found on device 0
+reading uEnv.txt
+569 bytes read in 3 ms (184.6 KiB/s)
+gpio: pin 55 (gpio 55) value is 1
+Loaded environment from uEnv.txt
+Importing environment from mmc ...
+Checking if uenvcmd is set ...
+gpio: pin 56 (gpio 56) value is 1
+Running uenvcmd ...
+cpsw Waiting for PHY auto negotiation to complete. done
+link up on port 0, speed 100, full duplex
+Using cpsw device
+TFTP from server 192.168.255.126; our IP address is 192.168.255.1
+Filename 'zImage'.
+Load address: 0x81000000
+Loading: *#################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 #################################################################
+	 ###############################################
+	 2.4 MiB/s
+done
+Bytes transferred = 5448216 (532218 hex)
+link up on port 0, speed 100, full duplex
+Using cpsw device
+TFTP from server 192.168.255.126; our IP address is 192.168.255.1
+Filename 'am335x-boneblack.dtb'.
+Load address: 0x82000000
+Loading: *#######
+	 2.2 MiB/s
+done
+Bytes transferred = 97996 (17ecc hex)
+Kernel image @ 0x81000000 [ 0x000000 - 0x532218 ]
+## Flattened Device Tree blob at 82000000
+   Booting using the fdt blob at 0x82000000
+   Using Device Tree in place at 82000000, end 8201aecb
+
+Starting kernel ...
+
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 6.11.0-g25ac1fd80f30 (user01@drvtest01) (arm-linux-gnueabihf-gcc (Linaro GCC 6.4-2017.11) 6.4.1 20171012, GNU ld (Linaro_Binutils-2017.11) 2.27.0.20161229) #3 SMP Tue Oct  1 16:05:34 EEST 2024
+[    0.000000] CPU: ARMv7 Processor [413fc082] revision 2 (ARMv7), cr=10c5387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] OF: fdt: Machine model: TI AM335x BeagleBone Black
+[    0.000000] Memory policy: Data cache writeback
+[    0.000000] cma: Reserved 16 MiB at 0x9e800000 on node -1
+[    0.000000] Zone ranges:
+[    0.000000]   Normal   [mem 0x0000000080000000-0x000000009fdfffff]
+[    0.000000]   HighMem  empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000080000000-0x000000009fdfffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000080000000-0x000000009fdfffff]
+[    0.000000] CPU: All CPU(s) started in SVC mode.
+[    0.000000] AM335X ES2.1 (sgx neon)
+[    0.000000] percpu: Embedded 17 pages/cpu s39628 r8192 d21812 u69632
+[    0.000000] Kernel command line: console=ttyO0,115200n8 root=/dev/nfs rw nfsroot=192.168.255.126:/home/user01/nfs,nfsvers=3 ip=192.168.255.1:192.168.255.126::255.255.255.0:bbb1:eth0 nfsrootdebug
+[    0.000000] Unknown kernel command line parameters "nfsrootdebug", will be passed to user space.
+[    0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes, linear)
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 130560
+[    0.000000] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] trace event string verifier disabled
+[    0.000000] rcu: Hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU event tracing is enabled.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=2 to nr_cpu_ids=1.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[    0.000000] NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+[    0.000000] IRQ: Found an INTC at 0x(ptrval) (revision 5.0) with 128 interrupts
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] TI gptimer clocksource: always-on /ocp/interconnect@44c00000/segment@200000/target-module@31000
+[    0.000002] sched_clock: 32 bits at 24MHz, resolution 41ns, wraps every 89478484971ns
+[    0.000029] clocksource: dmtimer: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 79635851949 ns
+[    0.000512] TI gptimer clockevent: 24000000 Hz at /ocp/interconnect@48000000/segment@0/target-module@40000
+[    0.002140] Console: colour dummy device 80x30
+[    0.002210] WARNING: Your 'console=ttyO0' has been replaced by 'ttyS0'
+[    0.002221] This ensures that you still see kernel messages. Please
+[    0.002227] update your kernel commandline.
+[    0.002273] Calibrating delay loop... 996.14 BogoMIPS (lpj=4980736)
+[    0.090566] CPU: Testing write buffer coherency: ok
+[    0.090675] CPU0: Spectre v2: using BPIALL workaround
+[    0.090687] pid_max: default: 32768 minimum: 301
+[    0.090812] LSM: initializing lsm=capability
+[    0.090975] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+[    0.090999] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+[    0.092534] CPU0: thread -1, cpu 0, socket -1, mpidr 0
+[    0.094241] Setting up static identity map for 0x80100000 - 0x80100078
+[    0.094548] rcu: Hierarchical SRCU implementation.
+[    0.094560] rcu: 	Max phase no-delay instances is 1000.
+[    0.096246] smp: Bringing up secondary CPUs ...
+[    0.096307] smp: Brought up 1 node, 1 CPU
+[    0.096320] SMP: Total of 1 processors activated (996.14 BogoMIPS).
+[    0.096334] CPU: All CPU(s) started in SVC mode.
+[    0.096529] Memory: 480876K/522240K available (11264K kernel code, 1197K rwdata, 2856K rodata, 1024K init, 297K bss, 23344K reserved, 16384K cma-reserved, 0K highmem)
+[    0.097327] devtmpfs: initialized
+[    0.113694] VFP support v0.3: implementor 41 architecture 3 part 30 variant c rev 3
+[    0.114047] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.114084] futex hash table entries: 256 (order: 2, 16384 bytes, linear)
+[    0.115325] pinctrl core: initialized pinctrl subsystem
+[    0.118058] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.121061] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.122026] audit: initializing netlink subsys (disabled)
+[    0.123388] thermal_sys: Registered thermal governor 'fair_share'
+[    0.123409] thermal_sys: Registered thermal governor 'step_wise'
+[    0.123420] thermal_sys: Registered thermal governor 'user_space'
+[    0.123533] audit: type=2000 audit(0.120:1): state=initialized audit_enabled=0 res=1
+[    0.123606] cpuidle: using governor menu
+[    0.142698] No ATAGs?
+[    0.142731] hw-breakpoint: debug architecture 0x4 unsupported.
+[    0.145648] kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+[    0.163960] iommu: Default domain type: Translated
+[    0.163990] iommu: DMA domain TLB invalidation policy: strict mode
+[    0.171514] SCSI subsystem initialized
+[    0.181286] pps_core: LinuxPPS API ver. 1 registered
+[    0.181299] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.181324] PTP clock support registered
+[    0.183271] vgaarb: loaded
+[    0.183666] clocksource: Switched to clocksource dmtimer
+[    0.184265] VFS: Disk quotas dquot_6.6.0
+[    0.184312] VFS: Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+[    0.210404] NET: Registered PF_INET protocol family
+[    0.210759] IP idents hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.212148] tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 4096 bytes, linear)
+[    0.212190] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.212209] TCP established hash table entries: 4096 (order: 2, 16384 bytes, linear)
+[    0.212254] TCP bind hash table entries: 4096 (order: 4, 65536 bytes, linear)
+[    0.212356] TCP: Hash tables configured (established 4096 bind 4096)
+[    0.212479] UDP hash table entries: 256 (order: 1, 8192 bytes, linear)
+[    0.212507] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes, linear)
+[    0.212681] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.224496] RPC: Registered named UNIX socket transport module.
+[    0.224524] RPC: Registered udp transport module.
+[    0.224531] RPC: Registered tcp transport module.
+[    0.224538] RPC: Registered tcp-with-tls transport module.
+[    0.224545] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.224572] PCI: CLS 0 bytes, default 64
+[    0.226034] Initialise system trusted keyrings
+[    0.226736] workingset: timestamp_bits=14 max_order=17 bucket_order=3
+[    0.228389] NFS: Registering the id_resolver key type
+[    0.228474] Key type id_resolver registered
+[    0.228485] Key type id_legacy registered
+[    0.228536] jffs2: version 2.2. (NAND) (SUMMARY)  © 2001-2006 Red Hat, Inc.
+[    0.228943] Key type asymmetric registered
+[    0.228961] Asymmetric key parser 'x509' registered
+[    0.229030] io scheduler mq-deadline registered
+[    0.229044] io scheduler kyber registered
+[    0.229119] io scheduler bfq registered
+[    0.244096] Serial: 8250/16550 driver, 6 ports, IRQ sharing enabled
+[    0.306449] brd: module loaded
+[    0.317981] loop: module loaded
+[    0.318921] mtdoops: mtd device (mtddev=name/number) must be supplied
+[    0.336249] i2c_dev: i2c /dev entries driver
+[    0.337221] cpuidle: enable-method property 'ti,am3352' found operations
+[    0.337666] sdhci: Secure Digital Host Controller Interface driver
+[    0.337679] sdhci: Copyright(c) Pierre Ossman
+[    0.337854] sdhci-pltfm: SDHCI platform and OF driver helper
+[    0.338163] ledtrig-cpu: registered to indicate activity on CPUs
+[    0.339104] Initializing XFRM netlink socket
+[    0.339229] NET: Registered PF_INET6 protocol family
+[    0.341076] Segment Routing with IPv6
+[    0.341174] In-situ OAM (IOAM) with IPv6
+[    0.341274] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    0.342213] NET: Registered PF_PACKET protocol family
+[    0.342255] NET: Registered PF_KEY protocol family
+[    0.342387] Key type dns_resolver registered
+[    0.342661] ThumbEE CPU extension supported.
+[    0.342683] Registering SWP/SWPB emulation handler
+[    0.343208] omap_voltage_late_init: Voltage driver support not added
+[    0.343554] SmartReflex Class3 initialized
+[    0.386805] Loading compiled-in X.509 certificates
+[    0.453009] platform 44e10800.pinmux: Fixed dependency cycle(s) with /ocp/interconnect@44c00000/segment@200000/target-module@10000/scm@0/pinmux@800/clkout2-pins
+[    0.453585] pinctrl-single 44e10800.pinmux: 142 pins, size 568
+[    0.458854] ti-sysc 44e31000.target-module: probe with driver ti-sysc failed with error -16
+[    0.500147] ti-sysc 48040000.target-module: probe with driver ti-sysc failed with error -16
+[    0.537309] OMAP GPIO hardware version 0.1
+[    0.567163] omap_i2c 4819c000.i2c: bus 2 rev0.11 at 100 kHz
+[    0.582364] 48000000.interconnect:segment@200000:target-module@0:mpu@0:fck: device ID is greater than 24
+[    0.586714] platform 4830e000.lcdc: Fixed dependency cycle(s) with /ocp/interconnect@44c00000/segment@200000/target-module@b000/i2c@0/tda19988@70
+[    0.598434] sdhci-omap 481d8000.mmc: supply pbias not found, using dummy regulator
+[    0.598899] sdhci-omap 481d8000.mmc: supply vqmmc not found, using dummy regulator
+[    0.674632] davinci_mdio 4a101000.mdio: davinci mdio revision 1.6, bus freq 1000000
+[    0.791887] davinci_mdio 4a101000.mdio: phy[0]: device 4a101000.mdio:00, driver SMSC LAN8710/LAN8720
+[    0.792537] cpsw-switch 4a100000.switch: initialized cpsw ale version 1.4
+[    0.792564] cpsw-switch 4a100000.switch: ALE Table size 1024
+[    0.823591] cpsw-switch 4a100000.switch: cpts: overflow check period 500 (jiffies)
+[    0.823621] cpsw-switch 4a100000.switch: CPTS: ref_clk_freq:250000000 calc_mult:2147483648 calc_shift:29 error:0 nsec/sec
+[    0.823771] cpsw-switch 4a100000.switch: Detected MACID = 6c:ec:eb:68:de:78
+[    0.825597] cpsw-switch 4a100000.switch: initialized (regs 0x4a100000, pool size 256) hw_ver:0019010C 1.12 (0)
+[    0.836487] debugfs: Directory '49000000.dma' with parent 'dmaengine' already present!
+[    0.836537] edma 49000000.dma: TI EDMA DMA engine driver
+[    0.867684] target-module@4b000000:target-module@140000:pmu@0:fck: device ID is greater than 24
+[    0.891200] hw perfevents: enabled with armv7_cortex_a8 PMU driver, 5 counters available
+[    0.915009] l3-aon-clkctrl:0000:0: failed to disable
+[    0.918075] 44e09000.serial: ttyS0 at MMIO 0x44e09000 (irq = 34, base_baud = 3000000) is a 8250
+[    0.918161] printk: legacy console [ttyS0] enabled
+ [    2.136462] tps65217-pmic: Failed to locate of_node [id: -1 ]
+[    2.142541] tps65217-bl: Failed to locate of_node [id: -1]
+[    2.161377] tps65217 0-0024: TPS65217 ID 0xe version 1.2
+[    2.167566] platform 4830e000.lcdc: Fixed dependency cycle(s) wi.425521] mmcblk1rpmb: mmc1:0001 MMC04G 128 KiB, chardev (250:0)
+[    5.524412] cpsw-switch 4a100000.switch eth0: Link is Up - 100Mbps/Full - flow control off
+[    5.563680] IP-Config: Complete:
+[    5.566954]      device=eth0, hwaddr=6c:ec:eb:68:de:78, ipaddr=192.168.255.1, mask=255.255.255.0, gw=255.255.255.255
+[    5.577573]      host=bbb1, domain=, nis-domain=(none)
+[    5.582740]      bootserver=192.168.255.126, rootserver=192.168.255.126, rootpath=
+[    5.583159] clk: Disabling unused clocks
+[    5.595031] PM: genpd: Disabling unused power domains
+[    5.600150] KTAP version 1
+[    5.602871] 1..0
+[    5.627715] VFS: Mounted root (nfs filesystem) on device 0:17.
+[    5.634741] devtmpfs: mounted
+[    5.639418] Freeing unused kernel image (initmem) memory: 1024K
+[    5.646305] Run /sbin/init as init process
+[    6.333604] systemd[1]: System time before build time, advancing clock.
+[    7.793683] random: crng init done
+[    7.865079] systemd[1]: systemd 232 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN)
+[    7.884132] systemd[1]: Detected architecture arm.
+
+Welcome to [1mDebian GNU/Linux 9 (stretch)[0m!
+
+[    7.926601] systemd[1]: Set hostname to <arm>.
+[    8.988702] systemd[1]: Created slice User and Session Slice.
+[[0;32m  OK  [0m] Created slice User and Session Slice.
+[    9.024924] systemd[1]: Listening on Journal Audit Socket.
+[[0;32m  OK  [0m] Listening on Journal Audit Socket.
+[    9.063987] systemd[1]: Reached target Remote File Systems.
+[[0;32m  OK  [0m] Reached target Remote File Systems.
+[    9.104911] systemd[1]: Created slice System Slice.
+[[0;32m  OK  [0m] Created slice System Slice.
+[    9.144128] systemd[1]: dev-hugepages.mount: Couldn't determine result for ConditionVirtualization=!private-users, assuming failed: No such file or directory
+[    9.159747] systemd[1]: Created slice system-getty.slice.
+[[0;32m  OK  [0m] Created slice system-getty.slice.
+[    9.195643] systemd[1]: Listening on udev Control Socket.
+[[0;32m  OK  [0m] Listening on udev Control Socket.
+[[0;32m  OK  [0m] Reached target Swap.
+[[0;32m  OK  [0m] Listening on udev Kernel Socket.
+[[0;32m  OK  [0m] Started Dispatch Password Requests to Console Directory Watch.
+[[0;32m  OK  [0m] Listening on /dev/initctl Compatibility Named Pipe.
+[[0;32m  OK  [0m] Listening on Syslog Socket.
+         Mounting Debug File System...
+[[0;32m  OK  [0m] Listening on Journal Socket (/dev/log).
+[[0;32m  OK  [0m] Reached target Slices.
+[[0;32m  OK  [0m] Started Forward Password Requests to Wall Directory Watch.
+[[0;32m  OK  [0m] Reached target Paths.
+[[0;32m  OK  [0m] Reached target Encrypted Volumes.
+[[0;32m  OK  [0m] Listening on Journal Socket.
+         Starting Load Kernel Modules...
+         Starting Remount Root and Kernel File Systems...
+         Starting Create list of required st…ce nodes for the current kernel...
+[[0;32m  OK  [0m] Set up automount Arbitrary Executab…rmats File System Automount Point.
+         Starting Journal Service...
+[[0;32m  OK  [0m] Created slice system-serial\x2dgetty.slice.
+         Mounting POSIX Message Queue File System...
+[[0;32m  OK  [0m] Mounted Debug File System.
+[[0;32m  OK  [0m] Started Load Kernel Modules.
+[[0;32m  OK  [0m] Started Remount Root and Kernel File Systems.
+[[0;32m  OK  [0m] Started Create list of required sta…vice nodes for the current kernel.
+[[0;32m  OK  [0m] Mounted POSIX Message Queue File System.
+         Starting Create Static Device Nodes in /dev...
+         Starting Load/Save Random Seed...
+         Starting udev Coldplug all Devices...
+         Mounting Configuration File System...
+         Starting Apply Kernel Variables...
+[[0;32m  OK  [0m] Mounted Configuration File System.
+[[0;32m  OK  [0m] Started Load/Save Random Seed.
+[[0;32m  OK  [0m] Started Apply Kernel Variables.
+[[0;32m  OK  [0m] Started Create Static Device Nodes in /dev.
+         Starting udev Kernel Device Manager...
+[[0;32m  OK  [0m] Reached target Local File Systems (Pre).
+[[0;32m  OK  [0m] Reached target Local File Systems.
+         Starting Raise network interfaces...
+[[0;32m  OK  [0m] Started Journal Service.
+         Starting Flush Journal to Persistent Storage...
+[   11.520998] systemd-journald[88]: Received request to flush runtime journal from PID 1
+[[0;32m  OK  [0m] Started Flush Journal to Persistent Storage.
+         Starting Create Volatile Files and Directories...
+[[0;32m  OK  [0m] Started udev Kernel Device Manager.
+[[0;32m  OK  [0m] Started Create Volatile Files and Directories.
+         Starting Network Time Synchronization...
+         Starting Update UTMP about System Boot/Shutdown...
+[[0;32m  OK  [0m] Started Update UTMP about System Boot/Shutdown.
+[[0;32m  OK  [0m] Started udev Coldplug all Devices.
+[[0;32m  OK  [0m] Started Network Time Synchronization.
+[[0;32m  OK  [0m] Reached target System Time Synchronized.
+[[0;32m  OK  [0m] Reached target System Initialization.
+[[0;32m  OK  [0m] Started Daily Cleanup of Temporary Directories.
+[[0;32m  OK  [0m] Listening on D-Bus System Message Bus Socket.
+[   14.650752] remoteproc remoteproc0: wkup_m3 is available
+[[0;32m  OK  [0m] Listening on Avahi mDNS/DNS-SD Stack Activation Socket.
+[[0;32m  OK  [0m] Reached target Sockets.
+[   14.777473] omap_rtc 44e3e000.rtc: registered as rtc0
+[   14.782683] omap_rtc 44e3e000.rtc: setting system clock to 2000-01-01T00:00:00 UTC (946684800)
+[[0;32m  OK  [0m] Started Daily apt download activities.
+[[0;32m  OK  [0m] Started Daily apt upgrade and clean activities.
+[[0;32m  OK  [0m] Reached target Timers.
+[[0;32m  OK  [0m] Reached target Basic System.
+[   14.998874] omap_wdt: OMAP Watchdog Timer Rev 0x01: initial timeout 60 sec
+         Starting Cape Manager Service...
+[   15.047641] at24 2-0054: supply vcc not found, using dummy regulator
+         Starting Login Service...
+[   15.234392] at24 2-0055: supply vcc not found, using dummy regulator
+         Starting Avahi mDNS/DNS-SD Stack...
+[   15.395291] at24 2-0056: supply vcc not found, using dummy regulator
+[   15.486756] at24 2-0057: supply vcc not found, using dummy regulator
+[   15.592678] at24 0-0050: 32768 byte 24c256 EEPROM, writable, 1 bytes/write
+[[0;32m  OK  [0m] Started Regular background program processing daemon.
+[   15.696913] tps6521x_pwrbutton tps65217-pwrbutton: DMA mask not set
+[   15.706345] wkup_m3_ipc 44e11324.wkup_m3_ipc: IPC Request for A8->M3 Channel failed! -517
+[   15.776592] wkup_m3_ipc 44e11324.wkup_m3_ipc: IPC Request for A8->M3 Channel failed! -517
+[[0;32m  OK  [0m] Started D-Bus System Message Bus.
+[   15.862139] input: tps65217_pwrbutton as /devices/platform/ocp/44c00000.interconnect/44c00000.interconnect:segment@200000/44e0b000.target-module/44e0b000.i2c/i2c-0/0-0024/tps65217-pwrbutton/input/input0
+[   15.946458] wkup_m3_ipc 44e11324.wkup_m3_ipc: IPC Request for A8->M3 Channel failed! -517
+[   16.138514] am335x-phy-driver 47401300.usb-phy: dummy supplies not allowed for exclusive requests (id=vbus)
+[   16.575624] am335x-phy-driver 47401b00.usb-phy: dummy supplies not allowed for exclusive requests (id=vbus)
+[   16.586797] wkup_m3_ipc 44e11324.wkup_m3_ipc: IPC Request for A8->M3 Channel failed! -517
+[   16.619711] usbcore: registered new interface driver usbfs
+[   16.625569] usbcore: registered new interface driver hub
+[   16.631231] usbcore: registered new device driver usb
+[   16.749421] wkup_m3_ipc 44e11324.wkup_m3_ipc: IPC Request for A8->M3 Channel failed! -517
+[   16.928960] tda998x 0-0070: found TDA19988
+[   17.073402] wkup_m3_ipc 44e11324.wkup_m3_ipc: IPC Request for A8->M3 Channel failed! -517
+[   17.214014] wkup_m3_ipc 44e11324.wkup_m3_ipc: IPC Request for A8->M3 Channel failed! -517
+[   17.298211] musb-hdrc musb-hdrc.1: MUSB HDRC host driver
+[   17.303804] musb-hdrc musb-hdrc.1: new USB bus registered, assigned bus number 1
+[   17.312079] wkup_m3_ipc 44e11324.wkup_m3_ipc: IPC Request for A8->M3 Channel failed! -517
+[   17.489352] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.11
+[   17.497893] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[   17.505237] usb usb1: Product: MUSB HDRC host driver
+[   17.510233] usb usb1: Manufacturer: Linux 6.11.0-g25ac1fd80f30 musb-hcd
+[   17.516911] usb usb1: SerialNumber: musb-hdrc.1
+[   17.601140] omap-mailbox 480c8000.mailbox: omap mailbox rev 0x400
+[   17.672351] hub 1-0:1.0: USB hub found
+[   17.692369] remoteproc remoteproc0: powering up wkup_m3
+[   17.742841] hub 1-0:1.0: 1 port detected
+[   17.847860] remoteproc remoteproc0: Direct firmware load for am335x-pm-firmware.elf failed with error -2
+[   17.857640] remoteproc remoteproc0: request_firmware failed: -2
+[   17.863603] wkup_m3_ipc 44e11324.wkup_m3_ipc: rproc_boot failed
+[   19.554793] omap_rng 48310000.rng: Random Number Generator ver. 20
+[   19.654882] tilcdc 4830e000.lcdc: bound 0-0070 (ops tda998x_driver_exit [tda998x])
+[[0;32m  OK  [0m] Started Avahi mDNS/DNS-SD Stack.
+[   19.729061] [drm] Initialized tilcdc 1.0.0 for 4830e000.lcdc on minor 0
+[   19.775281] tilcdc 4830e000.lcdc: [drm] Cannot find any crtc or sizes
+         Starting Connection service...[   19.786123] tilcdc 4830e000.lcdc: [drm] Cannot find any crtc or sizes
+
+         Starting LSB: Start busybox udhcpd at boot time...
+         Starting System Logging Service...
+         Starting Telephony service...
+         Starting Generic Board Startup...
+         Starting DUN service...
+         Starting LSB: Load kernel modules needed to enable cpufreq scaling...
+[[0;32m  OK  [0m] Started Cape Manager Service.
+[   21.159529] PM: Cannot get wkup_m3_ipc handle
+[   21.242088] omap-sham 53100000.sham: hw accel on OMAP rev 4.3
+[   21.383472] omap-sham 53100000.sham: will run requests pump with realtime priority
+[   21.392653] PM: Cannot get wkup_m3_ipc handle
+[[0;32m  OK  [0m] Found device /dev/ttyS0.
+[   21.602572] omap-aes 53500000.aes: OMAP AES hw accel rev: 3.2
+[   21.752602] omap-aes 53500000.aes: will run requests pump with realtime priority
+[   21.763882] PM: Cannot get wkup_m3_ipc handle
+[[0;32m  OK  [0m] Started System Logging Service.
+[   23.246877] Bluetooth: Core ver 2.22
+[   23.250699] NET: Registered PF_BLUETOOTH protocol family
+[   23.256272] Bluetooth: HCI device and connection manager initialized
+[   23.262690] Bluetooth: HCI socket layer initialized
+[   23.267695] Bluetooth: L2CAP socket layer initialized
+[   23.272815] Bluetooth: SCO socket layer initialized
+[   24.758582] PM: Cannot get wkup_m3_ipc handle
+[   24.891171] PM: Cannot get wkup_m3_ipc handle
+[[0;32m  OK  [0m] Started LSB: Start busybox udhcpd at boot time.
+[[0;32m  OK  [0m] Started Raise network interfaces.
+[[0;32m  OK  [0m] Started LSB: Load kernel modules needed to enable cpufreq scaling.
+[   28.661094] configfs-gadget.g_multi gadget.0: HOST MAC 1c:ba:8c:a2:ed:6c
+[   28.668090] configfs-gadget.g_multi gadget.0: MAC 1c:ba:8c:a2:ed:70
+[   28.675520] configfs-gadget.g_multi gadget.0: HOST MAC 1c:ba:8c:a2:ed:6c
+[   28.682280] configfs-gadget.g_multi gadget.0: MAC 1c:ba:8c:a2:ed:6d
+[   28.694130] PM: Cannot get wkup_m3_ipc handle
+[[0;32m  OK  [0m] Started DUN service.
+[[0;32m  OK  [0m] Started Telephony service.
+[[0;32m  OK  [0m] Started Connection service.
+[[0;32m  OK  [0m] Started Login Service.
+[[0;32m  OK  [0m] Reached target Sound Card.
+         Starting LSB: set CPUFreq kernel parameters...
+[[0;32m  OK  [0m] Reached target Network.
+[[0;32m  OK  [0m] Reached target Network is Online.
+         Starting LSB: Advanced IEEE 802.11 management daemon...
+         Starting The Apache HTTP Server...
+         Starting OpenBSD Secure Shell server...
+         Starting Permit User Sessions...
+[[0;32m  OK  [0m] Started LSB: Advanced IEEE 802.11 management daemon.
+[[0;32m  OK  [0m] Started Permit User Sessions.
+         Starting Hostname Service...
+[[0;32m  OK  [0m] Started Serial Getty on ttyS0.
+[[0;32m  OK  [0m] Started Getty on tty1.
+[[0;32m  OK  [0m] Reached target Login Prompts.
+         Starting WPA supplicant...
+[[0;32m  OK  [0m] Started LSB: set CPUFreq kernel parameters.
+[[0;32m  OK  [0m] Started Hostname Service.
+[[0;32m  OK  [0m] Started WPA supplicant.
+[[0;32m  OK  [0m] Started OpenBSD Secure Shell server.
+         Stopping LSB: Start busybox udhcpd at boot time...
+[[0;32m  OK  [0m] Started The Apache HTTP Server.
+[[0;32m  OK  [0m] Stopped LSB: Start busybox udhcpd at boot time.
+         Starting dnsmasq - A lightweight DHCP and caching DNS server...
+[[0;32m  OK  [0m] Started dnsmasq - A lightweight DHCP and caching DNS server.
+[[0;32m  OK  [0m] Reached target Host and Network Name Lookups.
+[[0;32m  OK  [0m] Started Serial Getty on ttyGS0.
+[[0;32m  OK  [0m] Started Generic Board Startup.
+[[0;32m  OK  [0m] Reached target Multi-User System.
+[[0;32m  OK  [0m] Reached target Graphical Interface.
+         Starting Update UTMP about System Runlevel Changes...
+[[0;32m  OK  [0m] Started Update UTMP about System Runlevel Changes.
+
+Debian GNU/Linux 9 arm ttyS0
+
+default username:password is [debian:temppwd]
+
+arm login: root
+Password: 
+Last login: Sat Jan  1 00:00:29 UTC 2000 on ttyS0
+root
+Linux arm 6.11.0-g25ac1fd80f30 #3 SMP Tue Oct  1 16:05:34 EEST 2024 armv7l
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+root@arm:~# root
+-bash: root: command not found
+root@arm:~# dmesg -n 1
+root@arm:~# echo 'EQOA''PPJKQN'
+EQOAPPJKQN
+root@arm:~# run() { echo -n "$MARKER"; sh -c "$@"; echo "$MARKER $?"; }
+root@arm:~# echo 'LKPW''VSUJJZ'
+LKPWVSUJJZ
+root@arm:~# MARKER='UNKX''TNVPVQ' run 'cat /proc/version'
+UNKXTNVPVQLinux version 6.11.0-g25ac1fd80f30 (user01@drvtest01) (arm-linux-gnueabihf-gcc (Linaro GCC 6.4-2017.11) 6.4.1 20171012, GNU ld (Linaro_Binutils-2017.11) 2.27.0.20161229) #3 SMP Tue Oct  1 16:05:34 EEST 2024
+UNKXTNVPVQ 0
+root@arm:~# echo 'SVTA''KTZZNL'
+SVTAKTZZNL
+root@arm:~# MARKER='NGMU''YVLXWM' run false
+NGMUYVLXWMNGMUYVLXWM 1
+root@arm:~# Labgrid Console Logfile for main
+Logfile started at 2024-10-02 11:43:15.148804
+=== Log starts here ===
+
+root@arm:~# run() { echo -n "$MARKER"; sh -c "$@"; echo "$MARKER $?"; }
+root@arm:~# echo 'UFKX''TUOQEC'
+UFKXTUOQEC
+root@arm:~# MARKER='CWQS''NJTWVG' run 'insmod /mva_overlay.ko'
+CWQSNJTWVGCWQSNJTWVG 0
+root@arm:~# echo 'GTYX''XKKHYC'
+GTYXXKKHYC
+root@arm:~# MARKER='JVEJ''CFHWXV' run lsmod
+JVEJCFHWXVModule                  Size  Used by
+mva_overlay            65536  0
+usb_f_acm              12288  2
+u_serial               16384  3 usb_f_acm
+usb_f_ecm              16384  2
+usb_f_rndis            24576  2
+u_ether                16384  2 usb_f_ecm,usb_f_rndis
+libcomposite           57344  15 usb_f_ecm,usb_f_acm,u_ether,usb_f_rndis
+iptable_nat            12288  0
+nf_nat                 36864  1 iptable_nat
+nf_conntrack          110592  1 nf_nat
+nf_defrag_ipv6         16384  1 nf_conntrack
+nf_defrag_ipv4         12288  1 nf_conntrack
+snd_soc_hdmi_codec     16384  1
+iptable_mangle         12288  0
+evdev                  20480  0
+iptable_filter         12288  0
+bluetooth             610304  2
+ecdh_generic           12288  1 bluetooth
+ecc                    36864  1 ecdh_generic
+omap_aes_driver        24576  0
+snd_soc_simple_card    16384  0
+omap_crypto            12288  1 omap_aes_driver
+snd_soc_simple_card_utils    20480  1 snd_soc_simple_card
+omap_sham              28672  0
+pm33xx                 12288  0
+libaes                 12288  2 omap_aes_driver,bluetooth
+ti_emif_sram           12288  1 pm33xx
+crypto_engine          12288  2 omap_aes_driver,omap_sham
+tilcdc                 32768  0
+omap_rng               12288  0
+rng_core               16384  1 omap_rng
+drm_dma_helper         16384  1 tilcdc
+snd_soc_davinci_mcasp    32768  2
+snd_soc_ti_udma        12288  1 snd_soc_davinci_mcasp
+snd_soc_ti_edma        12288  1 snd_soc_davinci_mcasp
+snd_soc_ti_sdma        12288  1 snd_soc_davinci_mcasp
+snd_soc_core          192512  7 snd_soc_davinci_mcasp,snd_soc_hdmi_codec,snd_soc_simple_card_utils,snd_soc_ti_sdma,snd_soc_ti_edma,snd_soc_ti_udma,snd_soc_simple_card
+snd_pcm_dmaengine      12288  1 snd_soc_core
+snd_pcm               110592  5 snd_soc_davinci_mcasp,snd_pcm_dmaengine,snd_soc_hdmi_codec,snd_soc_simple_card_utils,snd_soc_core
+omap_mailbox           12288  1
+snd_timer              28672  1 snd_pcm
+snd                    69632  4 snd_soc_hdmi_codec,snd_timer,snd_soc_core,snd_pcm
+musb_dsps              16384  0
+soundcore              12288  1 snd
+musb_hdrc             131072  1 musb_dsps
+udc_core               45056  7 usb_f_ecm,usb_f_acm,u_serial,musb_hdrc,u_ether,usb_f_rndis,libcomposite
+tda998x                20480  0
+drm_kms_helper        122880  3 drm_dma_helper,tda998x,tilcdc
+usbcore               225280  1 musb_hdrc
+phy_am335x             12288  2
+phy_generic            12288  1 phy_am335x
+usb_common             12288  6 phy_am335x,udc_core,musb_hdrc,libcomposite,musb_dsps,usbcore
+cppi41                 16384  60
+phy_am335x_control     12288  1 phy_am335x
+drm                   417792  5 drm_dma_helper,tda998x,tilcdc,drm_kms_helper
+wkup_m3_ipc            12288  1 pm33xx
+tps65218_pwrbutton     12288  0
+drm_panel_orientation_quirks    12288  1 drm
+at24                   16384  0
+omap_wdt               12288  0
+watchdog               24576  1 omap_wdt
+rtc_omap               16384  2 pm33xx
+wkup_m3_rproc          12288  1
+leds_gpio              12288  0
+led_class              12288  1 leds_gpio
+cpufreq_dt             12288  0
+ip_tables              20480  3 iptable_mangle,iptable_filter,iptable_nat
+x_tables               24576  4 iptable_mangle,ip_tables,iptable_filter,iptable_nat
+autofs4                40960  2
+JVEJCFHWXV 0
+root@arm:~# Labgrid Console Logfile for main
+Logfile started at 2024-10-02 11:43:18.962298
+=== Log starts here ===
+
+root@arm:~# run() { echo -n "$MARKER"; sh -c "$@"; echo "$MARKER $?"; }
+root@arm:~# echo 'AESB''HNOBHT'
+AESBHNOBHT
+root@arm:~# MARKER='UUEA''COMWLO' run 'dd if=/bd9576_test.dtbo of=/sys/kernel/mvaa_overlay/overlay_add bs=1M'
+UUEACOMWLO0+1 records in
+0+1 records out
+3397 bytes (3.4 kB, 3.3 KiB) copied, 0.0944028 s, 36.0 kB/s
+UUEACOMWLO 0
+root@arm:~# echo 'TVOO''GMZUKN'
+TVOOGMZUKN
+root@arm:~# MARKER='XPOZ''YNOGKL' run lsmod
+XPOZYNOGKLModule                  Size  Used by
+bd9576_regulator       16384  0
+bd9576_wdt             12288  0
+rohm_bd9576            12288  0
+mva_overlay            65536  0
+usb_f_acm              12288  2
+u_serial               16384  3 usb_f_acm
+usb_f_ecm              16384  2
+usb_f_rndis            24576  2
+u_ether                16384  2 usb_f_ecm,usb_f_rndis
+libcomposite           57344  15 usb_f_ecm,usb_f_acm,u_ether,usb_f_rndis
+iptable_nat            12288  0
+nf_nat                 36864  1 iptable_nat
+nf_conntrack          110592  1 nf_nat
+nf_defrag_ipv6         16384  1 nf_conntrack
+nf_defrag_ipv4         12288  1 nf_conntrack
+snd_soc_hdmi_codec     16384  1
+iptable_mangle         12288  0
+evdev                  20480  0
+iptable_filter         12288  0
+bluetooth             610304  2
+ecdh_generic           12288  1 bluetooth
+ecc                    36864  1 ecdh_generic
+omap_aes_driver        24576  0
+snd_soc_simple_card    16384  0
+omap_crypto            12288  1 omap_aes_driver
+snd_soc_simple_card_utils    20480  1 snd_soc_simple_card
+omap_sham              28672  0
+pm33xx                 12288  0
+libaes                 12288  2 omap_aes_driver,bluetooth
+ti_emif_sram           12288  1 pm33xx
+crypto_engine          12288  2 omap_aes_driver,omap_sham
+tilcdc                 32768  0
+omap_rng               12288  0
+rng_core               16384  1 omap_rng
+drm_dma_helper         16384  1 tilcdc
+snd_soc_davinci_mcasp    32768  2
+snd_soc_ti_udma        12288  1 snd_soc_davinci_mcasp
+snd_soc_ti_edma        12288  1 snd_soc_davinci_mcasp
+snd_soc_ti_sdma        12288  1 snd_soc_davinci_mcasp
+snd_soc_core          192512  7 snd_soc_davinci_mcasp,snd_soc_hdmi_codec,snd_soc_simple_card_utils,snd_soc_ti_sdma,snd_soc_ti_edma,snd_soc_ti_udma,snd_soc_simple_card
+snd_pcm_dmaengine      12288  1 snd_soc_core
+snd_pcm               110592  5 snd_soc_davinci_mcasp,snd_pcm_dmaengine,snd_soc_hdmi_codec,snd_soc_simple_card_utils,snd_soc_core
+omap_mailbox           12288  1
+snd_timer              28672  1 snd_pcm
+snd                    69632  4 snd_soc_hdmi_codec,snd_timer,snd_soc_core,snd_pcm
+musb_dsps              16384  0
+soundcore              12288  1 snd
+musb_hdrc             131072  1 musb_dsps
+udc_core               45056  7 usb_f_ecm,usb_f_acm,u_serial,musb_hdrc,u_ether,usb_f_rndis,libcomposite
+tda998x                20480  0
+drm_kms_helper        122880  3 drm_dma_helper,tda998x,tilcdc
+usbcore               225280  1 musb_hdrc
+phy_am335x             12288  2
+phy_generic            12288  1 phy_am335x
+usb_common             12288  6 phy_am335x,udc_core,musb_hdrc,libcomposite,musb_dsps,usbcore
+cppi41                 16384  60
+phy_am335x_control     12288  1 phy_am335x
+drm                   417792  5 drm_dma_helper,tda998x,tilcdc,drm_kms_helper
+wkup_m3_ipc            12288  1 pm33xx
+tps65218_pwrbutton     12288  0
+drm_panel_orientation_quirks    12288  1 drm
+at24                   16384  0
+omap_wdt               12288  0
+watchdog               24576  2 bd9576_wdt,omap_wdt
+rtc_omap               16384  2 pm33xx
+wkup_m3_rproc          12288  1
+leds_gpio              12288  0
+led_class              12288  1 leds_gpio
+cpufreq_dt             12288  0
+ip_tables              20480  3 iptable_mangle,iptable_filter,iptable_nat
+x_tables               24576  4 iptable_mangle,ip_tables,iptable_filter,iptable_nat
+autofs4                40960  2
+XPOZYNOGKL 0
+root@arm:~# Labgrid Console Logfile for main
+Logfile started at 2024-10-02 11:43:24.869564
+=== Log starts here ===
+
+root@arm:~# run() { echo -n "$MARKER"; sh -c "$@"; echo "$MARKER $?"; }
+root@arm:~# echo 'VYTG''AXXNYV'
+VYTGAXXNYV
+root@arm:~# MARKER='WQGQ''LMOLAL' run 'insmod /bd9576-test.ko'
+WQGQLMOLALWQGQLMOLAL 0
+root@arm:~# echo 'KJSE''JEJZZE'
+KJSEJEJZZE
+root@arm:~# MARKER='QTUU''JOCFSO' run lsmod
+QTUUJOCFSOModule                  Size  Used by
+bd9576_test            12288  0
+bd9576_regulator       16384  6
+bd9576_wdt             12288  0
+rohm_bd9576            12288  0
+mva_overlay            65536  0
+usb_f_acm              12288  2
+u_serial               16384  3 usb_f_acm
+usb_f_ecm              16384  2
+usb_f_rndis            24576  2
+u_ether                16384  2 usb_f_ecm,usb_f_rndis
+libcomposite           57344  15 usb_f_ecm,usb_f_acm,u_ether,usb_f_rndis
+iptable_nat            12288  0
+nf_nat                 36864  1 iptable_nat
+nf_conntrack          110592  1 nf_nat
+nf_defrag_ipv6         16384  1 nf_conntrack
+nf_defrag_ipv4         12288  1 nf_conntrack
+snd_soc_hdmi_codec     16384  1
+iptable_mangle         12288  0
+evdev                  20480  0
+iptable_filter         12288  0
+bluetooth             610304  2
+ecdh_generic           12288  1 bluetooth
+ecc                    36864  1 ecdh_generic
+omap_aes_driver        24576  0
+snd_soc_simple_card    16384  0
+omap_crypto            12288  1 omap_aes_driver
+snd_soc_simple_card_utils    20480  1 snd_soc_simple_card
+omap_sham              28672  0
+pm33xx                 12288  0
+libaes                 12288  2 omap_aes_driver,bluetooth
+ti_emif_sram           12288  1 pm33xx
+crypto_engine          12288  2 omap_aes_driver,omap_sham
+tilcdc                 32768  0
+omap_rng               12288  0
+rng_core               16384  1 omap_rng
+drm_dma_helper         16384  1 tilcdc
+snd_soc_davinci_mcasp    32768  2
+snd_soc_ti_udma        12288  1 snd_soc_davinci_mcasp
+snd_soc_ti_edma        12288  1 snd_soc_davinci_mcasp
+snd_soc_ti_sdma        12288  1 snd_soc_davinci_mcasp
+snd_soc_core          192512  7 snd_soc_davinci_mcasp,snd_soc_hdmi_codec,snd_soc_simple_card_utils,snd_soc_ti_sdma,snd_soc_ti_edma,snd_soc_ti_udma,snd_soc_simple_card
+snd_pcm_dmaengine      12288  1 snd_soc_core
+snd_pcm               110592  5 snd_soc_davinci_mcasp,snd_pcm_dmaengine,snd_soc_hdmi_codec,snd_soc_simple_card_utils,snd_soc_core
+omap_mailbox           12288  1
+snd_timer              28672  1 snd_pcm
+snd                    69632  4 snd_soc_hdmi_codec,snd_timer,snd_soc_core,snd_pcm
+musb_dsps              16384  0
+soundcore              12288  1 snd
+musb_hdrc             131072  1 musb_dsps
+udc_core               45056  7 usb_f_ecm,usb_f_acm,u_serial,musb_hdrc,u_ether,usb_f_rndis,libcomposite
+tda998x                20480  0
+drm_kms_helper        122880  3 drm_dma_helper,tda998x,tilcdc
+usbcore               225280  1 musb_hdrc
+phy_am335x             12288  2
+phy_generic            12288  1 phy_am335x
+usb_common             12288  6 phy_am335x,udc_core,musb_hdrc,libcomposite,musb_dsps,usbcore
+cppi41                 16384  60
+phy_am335x_control     12288  1 phy_am335x
+drm                   417792  5 drm_dma_helper,tda998x,tilcdc,drm_kms_helper
+wkup_m3_ipc            12288  1 pm33xx
+tps65218_pwrbutton     12288  0
+drm_panel_orientation_quirks    12288  1 drm
+at24                   16384  0
+omap_wdt               12288  0
+watchdog               24576  2 bd9576_wdt,omap_wdt
+rtc_omap               16384  2 pm33xx
+wkup_m3_rproc          12288  1
+leds_gpio              12288  0
+led_class              12288  1 leds_gpio
+cpufreq_dt             12288  0
+ip_tables              20480  3 iptable_mangle,iptable_filter,iptable_nat
+x_tables               24576  4 iptable_mangle,ip_tables,iptable_filter,iptable_nat
+autofs4                40960  2
+QTUUJOCFSO 0
+root@arm:~# Labgrid Console Logfile for main
+Logfile started at 2024-10-02 11:43:28.659407
+=== Log starts here ===
+
+root@arm:~# run() { echo -n "$MARKER"; sh -c "$@"; echo "$MARKER $?"; }
+root@arm:~# echo 'UFCY''GGOAYW'
+UFCYGGOAYW
+root@arm:~# MARKER='LGOE''PLTGZP' run '/./init_regulator_test.sh bd9576'
+LGOEPLTGZPboard bd9576 given
+/./init_regulator_test.sh: line 38: buck10_en: command not found
+/./init_regulator_test.sh: line 39: buck10_set: command not found
+LGOEPLTGZP 0
+root@arm:~# Labgrid Console Logfile for main
+Logfile started at 2024-10-02 11:43:38.925582
+=== Log starts here ===
+
+root@arm:~# run() { echo -n "$MARKER"; sh -c "$@"; echo "$MARKER $?"; }
+root@arm:~# echo 'KYYE''YKHZPW'
+KYYEYKHZPW
+root@arm:~# MARKER='TXHT''MOKAJN' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+TXHTMOKAJN/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+TXHTMOKAJN 0
+root@arm:~# echo 'WNJH''QBAMXG'
+WNJHQBAMXG
+root@arm:~# MARKER='AHTY''WYZVTW' run 'xxd -p /proc/device-tree/ocp/interconnect\\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regulaator-vd50/regulator-ov-error-microvolt'
+AHTYWYZVTW00000000
+AHTYWYZVTW 0
+root@arm:~# echo 'FLYV''EXWKZF'
+FLYVEXWKZF
+root@arm:~# MARKER='KBUB''TBPQZN' run 'i2cget -y -f 2 0x30 0x51'
+KBUBTBPQZN0x00
+KBUBTBPQZN 0
+root@arm:~# echo 'CPGF''KWVFNJ'
+CPGFKWVFNJ
+root@arm:~# MARKER='MUYZ''YKAJEZ' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+MUYZYKAJEZ/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+MUYZYKAJEZ 0
+root@arm:~# echo 'MMOU''YJMVKC'
+MMOUYJMVKC
+root@arm:~# MARKER='KVBN''LAOHJF' run 'xxd -p /proc/device-tree/ocp/interconnect\\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regulaator-vd50/regulator-uv-error-microvolt'
+KVBNLAOHJF00000000
+KVBNLAOHJF 0
+root@arm:~# echo 'KXWT''QXBOLO'
+KXWTQXBOLO
+root@arm:~# MARKER='AHAC''BWKNXA' run 'i2cget -y -f 2 0x30 0x52'
+AHACBWKNXA0x00
+AHACBWKNXA 0
+root@arm:~# echo 'WVZJ''WSBOPJ'
+WVZJWSBOPJ
+root@arm:~# MARKER='ABCB''QZBSOL' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+ABCBQZBSOL/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+ABCBQZBSOL 0
+root@arm:~# echo 'PBZV''QJTQBO'
+PBZVQJTQBO
+root@arm:~# MARKER='JSLN''VWMOEN' run 'xxd -p /proc/device-tree/ocp/interconnect\\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regulaator-vd18/regulator-ov-error-microvolt'
+JSLNVWMOEN00000000
+JSLNVWMOEN 0
+root@arm:~# echo 'YNAX''ZJEOGO'
+YNAXZJEOGO
+root@arm:~# MARKER='SBVK''ULFLBF' run 'i2cget -y -f 2 0x30 0x54'
+SBVKULFLBF0x00
+SBVKULFLBF 0
+root@arm:~# echo 'OPKK''QHGCFG'
+OPKKQHGCFG
+root@arm:~# MARKER='PUEX''JYQCGK' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+PUEXJYQCGK/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+PUEXJYQCGK 0
+root@arm:~# echo 'YAYQ''MGKNUL'
+YAYQMGKNUL
+root@arm:~# MARKER='HYFE''GXTGMT' run 'xxd -p /proc/device-tree/ocp/interconnect\\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regulaator-vd18/regulator-uv-error-microvolt'
+HYFEGXTGMT00000000
+HYFEGXTGMT 0
+root@arm:~# echo 'FMSZ''ZUQOXE'
+FMSZZUQOXE
+root@arm:~# MARKER='XTLE''YSVYMA' run 'i2cget -y -f 2 0x30 0x55'
+XTLEYSVYMA0x00
+XTLEYSVYMA 0
+root@arm:~# echo 'HUSA''TQUBCT'
+HUSATQUBCT
+root@arm:~# MARKER='VTCT''MHKXCP' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+VTCTMHKXCP/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+VTCTMHKXCP 0
+root@arm:~# echo 'MTTH''TZGQMK'
+MTTHTZGQMK
+root@arm:~# MARKER='MCNW''XUNCSW' run 'xxd -p /proc/device-tree/ocp/interconnect\\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regulaator-vdddr/regulator-ov-warn-microvolt'
+MCNWXUNCSW00000000
+MCNWXUNCSW 0
+root@arm:~# echo 'FTCU''VLEGTF'
+FTCUVLEGTF
+root@arm:~# MARKER='QXZT''JTPESC' run 'i2cget -y -f 2 0x30 0x57'
+QXZTJTPESC0x00
+QXZTJTPESC 0
+root@arm:~# echo 'MZSV''ZQKFFV'
+MZSVZQKFFV
+root@arm:~# MARKER='VGWK''NSXUKH' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+VGWKNSXUKH/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+VGWKNSXUKH 0
+root@arm:~# echo 'OOVL''KOEEAC'
+OOVLKOEEAC
+root@arm:~# MARKER='LOLV''AMYNQA' run 'xxd -p /proc/device-tree/ocp/interconnect \@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regulaator-vdddr/regulator-uv-warn-microvolt'
+LOLVAMYNQA00000000
+LOLVAMYNQA 0
+root@arm:~# echo 'GCOY''GKMSHG'
+GCOYGKMSHG
+root@arm:~# MARKER='PXWK''KJEJQA' run 'i2cget -y -f 2 0x30 0x58'
+PXWKKJEJQA0x00
+PXWKKJEJQA 0
+root@arm:~# echo 'KWKF''KXYBWP'
+KWKFKXYBWP
+root@arm:~# MARKER='AGWN''HYKSOA' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+AGWNHYKSOA/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+AGWNHYKSOA 0
+root@arm:~# echo 'VMLZ''XYUETO'
+VMLZXYUETO
+root@arm:~# MARKER='MKKA''ZWNPOJ' run 'xxd -p /proc/device-tree/ocp/interconnect\\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regulaator-vd10/regulator-ov-error-microvolt'
+MKKAZWNPOJ00000000
+MKKAZWNPOJ 0
+root@arm:~# echo 'UFSC''LKSPZL'
+UFSCLKSPZL
+root@arm:~# MARKER='HWCT''OYVLZK' run 'i2cget -y -f 2 0x30 0x5a'
+HWCTOYVLZK0x00
+HWCTOYVLZK 0
+root@arm:~# echo 'JFPZ''JVPZJF'
+JFPZJVPZJF
+root@arm:~# MARKER='XZUV''QWMNNK' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+XZUVQWMNNK/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+XZUVQWMNNK 0
+root@arm:~# echo 'MTOS''EVFTKT'
+MTOSEVFTKT
+root@arm:~# MARKER='COJP''YUKFPY' run 'xxd -p /proc/device-tree/ocp/interconnect\\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regulaator-vd10/regulator-uv-error-microvolt'
+COJPYUKFPY00000000
+COJPYUKFPY 0
+root@arm:~# echo 'EUUQ''XMZYCC'
+EUUQXMZYCC
+root@arm:~# MARKER='GHZG''YHNFPM' run 'i2cget -y -f 2 0x30 0x5b'
+GHZGYHNFPM0x00
+GHZGYHNFPM 0
+root@arm:~# echo 'TLCL''OUHHLP'
+TLCLOUHHLP
+root@arm:~# MARKER='XCMM''FQESFG' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+XCMMFQESFG/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+XCMMFQESFG 0
+root@arm:~# echo 'UVAY''KXMGSV'
+UVAYKXMGSV
+root@arm:~# MARKER='JTLT''NOTLMA' run 'xxd -p /proc/device-tree/ocp/interconnect\\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regulaator-voutl1/regulator-ov-error-microvolt'
+JTLTNOTLMA00000000
+JTLTNOTLMA 0
+root@arm:~# echo 'BFGJ''FMMBYH'
+BFGJFMMBYH
+root@arm:~# MARKER='JVUX''UKXGBK' run 'i2cget -y -f 2 0x30 0x5d'
+JVUXUKXGBK0x00
+JVUXUKXGBK 0
+root@arm:~# echo 'AQYJ''UYEMNX'
+AQYJUYEMNX
+root@arm:~# MARKER='TVQG''HFQNJX' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+TVQGHFQNJX/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+TVQGHFQNJX 0
+root@arm:~# echo 'KZGY''XNMELF'
+KZGYXNMELF
+root@arm:~# MARKER='HKXC''OHNUMY' run 'xxd -p /proc/device-tree/ocp/interconnect\\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regulaator-voutl1/regulator-uv-error-microvolt'
+HKXCOHNUMY00000000
+HKXCOHNUMY 0
+root@arm:~# echo 'GHMO''YLGUWL'
+GHMOYLGUWL
+root@arm:~# MARKER='ALFH''HTFAAO' run 'i2cget -y -f 2 0x30 0x5e'
+ALFHHTFAAO0x00
+ALFHHTFAAO 0
+root@arm:~# echo 'JFLB''NAZQSY'
+JFLBNAZQSY
+root@arm:~# MARKER='ZVEH''SKFYFS' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+ZVEHSKFYFS/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+ZVEHSKFYFS 0
+root@arm:~# echo 'XSXA''TSWCAS'
+XSXATSWCAS
+root@arm:~# MARKER='YTMJ''SECZEK' run 'xxd -p /proc/device-tree/ocp/interconnect\\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regulaator-vouts1/regulator-oc-warn-microamp'
+YTMJSECZEK00000000
+YTMJSECZEK 0
+root@arm:~# echo 'TJNK''HWOGOG'
+TJNKHWOGOG
+root@arm:~# MARKER='XFGN''JUBXCW' run 'i2cget -y -f 2 0x30 0x5f'
+XFGNJUBXCW0x00
+XFGNJUBXCW 0
+root@arm:~# echo 'GAAP''GFJXLF'
+GAAPGFJXLF
+root@arm:~# MARKER='PTYN''SSELAB' run 'grep -r -l rohm,bd9576 /proc/device-tree || sed '"'"'s![^/]*$!!'"'"''
+PTYNSSELAB/proc/device-tree/ocp/interconnect@48000000/segment@100000/target-module@9c000/i2c@0/pmic@30/
+PTYNSSELAB 0
+root@arm:~# echo 'LSKA''GJSUWS'
+LSKAGJSUWS
+root@arm:~# MARKER='NBSE''HPBAJV' run 'xxd -p /proc/device-tree/ocp/interconnect\\@48000000/segment\@100000/target-module\@9c000/i2c\@0/pmic\@30/regulators/regulaator-vouts1/regulator-oc-protection-microamp'
+NBSEHPBAJV00000000
+NBSEHPBAJV 0
+root@arm:~# echo 'CSMM''HUGXKQ'
+CSMMHUGXKQ
+root@arm:~# MARKER='YAJC''EVJQZH' run 'i2cget -y -f 2 0x30 0x60'
+YAJCEVJQZH0x00
+YAJCEVJQZH 0
+root@arm:~# 
