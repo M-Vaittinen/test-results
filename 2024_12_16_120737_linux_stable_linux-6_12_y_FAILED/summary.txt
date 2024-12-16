@@ -1,0 +1,57 @@
+BuildBot project: linux_stable_linux-6_12_y
+Linux version: 6.12.111
+Commit hash: c2653f1704ff800d5ee95262d4804333a16e4c6b
+
+Building kernel failed!
+stderr:
+
+drivers/regulator/helpers.c: In function ‘regulator_get_voltage_sel_pickable_regmap’:
+drivers/regulator/helpers.c:138:33: error: initialization from incompatible pointer type [-Werror=incompatible-pointer-types]
+  const struct linear_range *r = rdev->desc->linear_ranges;
+                                 ^~~~
+drivers/regulator/helpers.c: In function ‘write_separate_vsel_and_range’:
+drivers/regulator/helpers.c:181:16: error: ‘const struct regulator_desc’ has no member named ‘range_applied_by_vsel’
+  if (rdev->desc->range_applied_by_vsel && range_updated)
+                ^~
+drivers/regulator/helpers.c: In function ‘regulator_set_voltage_sel_pickable_regmap’:
+drivers/regulator/helpers.c:211:3: error: invalid use of undefined type ‘struct regulator_linear_range’
+   r = &rdev->desc->linear_ranges[i];
+   ^
+drivers/regulator/helpers.c:211:33: error: dereferencing pointer to incomplete type ‘const struct regulator_linear_range’
+   r = &rdev->desc->linear_ranges[i];
+                                 ^
+drivers/regulator/helpers.c:223:2: error: invalid use of undefined type ‘struct regulator_linear_range’
+  sel += rdev->desc->linear_ranges[i].min_sel;
+  ^~~
+drivers/regulator/helpers.c: In function ‘regulator_map_voltage_linear_range’:
+drivers/regulator/helpers.c:442:3: error: invalid use of undefined type ‘struct regulator_linear_range’
+   range = &rdev->desc->linear_ranges[i];
+   ^~~~~
+drivers/regulator/helpers.c: In function ‘regulator_map_voltage_pickable_linear_range’:
+drivers/regulator/helpers.c:494:3: error: invalid use of undefined type ‘struct regulator_linear_range’
+   range = &rdev->desc->linear_ranges[i];
+   ^~~~~
+drivers/regulator/helpers.c: In function ‘regulator_list_voltage_pickable_linear_range’:
+drivers/regulator/helpers.c:599:3: error: invalid use of undefined type ‘struct regulator_linear_range’
+   range = &rdev->desc->linear_ranges[i];
+   ^~~~~
+drivers/regulator/helpers.c: In function ‘regulator_desc_list_voltage_linear_range’:
+drivers/regulator/helpers.c:645:37: error: passing argument 1 of ‘linear_range_get_value_array’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+  ret = linear_range_get_value_array(desc->linear_ranges,
+                                     ^~~~
+In file included from ./include/linux/regulator/driver.h:16:0,
+                 from drivers/regulator/helpers.c:15:
+./include/linux/linear_range.h:47:5: note: expected ‘const struct linear_range *’ but argument is of type ‘const struct regulator_linear_range * const’
+ int linear_range_get_value_array(const struct linear_range *r, int ranges,
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/regulator/helpers.c: At top level:
+cc1: warning: unrecognized command line option ‘-Wno-stringop-overflow’
+cc1: some warnings being treated as errors
+make[4]: *** [scripts/Makefile.build:229: drivers/regulator/helpers.o] Error 1
+make[4]: *** Waiting for unfinished jobs....
+make[3]: *** [scripts/Makefile.build:478: drivers/regulator] Error 2
+make[3]: *** Waiting for unfinished jobs....
+make[2]: *** [scripts/Makefile.build:478: drivers] Error 2
+make[1]: *** [/home/kale/Linux-Driver-Testing/buildbot/master_root/master/workers/Linux_Worker/linux_stable_linux-6_12_y/build/Makefile:1936: .] Error 2
+make: *** [Makefile:224: __sub-make] Error 2
+
