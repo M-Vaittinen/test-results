@@ -1,0 +1,4067 @@
+Labgrid Console Logfile for main
+Logfile started at 2024-12-19 14:16:39.083812
+=== Log starts here ===
+
+root@arm:~# run() { echo -n "$MARKER"; sh -c "$@"; echo "$MARKER $?"; }
+root@arm:~# echo 'CUBV''FBOLBF'
+CUBVFBOLBF
+root@arm:~# MARKER='FQVB''NXNVXE' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+FQVBNXNVXE/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+FQVBNXNVXE 0
+root@arm:~# echo 'ZNMQ''PZYOAP'
+ZNMQPZYOAP
+root@arm:~# MARKER='QFTM''NOZVHJ' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/BUCK1/roh m,no-regulator-enable-control ;echo $?'
+QFTMNOZVHJ1
+QFTMNOZVHJ 0
+root@arm:~# echo 'SYME''CANPTS'
+SYMECANPTS
+root@arm:~# MARKER='LXSU''MAJLJE' run 'echo 1 > /sys/kernel/mva_test/regulators/bbuck1_en'
+LXSUMAJLJELXSUMAJLJE 0
+root@arm:~# echo 'LLFU''YKCBKS'
+LLFUYKCBKS
+root@arm:~# MARKER='HPYE''ENLZLJ' run 'i2cget -y -f 1 0x4b 0x5'
+HPYEENLZLJ0x03
+HPYEENLZLJ 0
+root@arm:~# echo 'YCMB''XHMYJQ'
+YCMBXHMYJQ
+root@arm:~# MARKER='SBPX''NWCTLU' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+SBPXNWCTLU/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+SBPXNWCTLU 0
+root@arm:~# echo 'ZAWX''FPXZZG'
+ZAWXFPXZZG
+root@arm:~# MARKER='OFCU''BNPGSU' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/BUCK1/rohmm,no-regulator-enable-control ;echo $?'
+OFCUBNPGSU1
+OFCUBNPGSU 0
+root@arm:~# echo 'OOSE''WJUXKB'
+OOSEWJUXKB
+root@arm:~# MARKER='XFJG''FKCLFZ' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+XFJGFKCLFZ/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+XFJGFKCLFZ 0
+root@arm:~# echo 'GLFM''CXSQQP'
+GLFMCXSQQP
+root@arm:~# MARKER='YFGO''GFGJCW' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/BUCK1/reguulator-always-on ;echo $?'
+YFGOGFGJCW1
+YFGOGFGJCW 0
+root@arm:~# echo 'UJZZ''FWXNQK'
+UJZZFWXNQK
+root@arm:~# MARKER='KVES''BPCBUH' run 'echo 0 > /sys/kernel/mva_test/regulators/bbuck1_en'
+KVESBPCBUHKVESBPCBUH 0
+root@arm:~# echo 'NZOZ''MVEPVP'
+NZOZMVEPVP
+root@arm:~# MARKER='PAMS''CKJAXA' run 'i2cget -y -f 1 0x4b 0x5'
+PAMSCKJAXA0x02
+PAMSCKJAXA 0
+root@arm:~# echo 'ELBN''ZMLQYZ'
+ELBNZMLQYZ
+root@arm:~# MARKER='XSST''MNQQWS' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+XSSTMNQQWS/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+XSSTMNQQWS 0
+root@arm:~# echo 'CPAF''CXEALV'
+CPAFCXEALV
+root@arm:~# MARKER='EABV''FOFLGJ' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/BUCK2/rohmm,no-regulator-enable-control ;echo $?'
+EABVFOFLGJ1
+EABVFOFLGJ 0
+root@arm:~# echo 'LALW''WXZPAY'
+LALWWXZPAY
+root@arm:~# MARKER='QBKM''CLYFQZ' run 'echo 1 > /sys/kernel/mva_test/regulators/bbuck2_en'
+QBKMCLYFQZQBKMCLYFQZ 0
+root@arm:~# echo 'TQQK''HGHLUM'
+TQQKHGHLUM
+root@arm:~# MARKER='ZWFA''VXQQZV' run 'i2cget -y -f 1 0x4b 0x6'
+ZWFAVXQQZV0x43
+ZWFAVXQQZV 0
+root@arm:~# echo 'ZEBE''LWVSTH'
+ZEBELWVSTH
+root@arm:~# MARKER='AOOS''QVOBPM' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+AOOSQVOBPM/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+AOOSQVOBPM 0
+root@arm:~# echo 'AWJF''LHCHQH'
+AWJFLHCHQH
+root@arm:~# MARKER='VSWC''CVUUTQ' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/BUCK2/rohmm,no-regulator-enable-control ;echo $?'
+VSWCCVUUTQ1
+VSWCCVUUTQ 0
+root@arm:~# echo 'YMTZ''JQXHHC'
+YMTZJQXHHC
+root@arm:~# MARKER='OYWK''USZEOQ' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+OYWKUSZEOQ/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+OYWKUSZEOQ 0
+root@arm:~# echo 'GZET''OABKQX'
+GZETOABKQX
+root@arm:~# MARKER='MQUU''HHQGXH' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/BUCK2/reguulator-always-on ;echo $?'
+MQUUHHQGXH0
+MQUUHHQGXH 0
+root@arm:~# echo 'WPYP''ZXOHNX'
+WPYPZXOHNX
+root@arm:~# MARKER='MTXG''PESKCN' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+MTXGPESKCN/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+MTXGPESKCN 0
+root@arm:~# echo 'QQBP''VBMQWJ'
+QQBPVBMQWJ
+root@arm:~# MARKER='ZUVK''FWCZAF' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/BUCK3/rohmm,no-regulator-enable-control ;echo $?'
+ZUVKFWCZAF0
+ZUVKFWCZAF 0
+root@arm:~# echo 'BZTT''COXOUT'
+BZTTCOXOUT
+root@arm:~# MARKER='OGPQ''LGNFBN' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+OGPQLGNFBN/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+OGPQLGNFBN 0
+root@arm:~# echo 'KMBJ''CFJZLG'
+KMBJCFJZLG
+root@arm:~# MARKER='AJYG''FQLMFN' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/BUCK3/rohmm,no-regulator-enable-control ;echo $?'
+AJYGFQLMFN0
+AJYGFQLMFN 0
+root@arm:~# echo 'OQAY''ZSXKTV'
+OQAYZSXKTV
+root@arm:~# MARKER='JTYL''WBSFZK' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+JTYLWBSFZK/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+JTYLWBSFZK 0
+root@arm:~# echo 'TGBX''PUNYLW'
+TGBXPUNYLW
+root@arm:~# MARKER='GVVP''CNGCMZ' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/BUCK4/roh m,no-regulator-enable-control ;echo $?'
+GVVPCNGCMZ1
+GVVPCNGCMZ 0
+root@arm:~# echo 'LHUY''XXVCFZ'
+LHUYXXVCFZ
+root@arm:~# MARKER='FOXX''VVNSQY' run 'echo 1 > /sys/kernel/mva_test/regulators/bbuck4_en'
+FOXXVVNSQYFOXXVVNSQY 0
+root@arm:~# echo 'PSKM''EOQTWF'
+PSKMEOQTWF
+root@arm:~# MARKER='EVUS''TTWKNY' run 'i2cget -y -f 1 0x4b 0xa'
+EVUSTTWKNY0x03
+EVUSTTWKNY 0
+root@arm:~# echo 'OEHS''VJSBJP'
+OEHSVJSBJP
+root@arm:~# MARKER='VZNP''OCCNSV' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+VZNPOCCNSV/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+VZNPOCCNSV 0
+root@arm:~# echo 'MJTO''HGQOHO'
+MJTOHGQOHO
+root@arm:~# MARKER='PBSL''XJBXCG' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/BUCK4/rohmm,no-regulator-enable-control ;echo $?'
+PBSLXJBXCG1
+PBSLXJBXCG 0
+root@arm:~# echo 'USTH''XVLYMJ'
+USTHXVLYMJ
+root@arm:~# MARKER='ELVV''JLCKCG' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+ELVVJLCKCG/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+ELVVJLCKCG 0
+root@arm:~# echo 'NHUX''PNECOX'
+NHUXPNECOX
+root@arm:~# MARKER='KEGV''GHZKVE' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/BUCK4/reguulator-always-on ;echo $?'
+KEGVGHZKVE1
+KEGVGHZKVE 0
+root@arm:~# echo 'GXEX''YGMKZP'
+GXEXYGMKZP
+root@arm:~# MARKER='SLPU''PHXXWE' run 'echo 0 > /sys/kernel/mva_test/regulators/bbuck4_en'
+SLPUPHXXWESLPUPHXXWE 0
+root@arm:~# echo 'QWML''KKXXUT'
+QWMLKKXXUT
+root@arm:~# MARKER='NVCE''UYBSLU' run 'i2cget -y -f 1 0x4b 0xa'
+NVCEUYBSLU0x02
+NVCEUYBSLU 0
+root@arm:~# echo 'PFME''KKUHCP'
+PFMEKKUHCP
+root@arm:~# MARKER='VLQW''YFMSHW' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+VLQWYFMSHW/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+VLQWYFMSHW 0
+root@arm:~# echo 'QUUO''HWEKFZ'
+QUUOHWEKFZ
+root@arm:~# MARKER='FGQS''VHEEOV' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/BUCK5/rohmm,no-regulator-enable-control ;echo $?'
+FGQSVHEEOV1
+FGQSVHEEOV 0
+root@arm:~# echo 'PACK''CNVZCB'
+PACKCNVZCB
+root@arm:~# MARKER='PTVJ''BOBWYO' run 'echo 1 > /sys/kernel/mva_test/regulators/bbuck5_en'
+PTVJBOBWYOPTVJBOBWYO 0
+root@arm:~# echo 'XOAZ''MVZGYM'
+XOAZMVZGYM
+root@arm:~# MARKER='QHBP''PCGPXQ' run 'i2cget -y -f 1 0x4b 0xb'
+QHBPPCGPXQ0x03
+QHBPPCGPXQ 0
+root@arm:~# echo 'BVKG''MOMYQS'
+BVKGMOMYQS
+root@arm:~# MARKER='KHBY''VOGQTB' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+KHBYVOGQTB/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+KHBYVOGQTB 0
+root@arm:~# echo 'SZOE''JWQHZF'
+SZOEJWQHZF
+root@arm:~# MARKER='GQGX''WJPKTO' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/BUCK5/rohmm,no-regulator-enable-control ;echo $?'
+GQGXWJPKTO1
+GQGXWJPKTO 0
+root@arm:~# echo 'QZTP''SKUZST'
+QZTPSKUZST
+root@arm:~# MARKER='GASF''VSCBEO' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+GASFVSCBEO/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+GASFVSCBEO 0
+root@arm:~# echo 'KOJJ''VJKPHO'
+KOJJVJKPHO
+root@arm:~# MARKER='ZJXM''FOOBMQ' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/BUCK5/reguulator-always-on ;echo $?'
+ZJXMFOOBMQ1
+ZJXMFOOBMQ 0
+root@arm:~# echo 'FLAZ''HJSVKK'
+FLAZHJSVKK
+root@arm:~# MARKER='KUVJ''GEYMHP' run 'echo 0 > /sys/kernel/mva_test/regulators/bbuck5_en'
+KUVJGEYMHPKUVJGEYMHP 0
+root@arm:~# echo 'WMEZ''PAGAGV'
+WMEZPAGAGV
+root@arm:~# MARKER='JHWK''QJNEJT' run 'i2cget -y -f 1 0x4b 0xb'
+JHWKQJNEJT0x02
+JHWKQJNEJT 0
+root@arm:~# echo 'UHFT''SFOCWQ'
+UHFTSFOCWQ
+root@arm:~# MARKER='HVZL''ASCYCU' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+HVZLASCYCU/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+HVZLASCYCU 0
+root@arm:~# echo 'TXST''FBGJUF'
+TXSTFBGJUF
+root@arm:~# MARKER='UKGF''FAXGHV' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/BUCK6/rohmm,no-regulator-enable-control ;echo $?'
+UKGFFAXGHV1
+UKGFFAXGHV 0
+root@arm:~# echo 'HVAQ''UVPQTT'
+HVAQUVPQTT
+root@arm:~# MARKER='BUZB''XPJNXX' run 'echo 1 > /sys/kernel/mva_test/regulators/bbuck6_en'
+BUZBXPJNXXBUZBXPJNXX 0
+root@arm:~# echo 'HCMJ''CWEVUV'
+HCMJCWEVUV
+root@arm:~# MARKER='YYMA''ZQHMSE' run 'i2cget -y -f 1 0x4b 0xc'
+YYMAZQHMSE0x03
+YYMAZQHMSE 0
+root@arm:~# echo 'QCQK''TZYQHB'
+QCQKTZYQHB
+root@arm:~# MARKER='CUWM''AUNLSV' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+CUWMAUNLSV/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+CUWMAUNLSV 0
+root@arm:~# echo 'HNXS''MHGHTS'
+HNXSMHGHTS
+root@arm:~# MARKER='SVQQ''CHPXZG' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/BUCK6/rohmm,no-regulator-enable-control ;echo $?'
+SVQQCHPXZG1
+SVQQCHPXZG 0
+root@arm:~# echo 'TTXS''WUQZLY'
+TTXSWUQZLY
+root@arm:~# MARKER='QVJC''SPUQBZ' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+QVJCSPUQBZ/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+QVJCSPUQBZ 0
+root@arm:~# echo 'GOQT''GJCSNP'
+GOQTGJCSNP
+root@arm:~# MARKER='ZWLL''AOZJWX' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/BUCK6/reguulator-always-on ;echo $?'
+ZWLLAOZJWX1
+ZWLLAOZJWX 0
+root@arm:~# echo 'HVQV''OGJKNF'
+HVQVOGJKNF
+root@arm:~# MARKER='GOST''HXFKFH' run 'echo 0 > /sys/kernel/mva_test/regulators/bbuck6_en'
+GOSTHXFKFHGOSTHXFKFH 0
+root@arm:~# echo 'XUJG''NKNZOP'
+XUJGNKNZOP
+root@arm:~# MARKER='FVSH''NJTNBA' run 'i2cget -y -f 1 0x4b 0xc'
+FVSHNJTNBA0x02
+FVSHNJTNBA 0
+root@arm:~# echo 'ZAQZ''HFZJVA'
+ZAQZHFZJVA
+root@arm:~# MARKER='WJPO''JSZGSU' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+WJPOJSZGSU/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+WJPOJSZGSU 0
+root@arm:~# echo 'QFVK''BBVMSM'
+QFVKBBVMSM
+root@arm:~# MARKER='GVFJ''JAGQWE' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/LDO1/rohm,,no-regulator-enable-control ;echo $?'
+GVFJJAGQWE1
+GVFJJAGQWE 0
+root@arm:~# echo 'YNGF''MMYJNZ'
+YNGFMMYJNZ
+root@arm:~# MARKER='UZLL''QFXLSS' run 'echo 1 > /sys/kernel/mva_test/regulators/bbuck7_en'
+UZLLQFXLSSUZLLQFXLSS 0
+root@arm:~# echo 'XLWG''FCZSKT'
+XLWGFCZSKT
+root@arm:~# MARKER='NVAV''MTTJWC' run 'i2cget -y -f 1 0x4b 0x18'
+NVAVMTTJWC0xe2
+NVAVMTTJWC 0
+root@arm:~# echo 'UJOS''PUCBGX'
+UJOSPUCBGX
+root@arm:~# MARKER='MQUZ''GEFJOZ' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+MQUZGEFJOZ/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+MQUZGEFJOZ 0
+root@arm:~# echo 'WBGF''BCYYXE'
+WBGFBCYYXE
+root@arm:~# MARKER='QJNF''APVMXH' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/LDO1/rohm,,no-regulator-enable-control ;echo $?'
+QJNFAPVMXH1
+QJNFAPVMXH 0
+root@arm:~# echo 'SKGF''GWCMKK'
+SKGFGWCMKK
+root@arm:~# MARKER='WUOQ''CVTJKE' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+WUOQCVTJKE/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+WUOQCVTJKE 0
+root@arm:~# echo 'JZLL''MKZNQC'
+JZLLMKZNQC
+root@arm:~# MARKER='OXMN''ZXJNUV' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/LDO1/regullator-always-on ;echo $?'
+OXMNZXJNUV1
+OXMNZXJNUV 0
+root@arm:~# echo 'KXUT''QKCSGV'
+KXUTQKCSGV
+root@arm:~# MARKER='WJKA''QOSTVT' run 'echo 0 > /sys/kernel/mva_test/regulators/bbuck7_en'
+WJKAQOSTVTWJKAQOSTVT 0
+root@arm:~# echo 'UZTM''QVXXJL'
+UZTMQVXXJL
+root@arm:~# MARKER='ZOXF''FYKHLQ' run 'i2cget -y -f 1 0x4b 0x18'
+ZOXFFYKHLQ0xa2
+ZOXFFYKHLQ 0
+root@arm:~# echo 'XOME''HYPMMF'
+XOMEHYPMMF
+root@arm:~# MARKER='EBUN''SEMSFK' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+EBUNSEMSFK/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+EBUNSEMSFK 0
+root@arm:~# echo 'PKNL''VGNMWL'
+PKNLVGNMWL
+root@arm:~# MARKER='PUUM''MKBFAF' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/LDO2/rohm,,no-regulator-enable-control ;echo $?'
+PUUMMKBFAF1
+PUUMMKBFAF 0
+root@arm:~# echo 'CZGP''GSOWLO'
+CZGPGSOWLO
+root@arm:~# MARKER='MLEP''PBHVLA' run 'echo 1 > /sys/kernel/mva_test/regulators/bbuck8_en'
+MLEPPBHVLAMLEPPBHVLA 0
+root@arm:~# echo 'ZMBZ''FNCYJJ'
+ZMBZFNCYJJ
+root@arm:~# MARKER='NQYJ''BBKOGF' run 'i2cget -y -f 1 0x4b 0x19'
+NQYJBBKOGF0xe0
+NQYJBBKOGF 0
+root@arm:~# echo 'EZFH''HOEJVJ'
+EZFHHOEJVJ
+root@arm:~# MARKER='ZJMT''XVOHXY' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+ZJMTXVOHXY/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+ZJMTXVOHXY 0
+root@arm:~# echo 'YHTO''EKAMOH'
+YHTOEKAMOH
+root@arm:~# MARKER='TAXU''YGEQBZ' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/LDO2/rohm,,no-regulator-enable-control ;echo $?'
+TAXUYGEQBZ1
+TAXUYGEQBZ 0
+root@arm:~# echo 'ZEYQ''NGABWW'
+ZEYQNGABWW
+root@arm:~# MARKER='GOYS''AOXSHV' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+GOYSAOXSHV/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+GOYSAOXSHV 0
+root@arm:~# echo 'PXLX''TBWWCM'
+PXLXTBWWCM
+root@arm:~# MARKER='JXSK''TAHTZE' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/LDO2/regullator-always-on ;echo $?'
+JXSKTAHTZE1
+JXSKTAHTZE 0
+root@arm:~# echo 'CEKA''BXGVQQ'
+CEKABXGVQQ
+root@arm:~# MARKER='HGKN''ULFSMN' run 'echo 0 > /sys/kernel/mva_test/regulators/bbuck8_en'
+HGKNULFSMNHGKNULFSMN 0
+root@arm:~# echo 'GMGE''SJXQAT'
+GMGESJXQAT
+root@arm:~# MARKER='XGGY''UYEFZU' run 'i2cget -y -f 1 0x4b 0x19'
+XGGYUYEFZU0xa0
+XGGYUYEFZU 0
+root@arm:~# echo 'OPHA''HVYZAF'
+OPHAHVYZAF
+root@arm:~# MARKER='LCCX''NOKCXL' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+LCCXNOKCXL/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+LCCXNOKCXL 0
+root@arm:~# echo 'MAQG''AHSCEE'
+MAQGAHSCEE
+root@arm:~# MARKER='NJHS''VKEFVN' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/LDO3/rohm,,no-regulator-enable-control ;echo $?'
+NJHSVKEFVN1
+NJHSVKEFVN 0
+root@arm:~# echo 'KCEY''HKAJXU'
+KCEYHKAJXU
+root@arm:~# MARKER='STGH''NOEOZS' run 'echo 1 > /sys/kernel/mva_test/regulators/bbuck9_en'
+STGHNOEOZSSTGHNOEOZS 0
+root@arm:~# echo 'ULKL''HQHUXT'
+ULKLHQHUXT
+root@arm:~# MARKER='TLHJ''TAXJKP' run 'i2cget -y -f 1 0x4b 0x1a'
+TLHJTAXJKP0xc0
+TLHJTAXJKP 0
+root@arm:~# echo 'YFUW''WZJBOE'
+YFUWWZJBOE
+root@arm:~# MARKER='AGEK''ALSAJY' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+AGEKALSAJY/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+AGEKALSAJY 0
+root@arm:~# echo 'VZJN''WKVBZO'
+VZJNWKVBZO
+root@arm:~# MARKER='ZCCA''WWQLKM' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/LDO3/rohm,,no-regulator-enable-control ;echo $?'
+ZCCAWWQLKM1
+ZCCAWWQLKM 0
+root@arm:~# echo 'JSAW''NEFJUP'
+JSAWNEFJUP
+root@arm:~# MARKER='FNHA''QWZJOL' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+FNHAQWZJOL/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+FNHAQWZJOL 0
+root@arm:~# echo 'LQGP''TPTBYT'
+LQGPTPTBYT
+root@arm:~# MARKER='OKON''WXEQFM' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/LDO3/regullator-always-on ;echo $?'
+OKONWXEQFM1
+OKONWXEQFM 0
+root@arm:~# echo 'PAGT''QSKQSX'
+PAGTQSKQSX
+root@arm:~# MARKER='SJWY''CGQNPW' run 'echo 0 > /sys/kernel/mva_test/regulators/bbuck9_en'
+SJWYCGQNPWSJWYCGQNPW 0
+root@arm:~# echo 'XLGN''ZGJZHX'
+XLGNZGJZHX
+root@arm:~# MARKER='JWSG''CYXEWB' run 'i2cget -y -f 1 0x4b 0x1a'
+JWSGCYXEWB0x80
+JWSGCYXEWB 0
+root@arm:~# echo 'YVPA''ZHHAFA'
+YVPAZHHAFA
+root@arm:~# MARKER='CVTE''YTAYAY' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+CVTEYTAYAY/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+CVTEYTAYAY 0
+root@arm:~# echo 'NNNX''FABZEN'
+NNNXFABZEN
+root@arm:~# MARKER='PQXE''YHTSLG' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/LDO4/rohm,,no-regulator-enable-control ;echo $?'
+PQXEYHTSLG1
+PQXEYHTSLG 0
+root@arm:~# echo 'YUEN''MYBGGZ'
+YUENMYBGGZ
+root@arm:~# MARKER='GOTV''XKGBYO' run 'echo 1 > /sys/kernel/mva_test/regulators/bbuck10_en'
+GOTVXKGBYOGOTVXKGBYO 0
+root@arm:~# echo 'QGCA''ZTXHQW'
+QGCAZTXHQW
+root@arm:~# MARKER='VXBB''HWAGKS' run 'i2cget -y -f 1 0x4b 0x1b'
+VXBBHWAGKS0xc0
+VXBBHWAGKS 0
+root@arm:~# echo 'BGGG''PYMZXT'
+BGGGPYMZXT
+root@arm:~# MARKER='WZVG''AUZKEP' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+WZVGAUZKEP/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+WZVGAUZKEP 0
+root@arm:~# echo 'APXN''VJWKOM'
+APXNVJWKOM
+root@arm:~# MARKER='ZOBW''UQHPTN' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/LDO4/rohm,,no-regulator-enable-control ;echo $?'
+ZOBWUQHPTN1
+ZOBWUQHPTN 0
+root@arm:~# echo 'YCWL''LZKEGM'
+YCWLLZKEGM
+root@arm:~# MARKER='GVEW''WMNHKW' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+GVEWWMNHKW/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+GVEWWMNHKW 0
+root@arm:~# echo 'PAFP''TFBGOY'
+PAFPTFBGOY
+root@arm:~# MARKER='LBOM''NSMXQW' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/LDO4/regullator-always-on ;echo $?'
+LBOMNSMXQW1
+LBOMNSMXQW 0
+root@arm:~# echo 'ZYYC''HAUBML'
+ZYYCHAUBML
+root@arm:~# MARKER='NUJY''AENTSZ' run 'echo 0 > /sys/kernel/mva_test/regulators/bbuck10_en'
+NUJYAENTSZNUJYAENTSZ 0
+root@arm:~# echo 'GSOC''UUKLZT'
+GSOCUUKLZT
+root@arm:~# MARKER='BWPY''OYEEBE' run 'i2cget -y -f 1 0x4b 0x1b'
+BWPYOYEEBE0x80
+BWPYOYEEBE 0
+root@arm:~# echo 'TTPU''KXLYSZ'
+TTPUKXLYSZ
+root@arm:~# MARKER='UKAG''XYEGZB' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+UKAGXYEGZB/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+UKAGXYEGZB 0
+root@arm:~# echo 'XZYP''ZMBAPL'
+XZYPZMBAPL
+root@arm:~# MARKER='OGLP''TTNAFM' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/LDO5/rohm,,no-regulator-enable-control ;echo $?'
+OGLPTTNAFM0
+OGLPTTNAFM 0
+root@arm:~# echo 'UXZK''XEBHJA'
+UXZKXEBHJA
+root@arm:~# MARKER='UJTH''BSQVCA' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+UJTHBSQVCA/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+UJTHBSQVCA 0
+root@arm:~# echo 'BFKG''HZCHZW'
+BFKGHZCHZW
+root@arm:~# MARKER='JHZV''VOKPNF' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/LDO5/rohm,,no-regulator-enable-control ;echo $?'
+JHZVVOKPNF0
+JHZVVOKPNF 0
+root@arm:~# echo 'PFVJ''BYAYPF'
+PFVJBYAYPF
+root@arm:~# MARKER='EJHF''HCAETU' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+EJHFHCAETU/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+EJHFHCAETU 0
+root@arm:~# echo 'FCYZ''GUCQGY'
+FCYZGUCQGY
+root@arm:~# MARKER='LQTC''TQUQLO' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/LDO6/rohm,,no-regulator-enable-control ;echo $?'
+LQTCTQUQLO1
+LQTCTQUQLO 0
+root@arm:~# echo 'JAMZ''PJGVWK'
+JAMZPJGVWK
+root@arm:~# MARKER='QWVY''GPMCKN' run 'echo 1 > /sys/kernel/mva_test/regulators/bbuck12_en'
+QWVYGPMCKNQWVYGPMCKN 0
+root@arm:~# echo 'AAVS''UTAJTG'
+AAVSUTAJTG
+root@arm:~# MARKER='YEUY''GLKQSF' run 'i2cget -y -f 1 0x4b 0x1d'
+YEUYGLKQSF0xc3
+YEUYGLKQSF 0
+root@arm:~# echo 'GCWW''FMVMTJ'
+GCWWFMVMTJ
+root@arm:~# MARKER='SMBH''CXKJHK' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+SMBHCXKJHK/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+SMBHCXKJHK 0
+root@arm:~# echo 'KCAO''BGHCSM'
+KCAOBGHCSM
+root@arm:~# MARKER='OKUU''VEMYWB' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/LDO6/rohm,,no-regulator-enable-control ;echo $?'
+OKUUVEMYWB1
+OKUUVEMYWB 0
+root@arm:~# echo 'CPHA''YOUNAP'
+CPHAYOUNAP
+root@arm:~# MARKER='TFTM''UVTMXZ' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+TFTMUVTMXZ/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+TFTMUVTMXZ 0
+root@arm:~# echo 'QZFY''KLYLOX'
+QZFYKLYLOX
+root@arm:~# MARKER='LPGM''WOJKZO' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/LDO6/regu lator-always-on ;echo $?'
+LPGMWOJKZO1
+LPGMWOJKZO 0
+root@arm:~# echo 'OWNB''VUQNEF'
+OWNBVUQNEF
+root@arm:~# MARKER='LEYC''GEZHLW' run 'echo 0 > /sys/kernel/mva_test/regulators/bbuck12_en'
+LEYCGEZHLWLEYCGEZHLW 0
+root@arm:~# echo 'ZTSE''BCQMXH'
+ZTSEBCQMXH
+root@arm:~# MARKER='OOUY''BLWEAQ' run 'i2cget -y -f 1 0x4b 0x1d'
+OOUYBLWEAQ0x83
+OOUYBLWEAQ 0
+root@arm:~# Labgrid Console Logfile for main
+Logfile started at 2024-12-19 14:17:06.952932
+=== Log starts here ===
+
+root@arm:~# run() { echo -n "$MARKER"; sh -c "$@"; echo "$MARKER $?"; }
+root@arm:~# echo 'HCLV''UUVPSM'
+HCLVUUVPSM
+root@arm:~# MARKER='KVGF''LVBCYH' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+KVGFLVBCYH/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+KVGFLVBCYH 0
+root@arm:~# echo 'JJOM''ZOCVLK'
+JJOMZOCVLK
+root@arm:~# MARKER='QCNF''AOLQLE' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/BUCK1/rohmm,no-regulator-enable-control ;echo $?'
+QCNFAOLQLE1
+QCNFAOLQLE 0
+root@arm:~# echo 'NKBQ''KBOXXX'
+NKBQKBOXXX
+root@arm:~# MARKER='PZJS''ANJHPW' run 'i2cget -y -f 1 0x4b 0x5'
+PZJSANJHPW0x02
+PZJSANJHPW 0
+root@arm:~# echo 'JZZE''CNHKPZ'
+JZZECNHKPZ
+root@arm:~# MARKER='GHSE''ZWKGSP' run 'echo 700000 700000 > /sys/kernel/mva_test//regulators/buck1_set'
+GHSEZWKGSPGHSEZWKGSP 0
+root@arm:~# echo 'UQPU''TYMULE'
+UQPUTYMULE
+root@arm:~# MARKER='TBPB''LPLVPZ' run 'i2cget -y -f 1 0x4b 0xd'
+TBPBLPLVPZ0x00
+TBPBLPLVPZ 0
+root@arm:~# echo 'COYA''BXPPZX'
+COYABXPPZX
+root@arm:~# MARKER='AXPA''TEAWSW' run 'echo 710000 710000 > /sys/kernel/mva_test//regulators/buck1_set'
+AXPATEAWSWAXPATEAWSW 0
+root@arm:~# echo 'EGXU''MUFANG'
+EGXUMUFANG
+root@arm:~# MARKER='MAUJ''XSOKEV' run 'i2cget -y -f 1 0x4b 0xd'
+MAUJXSOKEV0x01
+MAUJXSOKEV 0
+root@arm:~# echo 'EQSU''FOFXTB'
+EQSUFOFXTB
+root@arm:~# MARKER='JOUK''XGEOAX' run 'echo 720000 720000 > /sys/kernel/mva_test//regulators/buck1_set'
+JOUKXGEOAXJOUKXGEOAX 0
+root@arm:~# echo 'NFJJ''MAOWLC'
+NFJJMAOWLC
+root@arm:~# MARKER='WOLF''PHTGZQ' run 'i2cget -y -f 1 0x4b 0xd'
+WOLFPHTGZQ0x02
+WOLFPHTGZQ 0
+root@arm:~# echo 'AHAJ''TPEPOY'
+AHAJTPEPOY
+root@arm:~# MARKER='YSHQ''NCATAL' run 'echo 730000 730000 > /sys/kernel/mva_test//regulators/buck1_set'
+YSHQNCATALYSHQNCATAL 0
+root@arm:~# echo 'BOSO''UZCNSU'
+BOSOUZCNSU
+root@arm:~# MARKER='MXLJ''BECUHJ' run 'i2cget -y -f 1 0x4b 0xd'
+MXLJBECUHJ0x03
+MXLJBECUHJ 0
+root@arm:~# echo 'YKGM''TLNBOT'
+YKGMTLNBOT
+root@arm:~# MARKER='OQJO''MMYUQS' run 'echo 740000 740000 > /sys/kernel/mva_test//regulators/buck1_set'
+OQJOMMYUQSOQJOMMYUQS 0
+root@arm:~# echo 'KHNA''UQGKXG'
+KHNAUQGKXG
+root@arm:~# MARKER='JWYT''VNTYZK' run 'i2cget -y -f 1 0x4b 0xd'
+JWYTVNTYZK0x04
+JWYTVNTYZK 0
+root@arm:~# echo 'KLOZ''EYWMNN'
+KLOZEYWMNN
+root@arm:~# MARKER='WVNE''GGYSGO' run 'echo 750000 750000 > /sys/kernel/mva_test//regulators/buck1_set'
+WVNEGGYSGOWVNEGGYSGO 0
+root@arm:~# echo 'GYOA''OJFJVT'
+GYOAOJFJVT
+root@arm:~# MARKER='HMLT''LAAVYT' run 'i2cget -y -f 1 0x4b 0xd'
+HMLTLAAVYT0x05
+HMLTLAAVYT 0
+root@arm:~# echo 'TLZQ''WEPYLO'
+TLZQWEPYLO
+root@arm:~# MARKER='JKWY''YLHFMX' run 'echo 760000 760000 > /sys/kernel/mva_test//regulators/buck1_set'
+JKWYYLHFMXJKWYYLHFMX 0
+root@arm:~# echo 'LMBL''CNBTXP'
+LMBLCNBTXP
+root@arm:~# MARKER='ACGE''FYNUHW' run 'i2cget -y -f 1 0x4b 0xd'
+ACGEFYNUHW0x06
+ACGEFYNUHW 0
+root@arm:~# echo 'MBWG''GTEKFJ'
+MBWGGTEKFJ
+root@arm:~# MARKER='VZFL''SSACVE' run 'echo 770000 770000 > /sys/kernel/mva_test//regulators/buck1_set'
+VZFLSSACVEVZFLSSACVE 0
+root@arm:~# echo 'YJSV''WOJGKM'
+YJSVWOJGKM
+root@arm:~# MARKER='KCPU''OWHGKM' run 'i2cget -y -f 1 0x4b 0xd'
+KCPUOWHGKM0x07
+KCPUOWHGKM 0
+root@arm:~# echo 'EPPS''LKUCOB'
+EPPSLKUCOB
+root@arm:~# MARKER='ZCZJ''LWPGCG' run 'echo 780000 780000 > /sys/kernel/mva_test//regulators/buck1_set'
+ZCZJLWPGCGZCZJLWPGCG 0
+root@arm:~# echo 'BXYP''VJQMVH'
+BXYPVJQMVH
+root@arm:~# MARKER='HHGZ''VTOBWO' run 'i2cget -y -f 1 0x4b 0xd'
+HHGZVTOBWO0x08
+HHGZVTOBWO 0
+root@arm:~# echo 'NJWE''YJVXUP'
+NJWEYJVXUP
+root@arm:~# MARKER='PZKG''QTESNJ' run 'echo 790000 790000 > /sys/kernel/mva_test//regulators/buck1_set'
+PZKGQTESNJPZKGQTESNJ 0
+root@arm:~# echo 'UAYL''CLSJBT'
+UAYLCLSJBT
+root@arm:~# MARKER='LHFE''SBOHZE' run 'i2cget -y -f 1 0x4b 0xd'
+LHFESBOHZE0x09
+LHFESBOHZE 0
+root@arm:~# echo 'GVGT''BCAAAN'
+GVGTBCAAAN
+root@arm:~# MARKER='GEYY''BUBWXZ' run 'echo 800000 800000 > /sys/kernel/mva_test//regulators/buck1_set'
+GEYYBUBWXZGEYYBUBWXZ 0
+root@arm:~# echo 'EVKH''NKXEBK'
+EVKHNKXEBK
+root@arm:~# MARKER='USWW''WNHWXS' run 'i2cget -y -f 1 0x4b 0xd'
+USWWWNHWXS0x0a
+USWWWNHWXS 0
+root@arm:~# echo 'PPPS''CBBUCG'
+PPPSCBBUCG
+root@arm:~# MARKER='GVCS''VKPYTJ' run 'echo 810000 810000 > /sys/kernel/mva_test//regulators/buck1_set'
+GVCSVKPYTJGVCSVKPYTJ 0
+root@arm:~# echo 'PGMQ''KBAFXK'
+PGMQKBAFXK
+root@arm:~# MARKER='XQTV''TCMWMK' run 'i2cget -y -f 1 0x4b 0xd'
+XQTVTCMWMK0x0b
+XQTVTCMWMK 0
+root@arm:~# echo 'KJWQ''TBNMAX'
+KJWQTBNMAX
+root@arm:~# MARKER='AVCP''WKZNCV' run 'echo 820000 820000 > /sys/kernel/mva_test//regulators/buck1_set'
+AVCPWKZNCVAVCPWKZNCV 0
+root@arm:~# echo 'GXAX''MHBQBP'
+GXAXMHBQBP
+root@arm:~# MARKER='PACQ''AZUMLY' run 'i2cget -y -f 1 0x4b 0xd'
+PACQAZUMLY0x0c
+PACQAZUMLY 0
+root@arm:~# echo 'ZQVS''THEUZV'
+ZQVSTHEUZV
+root@arm:~# MARKER='VQSL''EUHFPV' run 'echo 830000 830000 > /sys/kernel/mva_test//regulators/buck1_set'
+VQSLEUHFPVVQSLEUHFPV 0
+root@arm:~# echo 'OVJA''CXVHKG'
+OVJACXVHKG
+root@arm:~# MARKER='ZEGQ''EQWUFK' run 'i2cget -y -f 1 0x4b 0xd'
+ZEGQEQWUFK0x0d
+ZEGQEQWUFK 0
+root@arm:~# echo 'GLQS''AJJLGJ'
+GLQSAJJLGJ
+root@arm:~# MARKER='AFBY''ZVHHQL' run 'echo 840000 840000 > /sys/kernel/mva_test//regulators/buck1_set'
+AFBYZVHHQLAFBYZVHHQL 0
+root@arm:~# echo 'NMLC''ZXJCBA'
+NMLCZXJCBA
+root@arm:~# MARKER='WTSG''BQBHPP' run 'i2cget -y -f 1 0x4b 0xd'
+WTSGBQBHPP0x0e
+WTSGBQBHPP 0
+root@arm:~# echo 'EFXB''EPLCEJ'
+EFXBEPLCEJ
+root@arm:~# MARKER='NBCF''WJNSEU' run 'echo 850000 850000 > /sys/kernel/mva_test//regulators/buck1_set'
+NBCFWJNSEUNBCFWJNSEU 0
+root@arm:~# echo 'OXHL''JTMCPN'
+OXHLJTMCPN
+root@arm:~# MARKER='LUCY''KYHZXT' run 'i2cget -y -f 1 0x4b 0xd'
+LUCYKYHZXT0x0f
+LUCYKYHZXT 0
+root@arm:~# echo 'VFFC''JFXUZF'
+VFFCJFXUZF
+root@arm:~# MARKER='HVUY''ULCTNC' run 'echo 860000 860000 > /sys/kernel/mva_test//regulators/buck1_set'
+HVUYULCTNCHVUYULCTNC 0
+root@arm:~# echo 'YWWH''XTQKZN'
+YWWHXTQKZN
+root@arm:~# MARKER='JFAG''FAUEJG' run 'i2cget -y -f 1 0x4b 0xd'
+JFAGFAUEJG0x10
+JFAGFAUEJG 0
+root@arm:~# echo 'AUTC''ELNMYO'
+AUTCELNMYO
+root@arm:~# MARKER='TCQQ''KHWUYY' run 'echo 870000 870000 > /sys/kernel/mva_test//regulators/buck1_set'
+TCQQKHWUYYTCQQKHWUYY 0
+root@arm:~# echo 'SLFG''TWVNUQ'
+SLFGTWVNUQ
+root@arm:~# MARKER='FKBG''KQXSSE' run 'i2cget -y -f 1 0x4b 0xd'
+FKBGKQXSSE0x11
+FKBGKQXSSE 0
+root@arm:~# echo 'ZEJY''LOWTAE'
+ZEJYLOWTAE
+root@arm:~# MARKER='LYXE''VXMQCO' run 'echo 880000 880000 > /sys/kernel/mva_test//regulators/buck1_set'
+LYXEVXMQCOLYXEVXMQCO 0
+root@arm:~# echo 'CVWB''HOBLEY'
+CVWBHOBLEY
+root@arm:~# MARKER='KWBO''QUHQLM' run 'i2cget -y -f 1 0x4b 0xd'
+KWBOQUHQLM0x12
+KWBOQUHQLM 0
+root@arm:~# echo 'YUMT''KGKPSG'
+YUMTKGKPSG
+root@arm:~# MARKER='WUFQ''SWKKCF' run 'echo 890000 890000 > /sys/kernel/mva_test//regulators/buck1_set'
+WUFQSWKKCFWUFQSWKKCF 0
+root@arm:~# echo 'OZKQ''VXVTVJ'
+OZKQVXVTVJ
+root@arm:~# MARKER='YMKL''WTEQPK' run 'i2cget -y -f 1 0x4b 0xd'
+YMKLWTEQPK0x13
+YMKLWTEQPK 0
+root@arm:~# echo 'FXPJ''JCAUXU'
+FXPJJCAUXU
+root@arm:~# MARKER='UMOY''TZEWXT' run 'echo 900000 900000 > /sys/kernel/mva_test//regulators/buck1_set'
+UMOYTZEWXTUMOYTZEWXT 0
+root@arm:~# echo 'CUZT''PTYLOK'
+CUZTPTYLOK
+root@arm:~# MARKER='YBTV''VSOSBA' run 'i2cget -y -f 1 0x4b 0xd'
+YBTVVSOSBA0x14
+YBTVVSOSBA 0
+root@arm:~# echo 'BYTY''NEMUCU'
+BYTYNEMUCU
+root@arm:~# MARKER='HZOO''CFKLPV' run 'echo 910000 910000 > /sys/kernel/mva_test//regulators/buck1_set'
+HZOOCFKLPVHZOOCFKLPV 0
+root@arm:~# echo 'AFHJ''NWQVWL'
+AFHJNWQVWL
+root@arm:~# MARKER='JJPW''JOETEV' run 'i2cget -y -f 1 0x4b 0xd'
+JJPWJOETEV0x15
+JJPWJOETEV 0
+root@arm:~# echo 'KGSP''TAAFUO'
+KGSPTAAFUO
+root@arm:~# MARKER='KSCK''GUNUCF' run 'echo 920000 920000 > /sys/kernel/mva_test//regulators/buck1_set'
+KSCKGUNUCFKSCKGUNUCF 0
+root@arm:~# echo 'NKOE''XCXWXT'
+NKOEXCXWXT
+root@arm:~# MARKER='AYHZ''UMOLLB' run 'i2cget -y -f 1 0x4b 0xd'
+AYHZUMOLLB0x16
+AYHZUMOLLB 0
+root@arm:~# echo 'UQEQ''BXXYSP'
+UQEQBXXYSP
+root@arm:~# MARKER='CHKG''YPGXYS' run 'echo 930000 930000 > /sys/kernel/mva_test//regulators/buck1_set'
+CHKGYPGXYSCHKGYPGXYS 0
+root@arm:~# echo 'LEWN''WBXTAZ'
+LEWNWBXTAZ
+root@arm:~# MARKER='AGUL''LUPTZZ' run 'i2cget -y -f 1 0x4b 0xd'
+AGULLUPTZZ0x17
+AGULLUPTZZ 0
+root@arm:~# echo 'LVVH''JAEUCG'
+LVVHJAEUCG
+root@arm:~# MARKER='CSBK''YSSXXF' run 'echo 940000 940000 > /sys/kernel/mva_test//regulators/buck1_set'
+CSBKYSSXXFCSBKYSSXXF 0
+root@arm:~# echo 'PTHZ''KCQCJC'
+PTHZKCQCJC
+root@arm:~# MARKER='VAHE''JYSMJN' run 'i2cget -y -f 1 0x4b 0xd'
+VAHEJYSMJN0x18
+VAHEJYSMJN 0
+root@arm:~# echo 'NPHJ''JSFKOL'
+NPHJJSFKOL
+root@arm:~# MARKER='TPKA''KOHFKY' run 'echo 950000 950000 > /sys/kernel/mva_test//regulators/buck1_set'
+TPKAKOHFKYTPKAKOHFKY 0
+root@arm:~# echo 'TELJ''QWLAFC'
+TELJQWLAFC
+root@arm:~# MARKER='AHBL''FFYZKU' run 'i2cget -y -f 1 0x4b 0xd'
+AHBLFFYZKU0x19
+AHBLFFYZKU 0
+root@arm:~# echo 'QZOW''JYGZTG'
+QZOWJYGZTG
+root@arm:~# MARKER='KYQY''WBFQYH' run 'echo 960000 960000 > /sys/kernel/mva_test//regulators/buck1_set'
+KYQYWBFQYHKYQYWBFQYH 0
+root@arm:~# echo 'GHGO''HFSGUZ'
+GHGOHFSGUZ
+root@arm:~# MARKER='KHFN''LANOPE' run 'i2cget -y -f 1 0x4b 0xd'
+KHFNLANOPE0x1a
+KHFNLANOPE 0
+root@arm:~# echo 'MCWA''QZFBGM'
+MCWAQZFBGM
+root@arm:~# MARKER='LTJJ''ZFKTLU' run 'echo 970000 970000 > /sys/kernel/mva_test//regulators/buck1_set'
+LTJJZFKTLULTJJZFKTLU 0
+root@arm:~# echo 'EUPS''CXLSJW'
+EUPSCXLSJW
+root@arm:~# MARKER='GVYB''ZGGGJY' run 'i2cget -y -f 1 0x4b 0xd'
+GVYBZGGGJY0x1b
+GVYBZGGGJY 0
+root@arm:~# echo 'PATF''VBTVKP'
+PATFVBTVKP
+root@arm:~# MARKER='FAHM''KUGHPW' run 'echo 980000 980000 > /sys/kernel/mva_test//regulators/buck1_set'
+FAHMKUGHPWFAHMKUGHPW 0
+root@arm:~# echo 'YUPY''YBOKFP'
+YUPYYBOKFP
+root@arm:~# MARKER='HEJH''MPTWEW' run 'i2cget -y -f 1 0x4b 0xd'
+HEJHMPTWEW0x1c
+HEJHMPTWEW 0
+root@arm:~# echo 'MXEZ''BZFSHX'
+MXEZBZFSHX
+root@arm:~# MARKER='SYOU''BXAMOY' run 'echo 990000 990000 > /sys/kernel/mva_test//regulators/buck1_set'
+SYOUBXAMOYSYOUBXAMOY 0
+root@arm:~# echo 'GHGN''LPWBEX'
+GHGNLPWBEX
+root@arm:~# MARKER='TZVT''JHMEHX' run 'i2cget -y -f 1 0x4b 0xd'
+TZVTJHMEHX0x1d
+TZVTJHMEHX 0
+root@arm:~# echo 'HENC''HOPZCB'
+HENCHOPZCB
+root@arm:~# MARKER='QLVT''HQLLBF' run 'echo 1000000 1000000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+QLVTHQLLBFQLVTHQLLBF 0
+root@arm:~# echo 'KSAT''PEXVAM'
+KSATPEXVAM
+root@arm:~# MARKER='STFO''BOBXPT' run 'i2cget -y -f 1 0x4b 0xd'
+STFOBOBXPT0x1e
+STFOBOBXPT 0
+root@arm:~# echo 'ELVP''YMNMFT'
+ELVPYMNMFT
+root@arm:~# MARKER='FUTH''CKHKBM' run 'echo 1010000 1010000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+FUTHCKHKBMFUTHCKHKBM 0
+root@arm:~# echo 'NCYZ''EQLPOB'
+NCYZEQLPOB
+root@arm:~# MARKER='MLOX''HSAABO' run 'i2cget -y -f 1 0x4b 0xd'
+MLOXHSAABO0x1f
+MLOXHSAABO 0
+root@arm:~# echo 'HXWG''YSUWXC'
+HXWGYSUWXC
+root@arm:~# MARKER='PXYJ''USCWUO' run 'echo 1020000 1020000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+PXYJUSCWUOPXYJUSCWUO 0
+root@arm:~# echo 'TMGP''SHHMAA'
+TMGPSHHMAA
+root@arm:~# MARKER='LFGB''KZGFAK' run 'i2cget -y -f 1 0x4b 0xd'
+LFGBKZGFAK0x20
+LFGBKZGFAK 0
+root@arm:~# echo 'QOWQ''EGHSJU'
+QOWQEGHSJU
+root@arm:~# MARKER='EAFK''FMJTSL' run 'echo 1030000 1030000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+EAFKFMJTSLEAFKFMJTSL 0
+root@arm:~# echo 'WXHJ''TKTFPQ'
+WXHJTKTFPQ
+root@arm:~# MARKER='HLOC''SCHTQT' run 'i2cget -y -f 1 0x4b 0xd'
+HLOCSCHTQT0x21
+HLOCSCHTQT 0
+root@arm:~# echo 'TFCV''YZJFGJ'
+TFCVYZJFGJ
+root@arm:~# MARKER='WASX''JBYZVA' run 'echo 1040000 1040000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+WASXJBYZVAWASXJBYZVA 0
+root@arm:~# echo 'ZLCL''GUXJCM'
+ZLCLGUXJCM
+root@arm:~# MARKER='ULXX''JFSSPV' run 'i2cget -y -f 1 0x4b 0xd'
+ULXXJFSSPV0x22
+ULXXJFSSPV 0
+root@arm:~# echo 'QTQJ''GOQYSA'
+QTQJGOQYSA
+root@arm:~# MARKER='LHYO''PXGFHH' run 'echo 1050000 1050000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+LHYOPXGFHHLHYOPXGFHH 0
+root@arm:~# echo 'MHFT''SXOQZS'
+MHFTSXOQZS
+root@arm:~# MARKER='NOKM''CGOYZC' run 'i2cget -y -f 1 0x4b 0xd'
+NOKMCGOYZC0x23
+NOKMCGOYZC 0
+root@arm:~# echo 'PCNW''XMZKGS'
+PCNWXMZKGS
+root@arm:~# MARKER='YBLP''FGNUUU' run 'echo 1060000 1060000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+YBLPFGNUUUYBLPFGNUUU 0
+root@arm:~# echo 'OKCL''JHGOAG'
+OKCLJHGOAG
+root@arm:~# MARKER='UONH''QWZOBC' run 'i2cget -y -f 1 0x4b 0xd'
+UONHQWZOBC0x24
+UONHQWZOBC 0
+root@arm:~# echo 'VOQO''SMUYZY'
+VOQOSMUYZY
+root@arm:~# MARKER='CBZJ''ZEUMEM' run 'echo 1070000 1070000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+CBZJZEUMEMCBZJZEUMEM 0
+root@arm:~# echo 'THXG''FEFSQG'
+THXGFEFSQG
+root@arm:~# MARKER='KLCO''WAJHXG' run 'i2cget -y -f 1 0x4b 0xd'
+KLCOWAJHXG0x25
+KLCOWAJHXG 0
+root@arm:~# echo 'HFSZ''VWQCSE'
+HFSZVWQCSE
+root@arm:~# MARKER='JOHA''ABBUBB' run 'echo 1080000 1080000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+JOHAABBUBBJOHAABBUBB 0
+root@arm:~# echo 'UYLK''LGTTEL'
+UYLKLGTTEL
+root@arm:~# MARKER='GOKK''YZBLCQ' run 'i2cget -y -f 1 0x4b 0xd'
+GOKKYZBLCQ0x26
+GOKKYZBLCQ 0
+root@arm:~# echo 'SYMY''APCXYW'
+SYMYAPCXYW
+root@arm:~# MARKER='XSYP''SNPEKN' run 'echo 1090000 1090000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+XSYPSNPEKNXSYPSNPEKN 0
+root@arm:~# echo 'ZQLK''HFGEQQ'
+ZQLKHFGEQQ
+root@arm:~# MARKER='SKTK''NHSCHY' run 'i2cget -y -f 1 0x4b 0xd'
+SKTKNHSCHY0x27
+SKTKNHSCHY 0
+root@arm:~# echo 'EAWL''AQBXGG'
+EAWLAQBXGG
+root@arm:~# MARKER='QNPG''QPWCLC' run 'echo 1100000 1100000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+QNPGQPWCLCQNPGQPWCLC 0
+root@arm:~# echo 'FXPS''JALGFU'
+FXPSJALGFU
+root@arm:~# MARKER='XWOB''UQEBQJ' run 'i2cget -y -f 1 0x4b 0xd'
+XWOBUQEBQJ0x28
+XWOBUQEBQJ 0
+root@arm:~# echo 'EWVN''SKFHGS'
+EWVNSKFHGS
+root@arm:~# MARKER='AOKP''FCMCSW' run 'echo 1110000 1110000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+AOKPFCMCSWAOKPFCMCSW 0
+root@arm:~# echo 'QAGL''SZUMTJ'
+QAGLSZUMTJ
+root@arm:~# MARKER='MGQT''WGBVCC' run 'i2cget -y -f 1 0x4b 0xd'
+MGQTWGBVCC0x29
+MGQTWGBVCC 0
+root@arm:~# echo 'MNYS''FMALQV'
+MNYSFMALQV
+root@arm:~# MARKER='EQVA''EWMQUB' run 'echo 1120000 1120000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+EQVAEWMQUBEQVAEWMQUB 0
+root@arm:~# echo 'KNUU''SUSUMY'
+KNUUSUSUMY
+root@arm:~# MARKER='YGOL''FLUYZM' run 'i2cget -y -f 1 0x4b 0xd'
+YGOLFLUYZM0x2a
+YGOLFLUYZM 0
+root@arm:~# echo 'EEAP''ZTHZSH'
+EEAPZTHZSH
+root@arm:~# MARKER='BZXF''JYSENA' run 'echo 1130000 1130000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+BZXFJYSENABZXFJYSENA 0
+root@arm:~# echo 'TAPT''JNOFAP'
+TAPTJNOFAP
+root@arm:~# MARKER='UQHA''PAOYCO' run 'i2cget -y -f 1 0x4b 0xd'
+UQHAPAOYCO0x2b
+UQHAPAOYCO 0
+root@arm:~# echo 'KKOV''NZGVXZ'
+KKOVNZGVXZ
+root@arm:~# MARKER='LNLY''HJJLLU' run 'echo 1140000 1140000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+LNLYHJJLLULNLYHJJLLU 0
+root@arm:~# echo 'YEZV''CLATJV'
+YEZVCLATJV
+root@arm:~# MARKER='WSXF''UGSNLH' run 'i2cget -y -f 1 0x4b 0xd'
+WSXFUGSNLH0x2c
+WSXFUGSNLH 0
+root@arm:~# echo 'JGQC''UFYXLJ'
+JGQCUFYXLJ
+root@arm:~# MARKER='CUUB''CTFSQE' run 'echo 1150000 1150000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+CUUBCTFSQECUUBCTFSQE 0
+root@arm:~# echo 'OJOC''UHUOVG'
+OJOCUHUOVG
+root@arm:~# MARKER='GNOX''OAYGCS' run 'i2cget -y -f 1 0x4b 0xd'
+GNOXOAYGCS0x2d
+GNOXOAYGCS 0
+root@arm:~# echo 'TCPS''WENSCL'
+TCPSWENSCL
+root@arm:~# MARKER='JNUJ''TXOUHZ' run 'echo 1160000 1160000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+JNUJTXOUHZJNUJTXOUHZ 0
+root@arm:~# echo 'AJZJ''GHLQBU'
+AJZJGHLQBU
+root@arm:~# MARKER='FWVU''TYQJXS' run 'i2cget -y -f 1 0x4b 0xd'
+FWVUTYQJXS0x2e
+FWVUTYQJXS 0
+root@arm:~# echo 'NZAF''XWHNLU'
+NZAFXWHNLU
+root@arm:~# MARKER='QBTA''UBWZSK' run 'echo 1170000 1170000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+QBTAUBWZSKQBTAUBWZSK 0
+root@arm:~# echo 'BBBU''QFVOJK'
+BBBUQFVOJK
+root@arm:~# MARKER='OYQU''UNWQFC' run 'i2cget -y -f 1 0x4b 0xd'
+OYQUUNWQFC0x2f
+OYQUUNWQFC 0
+root@arm:~# echo 'TKCE''OFEBAZ'
+TKCEOFEBAZ
+root@arm:~# MARKER='FPHF''AEKEGA' run 'echo 1180000 1180000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+FPHFAEKEGAFPHFAEKEGA 0
+root@arm:~# echo 'LZTH''HZUZCB'
+LZTHHZUZCB
+root@arm:~# MARKER='MTAK''GHQNNX' run 'i2cget -y -f 1 0x4b 0xd'
+MTAKGHQNNX0x30
+MTAKGHQNNX 0
+root@arm:~# echo 'WFAN''CWFVGQ'
+WFANCWFVGQ
+root@arm:~# MARKER='JPYN''EKOLAL' run 'echo 1190000 1190000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+JPYNEKOLALJPYNEKOLAL 0
+root@arm:~# echo 'KHZW''OVCUPT'
+KHZWOVCUPT
+root@arm:~# MARKER='ZGHK''JOXKJZ' run 'i2cget -y -f 1 0x4b 0xd'
+ZGHKJOXKJZ0x31
+ZGHKJOXKJZ 0
+root@arm:~# echo 'BJMQ''MJSTTO'
+BJMQMJSTTO
+root@arm:~# MARKER='WLAM''MHBKWO' run 'echo 1200000 1200000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+WLAMMHBKWOWLAMMHBKWO 0
+root@arm:~# echo 'AJAC''QLXQNL'
+AJACQLXQNL
+root@arm:~# MARKER='PLZE''BXKTOM' run 'i2cget -y -f 1 0x4b 0xd'
+PLZEBXKTOM0x32
+PLZEBXKTOM 0
+root@arm:~# echo 'AXZK''ZGTOHH'
+AXZKZGTOHH
+root@arm:~# MARKER='GBEV''JWJYCE' run 'echo 1210000 1210000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+GBEVJWJYCEGBEVJWJYCE 0
+root@arm:~# echo 'YTPL''GKQTCK'
+YTPLGKQTCK
+root@arm:~# MARKER='KUQG''AQOWNG' run 'i2cget -y -f 1 0x4b 0xd'
+KUQGAQOWNG0x33
+KUQGAQOWNG 0
+root@arm:~# echo 'MUTC''NAUSNP'
+MUTCNAUSNP
+root@arm:~# MARKER='OMJV''OAOHXL' run 'echo 1220000 1220000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+OMJVOAOHXLOMJVOAOHXL 0
+root@arm:~# echo 'QCZT''MPUUKN'
+QCZTMPUUKN
+root@arm:~# MARKER='JWQZ''JKJAZH' run 'i2cget -y -f 1 0x4b 0xd'
+JWQZJKJAZH0x34
+JWQZJKJAZH 0
+root@arm:~# echo 'WYCE''WVWFXZ'
+WYCEWVWFXZ
+root@arm:~# MARKER='FCCP''QXSKCN' run 'echo 1230000 1230000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+FCCPQXSKCNFCCPQXSKCN 0
+root@arm:~# echo 'MKJC''ZLANKO'
+MKJCZLANKO
+root@arm:~# MARKER='JTBK''HNCYBB' run 'i2cget -y -f 1 0x4b 0xd'
+JTBKHNCYBB0x35
+JTBKHNCYBB 0
+root@arm:~# echo 'BOBU''ACQSQH'
+BOBUACQSQH
+root@arm:~# MARKER='ULUO''PMSPSM' run 'echo 1240000 1240000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+ULUOPMSPSMULUOPMSPSM 0
+root@arm:~# echo 'OVWZ''YVFFHV'
+OVWZYVFFHV
+root@arm:~# MARKER='FGCZ''WPYXEF' run 'i2cget -y -f 1 0x4b 0xd'
+FGCZWPYXEF0x36
+FGCZWPYXEF 0
+root@arm:~# echo 'MQKM''OTUCWV'
+MQKMOTUCWV
+root@arm:~# MARKER='FUVN''ASLUTJ' run 'echo 1250000 1250000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+FUVNASLUTJFUVNASLUTJ 0
+root@arm:~# echo 'ZNXJ''HCUJEN'
+ZNXJHCUJEN
+root@arm:~# MARKER='JFOT''LSBWFM' run 'i2cget -y -f 1 0x4b 0xd'
+JFOTLSBWFM0x37
+JFOTLSBWFM 0
+root@arm:~# echo 'HEKL''CMLOTK'
+HEKLCMLOTK
+root@arm:~# MARKER='NLCZ''TNNKHL' run 'echo 1260000 1260000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+NLCZTNNKHLNLCZTNNKHL 0
+root@arm:~# echo 'HETJ''GUANZX'
+HETJGUANZX
+root@arm:~# MARKER='AQMA''MTWFXO' run 'i2cget -y -f 1 0x4b 0xd'
+AQMAMTWFXO0x38
+AQMAMTWFXO 0
+root@arm:~# echo 'SZEA''JJTNXK'
+SZEAJJTNXK
+root@arm:~# MARKER='UFEB''GCQJTH' run 'echo 1270000 1270000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+UFEBGCQJTHUFEBGCQJTH 0
+root@arm:~# echo 'YNKQ''JOPLPM'
+YNKQJOPLPM
+root@arm:~# MARKER='EFKG''SOHNPZ' run 'i2cget -y -f 1 0x4b 0xd'
+EFKGSOHNPZ0x39
+EFKGSOHNPZ 0
+root@arm:~# echo 'VFLB''BCOMQK'
+VFLBBCOMQK
+root@arm:~# MARKER='YCLC''VNQWBP' run 'echo 1280000 1280000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+YCLCVNQWBPYCLCVNQWBP 0
+root@arm:~# echo 'LJZF''GLJWHY'
+LJZFGLJWHY
+root@arm:~# MARKER='SVYN''VCCCZO' run 'i2cget -y -f 1 0x4b 0xd'
+SVYNVCCCZO0x3a
+SVYNVCCCZO 0
+root@arm:~# echo 'LFNF''CSLPXE'
+LFNFCSLPXE
+root@arm:~# MARKER='MTYW''YKZYHE' run 'echo 1290000 1290000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+MTYWYKZYHEMTYWYKZYHE 0
+root@arm:~# echo 'VHKP''KAWMVY'
+VHKPKAWMVY
+root@arm:~# MARKER='NTOG''GEJBGB' run 'i2cget -y -f 1 0x4b 0xd'
+NTOGGEJBGB0x3b
+NTOGGEJBGB 0
+root@arm:~# echo 'SSYX''XHHQHM'
+SSYXXHHQHM
+root@arm:~# MARKER='UUCT''SHYGUX' run 'echo 1300000 1300000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+UUCTSHYGUXUUCTSHYGUX 0
+root@arm:~# echo 'TZKU''PGTMLA'
+TZKUPGTMLA
+root@arm:~# MARKER='ZQPJ''EWTBBW' run 'i2cget -y -f 1 0x4b 0xd'
+ZQPJEWTBBW0x3c
+ZQPJEWTBBW 0
+root@arm:~# echo 'LWFC''OLWOXE'
+LWFCOLWOXE
+root@arm:~# MARKER='GVLM''WBMTXH' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+GVLMWBMTXH/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+GVLMWBMTXH 0
+root@arm:~# echo 'AOBQ''PYZYHK'
+AOBQPYZYHK
+root@arm:~# MARKER='TQHA''LMYXCV' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/BUCK2/rohmm,no-regulator-enable-control ;echo $?'
+TQHALMYXCV1
+TQHALMYXCV 0
+root@arm:~# echo 'XOXA''JULCPU'
+XOXAJULCPU
+root@arm:~# MARKER='GVCM''NXKTWK' run 'i2cget -y -f 1 0x4b 0x6'
+GVCMNXKTWK0x43
+GVCMNXKTWK 0
+root@arm:~# echo 'CLKY''ATSWEJ'
+CLKYATSWEJ
+root@arm:~# MARKER='FMSE''VKOAFV' run 'echo 700000 700000 > /sys/kernel/mva_test//regulators/buck2_set'
+FMSEVKOAFVFMSEVKOAFV 0
+root@arm:~# echo 'QPVT''HKAAKZ'
+QPVTHKAAKZ
+root@arm:~# MARKER='EKSW''MHTYFV' run 'i2cget -y -f 1 0x4b 0x10'
+EKSWMHTYFV0x00
+EKSWMHTYFV 0
+root@arm:~# echo 'XGQB''XWBMKH'
+XGQBXWBMKH
+root@arm:~# MARKER='USFN''WZOXBO' run 'echo 710000 710000 > /sys/kernel/mva_test//regulators/buck2_set'
+USFNWZOXBOUSFNWZOXBO 0
+root@arm:~# echo 'KAQQ''HMAPQN'
+KAQQHMAPQN
+root@arm:~# MARKER='VLMU''LLNXEF' run 'i2cget -y -f 1 0x4b 0x10'
+VLMULLNXEF0x01
+VLMULLNXEF 0
+root@arm:~# echo 'MHKY''CQQLYU'
+MHKYCQQLYU
+root@arm:~# MARKER='QHSP''MFBPMY' run 'echo 720000 720000 > /sys/kernel/mva_test//regulators/buck2_set'
+QHSPMFBPMYQHSPMFBPMY 0
+root@arm:~# echo 'JVGN''XBKKUG'
+JVGNXBKKUG
+root@arm:~# MARKER='KMJC''JLOCJW' run 'i2cget -y -f 1 0x4b 0x10'
+KMJCJLOCJW0x02
+KMJCJLOCJW 0
+root@arm:~# echo 'JHGH''BVHPSM'
+JHGHBVHPSM
+root@arm:~# MARKER='JEOO''CXWQOF' run 'echo 730000 730000 > /sys/kernel/mva_test//regulators/buck2_set'
+JEOOCXWQOFJEOOCXWQOF 0
+root@arm:~# echo 'SKQA''OYNMQE'
+SKQAOYNMQE
+root@arm:~# MARKER='NZKO''EXPFGH' run 'i2cget -y -f 1 0x4b 0x10'
+NZKOEXPFGH0x03
+NZKOEXPFGH 0
+root@arm:~# echo 'LXJM''XELBEV'
+LXJMXELBEV
+root@arm:~# MARKER='VYCH''GUMCGH' run 'echo 740000 740000 > /sys/kernel/mva_test//regulators/buck2_set'
+VYCHGUMCGHVYCHGUMCGH 0
+root@arm:~# echo 'UZLZ''CJXXOW'
+UZLZCJXXOW
+root@arm:~# MARKER='SGCA''KHZHJW' run 'i2cget -y -f 1 0x4b 0x10'
+SGCAKHZHJW0x04
+SGCAKHZHJW 0
+root@arm:~# echo 'OSPY''JEFTNS'
+OSPYJEFTNS
+root@arm:~# MARKER='JNQE''XEPOAA' run 'echo 750000 750000 > /sys/kernel/mva_test//regulators/buck2_set'
+JNQEXEPOAAJNQEXEPOAA 0
+root@arm:~# echo 'NNZS''EKENLF'
+NNZSEKENLF
+root@arm:~# MARKER='ZZXU''AELNOL' run 'i2cget -y -f 1 0x4b 0x10'
+ZZXUAELNOL0x05
+ZZXUAELNOL 0
+root@arm:~# echo 'NFVM''KLJXZB'
+NFVMKLJXZB
+root@arm:~# MARKER='KMBY''OYQMAZ' run 'echo 760000 760000 > /sys/kernel/mva_test//regulators/buck2_set'
+KMBYOYQMAZKMBYOYQMAZ 0
+root@arm:~# echo 'HYAQ''ENCUAS'
+HYAQENCUAS
+root@arm:~# MARKER='OAVX''GJCBEJ' run 'i2cget -y -f 1 0x4b 0x10'
+OAVXGJCBEJ0x06
+OAVXGJCBEJ 0
+root@arm:~# echo 'HCAY''VMGWTC'
+HCAYVMGWTC
+root@arm:~# MARKER='WOMM''PCCQME' run 'echo 770000 770000 > /sys/kernel/mva_test//regulators/buck2_set'
+WOMMPCCQMEWOMMPCCQME 0
+root@arm:~# echo 'GUPF''LCZFZJ'
+GUPFLCZFZJ
+root@arm:~# MARKER='WPJF''SYMOGL' run 'i2cget -y -f 1 0x4b 0x10'
+WPJFSYMOGL0x07
+WPJFSYMOGL 0
+root@arm:~# echo 'FOVX''EGTKFK'
+FOVXEGTKFK
+root@arm:~# MARKER='YNYO''EVQUEB' run 'echo 780000 780000 > /sys/kernel/mva_test//regulators/buck2_set'
+YNYOEVQUEBYNYOEVQUEB 0
+root@arm:~# echo 'YEAN''GWGMFV'
+YEANGWGMFV
+root@arm:~# MARKER='WLVK''EQHNAA' run 'i2cget -y -f 1 0x4b 0x10'
+WLVKEQHNAA0x08
+WLVKEQHNAA 0
+root@arm:~# echo 'FGYW''LYGYPZ'
+FGYWLYGYPZ
+root@arm:~# MARKER='LUTV''ZMLOWH' run 'echo 790000 790000 > /sys/kernel/mva_test//regulators/buck2_set'
+LUTVZMLOWHLUTVZMLOWH 0
+root@arm:~# echo 'OXJT''WTQHWG'
+OXJTWTQHWG
+root@arm:~# MARKER='GPCC''HASKZY' run 'i2cget -y -f 1 0x4b 0x10'
+GPCCHASKZY0x09
+GPCCHASKZY 0
+root@arm:~# echo 'OJLU''SMALJC'
+OJLUSMALJC
+root@arm:~# MARKER='UKEE''TBCLNL' run 'echo 800000 800000 > /sys/kernel/mva_test//regulators/buck2_set'
+UKEETBCLNLUKEETBCLNL 0
+root@arm:~# echo 'JBAT''NHYMZU'
+JBATNHYMZU
+root@arm:~# MARKER='QMVG''ALZYMM' run 'i2cget -y -f 1 0x4b 0x10'
+QMVGALZYMM0x0a
+QMVGALZYMM 0
+root@arm:~# echo 'QUMS''CUJAYL'
+QUMSCUJAYL
+root@arm:~# MARKER='WEHM''BTSEVA' run 'echo 810000 810000 > /sys/kernel/mva_test//regulators/buck2_set'
+WEHMBTSEVAWEHMBTSEVA 0
+root@arm:~# echo 'TELN''GSMCAW'
+TELNGSMCAW
+root@arm:~# MARKER='GAKG''QNVZTG' run 'i2cget -y -f 1 0x4b 0x10'
+GAKGQNVZTG0x0b
+GAKGQNVZTG 0
+root@arm:~# echo 'KLYX''BAYMXW'
+KLYXBAYMXW
+root@arm:~# MARKER='MVUB''CSESQE' run 'echo 820000 820000 > /sys/kernel/mva_test//regulators/buck2_set'
+MVUBCSESQEMVUBCSESQE 0
+root@arm:~# echo 'TSTQ''PTGJWW'
+TSTQPTGJWW
+root@arm:~# MARKER='NELV''KKXCQX' run 'i2cget -y -f 1 0x4b 0x10'
+NELVKKXCQX0x0c
+NELVKKXCQX 0
+root@arm:~# echo 'XXCW''OMEOYE'
+XXCWOMEOYE
+root@arm:~# MARKER='BUYH''MWZOFU' run 'echo 830000 830000 > /sys/kernel/mva_test//regulators/buck2_set'
+BUYHMWZOFUBUYHMWZOFU 0
+root@arm:~# echo 'SUTU''NFOSHB'
+SUTUNFOSHB
+root@arm:~# MARKER='ZZTQ''BNUYFW' run 'i2cget -y -f 1 0x4b 0x10'
+ZZTQBNUYFW0x0d
+ZZTQBNUYFW 0
+root@arm:~# echo 'GLKH''YSZSOL'
+GLKHYSZSOL
+root@arm:~# MARKER='XYEY''NFAEFB' run 'echo 840000 840000 > /sys/kernel/mva_test//regulators/buck2_set'
+XYEYNFAEFBXYEYNFAEFB 0
+root@arm:~# echo 'TWJY''UJJNOC'
+TWJYUJJNOC
+root@arm:~# MARKER='YJXM''NFQUCU' run 'i2cget -y -f 1 0x4b 0x10'
+YJXMNFQUCU0x0e
+YJXMNFQUCU 0
+root@arm:~# echo 'LNXB''SQSZHE'
+LNXBSQSZHE
+root@arm:~# MARKER='HKOJ''XZNSPC' run 'echo 850000 850000 > /sys/kernel/mva_test//regulators/buck2_set'
+HKOJXZNSPCHKOJXZNSPC 0
+root@arm:~# echo 'KZZN''ZQWZOT'
+KZZNZQWZOT
+root@arm:~# MARKER='SCCM''LTYGEK' run 'i2cget -y -f 1 0x4b 0x10'
+SCCMLTYGEK0x0f
+SCCMLTYGEK 0
+root@arm:~# echo 'NPUC''ECFGKM'
+NPUCECFGKM
+root@arm:~# MARKER='NUZW''KMXVGA' run 'echo 860000 860000 > /sys/kernel/mva_test//regulators/buck2_set'
+NUZWKMXVGANUZWKMXVGA 0
+root@arm:~# echo 'PNPO''VGCSEM'
+PNPOVGCSEM
+root@arm:~# MARKER='UMHL''KLMHMM' run 'i2cget -y -f 1 0x4b 0x10'
+UMHLKLMHMM0x10
+UMHLKLMHMM 0
+root@arm:~# echo 'UMOZ''BWSNWN'
+UMOZBWSNWN
+root@arm:~# MARKER='VMCB''NTAKXJ' run 'echo 870000 870000 > /sys/kernel/mva_test//regulators/buck2_set'
+VMCBNTAKXJVMCBNTAKXJ 0
+root@arm:~# echo 'TTJT''HAPLWS'
+TTJTHAPLWS
+root@arm:~# MARKER='CLYK''VCQALK' run 'i2cget -y -f 1 0x4b 0x10'
+CLYKVCQALK0x11
+CLYKVCQALK 0
+root@arm:~# echo 'LEHW''ZSXPWK'
+LEHWZSXPWK
+root@arm:~# MARKER='ANMC''YZTWNC' run 'echo 880000 880000 > /sys/kernel/mva_test//regulators/buck2_set'
+ANMCYZTWNCANMCYZTWNC 0
+root@arm:~# echo 'SLCH''KCTKZS'
+SLCHKCTKZS
+root@arm:~# MARKER='BCGK''ZYXQKN' run 'i2cget -y -f 1 0x4b 0x10'
+BCGKZYXQKN0x12
+BCGKZYXQKN 0
+root@arm:~# echo 'KEQT''AYYNAL'
+KEQTAYYNAL
+root@arm:~# MARKER='KCGZ''YABNJB' run 'echo 890000 890000 > /sys/kernel/mva_test//regulators/buck2_set'
+KCGZYABNJBKCGZYABNJB 0
+root@arm:~# echo 'ZSYP''SHVSHG'
+ZSYPSHVSHG
+root@arm:~# MARKER='SSEE''SQYAAY' run 'i2cget -y -f 1 0x4b 0x10'
+SSEESQYAAY0x13
+SSEESQYAAY 0
+root@arm:~# echo 'PVJX''UJPJWT'
+PVJXUJPJWT
+root@arm:~# MARKER='BGZO''AGEPKP' run 'echo 900000 900000 > /sys/kernel/mva_test//regulators/buck2_set'
+BGZOAGEPKPBGZOAGEPKP 0
+root@arm:~# echo 'ZJYB''ZEOWEM'
+ZJYBZEOWEM
+root@arm:~# MARKER='HJNH''WUJSLU' run 'i2cget -y -f 1 0x4b 0x10'
+HJNHWUJSLU0x14
+HJNHWUJSLU 0
+root@arm:~# echo 'AHQK''KUMFWW'
+AHQKKUMFWW
+root@arm:~# MARKER='MEJE''CVWGHV' run 'echo 910000 910000 > /sys/kernel/mva_test//regulators/buck2_set'
+MEJECVWGHVMEJECVWGHV 0
+root@arm:~# echo 'LVFO''FJTOOG'
+LVFOFJTOOG
+root@arm:~# MARKER='NOAU''WCGXVC' run 'i2cget -y -f 1 0x4b 0x10'
+NOAUWCGXVC0x15
+NOAUWCGXVC 0
+root@arm:~# echo 'CKLY''EOWEZO'
+CKLYEOWEZO
+root@arm:~# MARKER='THMY''HAMGWO' run 'echo 920000 920000 > /sys/kernel/mva_test//regulators/buck2_set'
+THMYHAMGWOTHMYHAMGWO 0
+root@arm:~# echo 'LCBV''CBJNFC'
+LCBVCBJNFC
+root@arm:~# MARKER='GQNB''XGJCKC' run 'i2cget -y -f 1 0x4b 0x10'
+GQNBXGJCKC0x16
+GQNBXGJCKC 0
+root@arm:~# echo 'FNEH''MQTVGP'
+FNEHMQTVGP
+root@arm:~# MARKER='VGHL''GZCUME' run 'echo 930000 930000 > /sys/kernel/mva_test//regulators/buck2_set'
+VGHLGZCUMEVGHLGZCUME 0
+root@arm:~# echo 'BVUW''AXSZMT'
+BVUWAXSZMT
+root@arm:~# MARKER='MVYC''ZAAESG' run 'i2cget -y -f 1 0x4b 0x10'
+MVYCZAAESG0x17
+MVYCZAAESG 0
+root@arm:~# echo 'BGMA''KGKOTB'
+BGMAKGKOTB
+root@arm:~# MARKER='HCYW''TXCXVK' run 'echo 940000 940000 > /sys/kernel/mva_test//regulators/buck2_set'
+HCYWTXCXVKHCYWTXCXVK 0
+root@arm:~# echo 'QJBT''LAQOZK'
+QJBTLAQOZK
+root@arm:~# MARKER='UAAW''WGNFAP' run 'i2cget -y -f 1 0x4b 0x10'
+UAAWWGNFAP0x18
+UAAWWGNFAP 0
+root@arm:~# echo 'CELQ''TMNCSE'
+CELQTMNCSE
+root@arm:~# MARKER='AOSX''QWYQCW' run 'echo 950000 950000 > /sys/kernel/mva_test//regulators/buck2_set'
+AOSXQWYQCWAOSXQWYQCW 0
+root@arm:~# echo 'PSYT''XNCXBB'
+PSYTXNCXBB
+root@arm:~# MARKER='BGUT''UMUUCK' run 'i2cget -y -f 1 0x4b 0x10'
+BGUTUMUUCK0x19
+BGUTUMUUCK 0
+root@arm:~# echo 'SZFT''OTSQXP'
+SZFTOTSQXP
+root@arm:~# MARKER='NEMB''JLMBJF' run 'echo 960000 960000 > /sys/kernel/mva_test//regulators/buck2_set'
+NEMBJLMBJFNEMBJLMBJF 0
+root@arm:~# echo 'VUKS''ZMUWHM'
+VUKSZMUWHM
+root@arm:~# MARKER='HPWW''VLBMAV' run 'i2cget -y -f 1 0x4b 0x10'
+HPWWVLBMAV0x1a
+HPWWVLBMAV 0
+root@arm:~# echo 'WXSH''EMEWGV'
+WXSHEMEWGV
+root@arm:~# MARKER='KTQY''BMTSYJ' run 'echo 970000 970000 > /sys/kernel/mva_test//regulators/buck2_set'
+KTQYBMTSYJKTQYBMTSYJ 0
+root@arm:~# echo 'KLWG''OEBHHF'
+KLWGOEBHHF
+root@arm:~# MARKER='YXXP''XXATTC' run 'i2cget -y -f 1 0x4b 0x10'
+YXXPXXATTC0x1b
+YXXPXXATTC 0
+root@arm:~# echo 'FUTM''EFUHTY'
+FUTMEFUHTY
+root@arm:~# MARKER='PSUT''ZFJFGG' run 'echo 980000 980000 > /sys/kernel/mva_test//regulators/buck2_set'
+PSUTZFJFGGPSUTZFJFGG 0
+root@arm:~# echo 'XLNX''OGUOCS'
+XLNXOGUOCS
+root@arm:~# MARKER='ZNQO''MLYVYC' run 'i2cget -y -f 1 0x4b 0x10'
+ZNQOMLYVYC0x1c
+ZNQOMLYVYC 0
+root@arm:~# echo 'ZHJP''SEXCWA'
+ZHJPSEXCWA
+root@arm:~# MARKER='EAUY''SHMTQW' run 'echo 990000 990000 > /sys/kernel/mva_test//regulators/buck2_set'
+EAUYSHMTQWEAUYSHMTQW 0
+root@arm:~# echo 'EYSF''LCVOBC'
+EYSFLCVOBC
+root@arm:~# MARKER='GKLM''TKEEVN' run 'i2cget -y -f 1 0x4b 0x10'
+GKLMTKEEVN0x1d
+GKLMTKEEVN 0
+root@arm:~# echo 'OAWK''TPWVAB'
+OAWKTPWVAB
+root@arm:~# MARKER='EFKK''AVWFCT' run 'echo 1000000 1000000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+EFKKAVWFCTEFKKAVWFCT 0
+root@arm:~# echo 'AFMO''UWMPKY'
+AFMOUWMPKY
+root@arm:~# MARKER='ABCN''CKHWLX' run 'i2cget -y -f 1 0x4b 0x10'
+ABCNCKHWLX0x1e
+ABCNCKHWLX 0
+root@arm:~# echo 'GXZU''ZXQZHP'
+GXZUZXQZHP
+root@arm:~# MARKER='HVSE''TAKYNE' run 'echo 1010000 1010000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+HVSETAKYNEHVSETAKYNE 0
+root@arm:~# echo 'FGYL''NTWCXV'
+FGYLNTWCXV
+root@arm:~# MARKER='VFSP''XFTQLY' run 'i2cget -y -f 1 0x4b 0x10'
+VFSPXFTQLY0x1f
+VFSPXFTQLY 0
+root@arm:~# echo 'KHBH''BLSFPG'
+KHBHBLSFPG
+root@arm:~# MARKER='EVOT''MLKGHP' run 'echo 1020000 1020000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+EVOTMLKGHPEVOTMLKGHP 0
+root@arm:~# echo 'KFAX''PHWUVM'
+KFAXPHWUVM
+root@arm:~# MARKER='SNTZ''KGHXKG' run 'i2cget -y -f 1 0x4b 0x10'
+SNTZKGHXKG0x20
+SNTZKGHXKG 0
+root@arm:~# echo 'FJLC''YNPKQG'
+FJLCYNPKQG
+root@arm:~# MARKER='CWZN''UOHXXU' run 'echo 1030000 1030000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+CWZNUOHXXUCWZNUOHXXU 0
+root@arm:~# echo 'LYQE''LCGYFV'
+LYQELCGYFV
+root@arm:~# MARKER='BMJW''CZKNHK' run 'i2cget -y -f 1 0x4b 0x10'
+BMJWCZKNHK0x21
+BMJWCZKNHK 0
+root@arm:~# echo 'FGBO''AFXPTK'
+FGBOAFXPTK
+root@arm:~# MARKER='BCJN''WQTZAE' run 'echo 1040000 1040000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+BCJNWQTZAEBCJNWQTZAE 0
+root@arm:~# echo 'OCGB''MFOKTV'
+OCGBMFOKTV
+root@arm:~# MARKER='XFNL''GLWVSF' run 'i2cget -y -f 1 0x4b 0x10'
+XFNLGLWVSF0x22
+XFNLGLWVSF 0
+root@arm:~# echo 'SZQO''VWVSPV'
+SZQOVWVSPV
+root@arm:~# MARKER='PWQF''YYQTYS' run 'echo 1050000 1050000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+PWQFYYQTYSPWQFYYQTYS 0
+root@arm:~# echo 'HOYO''YULFSZ'
+HOYOYULFSZ
+root@arm:~# MARKER='UWPN''XXZKPA' run 'i2cget -y -f 1 0x4b 0x10'
+UWPNXXZKPA0x23
+UWPNXXZKPA 0
+root@arm:~# echo 'ZSTQ''YNUWQX'
+ZSTQYNUWQX
+root@arm:~# MARKER='BJYP''UGZZEC' run 'echo 1060000 1060000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+BJYPUGZZECBJYPUGZZEC 0
+root@arm:~# echo 'VTSO''ZFCTNY'
+VTSOZFCTNY
+root@arm:~# MARKER='AFKH''PNOBXY' run 'i2cget -y -f 1 0x4b 0x10'
+AFKHPNOBXY0x24
+AFKHPNOBXY 0
+root@arm:~# echo 'JNZJ''YNOFVE'
+JNZJYNOFVE
+root@arm:~# MARKER='FBMY''GKXQCL' run 'echo 1070000 1070000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+FBMYGKXQCLFBMYGKXQCL 0
+root@arm:~# echo 'NZQY''JQVTCL'
+NZQYJQVTCL
+root@arm:~# MARKER='XKOW''SPNVKP' run 'i2cget -y -f 1 0x4b 0x10'
+XKOWSPNVKP0x25
+XKOWSPNVKP 0
+root@arm:~# echo 'SVEP''MLAXWH'
+SVEPMLAXWH
+root@arm:~# MARKER='PFLM''JKUFQN' run 'echo 1080000 1080000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+PFLMJKUFQNPFLMJKUFQN 0
+root@arm:~# echo 'ZCMH''PZMANA'
+ZCMHPZMANA
+root@arm:~# MARKER='TAJC''PJVMOK' run 'i2cget -y -f 1 0x4b 0x10'
+TAJCPJVMOK0x26
+TAJCPJVMOK 0
+root@arm:~# echo 'YWXP''JTNBLW'
+YWXPJTNBLW
+root@arm:~# MARKER='VXWO''ZBFJWW' run 'echo 1090000 1090000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+VXWOZBFJWWVXWOZBFJWW 0
+root@arm:~# echo 'CCFF''FUNHTH'
+CCFFFUNHTH
+root@arm:~# MARKER='GTKY''WCMXBA' run 'i2cget -y -f 1 0x4b 0x10'
+GTKYWCMXBA0x27
+GTKYWCMXBA 0
+root@arm:~# echo 'MOTW''TVUQWS'
+MOTWTVUQWS
+root@arm:~# MARKER='VBJY''AZPWMF' run 'echo 1100000 1100000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+VBJYAZPWMFVBJYAZPWMF 0
+root@arm:~# echo 'SNMB''PBQPJN'
+SNMBPBQPJN
+root@arm:~# MARKER='MPWS''UZCUQM' run 'i2cget -y -f 1 0x4b 0x10'
+MPWSUZCUQM0x28
+MPWSUZCUQM 0
+root@arm:~# echo 'ZPPJ''ELOWTG'
+ZPPJELOWTG
+root@arm:~# MARKER='AGLS''UTTKKN' run 'echo 1110000 1110000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+AGLSUTTKKNAGLSUTTKKN 0
+root@arm:~# echo 'NSKH''TGPATG'
+NSKHTGPATG
+root@arm:~# MARKER='PNUT''SSPBWA' run 'i2cget -y -f 1 0x4b 0x10'
+PNUTSSPBWA0x29
+PNUTSSPBWA 0
+root@arm:~# echo 'XPOC''LLUCVF'
+XPOCLLUCVF
+root@arm:~# MARKER='FLHP''OHFUTT' run 'echo 1120000 1120000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+FLHPOHFUTTFLHPOHFUTT 0
+root@arm:~# echo 'GUJB''NUTQAV'
+GUJBNUTQAV
+root@arm:~# MARKER='OQEF''HCVEEC' run 'i2cget -y -f 1 0x4b 0x10'
+OQEFHCVEEC0x2a
+OQEFHCVEEC 0
+root@arm:~# echo 'BCEO''OLKFUB'
+BCEOOLKFUB
+root@arm:~# MARKER='OTHY''TXQCXZ' run 'echo 1130000 1130000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+OTHYTXQCXZOTHYTXQCXZ 0
+root@arm:~# echo 'VJWC''OYNCOF'
+VJWCOYNCOF
+root@arm:~# MARKER='MVEV''PVUOCC' run 'i2cget -y -f 1 0x4b 0x10'
+MVEVPVUOCC0x2b
+MVEVPVUOCC 0
+root@arm:~# echo 'SJZG''GAVALK'
+SJZGGAVALK
+root@arm:~# MARKER='KVUS''MGUJOH' run 'echo 1140000 1140000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+KVUSMGUJOHKVUSMGUJOH 0
+root@arm:~# echo 'CYGE''CABUQG'
+CYGECABUQG
+root@arm:~# MARKER='AUPX''CABYYC' run 'i2cget -y -f 1 0x4b 0x10'
+AUPXCABYYC0x2c
+AUPXCABYYC 0
+root@arm:~# echo 'AOUC''TQVUJB'
+AOUCTQVUJB
+root@arm:~# MARKER='SCYF''HXPZCO' run 'echo 1150000 1150000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+SCYFHXPZCOSCYFHXPZCO 0
+root@arm:~# echo 'ULMV''TGAZYG'
+ULMVTGAZYG
+root@arm:~# MARKER='SQAS''ZHVPSZ' run 'i2cget -y -f 1 0x4b 0x10'
+SQASZHVPSZ0x2d
+SQASZHVPSZ 0
+root@arm:~# echo 'WUMM''KTLQKP'
+WUMMKTLQKP
+root@arm:~# MARKER='VZJU''KSPTWL' run 'echo 1160000 1160000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+VZJUKSPTWLVZJUKSPTWL 0
+root@arm:~# echo 'AMHZ''NEUHPY'
+AMHZNEUHPY
+root@arm:~# MARKER='MPKP''VTJCFQ' run 'i2cget -y -f 1 0x4b 0x10'
+MPKPVTJCFQ0x2e
+MPKPVTJCFQ 0
+root@arm:~# echo 'NPAT''HKSQJF'
+NPATHKSQJF
+root@arm:~# MARKER='EEBH''SYSTST' run 'echo 1170000 1170000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+EEBHSYSTSTEEBHSYSTST 0
+root@arm:~# echo 'PFNU''FGEXPJ'
+PFNUFGEXPJ
+root@arm:~# MARKER='GFQF''FKJFMX' run 'i2cget -y -f 1 0x4b 0x10'
+GFQFFKJFMX0x2f
+GFQFFKJFMX 0
+root@arm:~# echo 'ONKW''TVPGMK'
+ONKWTVPGMK
+root@arm:~# MARKER='TKSV''LUQSUX' run 'echo 1180000 1180000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+TKSVLUQSUXTKSVLUQSUX 0
+root@arm:~# echo 'MPKJ''MVPKAH'
+MPKJMVPKAH
+root@arm:~# MARKER='FFYN''TOUNYT' run 'i2cget -y -f 1 0x4b 0x10'
+FFYNTOUNYT0x30
+FFYNTOUNYT 0
+root@arm:~# echo 'JVMG''PBJZME'
+JVMGPBJZME
+root@arm:~# MARKER='ECTO''ZLKONF' run 'echo 1190000 1190000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+ECTOZLKONFECTOZLKONF 0
+root@arm:~# echo 'YANF''HXSZGO'
+YANFHXSZGO
+root@arm:~# MARKER='NEXG''BOLNAF' run 'i2cget -y -f 1 0x4b 0x10'
+NEXGBOLNAF0x31
+NEXGBOLNAF 0
+root@arm:~# echo 'TNEN''UMZPOK'
+TNENUMZPOK
+root@arm:~# MARKER='GZNP''TEFKEU' run 'echo 1200000 1200000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+GZNPTEFKEUGZNPTEFKEU 0
+root@arm:~# echo 'OWVB''PNEAHH'
+OWVBPNEAHH
+root@arm:~# MARKER='CBFG''JEEBGJ' run 'i2cget -y -f 1 0x4b 0x10'
+CBFGJEEBGJ0x32
+CBFGJEEBGJ 0
+root@arm:~# echo 'ABGF''CEFKCZ'
+ABGFCEFKCZ
+root@arm:~# MARKER='LEHU''YTKKGQ' run 'echo 1210000 1210000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+LEHUYTKKGQLEHUYTKKGQ 0
+root@arm:~# echo 'CZET''SAVQGO'
+CZETSAVQGO
+root@arm:~# MARKER='PEKO''FNPHFM' run 'i2cget -y -f 1 0x4b 0x10'
+PEKOFNPHFM0x33
+PEKOFNPHFM 0
+root@arm:~# echo 'MYBU''SBAAST'
+MYBUSBAAST
+root@arm:~# MARKER='PCAT''FEJGJO' run 'echo 1220000 1220000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+PCATFEJGJOPCATFEJGJO 0
+root@arm:~# echo 'VMLJ''TEKSWC'
+VMLJTEKSWC
+root@arm:~# MARKER='YPMG''NBCNLW' run 'i2cget -y -f 1 0x4b 0x10'
+YPMGNBCNLW0x34
+YPMGNBCNLW 0
+root@arm:~# echo 'JPXQ''UPCAQJ'
+JPXQUPCAQJ
+root@arm:~# MARKER='HNAE''XZVVLA' run 'echo 1230000 1230000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+HNAEXZVVLAHNAEXZVVLA 0
+root@arm:~# echo 'ZPJH''NBCWQG'
+ZPJHNBCWQG
+root@arm:~# MARKER='ZZMM''YLVEJZ' run 'i2cget -y -f 1 0x4b 0x10'
+ZZMMYLVEJZ0x35
+ZZMMYLVEJZ 0
+root@arm:~# echo 'XPTG''BNCTNN'
+XPTGBNCTNN
+root@arm:~# MARKER='LJFU''JWFJLX' run 'echo 1240000 1240000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+LJFUJWFJLXLJFUJWFJLX 0
+root@arm:~# echo 'HCSA''LNLNMA'
+HCSALNLNMA
+root@arm:~# MARKER='WJQK''FFGASH' run 'i2cget -y -f 1 0x4b 0x10'
+WJQKFFGASH0x36
+WJQKFFGASH 0
+root@arm:~# echo 'PQON''ETSFXE'
+PQONETSFXE
+root@arm:~# MARKER='OWQV''WHKJVK' run 'echo 1250000 1250000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+OWQVWHKJVKOWQVWHKJVK 0
+root@arm:~# echo 'JFUN''WFGFOJ'
+JFUNWFGFOJ
+root@arm:~# MARKER='LJQJ''BXHSYF' run 'i2cget -y -f 1 0x4b 0x10'
+LJQJBXHSYF0x37
+LJQJBXHSYF 0
+root@arm:~# echo 'QYBM''QUMGLY'
+QYBMQUMGLY
+root@arm:~# MARKER='GAAF''QBSANG' run 'echo 1260000 1260000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+GAAFQBSANGGAAFQBSANG 0
+root@arm:~# echo 'JLSU''BVVTSJ'
+JLSUBVVTSJ
+root@arm:~# MARKER='CFJE''SCPSTX' run 'i2cget -y -f 1 0x4b 0x10'
+CFJESCPSTX0x38
+CFJESCPSTX 0
+root@arm:~# echo 'WOWE''YQNXMZ'
+WOWEYQNXMZ
+root@arm:~# MARKER='OYEH''SBVKLE' run 'echo 1270000 1270000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+OYEHSBVKLEOYEHSBVKLE 0
+root@arm:~# echo 'HKPZ''QNHAMQ'
+HKPZQNHAMQ
+root@arm:~# MARKER='TKJA''SXAHQL' run 'i2cget -y -f 1 0x4b 0x10'
+TKJASXAHQL0x39
+TKJASXAHQL 0
+root@arm:~# echo 'LXYT''WFTUCB'
+LXYTWFTUCB
+root@arm:~# MARKER='EMXF''VYCMKL' run 'echo 1280000 1280000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+EMXFVYCMKLEMXFVYCMKL 0
+root@arm:~# echo 'QCOH''XWZHEF'
+QCOHXWZHEF
+root@arm:~# MARKER='FVCJ''GSWNVB' run 'i2cget -y -f 1 0x4b 0x10'
+FVCJGSWNVB0x3a
+FVCJGSWNVB 0
+root@arm:~# echo 'EFAP''WGKKPH'
+EFAPWGKKPH
+root@arm:~# MARKER='VBZU''YTFGWA' run 'echo 1290000 1290000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+VBZUYTFGWAVBZUYTFGWA 0
+root@arm:~# echo 'YMMV''GQBGVH'
+YMMVGQBGVH
+root@arm:~# MARKER='TOYU''TKHZLE' run 'i2cget -y -f 1 0x4b 0x10'
+TOYUTKHZLE0x3b
+TOYUTKHZLE 0
+root@arm:~# echo 'FUAY''WWNWKM'
+FUAYWWNWKM
+root@arm:~# MARKER='BNTT''NQLZOY' run 'echo 1300000 1300000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+BNTTNQLZOYBNTTNQLZOY 0
+root@arm:~# echo 'AUWP''OZCKWL'
+AUWPOZCKWL
+root@arm:~# MARKER='WBSU''SNZXUS' run 'i2cget -y -f 1 0x4b 0x10'
+WBSUSNZXUS0x3c
+WBSUSNZXUS 0
+root@arm:~# echo 'YJXV''YLXVZA'
+YJXVYLXVZA
+root@arm:~# MARKER='YHNG''MHZYWY' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+YHNGMHZYWY/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+YHNGMHZYWY 0
+root@arm:~# echo 'GXSB''HAKFCQ'
+GXSBHAKFCQ
+root@arm:~# MARKER='FWVC''ZXPHYE' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/BUCK3/rohmm,no-regulator-enable-control ;echo $?'
+FWVCZXPHYE0
+FWVCZXPHYE 0
+root@arm:~# echo 'WMKG''GVUJCL'
+WMKGGVUJCL
+root@arm:~# MARKER='YJBB''SEOGEM' run 'echo 700000 700000 > /sys/kernel/mva_test//regulators/buck3_set'
+YJBBSEOGEMYJBBSEOGEM 0
+root@arm:~# echo 'MVFA''YWEEUG'
+MVFAYWEEUG
+root@arm:~# MARKER='BVSY''KPYKEO' run 'i2cget -y -f 1 0x4b 0x14'
+BVSYKPYKEO0x00
+BVSYKPYKEO 0
+root@arm:~# echo 'UOMN''UTBVGJ'
+UOMNUTBVGJ
+root@arm:~# MARKER='SSJL''OZBOBU' run 'echo 800000 800000 > /sys/kernel/mva_test//regulators/buck3_set'
+SSJLOZBOBUSSJLOZBOBU 0
+root@arm:~# echo 'LWWJ''UNMSNF'
+LWWJUNMSNF
+root@arm:~# MARKER='HVAE''XUKGEP' run 'i2cget -y -f 1 0x4b 0x14'
+HVAEXUKGEP0x01
+HVAEXUKGEP 0
+root@arm:~# echo 'XEKZ''KJKUGT'
+XEKZKJKUGT
+root@arm:~# MARKER='TCHN''VKBBZP' run 'echo 900000 900000 > /sys/kernel/mva_test//regulators/buck3_set'
+TCHNVKBBZPTCHNVKBBZP 0
+root@arm:~# echo 'ASWH''VJMUEH'
+ASWHVJMUEH
+root@arm:~# MARKER='SLFB''QZZZXE' run 'i2cget -y -f 1 0x4b 0x14'
+SLFBQZZZXE0x02
+SLFBQZZZXE 0
+root@arm:~# echo 'ABFO''KZNWSH'
+ABFOKZNWSH
+root@arm:~# MARKER='CNXK''MXFSPF' run 'echo 1000000 1000000 > /sys/kernel/mva_tesst/regulators/buck3_set'
+CNXKMXFSPFCNXKMXFSPF 0
+root@arm:~# echo 'FHCP''XPJUTF'
+FHCPXPJUTF
+root@arm:~# MARKER='HKUG''EXEAPW' run 'i2cget -y -f 1 0x4b 0x14'
+HKUGEXEAPW0x03
+HKUGEXEAPW 0
+root@arm:~# echo 'UBWH''FSZWCJ'
+UBWHFSZWCJ
+root@arm:~# MARKER='FKWL''HCZLMG' run 'echo 1050000 1050000 > /sys/kernel/mva_tesst/regulators/buck3_set'
+FKWLHCZLMGFKWLHCZLMG 0
+root@arm:~# echo 'UOYQ''XVVNGF'
+UOYQXVVNGF
+root@arm:~# MARKER='YSAZ''VHACLG' run 'i2cget -y -f 1 0x4b 0x14'
+YSAZVHACLG0x04
+YSAZVHACLG 0
+root@arm:~# echo 'TKZU''FCGGBO'
+TKZUFCGGBO
+root@arm:~# MARKER='OCXP''ONJUXP' run 'echo 1100000 1100000 > /sys/kernel/mva_tesst/regulators/buck3_set'
+OCXPONJUXPOCXPONJUXP 0
+root@arm:~# echo 'WKEO''XJHBST'
+WKEOXJHBST
+root@arm:~# MARKER='KAOK''ZOHSGB' run 'i2cget -y -f 1 0x4b 0x14'
+KAOKZOHSGB0x05
+KAOKZOHSGB 0
+root@arm:~# echo 'ENAU''SEJCEU'
+ENAUSEJCEU
+root@arm:~# MARKER='BUFP''CXNGCF' run 'echo 1200000 1200000 > /sys/kernel/mva_tesst/regulators/buck3_set'
+BUFPCXNGCFBUFPCXNGCF 0
+root@arm:~# echo 'QJOA''XYGCKP'
+QJOAXYGCKP
+root@arm:~# MARKER='BEPO''AHFVQC' run 'i2cget -y -f 1 0x4b 0x14'
+BEPOAHFVQC0x06
+BEPOAHFVQC 0
+root@arm:~# echo 'JFSQ''NAMSOW'
+JFSQNAMSOW
+root@arm:~# MARKER='QELF''FLAUGH' run 'echo 1350000 1350000 > /sys/kernel/mva_tesst/regulators/buck3_set'
+QELFFLAUGHQELFFLAUGH 0
+root@arm:~# echo 'WLPZ''PPWCXW'
+WLPZPPWCXW
+root@arm:~# MARKER='MASZ''XLFNYF' run 'i2cget -y -f 1 0x4b 0x14'
+MASZXLFNYF0x07
+MASZXLFNYF 0
+root@arm:~# echo 'FFAG''XGUCXQ'
+FFAGXGUCXQ
+root@arm:~# MARKER='TAVZ''VCKYJE' run 'echo 550000 550000 > /sys/kernel/mva_test//regulators/buck3_set'
+TAVZVCKYJETAVZVCKYJE 0
+root@arm:~# echo 'MNET''UEHJBG'
+MNETUEHJBG
+root@arm:~# MARKER='OGHE''JLVMFV' run 'i2cget -y -f 1 0x4b 0x14'
+OGHEJLVMFV0x40
+OGHEJLVMFV 0
+root@arm:~# echo 'AZYS''VMZHMF'
+AZYSVMZHMF
+root@arm:~# MARKER='SHEA''CLJCWK' run 'echo 600000 600000 > /sys/kernel/mva_test//regulators/buck3_set'
+SHEACLJCWKSHEACLJCWK 0
+root@arm:~# echo 'CHJX''CUGOMN'
+CHJXCUGOMN
+root@arm:~# MARKER='TJPM''YLJOVV' run 'i2cget -y -f 1 0x4b 0x14'
+TJPMYLJOVV0x41
+TJPMYLJOVV 0
+root@arm:~# echo 'MFYZ''NWHJVQ'
+MFYZNWHJVQ
+root@arm:~# MARKER='SEWM''GYEMNM' run 'echo 650000 650000 > /sys/kernel/mva_test//regulators/buck3_set'
+SEWMGYEMNMSEWMGYEMNM 0
+root@arm:~# echo 'AZUE''KCMXHM'
+AZUEKCMXHM
+root@arm:~# MARKER='NXLF''ZBYYOE' run 'i2cget -y -f 1 0x4b 0x14'
+NXLFZBYYOE0x42
+NXLFZBYYOE 0
+root@arm:~# echo 'SWOB''AWEGEL'
+SWOBAWEGEL
+root@arm:~# MARKER='OZQG''XCGTCW' run 'echo 700000 700000 > /sys/kernel/mva_test//regulators/buck3_set'
+OZQGXCGTCWOZQGXCGTCW 0
+root@arm:~# echo 'XHMT''YFQFKA'
+XHMTYFQFKA
+root@arm:~# MARKER='QBSL''BPUPEN' run 'i2cget -y -f 1 0x4b 0x14'
+QBSLBPUPEN0x00
+QBSLBPUPEN 0
+root@arm:~# echo 'QZNZ''OTXUJN'
+QZNZOTXUJN
+root@arm:~# MARKER='MLQY''VPABGF' run 'echo 750000 750000 > /sys/kernel/mva_test//regulators/buck3_set'
+MLQYVPABGFMLQYVPABGF 0
+root@arm:~# echo 'LWMY''CWEGNM'
+LWMYCWEGNM
+root@arm:~# MARKER='YSZW''WOXPQK' run 'i2cget -y -f 1 0x4b 0x14'
+YSZWWOXPQK0x44
+YSZWWOXPQK 0
+root@arm:~# echo 'TUSO''MAKEMY'
+TUSOMAKEMY
+root@arm:~# MARKER='PTWL''BABLLJ' run 'echo 800000 800000 > /sys/kernel/mva_test//regulators/buck3_set'
+PTWLBABLLJPTWLBABLLJ 0
+root@arm:~# echo 'GQSM''YJYXQJ'
+GQSMYJYXQJ
+root@arm:~# MARKER='KCHZ''JTUJQZ' run 'i2cget -y -f 1 0x4b 0x14'
+KCHZJTUJQZ0x01
+KCHZJTUJQZ 0
+root@arm:~# echo 'AYEE''QJFOTL'
+AYEEQJFOTL
+root@arm:~# MARKER='GUZM''AZBEWJ' run 'echo 850000 850000 > /sys/kernel/mva_test//regulators/buck3_set'
+GUZMAZBEWJGUZMAZBEWJ 0
+root@arm:~# echo 'HBUQ''FXEOOU'
+HBUQFXEOOU
+root@arm:~# MARKER='YTJC''KTNAFV' run 'i2cget -y -f 1 0x4b 0x14'
+YTJCKTNAFV0x46
+YTJCKTNAFV 0
+root@arm:~# echo 'CWHX''SSCBCB'
+CWHXSSCBCB
+root@arm:~# MARKER='AVEO''GWUBMZ' run 'echo 900000 900000 > /sys/kernel/mva_test//regulators/buck3_set'
+AVEOGWUBMZAVEOGWUBMZ 0
+root@arm:~# echo 'UUUU''AAZSKP'
+UUUUAAZSKP
+root@arm:~# MARKER='MWNN''NVMKMT' run 'i2cget -y -f 1 0x4b 0x14'
+MWNNNVMKMT0x02
+MWNNNVMKMT 0
+root@arm:~# echo 'BEJG''PPFJQY'
+BEJGPPFJQY
+root@arm:~# MARKER='ZKPN''NWLWJS' run 'echo 675000 675000 > /sys/kernel/mva_test//regulators/buck3_set'
+ZKPNNWLWJSZKPNNWLWJS 0
+root@arm:~# echo 'AJTE''XOKAWF'
+AJTEXOKAWF
+root@arm:~# MARKER='OZMT''OBPCFJ' run 'i2cget -y -f 1 0x4b 0x14'
+OZMTOBPCFJ0x80
+OZMTOBPCFJ 0
+root@arm:~# echo 'HFQC''BAUCOA'
+HFQCBAUCOA
+root@arm:~# MARKER='GVVE''EFHFMP' run 'echo 775000 775000 > /sys/kernel/mva_test//regulators/buck3_set'
+GVVEEFHFMPGVVEEFHFMP 0
+root@arm:~# echo 'PEHU''TCFJKU'
+PEHUTCFJKU
+root@arm:~# MARKER='EXWS''EWLTMZ' run 'i2cget -y -f 1 0x4b 0x14'
+EXWSEWLTMZ0x81
+EXWSEWLTMZ 0
+root@arm:~# echo 'YNWE''XUQBCG'
+YNWEXUQBCG
+root@arm:~# MARKER='HVQY''AJQLUQ' run 'echo 875000 875000 > /sys/kernel/mva_test//regulators/buck3_set'
+HVQYAJQLUQHVQYAJQLUQ 0
+root@arm:~# echo 'QGAQ''GLOWKS'
+QGAQGLOWKS
+root@arm:~# MARKER='PVWO''TYAWGP' run 'i2cget -y -f 1 0x4b 0x14'
+PVWOTYAWGP0x82
+PVWOTYAWGP 0
+root@arm:~# echo 'FMJS''MJEAXK'
+FMJSMJEAXK
+root@arm:~# MARKER='TLSU''KCANQN' run 'echo 975000 975000 > /sys/kernel/mva_test//regulators/buck3_set'
+TLSUKCANQNTLSUKCANQN 0
+root@arm:~# echo 'TLUS''OUETMH'
+TLUSOUETMH
+root@arm:~# MARKER='LCPO''XQUJJN' run 'i2cget -y -f 1 0x4b 0x14'
+LCPOXQUJJN0x83
+LCPOXQUJJN 0
+root@arm:~# echo 'FFHN''ZZXUCT'
+FFHNZZXUCT
+root@arm:~# MARKER='OUFN''HJJSJT' run 'echo 1025000 1025000 > /sys/kernel/mva_tesst/regulators/buck3_set'
+OUFNHJJSJTOUFNHJJSJT 0
+root@arm:~# echo 'AFCH''ZAEBEQ'
+AFCHZAEBEQ
+root@arm:~# MARKER='OJXK''OYEULZ' run 'i2cget -y -f 1 0x4b 0x14'
+OJXKOYEULZ0x84
+OJXKOYEULZ 0
+root@arm:~# echo 'VXWF''VVHKHN'
+VXWFVVHKHN
+root@arm:~# MARKER='ZKKU''YGKBKC' run 'echo 1075000 1075000 > /sys/kernel/mva_tesst/regulators/buck3_set'
+ZKKUYGKBKCZKKUYGKBKC 0
+root@arm:~# echo 'PUEB''ZOXNMJ'
+PUEBZOXNMJ
+root@arm:~# MARKER='UVNN''QKMPTT' run 'i2cget -y -f 1 0x4b 0x14'
+UVNNQKMPTT0x85
+UVNNQKMPTT 0
+root@arm:~# echo 'ZTQM''CCAGKZ'
+ZTQMCCAGKZ
+root@arm:~# MARKER='LOUN''YJTZMT' run 'echo 1175000 1175000 > /sys/kernel/mva_tesst/regulators/buck3_set'
+LOUNYJTZMTLOUNYJTZMT 0
+root@arm:~# echo 'CVLM''AUXZMB'
+CVLMAUXZMB
+root@arm:~# MARKER='TXJK''BZQEPZ' run 'i2cget -y -f 1 0x4b 0x14'
+TXJKBZQEPZ0x86
+TXJKBZQEPZ 0
+root@arm:~# echo 'WMET''GANWCS'
+WMETGANWCS
+root@arm:~# MARKER='GGSB''PVFXJF' run 'echo 1325000 1325000 > /sys/kernel/mva_tesst/regulators/buck3_set'
+GGSBPVFXJFGGSBPVFXJF 0
+root@arm:~# echo 'USBL''QNSTFG'
+USBLQNSTFG
+root@arm:~# MARKER='JCEY''EBMPUH' run 'i2cget -y -f 1 0x4b 0x14'
+JCEYEBMPUH0x87
+JCEYEBMPUH 0
+root@arm:~# echo 'MVEK''LYWLEA'
+MVEKLYWLEA
+root@arm:~# MARKER='MXJL''UVTLVZ' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+MXJLUVTLVZ/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+MXJLUVTLVZ 0
+root@arm:~# echo 'KQAK''VUFUGK'
+KQAKVUFUGK
+root@arm:~# MARKER='HUVG''VNEWXB' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/BUCK4/rohmm,no-regulator-enable-control ;echo $?'
+HUVGVNEWXB1
+HUVGVNEWXB 0
+root@arm:~# echo 'WQUK''JLYEYS'
+WQUKJLYEYS
+root@arm:~# MARKER='JVQA''TPPBYN' run 'i2cget -y -f 1 0x4b 0xa'
+JVQATPPBYN0x02
+JVQATPPBYN 0
+root@arm:~# echo 'GGHV''NKBFTG'
+GGHVNKBFTG
+root@arm:~# MARKER='SWCP''MUCVPQ' run 'echo 3000000 3000000 > /sys/kernel/mva_tesst/regulators/buck4_set'
+SWCPMUCVPQSWCPMUCVPQ 0
+root@arm:~# echo 'HCNL''MVPHJM'
+HCNLMVPHJM
+root@arm:~# MARKER='GSUG''FFTXPY' run 'i2cget -y -f 1 0x4b 0x15'
+GSUGFFTXPY0x00
+GSUGFFTXPY 0
+root@arm:~# echo 'ZGZJ''PCTPJB'
+ZGZJPCTPJB
+root@arm:~# MARKER='JWFW''JXVCLM' run 'echo 3100000 3100000 > /sys/kernel/mva_tesst/regulators/buck4_set'
+JWFWJXVCLMJWFWJXVCLM 0
+root@arm:~# echo 'WTCE''VNVPHF'
+WTCEVNVPHF
+root@arm:~# MARKER='TOXV''JPHBFV' run 'i2cget -y -f 1 0x4b 0x15'
+TOXVJPHBFV0x01
+TOXVJPHBFV 0
+root@arm:~# echo 'ECQW''CWEWUK'
+ECQWCWEWUK
+root@arm:~# MARKER='OMTX''BBOGBL' run 'echo 3200000 3200000 > /sys/kernel/mva_tesst/regulators/buck4_set'
+OMTXBBOGBLOMTXBBOGBL 0
+root@arm:~# echo 'KAOV''BKUEVG'
+KAOVBKUEVG
+root@arm:~# MARKER='GHOC''PLZLCZ' run 'i2cget -y -f 1 0x4b 0x15'
+GHOCPLZLCZ0x02
+GHOCPLZLCZ 0
+root@arm:~# echo 'BPVA''FWUYAY'
+BPVAFWUYAY
+root@arm:~# MARKER='JEAL''MFWPCU' run 'echo 3300000 3300000 > /sys/kernel/mva_tesst/regulators/buck4_set'
+JEALMFWPCUJEALMFWPCU 0
+root@arm:~# echo 'QCVC''VBWAMA'
+QCVCVBWAMA
+root@arm:~# MARKER='OLWQ''GNLCGE' run 'i2cget -y -f 1 0x4b 0x15'
+OLWQGNLCGE0x03
+OLWQGNLCGE 0
+root@arm:~# echo 'USUG''FOSEMV'
+USUGFOSEMV
+root@arm:~# MARKER='OLYY''GVXVTE' run 'echo 2600000 2600000 > /sys/kernel/mva_tesst/regulators/buck4_set'
+OLYYGVXVTEOLYYGVXVTE 0
+root@arm:~# echo 'KNOS''UPAOQV'
+KNOSUPAOQV
+root@arm:~# MARKER='ZZAP''MTTGWY' run 'i2cget -y -f 1 0x4b 0x15'
+ZZAPMTTGWY0x40
+ZZAPMTTGWY 0
+root@arm:~# echo 'VFOQ''FFACKZ'
+VFOQFFACKZ
+root@arm:~# MARKER='ZPOV''XXQKCP' run 'echo 2700000 2700000 > /sys/kernel/mva_tesst/regulators/buck4_set'
+ZPOVXXQKCPZPOVXXQKCP 0
+root@arm:~# echo 'QVQN''VJHVJU'
+QVQNVJHVJU
+root@arm:~# MARKER='KXNC''LQNVXH' run 'i2cget -y -f 1 0x4b 0x15'
+KXNCLQNVXH0x41
+KXNCLQNVXH 0
+root@arm:~# echo 'CGGX''NGOWSG'
+CGGXNGOWSG
+root@arm:~# MARKER='UEUE''ZOXQZS' run 'echo 2800000 2800000 > /sys/kernel/mva_tesst/regulators/buck4_set'
+UEUEZOXQZSUEUEZOXQZS 0
+root@arm:~# echo 'FEUB''OXVNMU'
+FEUBOXVNMU
+root@arm:~# MARKER='EMON''KOTVKE' run 'i2cget -y -f 1 0x4b 0x15'
+EMONKOTVKE0x42
+EMONKOTVKE 0
+root@arm:~# echo 'EWPX''LSUGTW'
+EWPXLSUGTW
+root@arm:~# MARKER='QCWX''UGTVMX' run 'echo 2900000 2900000 > /sys/kernel/mva_tesst/regulators/buck4_set'
+QCWXUGTVMXQCWXUGTVMX 0
+root@arm:~# echo 'OXCN''JBBQHC'
+OXCNJBBQHC
+root@arm:~# MARKER='EOAT''VHJZNQ' run 'i2cget -y -f 1 0x4b 0x15'
+EOATVHJZNQ0x43
+EOATVHJZNQ 0
+root@arm:~# echo 'GGOG''EKFTVJ'
+GGOGEKFTVJ
+root@arm:~# MARKER='TKOF''EOVCSY' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+TKOFEOVCSY/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+TKOFEOVCSY 0
+root@arm:~# echo 'UAAF''MCTAWF'
+UAAFMCTAWF
+root@arm:~# MARKER='YVHQ''KEUUHM' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/BUCK5/rohmm,no-regulator-enable-control ;echo $?'
+YVHQKEUUHM1
+YVHQKEUUHM 0
+root@arm:~# echo 'XWAG''PJYLJW'
+XWAGPJYLJW
+root@arm:~# MARKER='XEYN''YCPQQB' run 'i2cget -y -f 1 0x4b 0xb'
+XEYNYCPQQB0x02
+XEYNYCPQQB 0
+root@arm:~# echo 'NLHB''HXKNCB'
+NLHBHXKNCB
+root@arm:~# MARKER='VVYG''HJMXZW' run 'echo 1605000 1605000 > /sys/kernel/mva_tesst/regulators/buck5_set'
+VVYGHJMXZWVVYGHJMXZW 0
+root@arm:~# echo 'BMCL''ZZUYJY'
+BMCLZZUYJY
+root@arm:~# MARKER='LJOG''LHCUBQ' run 'i2cget -y -f 1 0x4b 0x16'
+LJOGLHCUBQ0x00
+LJOGLHCUBQ 0
+root@arm:~# echo 'VUZE''PHPGJY'
+VUZEPHPGJY
+root@arm:~# MARKER='CHWC''ABTJAZ' run 'echo 1695000 1695000 > /sys/kernel/mva_tesst/regulators/buck5_set'
+CHWCABTJAZCHWCABTJAZ 0
+root@arm:~# echo 'VUZA''UOENBG'
+VUZAUOENBG
+root@arm:~# MARKER='UBXG''GXSMXF' run 'i2cget -y -f 1 0x4b 0x16'
+UBXGGXSMXF0x01
+UBXGGXSMXF 0
+root@arm:~# echo 'AKKM''KJSSMT'
+AKKMKJSSMT
+root@arm:~# MARKER='SXTM''HZTUCT' run 'echo 1755000 1755000 > /sys/kernel/mva_tesst/regulators/buck5_set'
+SXTMHZTUCTSXTMHZTUCT 0
+root@arm:~# echo 'ACNM''YXFOPK'
+ACNMYXFOPK
+root@arm:~# MARKER='VJUA''BGVQBT' run 'i2cget -y -f 1 0x4b 0x16'
+VJUABGVQBT0x02
+VJUABGVQBT 0
+root@arm:~# echo 'CMAJ''HTQVEW'
+CMAJHTQVEW
+root@arm:~# MARKER='HCWV''QPPNNG' run 'echo 1800000 1800000 > /sys/kernel/mva_tesst/regulators/buck5_set'
+HCWVQPPNNGHCWVQPPNNG 0
+root@arm:~# echo 'HSJV''UNNZJC'
+HSJVUNNZJC
+root@arm:~# MARKER='GKCQ''QQHCCV' run 'i2cget -y -f 1 0x4b 0x16'
+GKCQQQHCCV0x03
+GKCQQQHCCV 0
+root@arm:~# echo 'JMTE''JMGVJC'
+JMTEJMGVJC
+root@arm:~# MARKER='KSCE''LHFXMH' run 'echo 1845000 1845000 > /sys/kernel/mva_tesst/regulators/buck5_set'
+KSCELHFXMHKSCELHFXMH 0
+root@arm:~# echo 'ZAMA''YUYTSH'
+ZAMAYUYTSH
+root@arm:~# MARKER='BZHE''EPCMYX' run 'i2cget -y -f 1 0x4b 0x16'
+BZHEEPCMYX0x04
+BZHEEPCMYX 0
+root@arm:~# echo 'CHKK''HCXSAL'
+CHKKHCXSAL
+root@arm:~# MARKER='SOCL''GUHZSK' run 'echo 1905000 1905000 > /sys/kernel/mva_tesst/regulators/buck5_set'
+SOCLGUHZSKSOCLGUHZSK 0
+root@arm:~# echo 'JYFT''PWXMGJ'
+JYFTPWXMGJ
+root@arm:~# MARKER='LFNQ''JKOKMV' run 'i2cget -y -f 1 0x4b 0x16'
+LFNQJKOKMV0x05
+LFNQJKOKMV 0
+root@arm:~# echo 'TQEE''KQEWBS'
+TQEEKQEWBS
+root@arm:~# MARKER='LZKS''SEYVQA' run 'echo 1950000 1950000 > /sys/kernel/mva_tesst/regulators/buck5_set'
+LZKSSEYVQALZKSSEYVQA 0
+root@arm:~# echo 'YBYG''KWPQSG'
+YBYGKWPQSG
+root@arm:~# MARKER='KXHT''PVXMKT' run 'i2cget -y -f 1 0x4b 0x16'
+KXHTPVXMKT0x06
+KXHTPVXMKT 0
+root@arm:~# echo 'QMCS''FUOAKF'
+QMCSFUOAKF
+root@arm:~# MARKER='YWXN''CMUGGV' run 'echo 1995000 1995000 > /sys/kernel/mva_tesst/regulators/buck5_set'
+YWXNCMUGGVYWXNCMUGGV 0
+root@arm:~# echo 'FNCZ''UGWSSE'
+FNCZUGWSSE
+root@arm:~# MARKER='PZHV''ZQUTLT' run 'i2cget -y -f 1 0x4b 0x16'
+PZHVZQUTLT0x07
+PZHVZQUTLT 0
+root@arm:~# echo 'HLHC''XTNNEO'
+HLHCXTNNEO
+root@arm:~# MARKER='VCWT''PBYXUQ' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+VCWTPBYXUQ/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+VCWTPBYXUQ 0
+root@arm:~# echo 'AWJY''CQBLPX'
+AWJYCQBLPX
+root@arm:~# MARKER='VAHS''BFBXUX' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/BUCK6/rohmm,no-regulator-enable-control ;echo $?'
+VAHSBFBXUX1
+VAHSBFBXUX 0
+root@arm:~# echo 'FQQY''GJEJMY'
+FQQYGJEJMY
+root@arm:~# MARKER='WQFU''OXLBKX' run 'i2cget -y -f 1 0x4b 0xc'
+WQFUOXLBKX0x02
+WQFUOXLBKX 0
+root@arm:~# echo 'GWVY''OLXHGV'
+GWVYOLXHGV
+root@arm:~# MARKER='YUZY''EGUYFL' run 'echo 800000 800000 > /sys/kernel/mva_test//regulators/buck6_set'
+YUZYEGUYFLYUZYEGUYFL 0
+root@arm:~# echo 'OKOV''SUKXHG'
+OKOVSUKXHG
+root@arm:~# MARKER='LLXS''UAESAJ' run 'i2cget -y -f 1 0x4b 0x17'
+LLXSUAESAJ0x00
+LLXSUAESAJ 0
+root@arm:~# echo 'MYCZ''MLZEVK'
+MYCZMLZEVK
+root@arm:~# MARKER='JOGE''JXKOSF' run 'echo 810000 810000 > /sys/kernel/mva_test//regulators/buck6_set'
+JOGEJXKOSFJOGEJXKOSF 0
+root@arm:~# echo 'ESVL''FBQVTV'
+ESVLFBQVTV
+root@arm:~# MARKER='YYSS''ULEWVV' run 'i2cget -y -f 1 0x4b 0x17'
+YYSSULEWVV0x01
+YYSSULEWVV 0
+root@arm:~# echo 'JKQP''OAOPBB'
+JKQPOAOPBB
+root@arm:~# MARKER='TLNW''NSWWOH' run 'echo 820000 820000 > /sys/kernel/mva_test//regulators/buck6_set'
+TLNWNSWWOHTLNWNSWWOH 0
+root@arm:~# echo 'ASPS''TQEXLS'
+ASPSTQEXLS
+root@arm:~# MARKER='BTPW''FNEYKT' run 'i2cget -y -f 1 0x4b 0x17'
+BTPWFNEYKT0x02
+BTPWFNEYKT 0
+root@arm:~# echo 'BTCT''XTXFKV'
+BTCTXTXFKV
+root@arm:~# MARKER='BPMJ''EPBXSZ' run 'echo 830000 830000 > /sys/kernel/mva_test//regulators/buck6_set'
+BPMJEPBXSZBPMJEPBXSZ 0
+root@arm:~# echo 'ZVBB''ATZOMS'
+ZVBBATZOMS
+root@arm:~# MARKER='QQLQ''KFXUZL' run 'i2cget -y -f 1 0x4b 0x17'
+QQLQKFXUZL0x03
+QQLQKFXUZL 0
+root@arm:~# echo 'EXLL''ZTUSTK'
+EXLLZTUSTK
+root@arm:~# MARKER='NHUC''QUPMEO' run 'echo 840000 840000 > /sys/kernel/mva_test//regulators/buck6_set'
+NHUCQUPMEONHUCQUPMEO 0
+root@arm:~# echo 'ZCTT''HOMLTO'
+ZCTTHOMLTO
+root@arm:~# MARKER='EAMU''CVWNCS' run 'i2cget -y -f 1 0x4b 0x17'
+EAMUCVWNCS0x04
+EAMUCVWNCS 0
+root@arm:~# echo 'SYLW''XLWSEO'
+SYLWXLWSEO
+root@arm:~# MARKER='UOLJ''SPZWEV' run 'echo 850000 850000 > /sys/kernel/mva_test//regulators/buck6_set'
+UOLJSPZWEVUOLJSPZWEV 0
+root@arm:~# echo 'GOHT''YBHAXP'
+GOHTYBHAXP
+root@arm:~# MARKER='ECQS''VWJSYT' run 'i2cget -y -f 1 0x4b 0x17'
+ECQSVWJSYT0x05
+ECQSVWJSYT 0
+root@arm:~# echo 'PAQM''HZFBNJ'
+PAQMHZFBNJ
+root@arm:~# MARKER='NYFG''CVXPKJ' run 'echo 860000 860000 > /sys/kernel/mva_test//regulators/buck6_set'
+NYFGCVXPKJNYFGCVXPKJ 0
+root@arm:~# echo 'AMZH''LAPHSM'
+AMZHLAPHSM
+root@arm:~# MARKER='UXEK''LHQQKN' run 'i2cget -y -f 1 0x4b 0x17'
+UXEKLHQQKN0x06
+UXEKLHQQKN 0
+root@arm:~# echo 'ZVKQ''YWOKNA'
+ZVKQYWOKNA
+root@arm:~# MARKER='PJQZ''UNKXAS' run 'echo 870000 870000 > /sys/kernel/mva_test//regulators/buck6_set'
+PJQZUNKXASPJQZUNKXAS 0
+root@arm:~# echo 'CQSF''FKZCSN'
+CQSFFKZCSN
+root@arm:~# MARKER='VXWT''EMLWSP' run 'i2cget -y -f 1 0x4b 0x17'
+VXWTEMLWSP0x07
+VXWTEMLWSP 0
+root@arm:~# echo 'PEKM''XSFXGF'
+PEKMXSFXGF
+root@arm:~# MARKER='ECZZ''LMZXYO' run 'echo 880000 880000 > /sys/kernel/mva_test//regulators/buck6_set'
+ECZZLMZXYOECZZLMZXYO 0
+root@arm:~# echo 'NOTW''HJJJXF'
+NOTWHJJJXF
+root@arm:~# MARKER='SSFV''MEYWEX' run 'i2cget -y -f 1 0x4b 0x17'
+SSFVMEYWEX0x08
+SSFVMEYWEX 0
+root@arm:~# echo 'FLEB''UUWWHH'
+FLEBUUWWHH
+root@arm:~# MARKER='ZSMV''XNZUZL' run 'echo 890000 890000 > /sys/kernel/mva_test//regulators/buck6_set'
+ZSMVXNZUZLZSMVXNZUZL 0
+root@arm:~# echo 'HGWQ''JKXWWG'
+HGWQJKXWWG
+root@arm:~# MARKER='TNNC''FQOCBM' run 'i2cget -y -f 1 0x4b 0x17'
+TNNCFQOCBM0x09
+TNNCFQOCBM 0
+root@arm:~# echo 'JJME''BLOZUZ'
+JJMEBLOZUZ
+root@arm:~# MARKER='ZYOH''UZGZJS' run 'echo 900000 900000 > /sys/kernel/mva_test//regulators/buck6_set'
+ZYOHUZGZJSZYOHUZGZJS 0
+root@arm:~# echo 'SNMS''FOECUS'
+SNMSFOECUS
+root@arm:~# MARKER='TXPV''HSFKCZ' run 'i2cget -y -f 1 0x4b 0x17'
+TXPVHSFKCZ0x0a
+TXPVHSFKCZ 0
+root@arm:~# echo 'WEFK''XUVMVZ'
+WEFKXUVMVZ
+root@arm:~# MARKER='FVJY''JCUMBS' run 'echo 910000 910000 > /sys/kernel/mva_test//regulators/buck6_set'
+FVJYJCUMBSFVJYJCUMBS 0
+root@arm:~# echo 'CLZE''ZPEKOF'
+CLZEZPEKOF
+root@arm:~# MARKER='YALQ''TXAYKX' run 'i2cget -y -f 1 0x4b 0x17'
+YALQTXAYKX0x0b
+YALQTXAYKX 0
+root@arm:~# echo 'BOQM''BZCZFB'
+BOQMBZCZFB
+root@arm:~# MARKER='TGKO''BPGBMW' run 'echo 920000 920000 > /sys/kernel/mva_test//regulators/buck6_set'
+TGKOBPGBMWTGKOBPGBMW 0
+root@arm:~# echo 'EACP''TUOJYO'
+EACPTUOJYO
+root@arm:~# MARKER='WWCG''BYABSP' run 'i2cget -y -f 1 0x4b 0x17'
+WWCGBYABSP0x0c
+WWCGBYABSP 0
+root@arm:~# echo 'LEYW''XAPCHO'
+LEYWXAPCHO
+root@arm:~# MARKER='QKWM''XYZNTJ' run 'echo 930000 930000 > /sys/kernel/mva_test//regulators/buck6_set'
+QKWMXYZNTJQKWMXYZNTJ 0
+root@arm:~# echo 'CJKC''NFWLXP'
+CJKCNFWLXP
+root@arm:~# MARKER='JWNE''ZVKCZP' run 'i2cget -y -f 1 0x4b 0x17'
+JWNEZVKCZP0x0d
+JWNEZVKCZP 0
+root@arm:~# echo 'ZZNQ''CMMWMK'
+ZZNQCMMWMK
+root@arm:~# MARKER='BOFG''NAKXOP' run 'echo 940000 940000 > /sys/kernel/mva_test//regulators/buck6_set'
+BOFGNAKXOPBOFGNAKXOP 0
+root@arm:~# echo 'YCMU''YQVEYA'
+YCMUYQVEYA
+root@arm:~# MARKER='YMOG''FEQFGQ' run 'i2cget -y -f 1 0x4b 0x17'
+YMOGFEQFGQ0x0e
+YMOGFEQFGQ 0
+root@arm:~# echo 'VJWQ''WNFUWE'
+VJWQWNFUWE
+root@arm:~# MARKER='HXVA''YBOWUJ' run 'echo 950000 950000 > /sys/kernel/mva_test//regulators/buck6_set'
+HXVAYBOWUJHXVAYBOWUJ 0
+root@arm:~# echo 'GVWT''UNFCVT'
+GVWTUNFCVT
+root@arm:~# MARKER='TMKV''JKQOPT' run 'i2cget -y -f 1 0x4b 0x17'
+TMKVJKQOPT0x0f
+TMKVJKQOPT 0
+root@arm:~# echo 'HQXB''AWHEHJ'
+HQXBAWHEHJ
+root@arm:~# MARKER='KYYT''ZQFKNK' run 'echo 960000 960000 > /sys/kernel/mva_test//regulators/buck6_set'
+KYYTZQFKNKKYYTZQFKNK 0
+root@arm:~# echo 'PKHC''QBNLHH'
+PKHCQBNLHH
+root@arm:~# MARKER='JXOP''UAQNUY' run 'i2cget -y -f 1 0x4b 0x17'
+JXOPUAQNUY0x10
+JXOPUAQNUY 0
+root@arm:~# echo 'ZQFX''HKLUUC'
+ZQFXHKLUUC
+root@arm:~# MARKER='SAOK''TGQTPN' run 'echo 970000 970000 > /sys/kernel/mva_test//regulators/buck6_set'
+SAOKTGQTPNSAOKTGQTPN 0
+root@arm:~# echo 'JVNE''PXCMWB'
+JVNEPXCMWB
+root@arm:~# MARKER='LZJO''KCUECE' run 'i2cget -y -f 1 0x4b 0x17'
+LZJOKCUECE0x11
+LZJOKCUECE 0
+root@arm:~# echo 'XLUM''XMGETG'
+XLUMXMGETG
+root@arm:~# MARKER='USFG''ULHMLQ' run 'echo 980000 980000 > /sys/kernel/mva_test//regulators/buck6_set'
+USFGULHMLQUSFGULHMLQ 0
+root@arm:~# echo 'HYKY''SEWBCF'
+HYKYSEWBCF
+root@arm:~# MARKER='MWLW''XKLXEG' run 'i2cget -y -f 1 0x4b 0x17'
+MWLWXKLXEG0x12
+MWLWXKLXEG 0
+root@arm:~# echo 'ETNC''ECSXVE'
+ETNCECSXVE
+root@arm:~# MARKER='XUXU''MCQZBY' run 'echo 990000 990000 > /sys/kernel/mva_test//regulators/buck6_set'
+XUXUMCQZBYXUXUMCQZBY 0
+root@arm:~# echo 'XNEM''TZWVOY'
+XNEMTZWVOY
+root@arm:~# MARKER='UVZB''HAGGUX' run 'i2cget -y -f 1 0x4b 0x17'
+UVZBHAGGUX0x13
+UVZBHAGGUX 0
+root@arm:~# echo 'YNBZ''JWNEPF'
+YNBZJWNEPF
+root@arm:~# MARKER='SYVO''QVQBLM' run 'echo 1000000 1000000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+SYVOQVQBLMSYVOQVQBLM 0
+root@arm:~# echo 'AEXW''WBYCUP'
+AEXWWBYCUP
+root@arm:~# MARKER='LYGK''OKQEAP' run 'i2cget -y -f 1 0x4b 0x17'
+LYGKOKQEAP0x14
+LYGKOKQEAP 0
+root@arm:~# echo 'XKKJ''NUQXUT'
+XKKJNUQXUT
+root@arm:~# MARKER='HUHV''JJXLPY' run 'echo 1010000 1010000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+HUHVJJXLPYHUHVJJXLPY 0
+root@arm:~# echo 'WPOY''NJVGBP'
+WPOYNJVGBP
+root@arm:~# MARKER='ZAKP''SBWVCJ' run 'i2cget -y -f 1 0x4b 0x17'
+ZAKPSBWVCJ0x15
+ZAKPSBWVCJ 0
+root@arm:~# echo 'MCJV''YZBCWC'
+MCJVYZBCWC
+root@arm:~# MARKER='FLZG''OTYGEP' run 'echo 1020000 1020000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+FLZGOTYGEPFLZGOTYGEP 0
+root@arm:~# echo 'APBJ''KLTNQG'
+APBJKLTNQG
+root@arm:~# MARKER='KTMQ''YXANGU' run 'i2cget -y -f 1 0x4b 0x17'
+KTMQYXANGU0x16
+KTMQYXANGU 0
+root@arm:~# echo 'NGMB''ZZSQWQ'
+NGMBZZSQWQ
+root@arm:~# MARKER='GESY''GTZFCH' run 'echo 1030000 1030000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+GESYGTZFCHGESYGTZFCH 0
+root@arm:~# echo 'MXLG''GQJEYC'
+MXLGGQJEYC
+root@arm:~# MARKER='LEKN''QPAZET' run 'i2cget -y -f 1 0x4b 0x17'
+LEKNQPAZET0x17
+LEKNQPAZET 0
+root@arm:~# echo 'MQVH''TAUQNX'
+MQVHTAUQNX
+root@arm:~# MARKER='TKHZ''MAFLYA' run 'echo 1040000 1040000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+TKHZMAFLYATKHZMAFLYA 0
+root@arm:~# echo 'BXVT''WWTBNF'
+BXVTWWTBNF
+root@arm:~# MARKER='JLEA''CJSVJH' run 'i2cget -y -f 1 0x4b 0x17'
+JLEACJSVJH0x18
+JLEACJSVJH 0
+root@arm:~# echo 'NGGH''HQKYZE'
+NGGHHQKYZE
+root@arm:~# MARKER='ZYBY''GPHMZL' run 'echo 1050000 1050000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+ZYBYGPHMZLZYBYGPHMZL 0
+root@arm:~# echo 'KJMS''KQOXYY'
+KJMSKQOXYY
+root@arm:~# MARKER='ZBZK''NVJPFX' run 'i2cget -y -f 1 0x4b 0x17'
+ZBZKNVJPFX0x19
+ZBZKNVJPFX 0
+root@arm:~# echo 'NJJW''LBQVEN'
+NJJWLBQVEN
+root@arm:~# MARKER='FUPL''FJXHZT' run 'echo 1060000 1060000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+FUPLFJXHZTFUPLFJXHZT 0
+root@arm:~# echo 'WYGP''STEOWH'
+WYGPSTEOWH
+root@arm:~# MARKER='OXAX''PCOWLM' run 'i2cget -y -f 1 0x4b 0x17'
+OXAXPCOWLM0x1a
+OXAXPCOWLM 0
+root@arm:~# echo 'ZUWQ''BSZKHF'
+ZUWQBSZKHF
+root@arm:~# MARKER='LLSW''LNVSCN' run 'echo 1070000 1070000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+LLSWLNVSCNLLSWLNVSCN 0
+root@arm:~# echo 'UGUF''PXFJWE'
+UGUFPXFJWE
+root@arm:~# MARKER='HUBU''BCYHKZ' run 'i2cget -y -f 1 0x4b 0x17'
+HUBUBCYHKZ0x1b
+HUBUBCYHKZ 0
+root@arm:~# echo 'HLQK''WMBTAP'
+HLQKWMBTAP
+root@arm:~# MARKER='OYQT''WBQLPP' run 'echo 1080000 1080000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+OYQTWBQLPPOYQTWBQLPP 0
+root@arm:~# echo 'MSVC''QXMSPK'
+MSVCQXMSPK
+root@arm:~# MARKER='YGHW''SKZUSV' run 'i2cget -y -f 1 0x4b 0x17'
+YGHWSKZUSV0x1c
+YGHWSKZUSV 0
+root@arm:~# echo 'EQUH''SYGPHP'
+EQUHSYGPHP
+root@arm:~# MARKER='HKGZ''JHCVXP' run 'echo 1090000 1090000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+HKGZJHCVXPHKGZJHCVXP 0
+root@arm:~# echo 'TGBT''NAOBHV'
+TGBTNAOBHV
+root@arm:~# MARKER='VMEU''PZFQSO' run 'i2cget -y -f 1 0x4b 0x17'
+VMEUPZFQSO0x1d
+VMEUPZFQSO 0
+root@arm:~# echo 'MYPW''PAKVFF'
+MYPWPAKVFF
+root@arm:~# MARKER='MSPW''BVEBTC' run 'echo 1100000 1100000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+MSPWBVEBTCMSPWBVEBTC 0
+root@arm:~# echo 'CZXK''SCVJVN'
+CZXKSCVJVN
+root@arm:~# MARKER='TSEN''KMNEEE' run 'i2cget -y -f 1 0x4b 0x17'
+TSENKMNEEE0x1e
+TSENKMNEEE 0
+root@arm:~# echo 'UPWO''XQAZUE'
+UPWOXQAZUE
+root@arm:~# MARKER='FYJJ''QQYVQB' run 'echo 1110000 1110000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+FYJJQQYVQBFYJJQQYVQB 0
+root@arm:~# echo 'GFKK''TAANFT'
+GFKKTAANFT
+root@arm:~# MARKER='VQZB''JWNKYA' run 'i2cget -y -f 1 0x4b 0x17'
+VQZBJWNKYA0x1f
+VQZBJWNKYA 0
+root@arm:~# echo 'GCSC''MKJTTH'
+GCSCMKJTTH
+root@arm:~# MARKER='UGZT''LWZLUP' run 'echo 1120000 1120000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+UGZTLWZLUPUGZTLWZLUP 0
+root@arm:~# echo 'LNXS''AAJNOW'
+LNXSAAJNOW
+root@arm:~# MARKER='AYXG''PUYYUK' run 'i2cget -y -f 1 0x4b 0x17'
+AYXGPUYYUK0x20
+AYXGPUYYUK 0
+root@arm:~# echo 'NQLN''AVAZNZ'
+NQLNAVAZNZ
+root@arm:~# MARKER='GQUC''LYKNLC' run 'echo 1130000 1130000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+GQUCLYKNLCGQUCLYKNLC 0
+root@arm:~# echo 'JYAN''KXXWKF'
+JYANKXXWKF
+root@arm:~# MARKER='LKFX''ZLUHVN' run 'i2cget -y -f 1 0x4b 0x17'
+LKFXZLUHVN0x21
+LKFXZLUHVN 0
+root@arm:~# echo 'VEON''NHXUUN'
+VEONNHXUUN
+root@arm:~# MARKER='GAFW''KYTPGF' run 'echo 1140000 1140000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+GAFWKYTPGFGAFWKYTPGF 0
+root@arm:~# echo 'NUSY''HWLLBQ'
+NUSYHWLLBQ
+root@arm:~# MARKER='JQSU''TNTNHM' run 'i2cget -y -f 1 0x4b 0x17'
+JQSUTNTNHM0x22
+JQSUTNTNHM 0
+root@arm:~# echo 'EVTZ''CKXKWO'
+EVTZCKXKWO
+root@arm:~# MARKER='GBVE''VZFOPY' run 'echo 1150000 1150000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+GBVEVZFOPYGBVEVZFOPY 0
+root@arm:~# echo 'BUHV''ZCMYPZ'
+BUHVZCMYPZ
+root@arm:~# MARKER='WKVU''HVPFAB' run 'i2cget -y -f 1 0x4b 0x17'
+WKVUHVPFAB0x23
+WKVUHVPFAB 0
+root@arm:~# echo 'GHUH''QOVGGL'
+GHUHQOVGGL
+root@arm:~# MARKER='VPAW''VSEOGF' run 'echo 1160000 1160000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+VPAWVSEOGFVPAWVSEOGF 0
+root@arm:~# echo 'KPSU''YCCOZY'
+KPSUYCCOZY
+root@arm:~# MARKER='MGNZ''UHCMFT' run 'i2cget -y -f 1 0x4b 0x17'
+MGNZUHCMFT0x24
+MGNZUHCMFT 0
+root@arm:~# echo 'MXLC''SBHAUH'
+MXLCSBHAUH
+root@arm:~# MARKER='EFFK''UNTTFT' run 'echo 1170000 1170000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+EFFKUNTTFTEFFKUNTTFT 0
+root@arm:~# echo 'HFSE''YTOLJB'
+HFSEYTOLJB
+root@arm:~# MARKER='SZQH''XVKJWV' run 'i2cget -y -f 1 0x4b 0x17'
+SZQHXVKJWV0x25
+SZQHXVKJWV 0
+root@arm:~# echo 'AKOC''JPVYYY'
+AKOCJPVYYY
+root@arm:~# MARKER='BXBQ''APSWSJ' run 'echo 1180000 1180000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+BXBQAPSWSJBXBQAPSWSJ 0
+root@arm:~# echo 'YCCP''QGGLQP'
+YCCPQGGLQP
+root@arm:~# MARKER='NCBB''JPMKSY' run 'i2cget -y -f 1 0x4b 0x17'
+NCBBJPMKSY0x26
+NCBBJPMKSY 0
+root@arm:~# echo 'QXVQ''VXHPJB'
+QXVQVXHPJB
+root@arm:~# MARKER='LQFE''CGBMST' run 'echo 1190000 1190000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+LQFECGBMSTLQFECGBMST 0
+root@arm:~# echo 'VVFK''UGWPAT'
+VVFKUGWPAT
+root@arm:~# MARKER='AEBY''FVWGFY' run 'i2cget -y -f 1 0x4b 0x17'
+AEBYFVWGFY0x27
+AEBYFVWGFY 0
+root@arm:~# echo 'VNCE''XVKYQW'
+VNCEXVKYQW
+root@arm:~# MARKER='TUSM''BUOKWC' run 'echo 1200000 1200000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+TUSMBUOKWCTUSMBUOKWC 0
+root@arm:~# echo 'THMN''TGWCXH'
+THMNTGWCXH
+root@arm:~# MARKER='QEHS''CXKSTO' run 'i2cget -y -f 1 0x4b 0x17'
+QEHSCXKSTO0x28
+QEHSCXKSTO 0
+root@arm:~# echo 'YWGM''ZMTUWO'
+YWGMZMTUWO
+root@arm:~# MARKER='OJFP''LLNFQW' run 'echo 1210000 1210000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+OJFPLLNFQWOJFPLLNFQW 0
+root@arm:~# echo 'MVYN''XSBKMF'
+MVYNXSBKMF
+root@arm:~# MARKER='EHBS''WWKNXE' run 'i2cget -y -f 1 0x4b 0x17'
+EHBSWWKNXE0x29
+EHBSWWKNXE 0
+root@arm:~# echo 'BYMH''FBLCKB'
+BYMHFBLCKB
+root@arm:~# MARKER='ZLSB''WCJWAY' run 'echo 1220000 1220000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+ZLSBWCJWAYZLSBWCJWAY 0
+root@arm:~# echo 'QPHE''BQSVGB'
+QPHEBQSVGB
+root@arm:~# MARKER='YSLL''JXEQKS' run 'i2cget -y -f 1 0x4b 0x17'
+YSLLJXEQKS0x2a
+YSLLJXEQKS 0
+root@arm:~# echo 'UFYG''FBSZYE'
+UFYGFBSZYE
+root@arm:~# MARKER='ABYS''VXQWET' run 'echo 1230000 1230000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+ABYSVXQWETABYSVXQWET 0
+root@arm:~# echo 'FVHW''OBVXVU'
+FVHWOBVXVU
+root@arm:~# MARKER='ZVQW''LNXKEA' run 'i2cget -y -f 1 0x4b 0x17'
+ZVQWLNXKEA0x2b
+ZVQWLNXKEA 0
+root@arm:~# echo 'BSBW''TGUMHE'
+BSBWTGUMHE
+root@arm:~# MARKER='KEUM''VUQTXK' run 'echo 1240000 1240000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+KEUMVUQTXKKEUMVUQTXK 0
+root@arm:~# echo 'ENLQ''JMJPMF'
+ENLQJMJPMF
+root@arm:~# MARKER='SPBC''VOUQZX' run 'i2cget -y -f 1 0x4b 0x17'
+SPBCVOUQZX0x2c
+SPBCVOUQZX 0
+root@arm:~# echo 'AGVV''KUZCHB'
+AGVVKUZCHB
+root@arm:~# MARKER='QCSG''EVVHLG' run 'echo 1250000 1250000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+QCSGEVVHLGQCSGEVVHLG 0
+root@arm:~# echo 'EBAP''ZTONGX'
+EBAPZTONGX
+root@arm:~# MARKER='FXPU''JABJQY' run 'i2cget -y -f 1 0x4b 0x17'
+FXPUJABJQY0x2d
+FXPUJABJQY 0
+root@arm:~# echo 'PQWP''VYTHVW'
+PQWPVYTHVW
+root@arm:~# MARKER='MVCQ''KVVOWE' run 'echo 1260000 1260000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+MVCQKVVOWEMVCQKVVOWE 0
+root@arm:~# echo 'TGZS''GFPZVJ'
+TGZSGFPZVJ
+root@arm:~# MARKER='QQUC''HKKPCN' run 'i2cget -y -f 1 0x4b 0x17'
+QQUCHKKPCN0x2e
+QQUCHKKPCN 0
+root@arm:~# echo 'NCZY''HJYLXB'
+NCZYHJYLXB
+root@arm:~# MARKER='KENH''WAVSKY' run 'echo 1270000 1270000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+KENHWAVSKYKENHWAVSKY 0
+root@arm:~# echo 'QNJY''PJYWKP'
+QNJYPJYWKP
+root@arm:~# MARKER='NNMM''AFFHVP' run 'i2cget -y -f 1 0x4b 0x17'
+NNMMAFFHVP0x2f
+NNMMAFFHVP 0
+root@arm:~# echo 'OHXA''BEWCSM'
+OHXABEWCSM
+root@arm:~# MARKER='TXAY''OQTMBT' run 'echo 1280000 1280000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+TXAYOQTMBTTXAYOQTMBT 0
+root@arm:~# echo 'MZQM''PQSSHT'
+MZQMPQSSHT
+root@arm:~# MARKER='SWNA''PAPBZA' run 'i2cget -y -f 1 0x4b 0x17'
+SWNAPAPBZA0x30
+SWNAPAPBZA 0
+root@arm:~# echo 'OLGU''WWSUNW'
+OLGUWWSUNW
+root@arm:~# MARKER='WBKW''SJESVL' run 'echo 1290000 1290000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+WBKWSJESVLWBKWSJESVL 0
+root@arm:~# echo 'VQNG''VPUCJG'
+VQNGVPUCJG
+root@arm:~# MARKER='EOEA''EVZKOP' run 'i2cget -y -f 1 0x4b 0x17'
+EOEAEVZKOP0x31
+EOEAEVZKOP 0
+root@arm:~# echo 'BTXW''HACVPE'
+BTXWHACVPE
+root@arm:~# MARKER='EBZY''HBJGSK' run 'echo 1300000 1300000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+EBZYHBJGSKEBZYHBJGSK 0
+root@arm:~# echo 'BXLY''ZMXKYV'
+BXLYZMXKYV
+root@arm:~# MARKER='VNOQ''GOBAEQ' run 'i2cget -y -f 1 0x4b 0x17'
+VNOQGOBAEQ0x32
+VNOQGOBAEQ 0
+root@arm:~# echo 'HTJP''FYMBLU'
+HTJPFYMBLU
+root@arm:~# MARKER='CKMU''GQOPOY' run 'echo 1310000 1310000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+CKMUGQOPOYCKMUGQOPOY 0
+root@arm:~# echo 'ENFP''TMJBFN'
+ENFPTMJBFN
+root@arm:~# MARKER='JCFP''SOJYYU' run 'i2cget -y -f 1 0x4b 0x17'
+JCFPSOJYYU0x33
+JCFPSOJYYU 0
+root@arm:~# echo 'CLBQ''SXCCPB'
+CLBQSXCCPB
+root@arm:~# MARKER='XKYN''YBXJFE' run 'echo 1320000 1320000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+XKYNYBXJFEXKYNYBXJFE 0
+root@arm:~# echo 'JAQO''SYPMMZ'
+JAQOSYPMMZ
+root@arm:~# MARKER='LKFS''OFMQEK' run 'i2cget -y -f 1 0x4b 0x17'
+LKFSOFMQEK0x34
+LKFSOFMQEK 0
+root@arm:~# echo 'AWUV''EKOZHF'
+AWUVEKOZHF
+root@arm:~# MARKER='AVNF''CSYEGQ' run 'echo 1330000 1330000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+AVNFCSYEGQAVNFCSYEGQ 0
+root@arm:~# echo 'VWHS''TSGGFC'
+VWHSTSGGFC
+root@arm:~# MARKER='OSNO''WGJVUN' run 'i2cget -y -f 1 0x4b 0x17'
+OSNOWGJVUN0x35
+OSNOWGJVUN 0
+root@arm:~# echo 'JUEW''FAQFUE'
+JUEWFAQFUE
+root@arm:~# MARKER='HKSQ''QXNLEA' run 'echo 1340000 1340000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+HKSQQXNLEAHKSQQXNLEA 0
+root@arm:~# echo 'FOOQ''UWEJVT'
+FOOQUWEJVT
+root@arm:~# MARKER='MVNT''JVMFJZ' run 'i2cget -y -f 1 0x4b 0x17'
+MVNTJVMFJZ0x36
+MVNTJVMFJZ 0
+root@arm:~# echo 'BVHJ''FPACJT'
+BVHJFPACJT
+root@arm:~# MARKER='XCWU''XKYZPM' run 'echo 1350000 1350000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+XCWUXKYZPMXCWUXKYZPM 0
+root@arm:~# echo 'TXWJ''YAJNPX'
+TXWJYAJNPX
+root@arm:~# MARKER='TAHO''KXYFWE' run 'i2cget -y -f 1 0x4b 0x17'
+TAHOKXYFWE0x37
+TAHOKXYFWE 0
+root@arm:~# echo 'QPSQ''YJGJBE'
+QPSQYJGJBE
+root@arm:~# MARKER='MTPH''QWPCOA' run 'echo 1360000 1360000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+MTPHQWPCOAMTPHQWPCOA 0
+root@arm:~# echo 'EQQE''EOKTMU'
+EQQEEOKTMU
+root@arm:~# MARKER='PTKM''JMWWVJ' run 'i2cget -y -f 1 0x4b 0x17'
+PTKMJMWWVJ0x38
+PTKMJMWWVJ 0
+root@arm:~# echo 'MSSG''KVTYYJ'
+MSSGKVTYYJ
+root@arm:~# MARKER='KUAY''OSVAUT' run 'echo 1370000 1370000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+KUAYOSVAUTKUAYOSVAUT 0
+root@arm:~# echo 'SYJB''VQVWLV'
+SYJBVQVWLV
+root@arm:~# MARKER='SWHM''JJOZQN' run 'i2cget -y -f 1 0x4b 0x17'
+SWHMJJOZQN0x39
+SWHMJJOZQN 0
+root@arm:~# echo 'HCGT''XQKOBZ'
+HCGTXQKOBZ
+root@arm:~# MARKER='KUWZ''ZEPAJJ' run 'echo 1380000 1380000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+KUWZZEPAJJKUWZZEPAJJ 0
+root@arm:~# echo 'GEZA''HLOQMZ'
+GEZAHLOQMZ
+root@arm:~# MARKER='CJPF''GKYBES' run 'i2cget -y -f 1 0x4b 0x17'
+CJPFGKYBES0x3a
+CJPFGKYBES 0
+root@arm:~# echo 'XXSW''GSJCSC'
+XXSWGSJCSC
+root@arm:~# MARKER='XTVV''AUMKPT' run 'echo 1390000 1390000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+XTVVAUMKPTXTVVAUMKPT 0
+root@arm:~# echo 'VJWV''OGJBYH'
+VJWVOGJBYH
+root@arm:~# MARKER='JNHF''HWSAXZ' run 'i2cget -y -f 1 0x4b 0x17'
+JNHFHWSAXZ0x3b
+JNHFHWSAXZ 0
+root@arm:~# echo 'SGKV''MTNOFU'
+SGKVMTNOFU
+root@arm:~# MARKER='YFYY''XXHQCS' run 'echo 1400000 1400000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+YFYYXXHQCSYFYYXXHQCS 0
+root@arm:~# echo 'XHYJ''TLKYUN'
+XHYJTLKYUN
+root@arm:~# MARKER='HMSF''WBNSZY' run 'i2cget -y -f 1 0x4b 0x17'
+HMSFWBNSZY0x3c
+HMSFWBNSZY 0
+root@arm:~# echo 'QUUB''ZENACT'
+QUUBZENACT
+root@arm:~# MARKER='FKTC''CKLYWL' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+FKTCCKLYWL/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+FKTCCKLYWL 0
+root@arm:~# echo 'EEFJ''JNPMWF'
+EEFJJNPMWF
+root@arm:~# MARKER='VHGL''YSXYHP' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/LDO1/rohm,,no-regulator-enable-control ;echo $?'
+VHGLYSXYHP1
+VHGLYSXYHP 0
+root@arm:~# echo 'GWZF''HPBMZF'
+GWZFHPBMZF
+root@arm:~# MARKER='UVXL''ZWNEBQ' run 'i2cget -y -f 1 0x4b 0x18'
+UVXLZWNEBQ0xa2
+UVXLZWNEBQ 0
+root@arm:~# echo 'UCQZ''UVEEQT'
+UCQZUVEEQT
+root@arm:~# MARKER='EGGN''YKNEHX' run 'echo 3000000 3000000 > /sys/kernel/mva_tesst/regulators/buck7_set'
+EGGNYKNEHXEGGNYKNEHX 0
+root@arm:~# echo 'FKES''XMLGCP'
+FKESXMLGCP
+root@arm:~# MARKER='CPJN''STOJET' run 'i2cget -y -f 1 0x4b 0x18'
+CPJNSTOJET0x80
+CPJNSTOJET 0
+root@arm:~# echo 'XCBQ''BJOOTE'
+XCBQBJOOTE
+root@arm:~# MARKER='SFMH''WOUCUO' run 'echo 3100000 3100000 > /sys/kernel/mva_tesst/regulators/buck7_set'
+SFMHWOUCUOSFMHWOUCUO 0
+root@arm:~# echo 'QLEV''TUBZNQ'
+QLEVTUBZNQ
+root@arm:~# MARKER='FCZJ''CJWMNZ' run 'i2cget -y -f 1 0x4b 0x18'
+FCZJCJWMNZ0x81
+FCZJCJWMNZ 0
+root@arm:~# echo 'NUCT''AHAVCJ'
+NUCTAHAVCJ
+root@arm:~# MARKER='ELKE''LSZMKU' run 'echo 3200000 3200000 > /sys/kernel/mva_tesst/regulators/buck7_set'
+ELKELSZMKUELKELSZMKU 0
+root@arm:~# echo 'MTVU''UWVFGO'
+MTVUUWVFGO
+root@arm:~# MARKER='QAUN''WZSHZX' run 'i2cget -y -f 1 0x4b 0x18'
+QAUNWZSHZX0x82
+QAUNWZSHZX 0
+root@arm:~# echo 'HKBZ''JKTKTV'
+HKBZJKTKTV
+root@arm:~# MARKER='TLVQ''OKXUQL' run 'echo 3300000 3300000 > /sys/kernel/mva_tesst/regulators/buck7_set'
+TLVQOKXUQLTLVQOKXUQL 0
+root@arm:~# echo 'ONNN''XKAMSP'
+ONNNXKAMSP
+root@arm:~# MARKER='UTYB''GBEGJU' run 'i2cget -y -f 1 0x4b 0x18'
+UTYBGBEGJU0x83
+UTYBGBEGJU 0
+root@arm:~# echo 'WZWT''POLVYG'
+WZWTPOLVYG
+root@arm:~# MARKER='PYBA''OQSGLL' run 'echo 1600000 1600000 > /sys/kernel/mva_tesst/regulators/buck7_set'
+PYBAOQSGLLPYBAOQSGLL 0
+root@arm:~# echo 'OHUS''AHGHSL'
+OHUSAHGHSL
+root@arm:~# MARKER='CJZX''BQZOVS' run 'i2cget -y -f 1 0x4b 0x18'
+CJZXBQZOVS0xa0
+CJZXBQZOVS 0
+root@arm:~# echo 'MLBV''UWENZN'
+MLBVUWENZN
+root@arm:~# MARKER='UGXJ''QOEPTO' run 'echo 1700000 1700000 > /sys/kernel/mva_tesst/regulators/buck7_set'
+UGXJQOEPTOUGXJQOEPTO 0
+root@arm:~# echo 'NNZE''GVSQWH'
+NNZEGVSQWH
+root@arm:~# MARKER='QVUN''LUGWEU' run 'i2cget -y -f 1 0x4b 0x18'
+QVUNLUGWEU0xa1
+QVUNLUGWEU 0
+root@arm:~# echo 'YHYB''VYPCYZ'
+YHYBVYPCYZ
+root@arm:~# MARKER='JFML''MPWSWH' run 'echo 1800000 1800000 > /sys/kernel/mva_tesst/regulators/buck7_set'
+JFMLMPWSWHJFMLMPWSWH 0
+root@arm:~# echo 'AXWA''OCTTKM'
+AXWAOCTTKM
+root@arm:~# MARKER='GXSB''JFYJKL' run 'i2cget -y -f 1 0x4b 0x18'
+GXSBJFYJKL0xa2
+GXSBJFYJKL 0
+root@arm:~# echo 'PTQF''QPFLVQ'
+PTQFQPFLVQ
+root@arm:~# MARKER='FBQS''JPAXKF' run 'echo 1900000 1900000 > /sys/kernel/mva_tesst/regulators/buck7_set'
+FBQSJPAXKFFBQSJPAXKF 0
+root@arm:~# echo 'UFOQ''OYYMYY'
+UFOQOYYMYY
+root@arm:~# MARKER='KNJB''VZOZFS' run 'i2cget -y -f 1 0x4b 0x18'
+KNJBVZOZFS0xa3
+KNJBVZOZFS 0
+root@arm:~# echo 'YJJH''VZWLLN'
+YJJHVZWLLN
+root@arm:~# MARKER='QOPO''YOJKYJ' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+QOPOYOJKYJ/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+QOPOYOJKYJ 0
+root@arm:~# echo 'MXEC''GFWFFY'
+MXECGFWFFY
+root@arm:~# MARKER='ESFH''BLUBLW' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/LDO2/rohm,,no-regulator-enable-control ;echo $?'
+ESFHBLUBLW1
+ESFHBLUBLW 0
+root@arm:~# echo 'SLFZ''SZJMEY'
+SLFZSZJMEY
+root@arm:~# MARKER='UAQM''XVHWCA' run 'i2cget -y -f 1 0x4b 0x19'
+UAQMXVHWCA0xa0
+UAQMXVHWCA 0
+root@arm:~# echo 'EJMM''HCSZAB'
+EJMMHCSZAB
+root@arm:~# MARKER='GMOQ''AMGJWZ' run 'echo 900000 900000 > /sys/kernel/mva_test//regulators/buck8_set'
+GMOQAMGJWZGMOQAMGJWZ 0
+root@arm:~# echo 'EUZK''LJESQU'
+EUZKLJESQU
+root@arm:~# MARKER='JPNW''WWLNFS' run 'i2cget -y -f 1 0x4b 0x19'
+JPNWWWLNFS0x80
+JPNWWWLNFS 0
+root@arm:~# echo 'EYCT''GZPPWG'
+EYCTGZPPWG
+root@arm:~# MARKER='LZXZ''OZSNJV' run 'echo 800000 800000 > /sys/kernel/mva_test//regulators/buck8_set'
+LZXZOZSNJVLZXZOZSNJV 0
+root@arm:~# echo 'FAEZ''YZNUSE'
+FAEZYZNUSE
+root@arm:~# MARKER='WEKV''VCUCZW' run 'i2cget -y -f 1 0x4b 0x19'
+WEKVVCUCZW0xa0
+WEKVVCUCZW 0
+root@arm:~# echo 'EHGW''ZOMVKX'
+EHGWZOMVKX
+root@arm:~# MARKER='MXAK''XJOXHL' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+MXAKXJOXHL/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+MXAKXJOXHL 0
+root@arm:~# echo 'GYTQ''JCXOSU'
+GYTQJCXOSU
+root@arm:~# MARKER='XBCZ''JGJLNF' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/LDO3/rohm,,no-regulator-enable-control ;echo $?'
+XBCZJGJLNF1
+XBCZJGJLNF 0
+root@arm:~# echo 'ESEC''SZFCCC'
+ESECSZFCCC
+root@arm:~# MARKER='MZJV''JOSWVH' run 'i2cget -y -f 1 0x4b 0x1a'
+MZJVJOSWVH0x80
+MZJVJOSWVH 0
+root@arm:~# echo 'YKFW''WYEABQ'
+YKFWWYEABQ
+root@arm:~# MARKER='WJYZ''MSEZFW' run 'echo 1800000 1800000 > /sys/kernel/mva_tesst/regulators/buck9_set'
+WJYZMSEZFWWJYZMSEZFW 0
+root@arm:~# echo 'VBYS''TVMUGQ'
+VBYSTVMUGQ
+root@arm:~# MARKER='BTTA''XYSAFK' run 'i2cget -y -f 1 0x4b 0x1a'
+BTTAXYSAFK0x80
+BTTAXYSAFK 0
+root@arm:~# echo 'OOST''VFFVJM'
+OOSTVFFVJM
+root@arm:~# MARKER='FKMT''PGHGHH' run 'echo 1900000 1900000 > /sys/kernel/mva_tesst/regulators/buck9_set'
+FKMTPGHGHHFKMTPGHGHH 0
+root@arm:~# echo 'QULB''PXLTGN'
+QULBPXLTGN
+root@arm:~# MARKER='JECX''XGFKYZ' run 'i2cget -y -f 1 0x4b 0x1a'
+JECXXGFKYZ0x81
+JECXXGFKYZ 0
+root@arm:~# echo 'XACG''TCESBG'
+XACGTCESBG
+root@arm:~# MARKER='PNGC''HUSPGH' run 'echo 2000000 2000000 > /sys/kernel/mva_tesst/regulators/buck9_set'
+PNGCHUSPGHPNGCHUSPGH 0
+root@arm:~# echo 'JGMU''OGTFFT'
+JGMUOGTFFT
+root@arm:~# MARKER='TBWQ''QQHTSV' run 'i2cget -y -f 1 0x4b 0x1a'
+TBWQQQHTSV0x82
+TBWQQQHTSV 0
+root@arm:~# echo 'NBQC''UGTLGH'
+NBQCUGTLGH
+root@arm:~# MARKER='LZBT''GTFTFJ' run 'echo 2100000 2100000 > /sys/kernel/mva_tesst/regulators/buck9_set'
+LZBTGTFTFJLZBTGTFTFJ 0
+root@arm:~# echo 'WQYN''BCWAUA'
+WQYNBCWAUA
+root@arm:~# MARKER='JBZG''BPWHNM' run 'i2cget -y -f 1 0x4b 0x1a'
+JBZGBPWHNM0x83
+JBZGBPWHNM 0
+root@arm:~# echo 'PUEX''XVHUZJ'
+PUEXXVHUZJ
+root@arm:~# MARKER='KXZM''UZHYJT' run 'echo 2200000 2200000 > /sys/kernel/mva_tesst/regulators/buck9_set'
+KXZMUZHYJTKXZMUZHYJT 0
+root@arm:~# echo 'JFFQ''KVSATO'
+JFFQKVSATO
+root@arm:~# MARKER='CTOA''YCFOTE' run 'i2cget -y -f 1 0x4b 0x1a'
+CTOAYCFOTE0x84
+CTOAYCFOTE 0
+root@arm:~# echo 'CAHX''KAHNUE'
+CAHXKAHNUE
+root@arm:~# MARKER='ZMBQ''SANZVA' run 'echo 2300000 2300000 > /sys/kernel/mva_tesst/regulators/buck9_set'
+ZMBQSANZVAZMBQSANZVA 0
+root@arm:~# echo 'VCJE''MSVKVN'
+VCJEMSVKVN
+root@arm:~# MARKER='GCOG''XZGBQX' run 'i2cget -y -f 1 0x4b 0x1a'
+GCOGXZGBQX0x85
+GCOGXZGBQX 0
+root@arm:~# echo 'NCKM''SGPTZH'
+NCKMSGPTZH
+root@arm:~# MARKER='GCCW''UEVBZT' run 'echo 2400000 2400000 > /sys/kernel/mva_tesst/regulators/buck9_set'
+GCCWUEVBZTGCCWUEVBZT 0
+root@arm:~# echo 'XZLB''HXVNGY'
+XZLBHXVNGY
+root@arm:~# MARKER='AUFE''NSJFYL' run 'i2cget -y -f 1 0x4b 0x1a'
+AUFENSJFYL0x86
+AUFENSJFYL 0
+root@arm:~# echo 'BXEL''KOTPOX'
+BXELKOTPOX
+root@arm:~# MARKER='ZCZM''HCZSCM' run 'echo 2500000 2500000 > /sys/kernel/mva_tesst/regulators/buck9_set'
+ZCZMHCZSCMZCZMHCZSCM 0
+root@arm:~# echo 'NJHM''NSZWYQ'
+NJHMNSZWYQ
+root@arm:~# MARKER='NQHT''OUQOTJ' run 'i2cget -y -f 1 0x4b 0x1a'
+NQHTOUQOTJ0x87
+NQHTOUQOTJ 0
+root@arm:~# echo 'QCKH''FWELBT'
+QCKHFWELBT
+root@arm:~# MARKER='QPEB''EUMASN' run 'echo 2600000 2600000 > /sys/kernel/mva_tesst/regulators/buck9_set'
+QPEBEUMASNQPEBEUMASN 0
+root@arm:~# echo 'TGTF''JTGXPB'
+TGTFJTGXPB
+root@arm:~# MARKER='KGFY''NXQKGJ' run 'i2cget -y -f 1 0x4b 0x1a'
+KGFYNXQKGJ0x88
+KGFYNXQKGJ 0
+root@arm:~# echo 'YQCL''VEULWB'
+YQCLVEULWB
+root@arm:~# MARKER='GWMO''AQBCHP' run 'echo 2700000 2700000 > /sys/kernel/mva_tesst/regulators/buck9_set'
+GWMOAQBCHPGWMOAQBCHP 0
+root@arm:~# echo 'SPKF''KSKLAF'
+SPKFKSKLAF
+root@arm:~# MARKER='AQJX''OWCQKT' run 'i2cget -y -f 1 0x4b 0x1a'
+AQJXOWCQKT0x89
+AQJXOWCQKT 0
+root@arm:~# echo 'GMFA''QYMCXM'
+GMFAQYMCXM
+root@arm:~# MARKER='PUHN''CXFJVK' run 'echo 2800000 2800000 > /sys/kernel/mva_tesst/regulators/buck9_set'
+PUHNCXFJVKPUHNCXFJVK 0
+root@arm:~# echo 'BPUK''YTEMQU'
+BPUKYTEMQU
+root@arm:~# MARKER='YQGU''FABOVQ' run 'i2cget -y -f 1 0x4b 0x1a'
+YQGUFABOVQ0x8a
+YQGUFABOVQ 0
+root@arm:~# echo 'PAOS''TZBPFK'
+PAOSTZBPFK
+root@arm:~# MARKER='FLMV''AYYCBC' run 'echo 2900000 2900000 > /sys/kernel/mva_tesst/regulators/buck9_set'
+FLMVAYYCBCFLMVAYYCBC 0
+root@arm:~# echo 'YJJJ''TVKMOX'
+YJJJTVKMOX
+root@arm:~# MARKER='JCYV''QOLWCF' run 'i2cget -y -f 1 0x4b 0x1a'
+JCYVQOLWCF0x8b
+JCYVQOLWCF 0
+root@arm:~# echo 'QCMY''NNKFTM'
+QCMYNNKFTM
+root@arm:~# MARKER='SJGB''KUBLLJ' run 'echo 3000000 3000000 > /sys/kernel/mva_tesst/regulators/buck9_set'
+SJGBKUBLLJSJGBKUBLLJ 0
+root@arm:~# echo 'BCCN''QPQZZE'
+BCCNQPQZZE
+root@arm:~# MARKER='EXVP''XSWSGB' run 'i2cget -y -f 1 0x4b 0x1a'
+EXVPXSWSGB0x8c
+EXVPXSWSGB 0
+root@arm:~# echo 'WTZX''PCOXZQ'
+WTZXPCOXZQ
+root@arm:~# MARKER='NGKF''LTGAFN' run 'echo 3100000 3100000 > /sys/kernel/mva_tesst/regulators/buck9_set'
+NGKFLTGAFNNGKFLTGAFN 0
+root@arm:~# echo 'ONLJ''GMKUKH'
+ONLJGMKUKH
+root@arm:~# MARKER='GPXL''XQXUZF' run 'i2cget -y -f 1 0x4b 0x1a'
+GPXLXQXUZF0x8d
+GPXLXQXUZF 0
+root@arm:~# echo 'MXNF''XPFLSG'
+MXNFXPFLSG
+root@arm:~# MARKER='QUMG''HMKSHN' run 'echo 3200000 3200000 > /sys/kernel/mva_tesst/regulators/buck9_set'
+QUMGHMKSHNQUMGHMKSHN 0
+root@arm:~# echo 'TCTX''FCXSUH'
+TCTXFCXSUH
+root@arm:~# MARKER='JXKQ''JTATCV' run 'i2cget -y -f 1 0x4b 0x1a'
+JXKQJTATCV0x8e
+JXKQJTATCV 0
+root@arm:~# echo 'QLHT''TCVWSQ'
+QLHTTCVWSQ
+root@arm:~# MARKER='TQOK''OOFGHG' run 'echo 3300000 3300000 > /sys/kernel/mva_tesst/regulators/buck9_set'
+TQOKOOFGHGTQOKOOFGHG 0
+root@arm:~# echo 'LSJY''UJESLU'
+LSJYUJESLU
+root@arm:~# MARKER='LACC''NAVXZE' run 'i2cget -y -f 1 0x4b 0x1a'
+LACCNAVXZE0x8f
+LACCNAVXZE 0
+root@arm:~# echo 'VHKX''VQAASM'
+VHKXVQAASM
+root@arm:~# MARKER='THLZ''UYXSXX' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+THLZUYXSXX/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+THLZUYXSXX 0
+root@arm:~# echo 'JWPG''XOTJQB'
+JWPGXOTJQB
+root@arm:~# MARKER='YMGF''NCYUKY' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/LDO4/rohm,,no-regulator-enable-control ;echo $?'
+YMGFNCYUKY1
+YMGFNCYUKY 0
+root@arm:~# echo 'QOSO''JHPETV'
+QOSOJHPETV
+root@arm:~# MARKER='UFAV''WPXUEK' run 'i2cget -y -f 1 0x4b 0x1b'
+UFAVWPXUEK0x80
+UFAVWPXUEK 0
+root@arm:~# echo 'YBSW''KCJCJG'
+YBSWKCJCJG
+root@arm:~# MARKER='GCLH''NTMJTL' run 'echo 900000 900000 > /sys/kernel/mva_test//regulators/buck10_set'
+GCLHNTMJTLGCLHNTMJTL 0
+root@arm:~# echo 'KGQW''UPPMOV'
+KGQWUPPMOV
+root@arm:~# MARKER='ZFCL''VHGYWX' run 'i2cget -y -f 1 0x4b 0x1b'
+ZFCLVHGYWX0x80
+ZFCLVHGYWX 0
+root@arm:~# echo 'QJKF''GXFTFP'
+QJKFGXFTFP
+root@arm:~# MARKER='QKOZ''WNNYPH' run 'echo 1000000 1000000 > /sys/kernel/mva_tesst/regulators/buck10_set'
+QKOZWNNYPHQKOZWNNYPH 0
+root@arm:~# echo 'WGXY''TTQEVS'
+WGXYTTQEVS
+root@arm:~# MARKER='VQQO''MLTOEF' run 'i2cget -y -f 1 0x4b 0x1b'
+VQQOMLTOEF0x81
+VQQOMLTOEF 0
+root@arm:~# echo 'CWWH''ESFPQW'
+CWWHESFPQW
+root@arm:~# MARKER='JQXZ''ECMLNK' run 'echo 1100000 1100000 > /sys/kernel/mva_tesst/regulators/buck10_set'
+JQXZECMLNKJQXZECMLNK 0
+root@arm:~# echo 'KUZS''EHUTJL'
+KUZSEHUTJL
+root@arm:~# MARKER='BVGN''QVEFLG' run 'i2cget -y -f 1 0x4b 0x1b'
+BVGNQVEFLG0x82
+BVGNQVEFLG 0
+root@arm:~# echo 'PWLP''JBYUSE'
+PWLPJBYUSE
+root@arm:~# MARKER='GMQN''UNSHAZ' run 'echo 1200000 1200000 > /sys/kernel/mva_tesst/regulators/buck10_set'
+GMQNUNSHAZGMQNUNSHAZ 0
+root@arm:~# echo 'NMXJ''KYGSGW'
+NMXJKYGSGW
+root@arm:~# MARKER='QNFU''NPYOLO' run 'i2cget -y -f 1 0x4b 0x1b'
+QNFUNPYOLO0x83
+QNFUNPYOLO 0
+root@arm:~# echo 'AAWQ''XOVJHF'
+AAWQXOVJHF
+root@arm:~# MARKER='YTYM''CGWMVE' run 'echo 1300000 1300000 > /sys/kernel/mva_tesst/regulators/buck10_set'
+YTYMCGWMVEYTYMCGWMVE 0
+root@arm:~# echo 'PBHZ''FVSNMQ'
+PBHZFVSNMQ
+root@arm:~# MARKER='VLLG''KXJKKU' run 'i2cget -y -f 1 0x4b 0x1b'
+VLLGKXJKKU0x84
+VLLGKXJKKU 0
+root@arm:~# echo 'NUXP''VFLUAC'
+NUXPVFLUAC
+root@arm:~# MARKER='OVQT''VLPLTQ' run 'echo 1400000 1400000 > /sys/kernel/mva_tesst/regulators/buck10_set'
+OVQTVLPLTQOVQTVLPLTQ 0
+root@arm:~# echo 'ZSGS''LXZNPF'
+ZSGSLXZNPF
+root@arm:~# MARKER='LGNT''UNWYLO' run 'i2cget -y -f 1 0x4b 0x1b'
+LGNTUNWYLO0x85
+LGNTUNWYLO 0
+root@arm:~# echo 'QOJB''EAUJUH'
+QOJBEAUJUH
+root@arm:~# MARKER='ETMH''CJAYFB' run 'echo 1500000 1500000 > /sys/kernel/mva_tesst/regulators/buck10_set'
+ETMHCJAYFBETMHCJAYFB 0
+root@arm:~# echo 'HEJH''SGWCVJ'
+HEJHSGWCVJ
+root@arm:~# MARKER='JYJJ''WOJHJE' run 'i2cget -y -f 1 0x4b 0x1b'
+JYJJWOJHJE0x86
+JYJJWOJHJE 0
+root@arm:~# echo 'NPGS''SLSLEQ'
+NPGSSLSLEQ
+root@arm:~# MARKER='KSGL''VSGKYQ' run 'echo 1600000 1600000 > /sys/kernel/mva_tesst/regulators/buck10_set'
+KSGLVSGKYQKSGLVSGKYQ 0
+root@arm:~# echo 'YLHV''OKVELM'
+YLHVOKVELM
+root@arm:~# MARKER='ECFY''QLUPVK' run 'i2cget -y -f 1 0x4b 0x1b'
+ECFYQLUPVK0x87
+ECFYQLUPVK 0
+root@arm:~# echo 'JBXX''TJTGVO'
+JBXXTJTGVO
+root@arm:~# MARKER='GHUL''GOEGYG' run 'echo 1700000 1700000 > /sys/kernel/mva_tesst/regulators/buck10_set'
+GHULGOEGYGGHULGOEGYG 0
+root@arm:~# echo 'HBHH''BBXJPT'
+HBHHBBXJPT
+root@arm:~# MARKER='OLTU''JCEFJB' run 'i2cget -y -f 1 0x4b 0x1b'
+OLTUJCEFJB0x88
+OLTUJCEFJB 0
+root@arm:~# echo 'ZXAZ''XJEJGY'
+ZXAZXJEJGY
+root@arm:~# MARKER='WMBA''FSNEWB' run 'echo 1800000 1800000 > /sys/kernel/mva_tesst/regulators/buck10_set'
+WMBAFSNEWBWMBAFSNEWB 0
+root@arm:~# echo 'HYPV''XJLKEN'
+HYPVXJLKEN
+root@arm:~# MARKER='BSYW''QUJATW' run 'i2cget -y -f 1 0x4b 0x1b'
+BSYWQUJATW0x89
+BSYWQUJATW 0
+root@arm:~# echo 'SOCP''AAWPSU'
+SOCPAAWPSU
+root@arm:~# MARKER='BTGS''VESVGB' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+BTGSVESVGB/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+BTGSVESVGB 0
+root@arm:~# echo 'XXYX''CBNXUW'
+XXYXCBNXUW
+root@arm:~# MARKER='MTKM''BUOFMF' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/LDO5/rohm,,no-regulator-enable-control ;echo $?'
+MTKMBUOFMF0
+MTKMBUOFMF 0
+root@arm:~# echo 'PAEX''ALZMQW'
+PAEXALZMQW
+root@arm:~# MARKER='QHVB''OCCWSV' run 'echo 1800000 1800000 > /sys/kernel/mva_tesst/regulators/buck11_set'
+QHVBOCCWSVQHVBOCCWSV 0
+root@arm:~# echo 'UOVY''GTBFEA'
+UOVYGTBFEA
+root@arm:~# MARKER='ZXMQ''TASLPY' run 'i2cget -y -f 1 0x4b 0x1c'
+ZXMQTASLPY0x80
+ZXMQTASLPY 0
+root@arm:~# echo 'KOJV''JWXWKV'
+KOJVJWXWKV
+root@arm:~# MARKER='LXVK''HGUOPN' run 'echo 1900000 1900000 > /sys/kernel/mva_tesst/regulators/buck11_set'
+LXVKHGUOPNLXVKHGUOPN 0
+root@arm:~# echo 'GPYE''LPAVYZ'
+GPYELPAVYZ
+root@arm:~# MARKER='OUNQ''MJMQLL' run 'i2cget -y -f 1 0x4b 0x1c'
+OUNQMJMQLL0x81
+OUNQMJMQLL 0
+root@arm:~# echo 'QPWQ''BCLUAS'
+QPWQBCLUAS
+root@arm:~# MARKER='GFOF''EMVXLY' run 'echo 2000000 2000000 > /sys/kernel/mva_tesst/regulators/buck11_set'
+GFOFEMVXLYGFOFEMVXLY 0
+root@arm:~# echo 'BWAV''ACMKJJ'
+BWAVACMKJJ
+root@arm:~# MARKER='QSQX''WSHJXG' run 'i2cget -y -f 1 0x4b 0x1c'
+QSQXWSHJXG0x82
+QSQXWSHJXG 0
+root@arm:~# echo 'HQVW''TNJQHE'
+HQVWTNJQHE
+root@arm:~# MARKER='FVHY''EZXCPC' run 'echo 2100000 2100000 > /sys/kernel/mva_tesst/regulators/buck11_set'
+FVHYEZXCPCFVHYEZXCPC 0
+root@arm:~# echo 'CHEJ''BBBEEH'
+CHEJBBBEEH
+root@arm:~# MARKER='UTUQ''GHCZTO' run 'i2cget -y -f 1 0x4b 0x1c'
+UTUQGHCZTO0x83
+UTUQGHCZTO 0
+root@arm:~# echo 'SVFG''GHFVCG'
+SVFGGHFVCG
+root@arm:~# MARKER='QQKM''EMUKCL' run 'echo 2200000 2200000 > /sys/kernel/mva_tesst/regulators/buck11_set'
+QQKMEMUKCLQQKMEMUKCL 0
+root@arm:~# echo 'ETJZ''YTMHJP'
+ETJZYTMHJP
+root@arm:~# MARKER='LGJB''TVPGVW' run 'i2cget -y -f 1 0x4b 0x1c'
+LGJBTVPGVW0x84
+LGJBTVPGVW 0
+root@arm:~# echo 'NQHM''FCJNVO'
+NQHMFCJNVO
+root@arm:~# MARKER='ZMZW''GEPJUE' run 'echo 2300000 2300000 > /sys/kernel/mva_tesst/regulators/buck11_set'
+ZMZWGEPJUEZMZWGEPJUE 0
+root@arm:~# echo 'QOTH''CQTQXQ'
+QOTHCQTQXQ
+root@arm:~# MARKER='MZBT''QLUEKV' run 'i2cget -y -f 1 0x4b 0x1c'
+MZBTQLUEKV0x85
+MZBTQLUEKV 0
+root@arm:~# echo 'PTMN''TACNAM'
+PTMNTACNAM
+root@arm:~# MARKER='HMJK''PMGKMF' run 'echo 2400000 2400000 > /sys/kernel/mva_tesst/regulators/buck11_set'
+HMJKPMGKMFHMJKPMGKMF 0
+root@arm:~# echo 'AXZN''GTYAQF'
+AXZNGTYAQF
+root@arm:~# MARKER='FBLS''VWBVMP' run 'i2cget -y -f 1 0x4b 0x1c'
+FBLSVWBVMP0x86
+FBLSVWBVMP 0
+root@arm:~# echo 'FGWG''ATFNFY'
+FGWGATFNFY
+root@arm:~# MARKER='QOKF''TBXPYJ' run 'echo 2500000 2500000 > /sys/kernel/mva_tesst/regulators/buck11_set'
+QOKFTBXPYJQOKFTBXPYJ 0
+root@arm:~# echo 'GXKH''NABQJH'
+GXKHNABQJH
+root@arm:~# MARKER='NOOF''GXJFVP' run 'i2cget -y -f 1 0x4b 0x1c'
+NOOFGXJFVP0x87
+NOOFGXJFVP 0
+root@arm:~# echo 'OPVH''PYOGHX'
+OPVHPYOGHX
+root@arm:~# MARKER='CLGZ''XOPBZW' run 'echo 2600000 2600000 > /sys/kernel/mva_tesst/regulators/buck11_set'
+CLGZXOPBZWCLGZXOPBZW 0
+root@arm:~# echo 'ZCXT''TMSCZS'
+ZCXTTMSCZS
+root@arm:~# MARKER='JHWC''YXNNOH' run 'i2cget -y -f 1 0x4b 0x1c'
+JHWCYXNNOH0x88
+JHWCYXNNOH 0
+root@arm:~# echo 'FKOL''JCMOAC'
+FKOLJCMOAC
+root@arm:~# MARKER='WSNZ''WLYLVU' run 'echo 2700000 2700000 > /sys/kernel/mva_tesst/regulators/buck11_set'
+WSNZWLYLVUWSNZWLYLVU 0
+root@arm:~# echo 'CZWT''GVHTEJ'
+CZWTGVHTEJ
+root@arm:~# MARKER='KGYC''TQYMYC' run 'i2cget -y -f 1 0x4b 0x1c'
+KGYCTQYMYC0x89
+KGYCTQYMYC 0
+root@arm:~# echo 'OSUC''EPOQHQ'
+OSUCEPOQHQ
+root@arm:~# MARKER='YUXQ''YVLBFX' run 'echo 2800000 2800000 > /sys/kernel/mva_tesst/regulators/buck11_set'
+YUXQYVLBFXYUXQYVLBFX 0
+root@arm:~# echo 'TUYK''SUCGKN'
+TUYKSUCGKN
+root@arm:~# MARKER='MEQK''QUBTUO' run 'i2cget -y -f 1 0x4b 0x1c'
+MEQKQUBTUO0x8a
+MEQKQUBTUO 0
+root@arm:~# echo 'SNOO''QJVKCZ'
+SNOOQJVKCZ
+root@arm:~# MARKER='SQBP''FHMXPU' run 'echo 2900000 2900000 > /sys/kernel/mva_tesst/regulators/buck11_set'
+SQBPFHMXPUSQBPFHMXPU 0
+root@arm:~# echo 'OLEO''CKOYEN'
+OLEOCKOYEN
+root@arm:~# MARKER='HQBX''WNUQTZ' run 'i2cget -y -f 1 0x4b 0x1c'
+HQBXWNUQTZ0x8b
+HQBXWNUQTZ 0
+root@arm:~# echo 'WCVP''EEBWXA'
+WCVPEEBWXA
+root@arm:~# MARKER='KPLF''ZOBMEP' run 'echo 3000000 3000000 > /sys/kernel/mva_tesst/regulators/buck11_set'
+KPLFZOBMEPKPLFZOBMEP 0
+root@arm:~# echo 'OOHS''XXFSAG'
+OOHSXXFSAG
+root@arm:~# MARKER='XKEF''YZVLNC' run 'i2cget -y -f 1 0x4b 0x1c'
+XKEFYZVLNC0x8c
+XKEFYZVLNC 0
+root@arm:~# echo 'PSTW''NGHLVU'
+PSTWNGHLVU
+root@arm:~# MARKER='TZNF''MSETSK' run 'echo 3100000 3100000 > /sys/kernel/mva_tesst/regulators/buck11_set'
+TZNFMSETSKTZNFMSETSK 0
+root@arm:~# echo 'HZBP''WTSWKZ'
+HZBPWTSWKZ
+root@arm:~# MARKER='KUXV''FSSZVU' run 'i2cget -y -f 1 0x4b 0x1c'
+KUXVFSSZVU0x8d
+KUXVFSSZVU 0
+root@arm:~# echo 'OXEJ''MSBGGP'
+OXEJMSBGGP
+root@arm:~# MARKER='OAFH''VLLZLQ' run 'echo 3200000 3200000 > /sys/kernel/mva_tesst/regulators/buck11_set'
+OAFHVLLZLQOAFHVLLZLQ 0
+root@arm:~# echo 'LWTA''EANZKF'
+LWTAEANZKF
+root@arm:~# MARKER='HQFX''VYECEZ' run 'i2cget -y -f 1 0x4b 0x1c'
+HQFXVYECEZ0x8e
+HQFXVYECEZ 0
+root@arm:~# echo 'ZVWO''EJWAXV'
+ZVWOEJWAXV
+root@arm:~# MARKER='ZNZK''EZSHBU' run 'echo 3300000 3300000 > /sys/kernel/mva_tesst/regulators/buck11_set'
+ZNZKEZSHBUZNZKEZSHBU 0
+root@arm:~# echo 'NFSF''UPMEYS'
+NFSFUPMEYS
+root@arm:~# MARKER='YGLQ''KZJAFC' run 'i2cget -y -f 1 0x4b 0x1c'
+YGLQKZJAFC0x8f
+YGLQKZJAFC 0
+root@arm:~# echo 'MEWV''ZOCPXP'
+MEWVZOCPXP
+root@arm:~# MARKER='MJTV''NOPHYZ' run 'echo 800000 800000 > /sys/kernel/mva_test//regulators/buck11_set'
+MJTVNOPHYZMJTVNOPHYZ 0
+root@arm:~# echo 'MFKM''PVVTUY'
+MFKMPVVTUY
+root@arm:~# MARKER='XVLF''UKEQHJ' run 'i2cget -y -f 1 0x4b 0x1c'
+XVLFUKEQHJ0xa0
+XVLFUKEQHJ 0
+root@arm:~# echo 'VZGH''HQJMQT'
+VZGHHQJMQT
+root@arm:~# MARKER='OMES''ZATLOC' run 'echo 900000 900000 > /sys/kernel/mva_test//regulators/buck11_set'
+OMESZATLOCOMESZATLOC 0
+root@arm:~# echo 'MJXW''FCGHJH'
+MJXWFCGHJH
+root@arm:~# MARKER='QQZO''FFNKGS' run 'i2cget -y -f 1 0x4b 0x1c'
+QQZOFFNKGS0xa1
+QQZOFFNKGS 0
+root@arm:~# echo 'TUGX''ZBKTEM'
+TUGXZBKTEM
+root@arm:~# MARKER='AZCB''WLCFZP' run 'echo 1000000 1000000 > /sys/kernel/mva_tesst/regulators/buck11_set'
+AZCBWLCFZPAZCBWLCFZP 0
+root@arm:~# echo 'WCAC''WCJSUC'
+WCACWCJSUC
+root@arm:~# MARKER='SCLH''LPQELF' run 'i2cget -y -f 1 0x4b 0x1c'
+SCLHLPQELF0xa2
+SCLHLPQELF 0
+root@arm:~# echo 'TWGE''ZXEBJC'
+TWGEZXEBJC
+root@arm:~# MARKER='OAQJ''YCWXTZ' run 'echo 1100000 1100000 > /sys/kernel/mva_tesst/regulators/buck11_set'
+OAQJYCWXTZOAQJYCWXTZ 0
+root@arm:~# echo 'CHBU''WULCFZ'
+CHBUWULCFZ
+root@arm:~# MARKER='YKLQ''GZOOCK' run 'i2cget -y -f 1 0x4b 0x1c'
+YKLQGZOOCK0xa3
+YKLQGZOOCK 0
+root@arm:~# echo 'KSUQ''LKXYHL'
+KSUQLKXYHL
+root@arm:~# MARKER='MNQS''YABMTM' run 'echo 1200000 1200000 > /sys/kernel/mva_tesst/regulators/buck11_set'
+MNQSYABMTMMNQSYABMTM 0
+root@arm:~# echo 'LVZO''TYMFFW'
+LVZOTYMFFW
+root@arm:~# MARKER='PGQQ''FMLWMS' run 'i2cget -y -f 1 0x4b 0x1c'
+PGQQFMLWMS0xa4
+PGQQFMLWMS 0
+root@arm:~# echo 'UJQZ''UMKBSP'
+UJQZUMKBSP
+root@arm:~# MARKER='XVOW''BGUXNV' run 'echo 1300000 1300000 > /sys/kernel/mva_tesst/regulators/buck11_set'
+XVOWBGUXNVXVOWBGUXNV 0
+root@arm:~# echo 'BYLJ''KZYJEE'
+BYLJKZYJEE
+root@arm:~# MARKER='SGSG''NEYEXW' run 'i2cget -y -f 1 0x4b 0x1c'
+SGSGNEYEXW0xa5
+SGSGNEYEXW 0
+root@arm:~# echo 'QLVE''YXQEFU'
+QLVEYXQEFU
+root@arm:~# MARKER='QNGM''JHEWEZ' run 'echo 1400000 1400000 > /sys/kernel/mva_tesst/regulators/buck11_set'
+QNGMJHEWEZQNGMJHEWEZ 0
+root@arm:~# echo 'XBMC''NBBVNX'
+XBMCNBBVNX
+root@arm:~# MARKER='PHAE''AZWGCW' run 'i2cget -y -f 1 0x4b 0x1c'
+PHAEAZWGCW0xa6
+PHAEAZWGCW 0
+root@arm:~# echo 'CKTU''YEBNOW'
+CKTUYEBNOW
+root@arm:~# MARKER='OMSA''BHUZZF' run 'echo 1500000 1500000 > /sys/kernel/mva_tesst/regulators/buck11_set'
+OMSABHUZZFOMSABHUZZF 0
+root@arm:~# echo 'HEBO''TFYWWK'
+HEBOTFYWWK
+root@arm:~# MARKER='AWUQ''TAZSSB' run 'i2cget -y -f 1 0x4b 0x1c'
+AWUQTAZSSB0xa7
+AWUQTAZSSB 0
+root@arm:~# echo 'BXMV''SNBXHL'
+BXMVSNBXHL
+root@arm:~# MARKER='QFGP''TCYFAY' run 'echo 1600000 1600000 > /sys/kernel/mva_tesst/regulators/buck11_set'
+QFGPTCYFAYQFGPTCYFAY 0
+root@arm:~# echo 'XWPL''YSWGOZ'
+XWPLYSWGOZ
+root@arm:~# MARKER='ZQZH''OVXAYE' run 'i2cget -y -f 1 0x4b 0x1c'
+ZQZHOVXAYE0xa8
+ZQZHOVXAYE 0
+root@arm:~# echo 'UNLN''XYULAS'
+UNLNXYULAS
+root@arm:~# MARKER='XAKS''KCKLBF' run 'echo 1700000 1700000 > /sys/kernel/mva_tesst/regulators/buck11_set'
+XAKSKCKLBFXAKSKCKLBF 0
+root@arm:~# echo 'HAEL''FZCENV'
+HAELFZCENV
+root@arm:~# MARKER='SGYL''EAEHAB' run 'i2cget -y -f 1 0x4b 0x1c'
+SGYLEAEHAB0xa9
+SGYLEAEHAB 0
+root@arm:~# echo 'TWQN''MJJVQQ'
+TWQNMJJVQQ
+root@arm:~# MARKER='MPLB''GNZYSY' run 'echo 1800000 1800000 > /sys/kernel/mva_tesst/regulators/buck11_set'
+MPLBGNZYSYMPLBGNZYSY 0
+root@arm:~# echo 'OVWO''LPCHCL'
+OVWOLPCHCL
+root@arm:~# MARKER='CYGN''BKFEBM' run 'i2cget -y -f 1 0x4b 0x1c'
+CYGNBKFEBM0x80
+CYGNBKFEBM 0
+root@arm:~# echo 'BEUC''QKACPJ'
+BEUCQKACPJ
+root@arm:~# MARKER='ZYGS''AEVXZQ' run 'echo 1900000 1900000 > /sys/kernel/mva_tesst/regulators/buck11_set'
+ZYGSAEVXZQZYGSAEVXZQ 0
+root@arm:~# echo 'MSXG''GYQKPK'
+MSXGGYQKPK
+root@arm:~# MARKER='NFFG''GJAMYJ' run 'i2cget -y -f 1 0x4b 0x1c'
+NFFGGJAMYJ0x81
+NFFGGJAMYJ 0
+root@arm:~# echo 'WAEL''QKCNSO'
+WAELQKCNSO
+root@arm:~# MARKER='BUFZ''WXYMEP' run 'echo 2000000 2000000 > /sys/kernel/mva_tesst/regulators/buck11_set'
+BUFZWXYMEPBUFZWXYMEP 0
+root@arm:~# echo 'ZPCU''BOVFBP'
+ZPCUBOVFBP
+root@arm:~# MARKER='ASCY''EHJWVY' run 'i2cget -y -f 1 0x4b 0x1c'
+ASCYEHJWVY0x82
+ASCYEHJWVY 0
+root@arm:~# echo 'OZPY''HECOCC'
+OZPYHECOCC
+root@arm:~# MARKER='SGVK''COGCSC' run 'echo 2100000 2100000 > /sys/kernel/mva_tesst/regulators/buck11_set'
+SGVKCOGCSCSGVKCOGCSC 0
+root@arm:~# echo 'JWKN''OGFFLY'
+JWKNOGFFLY
+root@arm:~# MARKER='TAUG''ZECHZH' run 'i2cget -y -f 1 0x4b 0x1c'
+TAUGZECHZH0x83
+TAUGZECHZH 0
+root@arm:~# echo 'EKGM''VHKTHK'
+EKGMVHKTHK
+root@arm:~# MARKER='JUVH''NUOVUZ' run 'echo 2200000 2200000 > /sys/kernel/mva_tesst/regulators/buck11_set'
+JUVHNUOVUZJUVHNUOVUZ 0
+root@arm:~# echo 'OYTQ''WEVZCL'
+OYTQWEVZCL
+root@arm:~# MARKER='KPNN''ZOGMAZ' run 'i2cget -y -f 1 0x4b 0x1c'
+KPNNZOGMAZ0x84
+KPNNZOGMAZ 0
+root@arm:~# echo 'JMYQ''AVQKGG'
+JMYQAVQKGG
+root@arm:~# MARKER='JQSP''BJJKAE' run 'echo 2300000 2300000 > /sys/kernel/mva_tesst/regulators/buck11_set'
+JQSPBJJKAEJQSPBJJKAE 0
+root@arm:~# echo 'FFQT''MMXQFZ'
+FFQTMMXQFZ
+root@arm:~# MARKER='WTMA''SOQUUY' run 'i2cget -y -f 1 0x4b 0x1c'
+WTMASOQUUY0x85
+WTMASOQUUY 0
+root@arm:~# echo 'FUWS''GHTQJO'
+FUWSGHTQJO
+root@arm:~# MARKER='WXMT''BEUHFT' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+WXMTBEUHFT/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+WXMTBEUHFT 0
+root@arm:~# echo 'NVGK''LFAVNB'
+NVGKLFAVNB
+root@arm:~# MARKER='XSWW''FXJQEB' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/LDO6/rohm,,no-regulator-enable-control ;echo $?'
+XSWWFXJQEB1
+XSWWFXJQEB 0
+root@arm:~# echo 'MVJL''KUKTNW'
+MVJLKUKTNW
+root@arm:~# MARKER='UKEH''JXXAYY' run 'i2cget -y -f 1 0x4b 0x1d'
+UKEHJXXAYY0x83
+UKEHJXXAYY 0
+root@arm:~# echo 'YLCN''FELWAA'
+YLCNFELWAA
+root@arm:~# MARKER='NTQC''JJCFWU' run 'echo 900000 900000 > /sys/kernel/mva_test//regulators/buck12_set'
+NTQCJJCFWUNTQCJJCFWU 0
+root@arm:~# echo 'MZYE''JOKOHJ'
+MZYEJOKOHJ
+root@arm:~# MARKER='EEML''GVVHTW' run 'i2cget -y -f 1 0x4b 0x1d'
+EEMLGVVHTW0x80
+EEMLGVVHTW 0
+root@arm:~# echo 'VEYA''BCWCHF'
+VEYABCWCHF
+root@arm:~# MARKER='BYFF''KYFZGW' run 'echo 1000000 1000000 > /sys/kernel/mva_tesst/regulators/buck12_set'
+BYFFKYFZGWBYFFKYFZGW 0
+root@arm:~# echo 'SCOX''WPKYXS'
+SCOXWPKYXS
+root@arm:~# MARKER='VKGV''GAYMOT' run 'i2cget -y -f 1 0x4b 0x1d'
+VKGVGAYMOT0x81
+VKGVGAYMOT 0
+root@arm:~# echo 'FLFH''VACXJH'
+FLFHVACXJH
+root@arm:~# MARKER='UZSZ''AABKNG' run 'echo 1100000 1100000 > /sys/kernel/mva_tesst/regulators/buck12_set'
+UZSZAABKNGUZSZAABKNG 0
+root@arm:~# echo 'VLNQ''BSBOGH'
+VLNQBSBOGH
+root@arm:~# MARKER='BXWE''SAMUWK' run 'i2cget -y -f 1 0x4b 0x1d'
+BXWESAMUWK0x82
+BXWESAMUWK 0
+root@arm:~# echo 'MXWG''JBAJHO'
+MXWGJBAJHO
+root@arm:~# MARKER='WOWM''LYBVQF' run 'echo 1200000 1200000 > /sys/kernel/mva_tesst/regulators/buck12_set'
+WOWMLYBVQFWOWMLYBVQF 0
+root@arm:~# echo 'SEBA''JAKAOK'
+SEBAJAKAOK
+root@arm:~# MARKER='KNBC''QZAVKB' run 'i2cget -y -f 1 0x4b 0x1d'
+KNBCQZAVKB0x83
+KNBCQZAVKB 0
+root@arm:~# echo 'JBGU''BGQKNG'
+JBGUBGQKNG
+root@arm:~# MARKER='GKJF''OOXFZA' run 'echo 1300000 1300000 > /sys/kernel/mva_tesst/regulators/buck12_set'
+GKJFOOXFZAGKJFOOXFZA 0
+root@arm:~# echo 'YQVL''SEVUME'
+YQVLSEVUME
+root@arm:~# MARKER='XENN''KWPVKK' run 'i2cget -y -f 1 0x4b 0x1d'
+XENNKWPVKK0x84
+XENNKWPVKK 0
+root@arm:~# echo 'FTVH''OCYKMW'
+FTVHOCYKMW
+root@arm:~# MARKER='WBFX''LNZJMY' run 'echo 1400000 1400000 > /sys/kernel/mva_tesst/regulators/buck12_set'
+WBFXLNZJMYWBFXLNZJMY 0
+root@arm:~# echo 'MQFT''WLWZKL'
+MQFTWLWZKL
+root@arm:~# MARKER='HEXW''JYXBLT' run 'i2cget -y -f 1 0x4b 0x1d'
+HEXWJYXBLT0x85
+HEXWJYXBLT 0
+root@arm:~# echo 'QQGY''YTPBMP'
+QQGYYTPBMP
+root@arm:~# MARKER='BNBL''PBHONC' run 'echo 1500000 1500000 > /sys/kernel/mva_tesst/regulators/buck12_set'
+BNBLPBHONCBNBLPBHONC 0
+root@arm:~# echo 'EUKV''AHTBAQ'
+EUKVAHTBAQ
+root@arm:~# MARKER='VVNA''SUUPCH' run 'i2cget -y -f 1 0x4b 0x1d'
+VVNASUUPCH0x86
+VVNASUUPCH 0
+root@arm:~# echo 'AOOW''KJUXWV'
+AOOWKJUXWV
+root@arm:~# MARKER='PSOO''VHPAEN' run 'echo 1600000 1600000 > /sys/kernel/mva_tesst/regulators/buck12_set'
+PSOOVHPAENPSOOVHPAEN 0
+root@arm:~# echo 'TLPH''YVCUKP'
+TLPHYVCUKP
+root@arm:~# MARKER='MXXS''MAQJJE' run 'i2cget -y -f 1 0x4b 0x1d'
+MXXSMAQJJE0x87
+MXXSMAQJJE 0
+root@arm:~# echo 'WZXK''VEJUUS'
+WZXKVEJUUS
+root@arm:~# MARKER='OXUC''HTZTZK' run 'echo 1700000 1700000 > /sys/kernel/mva_tesst/regulators/buck12_set'
+OXUCHTZTZKOXUCHTZTZK 0
+root@arm:~# echo 'TQYF''GUWVEX'
+TQYFGUWVEX
+root@arm:~# MARKER='XJZS''MNWOVO' run 'i2cget -y -f 1 0x4b 0x1d'
+XJZSMNWOVO0x88
+XJZSMNWOVO 0
+root@arm:~# echo 'JOHZ''KFSXGW'
+JOHZKFSXGW
+root@arm:~# MARKER='UYLG''YWMPOH' run 'echo 1800000 1800000 > /sys/kernel/mva_tesst/regulators/buck12_set'
+UYLGYWMPOHUYLGYWMPOH 0
+root@arm:~# echo 'THLG''SJNSMW'
+THLGSJNSMW
+root@arm:~# MARKER='LJYM''BBNMUX' run 'i2cget -y -f 1 0x4b 0x1d'
+LJYMBBNMUX0x89
+LJYMBBNMUX 0
+root@arm:~# Labgrid Console Logfile for main
+Logfile started at 2024-12-19 14:18:31.567601
+=== Log starts here ===
+
+root@arm:~# run() { echo -n "$MARKER"; sh -c "$@"; echo "$MARKER $?"; }
+root@arm:~# echo 'BEVY''AEAQQW'
+BEVYAEAQQW
+root@arm:~# MARKER='UXLU''NUYJWG' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+UXLUNUYJWG/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+UXLUNUYJWG 0
+root@arm:~# echo 'JMWZ''WUZKJY'
+JMWZWUZKJY
+root@arm:~# MARKER='JLYG''HTEVHE' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/BUCK1/rohmm,no-regulator-enable-control ;echo $?'
+JLYGHTEVHE1
+JLYGHTEVHE 0
+root@arm:~# echo 'UTVV''MMHVZJ'
+UTVVMMHVZJ
+root@arm:~# MARKER='UYPC''XUGUCV' run 'i2cget -y -f 1 0x4b 0x5'
+UYPCXUGUCV0x02
+UYPCXUGUCV 0
+root@arm:~# echo 'SUXW''QLOHKH'
+SUXWQLOHKH
+root@arm:~# MARKER='STXJ''SEGTQY' run 'echo 700000 700000 > /sys/kernel/mva_test//regulators/buck1_set'
+STXJSEGTQYSTXJSEGTQY 0
+root@arm:~# echo 'MHKO''OFQMNE'
+MHKOOFQMNE
+root@arm:~# MARKER='ZGQY''AULHMC' run 'i2cget -y -f 1 0x4b 0xd'
+ZGQYAULHMC0x00
+ZGQYAULHMC 0
+root@arm:~# echo 'SZXH''SEOSSE'
+SZXHSEOSSE
+root@arm:~# MARKER='FPHA''NOQWHH' run 'echo 690000 690000 > /sys/kernel/mva_test//regulators/buck1_set'
+FPHANOQWHHsh: echo: I/O error
+FPHANOQWHH 1
+root@arm:~# echo 'VQBH''HHLZCS'
+VQBHHHLZCS
+root@arm:~# MARKER='NWBP''QAGNTA' run 'i2cget -y -f 1 0x4b 0xd'
+NWBPQAGNTA0x00
+NWBPQAGNTA 0
+root@arm:~# echo 'JQEP''ONNFKX'
+JQEPONNFKX
+root@arm:~# MARKER='JLVN''JXCANG' run 'echo 1300000 1300000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+JLVNJXCANGJLVNJXCANG 0
+root@arm:~# echo 'NGAA''VNEVLO'
+NGAAVNEVLO
+root@arm:~# MARKER='CMSL''TJTSKU' run 'i2cget -y -f 1 0x4b 0xd'
+CMSLTJTSKU0x3c
+CMSLTJTSKU 0
+root@arm:~# echo 'PTFK''CKYYKT'
+PTFKCKYYKT
+root@arm:~# MARKER='KSZG''MCPGFT' run 'echo 1310000 1310000 > /sys/kernel/mva_tesst/regulators/buck1_set'
+KSZGMCPGFTsh: echo: I/O error
+KSZGMCPGFT 1
+root@arm:~# echo 'BSMW''ABFUTO'
+BSMWABFUTO
+root@arm:~# MARKER='VVPT''CJYGZC' run 'i2cget -y -f 1 0x4b 0xd'
+VVPTCJYGZC0x3c
+VVPTCJYGZC 0
+root@arm:~# echo 'HNFJ''BKKUSS'
+HNFJBKKUSS
+root@arm:~# MARKER='KAFJ''PCMYUN' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+KAFJPCMYUN/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+KAFJPCMYUN 0
+root@arm:~# echo 'EZGU''EZNZZP'
+EZGUEZNZZP
+root@arm:~# MARKER='PSMK''VQLFPY' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/BUCK2/rohmm,no-regulator-enable-control ;echo $?'
+PSMKVQLFPY1
+PSMKVQLFPY 0
+root@arm:~# echo 'TLAZ''JCYXUQ'
+TLAZJCYXUQ
+root@arm:~# MARKER='QHNL''VTLNZX' run 'i2cget -y -f 1 0x4b 0x6'
+QHNLVTLNZX0x43
+QHNLVTLNZX 0
+root@arm:~# echo 'JBAW''ALUJFN'
+JBAWALUJFN
+root@arm:~# MARKER='UVMN''YXMGPK' run 'echo 700000 700000 > /sys/kernel/mva_test//regulators/buck2_set'
+UVMNYXMGPKUVMNYXMGPK 0
+root@arm:~# echo 'NTUV''PEUKYF'
+NTUVPEUKYF
+root@arm:~# MARKER='QTTB''JLZKNG' run 'i2cget -y -f 1 0x4b 0x10'
+QTTBJLZKNG0x00
+QTTBJLZKNG 0
+root@arm:~# echo 'AMZB''HJBUFV'
+AMZBHJBUFV
+root@arm:~# MARKER='KUOZ''HLYONG' run 'echo 690000 690000 > /sys/kernel/mva_test//regulators/buck2_set'
+KUOZHLYONGsh: echo: I/O error
+KUOZHLYONG 1
+root@arm:~# echo 'WPUG''OBCUVE'
+WPUGOBCUVE
+root@arm:~# MARKER='LTYP''LXGAAB' run 'i2cget -y -f 1 0x4b 0x10'
+LTYPLXGAAB0x00
+LTYPLXGAAB 0
+root@arm:~# echo 'BGPT''QAEVZJ'
+BGPTQAEVZJ
+root@arm:~# MARKER='YNUB''EEJBBX' run 'echo 1300000 1300000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+YNUBEEJBBXYNUBEEJBBX 0
+root@arm:~# echo 'OGKH''WVVMLJ'
+OGKHWVVMLJ
+root@arm:~# MARKER='GHYB''CNPUFO' run 'i2cget -y -f 1 0x4b 0x10'
+GHYBCNPUFO0x3c
+GHYBCNPUFO 0
+root@arm:~# echo 'QJBO''GBZBHA'
+QJBOGBZBHA
+root@arm:~# MARKER='APXS''CWBGJE' run 'echo 1310000 1310000 > /sys/kernel/mva_tesst/regulators/buck2_set'
+APXSCWBGJEsh: echo: I/O error
+APXSCWBGJE 1
+root@arm:~# echo 'YLJV''FCEFKM'
+YLJVFCEFKM
+root@arm:~# MARKER='CYXJ''SUPUXB' run 'i2cget -y -f 1 0x4b 0x10'
+CYXJSUPUXB0x3c
+CYXJSUPUXB 0
+root@arm:~# echo 'BNAO''LZXMTW'
+BNAOLZXMTW
+root@arm:~# MARKER='ZTWT''VOSLKU' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+ZTWTVOSLKU/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+ZTWTVOSLKU 0
+root@arm:~# echo 'UZOL''HZECLU'
+UZOLHZECLU
+root@arm:~# MARKER='MPTP''OWEHYV' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/BUCK3/rohmm,no-regulator-enable-control ;echo $?'
+MPTPOWEHYV0
+MPTPOWEHYV 0
+root@arm:~# echo 'TKSU''PKZBML'
+TKSUPKZBML
+root@arm:~# MARKER='OVFC''FWBOVF' run 'echo 550000 550000 > /sys/kernel/mva_test//regulators/buck3_set'
+OVFCFWBOVFOVFCFWBOVF 0
+root@arm:~# echo 'XTJC''HBAJPO'
+XTJCHBAJPO
+root@arm:~# MARKER='COJQ''UCHUBB' run 'i2cget -y -f 1 0x4b 0x14'
+COJQUCHUBB0x40
+COJQUCHUBB 0
+root@arm:~# echo 'WVKZ''XXBALY'
+WVKZXXBALY
+root@arm:~# MARKER='QXGS''CBZKHC' run 'echo 540000 540000 > /sys/kernel/mva_test//regulators/buck3_set'
+QXGSCBZKHCsh: echo: I/O error
+QXGSCBZKHC 1
+root@arm:~# echo 'WOBV''AESCJB'
+WOBVAESCJB
+root@arm:~# MARKER='XYHN''MSBAZF' run 'i2cget -y -f 1 0x4b 0x14'
+XYHNMSBAZF0x40
+XYHNMSBAZF 0
+root@arm:~# echo 'KTMM''QBOSYU'
+KTMMQBOSYU
+root@arm:~# MARKER='YMCA''PXPLTX' run 'echo 1350000 1350000 > /sys/kernel/mva_tesst/regulators/buck3_set'
+YMCAPXPLTXYMCAPXPLTX 0
+root@arm:~# echo 'CONZ''GFOCNC'
+CONZGFOCNC
+root@arm:~# MARKER='TFXF''OUFQLJ' run 'i2cget -y -f 1 0x4b 0x14'
+TFXFOUFQLJ0x07
+TFXFOUFQLJ 0
+root@arm:~# echo 'NFYB''OKMSOK'
+NFYBOKMSOK
+root@arm:~# MARKER='YAYV''GFFUTU' run 'echo 1360000 1360000 > /sys/kernel/mva_tesst/regulators/buck3_set'
+YAYVGFFUTUsh: echo: I/O error
+YAYVGFFUTU 1
+root@arm:~# echo 'WTKW''WKHMYZ'
+WTKWWKHMYZ
+root@arm:~# MARKER='BAHU''JVBVEE' run 'i2cget -y -f 1 0x4b 0x14'
+BAHUJVBVEE0x07
+BAHUJVBVEE 0
+root@arm:~# echo 'ZKYB''AFMAWV'
+ZKYBAFMAWV
+root@arm:~# MARKER='QXLJ''WFELHT' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+QXLJWFELHT/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+QXLJWFELHT 0
+root@arm:~# echo 'BFLM''MSBKXO'
+BFLMMSBKXO
+root@arm:~# MARKER='MHNK''SQQVQH' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/BUCK4/rohmm,no-regulator-enable-control ;echo $?'
+MHNKSQQVQH1
+MHNKSQQVQH 0
+root@arm:~# echo 'ABXK''YFXHVL'
+ABXKYFXHVL
+root@arm:~# MARKER='JJFB''PETOTQ' run 'i2cget -y -f 1 0x4b 0xa'
+JJFBPETOTQ0x02
+JJFBPETOTQ 0
+root@arm:~# echo 'HXXE''VNBUBM'
+HXXEVNBUBM
+root@arm:~# MARKER='FFMK''CTUCYH' run 'echo 2600000 2600000 > /sys/kernel/mva_tesst/regulators/buck4_set'
+FFMKCTUCYHFFMKCTUCYH 0
+root@arm:~# echo 'AWPV''BMHMCY'
+AWPVBMHMCY
+root@arm:~# MARKER='WBUM''JXTOBT' run 'i2cget -y -f 1 0x4b 0x15'
+WBUMJXTOBT0x40
+WBUMJXTOBT 0
+root@arm:~# echo 'YMVU''GPTALE'
+YMVUGPTALE
+root@arm:~# MARKER='OXOL''QVJNWE' run 'echo 2590000 2590000 > /sys/kernel/mva_tesst/regulators/buck4_set'
+OXOLQVJNWEsh: echo: I/O error
+OXOLQVJNWE 1
+root@arm:~# echo 'PAOY''XLSBCP'
+PAOYXLSBCP
+root@arm:~# MARKER='BFLJ''LJLUHA' run 'i2cget -y -f 1 0x4b 0x15'
+BFLJLJLUHA0x40
+BFLJLJLUHA 0
+root@arm:~# echo 'LJPV''MNNFNZ'
+LJPVMNNFNZ
+root@arm:~# MARKER='MUVH''UHSOMV' run 'echo 3300000 3300000 > /sys/kernel/mva_tesst/regulators/buck4_set'
+MUVHUHSOMVMUVHUHSOMV 0
+root@arm:~# echo 'LKOL''CMHZWX'
+LKOLCMHZWX
+root@arm:~# MARKER='CLFW''QOCYBU' run 'i2cget -y -f 1 0x4b 0x15'
+CLFWQOCYBU0x03
+CLFWQOCYBU 0
+root@arm:~# echo 'VMAF''XMZQAM'
+VMAFXMZQAM
+root@arm:~# MARKER='BCSN''FFTHNY' run 'echo 3310000 3310000 > /sys/kernel/mva_tesst/regulators/buck4_set'
+BCSNFFTHNYsh: echo: I/O error
+BCSNFFTHNY 1
+root@arm:~# echo 'MHNZ''LOHOXS'
+MHNZLOHOXS
+root@arm:~# MARKER='YEAQ''YWNPJS' run 'i2cget -y -f 1 0x4b 0x15'
+YEAQYWNPJS0x03
+YEAQYWNPJS 0
+root@arm:~# echo 'ELTE''NJWBWP'
+ELTENJWBWP
+root@arm:~# MARKER='QTBA''POMCJB' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+QTBAPOMCJB/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+QTBAPOMCJB 0
+root@arm:~# echo 'LXAE''KJSSQF'
+LXAEKJSSQF
+root@arm:~# MARKER='QHLC''JQXSGX' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/BUCK5/roh m,no-regulator-enable-control ;echo $?'
+QHLCJQXSGX1
+QHLCJQXSGX 0
+root@arm:~# echo 'NBNN''LANCEY'
+NBNNLANCEY
+root@arm:~# MARKER='NHKQ''NJBTNV' run 'i2cget -y -f 1 0x4b 0xb'
+NHKQNJBTNV0x02
+NHKQNJBTNV 0
+root@arm:~# echo 'ESTX''SKONUT'
+ESTXSKONUT
+root@arm:~# MARKER='YMOC''QGHPAV' run 'echo 1605000 1605000 > /sys/kernel/mva_tesst/regulators/buck5_set'
+YMOCQGHPAVYMOCQGHPAV 0
+root@arm:~# echo 'LFUP''CVWBWH'
+LFUPCVWBWH
+root@arm:~# MARKER='MBWW''VHMYEJ' run 'i2cget -y -f 1 0x4b 0x16'
+MBWWVHMYEJ0x00
+MBWWVHMYEJ 0
+root@arm:~# echo 'QAQU''TAOFBC'
+QAQUTAOFBC
+root@arm:~# MARKER='FGQE''BPUEBQ' run 'echo 1595000 1595000 > /sys/kernel/mva_tesst/regulators/buck5_set'
+FGQEBPUEBQsh: echo: I/O error
+FGQEBPUEBQ 1
+root@arm:~# echo 'ETLA''UVAYKF'
+ETLAUVAYKF
+root@arm:~# MARKER='UYJJ''ZZNWQC' run 'i2cget -y -f 1 0x4b 0x16'
+UYJJZZNWQC0x00
+UYJJZZNWQC 0
+root@arm:~# echo 'TSYC''JQSTYV'
+TSYCJQSTYV
+root@arm:~# MARKER='XLPA''ZCXTOF' run 'echo 1995000 1995000 > /sys/kernel/mva_tesst/regulators/buck5_set'
+XLPAZCXTOFXLPAZCXTOF 0
+root@arm:~# echo 'UPJO''MCFMZV'
+UPJOMCFMZV
+root@arm:~# MARKER='NSES''CSEHWC' run 'i2cget -y -f 1 0x4b 0x16'
+NSESCSEHWC0x07
+NSESCSEHWC 0
+root@arm:~# echo 'PGWA''LECWZH'
+PGWALECWZH
+root@arm:~# MARKER='YQOH''VOXZMG' run 'echo 2005000 2005000 > /sys/kernel/mva_tesst/regulators/buck5_set'
+YQOHVOXZMGsh: echo: I/O error
+YQOHVOXZMG 1
+root@arm:~# echo 'PTTJ''TOMMBM'
+PTTJTOMMBM
+root@arm:~# MARKER='HNVJ''XPJMPV' run 'i2cget -y -f 1 0x4b 0x16'
+HNVJXPJMPV0x07
+HNVJXPJMPV 0
+root@arm:~# echo 'LWGX''LQEWKP'
+LWGXLQEWKP
+root@arm:~# MARKER='TSQQ''UJKQJX' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+TSQQUJKQJX/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+TSQQUJKQJX 0
+root@arm:~# echo 'JQHE''APAMPA'
+JQHEAPAMPA
+root@arm:~# MARKER='JWJN''MYGBSP' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/BUCK6/roh m,no-regulator-enable-control ;echo $?'
+JWJNMYGBSP1
+JWJNMYGBSP 0
+root@arm:~# echo 'BFTU''SSVPTQ'
+BFTUSSVPTQ
+root@arm:~# MARKER='SGKF''NQWXBZ' run 'i2cget -y -f 1 0x4b 0xc'
+SGKFNQWXBZ0x02
+SGKFNQWXBZ 0
+root@arm:~# echo 'PCWN''MEPMOU'
+PCWNMEPMOU
+root@arm:~# MARKER='HXNL''BEAVPU' run 'echo 800000 800000 > /sys/kernel/mva_test//regulators/buck6_set'
+HXNLBEAVPUHXNLBEAVPU 0
+root@arm:~# echo 'QQYJ''CTULMT'
+QQYJCTULMT
+root@arm:~# MARKER='KUYE''PULJXE' run 'i2cget -y -f 1 0x4b 0x17'
+KUYEPULJXE0x00
+KUYEPULJXE 0
+root@arm:~# echo 'HHKK''QHSYQE'
+HHKKQHSYQE
+root@arm:~# MARKER='LALQ''EMOSVK' run 'echo 790000 790000 > /sys/kernel/mva_test//regulators/buck6_set'
+LALQEMOSVKsh: echo: I/O error
+LALQEMOSVK 1
+root@arm:~# echo 'WAWG''WUMCKJ'
+WAWGWUMCKJ
+root@arm:~# MARKER='OOMQ''MSCPBH' run 'i2cget -y -f 1 0x4b 0x17'
+OOMQMSCPBH0x00
+OOMQMSCPBH 0
+root@arm:~# echo 'XAXG''EAEYTV'
+XAXGEAEYTV
+root@arm:~# MARKER='MCQY''SGTXEZ' run 'echo 1400000 1400000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+MCQYSGTXEZMCQYSGTXEZ 0
+root@arm:~# echo 'EVBM''SYZPQC'
+EVBMSYZPQC
+root@arm:~# MARKER='TAAH''LNWECJ' run 'i2cget -y -f 1 0x4b 0x17'
+TAAHLNWECJ0x3c
+TAAHLNWECJ 0
+root@arm:~# echo 'GTFA''NNJAUC'
+GTFANNJAUC
+root@arm:~# MARKER='QJBS''QFYFUU' run 'echo 1410000 1410000 > /sys/kernel/mva_tesst/regulators/buck6_set'
+QJBSQFYFUUsh: echo: I/O error
+QJBSQFYFUU 1
+root@arm:~# echo 'OWHF''MELAQF'
+OWHFMELAQF
+root@arm:~# MARKER='GWUV''ULHUXN' run 'i2cget -y -f 1 0x4b 0x17'
+GWUVULHUXN0x3c
+GWUVULHUXN 0
+root@arm:~# echo 'HMMA''GVEYBM'
+HMMAGVEYBM
+root@arm:~# MARKER='WPNH''XTYLUU' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+WPNHXTYLUU/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+WPNHXTYLUU 0
+root@arm:~# echo 'ONLM''TNEFAL'
+ONLMTNEFAL
+root@arm:~# MARKER='OMGK''PJYESH' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/LDO1/rohm ,no-regulator-enable-control ;echo $?'
+OMGKPJYESH1
+OMGKPJYESH 0
+root@arm:~# echo 'BFCE''MNWALP'
+BFCEMNWALP
+root@arm:~# MARKER='OLTC''BCAHLV' run 'i2cget -y -f 1 0x4b 0x18'
+OLTCBCAHLV0xa3
+OLTCBCAHLV 0
+root@arm:~# echo 'WPZV''EGNZOA'
+WPZVEGNZOA
+root@arm:~# MARKER='GHAU''ETWQHQ' run 'echo 1600000 1600000 > /sys/kernel/mva_tesst/regulators/buck7_set'
+GHAUETWQHQGHAUETWQHQ 0
+root@arm:~# echo 'WMUN''JTLXNW'
+WMUNJTLXNW
+root@arm:~# MARKER='AZWQ''FOYXJQ' run 'i2cget -y -f 1 0x4b 0x18'
+AZWQFOYXJQ0xa0
+AZWQFOYXJQ 0
+root@arm:~# echo 'ZFSJ''ABFEWH'
+ZFSJABFEWH
+root@arm:~# MARKER='UMYN''EOKMYU' run 'echo 1590000 1590000 > /sys/kernel/mva_tesst/regulators/buck7_set'
+UMYNEOKMYUsh: echo: I/O error
+UMYNEOKMYU 1
+root@arm:~# echo 'VHEQ''GAYXUQ'
+VHEQGAYXUQ
+root@arm:~# MARKER='MAZZ''ONWSLK' run 'i2cget -y -f 1 0x4b 0x18'
+MAZZONWSLK0xa0
+MAZZONWSLK 0
+root@arm:~# echo 'BKJX''KZMTNF'
+BKJXKZMTNF
+root@arm:~# MARKER='YLUY''AABCXO' run 'echo 3300000 3300000 > /sys/kernel/mva_tesst/regulators/buck7_set'
+YLUYAABCXOYLUYAABCXO 0
+root@arm:~# echo 'OGFK''VKNOKO'
+OGFKVKNOKO
+root@arm:~# MARKER='ECSQ''GXLYYT' run 'i2cget -y -f 1 0x4b 0x18'
+ECSQGXLYYT0x83
+ECSQGXLYYT 0
+root@arm:~# echo 'VFZC''HSBTFU'
+VFZCHSBTFU
+root@arm:~# MARKER='YFMV''ZYMQBB' run 'echo 3310000 3310000 > /sys/kernel/mva_tesst/regulators/buck7_set'
+YFMVZYMQBBsh: echo: I/O error
+YFMVZYMQBB 1
+root@arm:~# echo 'WCHA''CXTQGG'
+WCHACXTQGG
+root@arm:~# MARKER='UXCH''CBFSAL' run 'i2cget -y -f 1 0x4b 0x18'
+UXCHCBFSAL0x83
+UXCHCBFSAL 0
+root@arm:~# echo 'CTBO''MXXBZT'
+CTBOMXXBZT
+root@arm:~# MARKER='BAKZ''QQUQQC' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+BAKZQQUQQC/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+BAKZQQUQQC 0
+root@arm:~# echo 'LTFP''EMKQWJ'
+LTFPEMKQWJ
+root@arm:~# MARKER='BCFT''JTOGCT' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/LDO2/rohm,,no-regulator-enable-control ;echo $?'
+BCFTJTOGCT1
+BCFTJTOGCT 0
+root@arm:~# echo 'JPJK''UPHSGE'
+JPJKUPHSGE
+root@arm:~# MARKER='YZXK''SZZLMG' run 'i2cget -y -f 1 0x4b 0x19'
+YZXKSZZLMG0xa0
+YZXKSZZLMG 0
+root@arm:~# echo 'KCPJ''PVZWGC'
+KCPJPVZWGC
+root@arm:~# MARKER='MVZC''OCNAQP' run 'echo 800000 800000 > /sys/kernel/mva_test//regulators/buck8_set'
+MVZCOCNAQPMVZCOCNAQP 0
+root@arm:~# echo 'XYBH''WNXSPL'
+XYBHWNXSPL
+root@arm:~# MARKER='GALP''UJLSUE' run 'i2cget -y -f 1 0x4b 0x19'
+GALPUJLSUE0xa0
+GALPUJLSUE 0
+root@arm:~# echo 'PKLE''EMBMBA'
+PKLEEMBMBA
+root@arm:~# MARKER='EHAY''ZCTMQJ' run 'echo 790000 790000 > /sys/kernel/mva_test//regulators/buck8_set'
+EHAYZCTMQJsh: echo: I/O error
+EHAYZCTMQJ 1
+root@arm:~# echo 'CPCZ''ECWKUF'
+CPCZECWKUF
+root@arm:~# MARKER='TEYO''GQSTVF' run 'i2cget -y -f 1 0x4b 0x19'
+TEYOGQSTVF0xa0
+TEYOGQSTVF 0
+root@arm:~# echo 'PLLC''BQNVEC'
+PLLCBQNVEC
+root@arm:~# MARKER='LNCP''FLCKZT' run 'echo 900000 900000 > /sys/kernel/mva_test//regulators/buck8_set'
+LNCPFLCKZTLNCPFLCKZT 0
+root@arm:~# echo 'CNEX''ZPYCUX'
+CNEXZPYCUX
+root@arm:~# MARKER='MCFB''ZXVQZZ' run 'i2cget -y -f 1 0x4b 0x19'
+MCFBZXVQZZ0x80
+MCFBZXVQZZ 0
+root@arm:~# echo 'UBNB''NWPJMF'
+UBNBNWPJMF
+root@arm:~# MARKER='THCE''GZLJLJ' run 'echo 910000 910000 > /sys/kernel/mva_test//regulators/buck8_set'
+THCEGZLJLJsh: echo: I/O error
+THCEGZLJLJ 1
+root@arm:~# echo 'UEMK''EMGOXX'
+UEMKEMGOXX
+root@arm:~# MARKER='CTZX''LQFEOE' run 'i2cget -y -f 1 0x4b 0x19'
+CTZXLQFEOE0x80
+CTZXLQFEOE 0
+root@arm:~# echo 'CCUX''QPOGCZ'
+CCUXQPOGCZ
+root@arm:~# MARKER='PYSE''LUAFXY' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+PYSELUAFXY/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+PYSELUAFXY 0
+root@arm:~# echo 'ETYX''ZPJVQY'
+ETYXZPJVQY
+root@arm:~# MARKER='QNTB''UWKCMT' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/LDO3/rohm,,no-regulator-enable-control ;echo $?'
+QNTBUWKCMT1
+QNTBUWKCMT 0
+root@arm:~# echo 'WFNM''YSKUBZ'
+WFNMYSKUBZ
+root@arm:~# MARKER='YSFT''QUOSZU' run 'i2cget -y -f 1 0x4b 0x1a'
+YSFTQUOSZU0x8f
+YSFTQUOSZU 0
+root@arm:~# echo 'MBSN''UKJALE'
+MBSNUKJALE
+root@arm:~# MARKER='LJZO''JNYAOF' run 'echo 1800000 1800000 > /sys/kernel/mva_tesst/regulators/buck9_set'
+LJZOJNYAOFLJZOJNYAOF 0
+root@arm:~# echo 'NEYN''VSLMEK'
+NEYNVSLMEK
+root@arm:~# MARKER='ZCGO''EWVFWH' run 'i2cget -y -f 1 0x4b 0x1a'
+ZCGOEWVFWH0x80
+ZCGOEWVFWH 0
+root@arm:~# echo 'QXFH''YEXOXH'
+QXFHYEXOXH
+root@arm:~# MARKER='AQYG''GYVEEX' run 'echo 1790000 1790000 > /sys/kernel/mva_tesst/regulators/buck9_set'
+AQYGGYVEEXsh: echo: I/O error
+AQYGGYVEEX 1
+root@arm:~# echo 'QGXY''SAAKES'
+QGXYSAAKES
+root@arm:~# MARKER='WWST''UPYZSA' run 'i2cget -y -f 1 0x4b 0x1a'
+WWSTUPYZSA0x80
+WWSTUPYZSA 0
+root@arm:~# echo 'WGCZ''MMWNSM'
+WGCZMMWNSM
+root@arm:~# MARKER='KYME''VNPXJB' run 'echo 3300000 3300000 > /sys/kernel/mva_tesst/regulators/buck9_set'
+KYMEVNPXJBKYMEVNPXJB 0
+root@arm:~# echo 'KVJK''LEYGLT'
+KVJKLEYGLT
+root@arm:~# MARKER='LYBS''FGHMZK' run 'i2cget -y -f 1 0x4b 0x1a'
+LYBSFGHMZK0x8f
+LYBSFGHMZK 0
+root@arm:~# echo 'KULY''UNLYKX'
+KULYUNLYKX
+root@arm:~# MARKER='YXPF''ZMEWPV' run 'echo 3310000 3310000 > /sys/kernel/mva_tesst/regulators/buck9_set'
+YXPFZMEWPVsh: echo: I/O error
+YXPFZMEWPV 1
+root@arm:~# echo 'LUBY''NEGAJZ'
+LUBYNEGAJZ
+root@arm:~# MARKER='SYCF''OTYCHY' run 'i2cget -y -f 1 0x4b 0x1a'
+SYCFOTYCHY0x8f
+SYCFOTYCHY 0
+root@arm:~# echo 'AYVQ''ZYATQK'
+AYVQZYATQK
+root@arm:~# MARKER='JLXV''XQEVQV' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+JLXVXQEVQV/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+JLXVXQEVQV 0
+root@arm:~# echo 'PXLF''NAGJBA'
+PXLFNAGJBA
+root@arm:~# MARKER='QUAJ''SJEZVZ' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/LDO4/rohm,,no-regulator-enable-control ;echo $?'
+QUAJSJEZVZ1
+QUAJSJEZVZ 0
+root@arm:~# echo 'SGLV''XVNJHU'
+SGLVXVNJHU
+root@arm:~# MARKER='VMAL''QLJFCZ' run 'i2cget -y -f 1 0x4b 0x1b'
+VMALQLJFCZ0x89
+VMALQLJFCZ 0
+root@arm:~# echo 'SJEV''PGCJVM'
+SJEVPGCJVM
+root@arm:~# MARKER='KGQB''SWNNEF' run 'echo 900000 900000 > /sys/kernel/mva_test//regulators/buck10_set'
+KGQBSWNNEFKGQBSWNNEF 0
+root@arm:~# echo 'YAHO''SVFGQS'
+YAHOSVFGQS
+root@arm:~# MARKER='CEWF''AOMESH' run 'i2cget -y -f 1 0x4b 0x1b'
+CEWFAOMESH0x80
+CEWFAOMESH 0
+root@arm:~# echo 'MUEU''NSPCXX'
+MUEUNSPCXX
+root@arm:~# MARKER='MXYK''BGGLEZ' run 'echo 890000 890000 > /sys/kernel/mva_test//regulators/buck10_set'
+MXYKBGGLEZsh: echo: I/O error
+MXYKBGGLEZ 1
+root@arm:~# echo 'UFBY''HCSTOJ'
+UFBYHCSTOJ
+root@arm:~# MARKER='FXMX''GLMPGE' run 'i2cget -y -f 1 0x4b 0x1b'
+FXMXGLMPGE0x80
+FXMXGLMPGE 0
+root@arm:~# echo 'OQXJ''NCHCQO'
+OQXJNCHCQO
+root@arm:~# MARKER='MGNV''MXOMQV' run 'echo 1800000 1800000 > /sys/kernel/mva_tesst/regulators/buck10_set'
+MGNVMXOMQVMGNVMXOMQV 0
+root@arm:~# echo 'CUVM''HZSOXW'
+CUVMHZSOXW
+root@arm:~# MARKER='NGQL''NQUPAK' run 'i2cget -y -f 1 0x4b 0x1b'
+NGQLNQUPAK0x89
+NGQLNQUPAK 0
+root@arm:~# echo 'VWVB''BOTAVG'
+VWVBBOTAVG
+root@arm:~# MARKER='FATX''EQAHWH' run 'echo 1810000 1810000 > /sys/kernel/mva_tesst/regulators/buck10_set'
+FATXEQAHWHsh: echo: I/O error
+FATXEQAHWH 1
+root@arm:~# echo 'GGKH''USXGAH'
+GGKHUSXGAH
+root@arm:~# MARKER='UQAN''KHUGMG' run 'i2cget -y -f 1 0x4b 0x1b'
+UQANKHUGMG0x89
+UQANKHUGMG 0
+root@arm:~# echo 'KXVY''GEGBWF'
+KXVYGEGBWF
+root@arm:~# MARKER='SXOK''QYEQLX' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+SXOKQYEQLX/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+SXOKQYEQLX 0
+root@arm:~# echo 'NUNL''GGJMJV'
+NUNLGGJMJV
+root@arm:~# MARKER='ULNO''UBZYLU' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/LDO5/rohm,,no-regulator-enable-control ;echo $?'
+ULNOUBZYLU0
+ULNOUBZYLU 0
+root@arm:~# echo 'CHVM''LAZCLK'
+CHVMLAZCLK
+root@arm:~# MARKER='FWAP''XTHAXO' run 'echo 800000 800000 > /sys/kernel/mva_test//regulators/buck11_set'
+FWAPXTHAXOFWAPXTHAXO 0
+root@arm:~# echo 'SFSH''PKYSEH'
+SFSHPKYSEH
+root@arm:~# MARKER='TEEB''YNQQBJ' run 'i2cget -y -f 1 0x4b 0x1c'
+TEEBYNQQBJ0xa0
+TEEBYNQQBJ 0
+root@arm:~# echo 'ASGZ''STCLBK'
+ASGZSTCLBK
+root@arm:~# MARKER='HPBK''HCVBXK' run 'echo 790000 790000 > /sys/kernel/mva_test//regulators/buck11_set'
+HPBKHCVBXKsh: echo: I/O error
+HPBKHCVBXK 1
+root@arm:~# echo 'OQHX''JQGGCC'
+OQHXJQGGCC
+root@arm:~# MARKER='LCHG''YTEHXL' run 'i2cget -y -f 1 0x4b 0x1c'
+LCHGYTEHXL0xa0
+LCHGYTEHXL 0
+root@arm:~# echo 'QPMB''MLOJMP'
+QPMBMLOJMP
+root@arm:~# MARKER='PXSA''XWEVLF' run 'echo 3300000 3300000 > /sys/kernel/mva_tesst/regulators/buck11_set'
+PXSAXWEVLFPXSAXWEVLF 0
+root@arm:~# echo 'KNAK''XCGABN'
+KNAKXCGABN
+root@arm:~# MARKER='PFST''BNCYAX' run 'i2cget -y -f 1 0x4b 0x1c'
+PFSTBNCYAX0x8f
+PFSTBNCYAX 0
+root@arm:~# echo 'QXFG''MEAEJW'
+QXFGMEAEJW
+root@arm:~# MARKER='VOLN''SCCMCB' run 'echo 3310000 3310000 > /sys/kernel/mva_tesst/regulators/buck11_set'
+VOLNSCCMCBsh: echo: I/O error
+VOLNSCCMCB 1
+root@arm:~# echo 'ZKME''NKMTPS'
+ZKMENKMTPS
+root@arm:~# MARKER='YUAQ''PUVVFP' run 'i2cget -y -f 1 0x4b 0x1c'
+YUAQPUVVFP0x8f
+YUAQPUVVFP 0
+root@arm:~# echo 'MUEZ''NVWEXW'
+MUEZNVWEXW
+root@arm:~# MARKER='TMON''GEAPJV' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+TMONGEAPJV/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+TMONGEAPJV 0
+root@arm:~# echo 'FMBS''BMTPKW'
+FMBSBMTPKW
+root@arm:~# MARKER='WAAJ''JFKPPH' run 'test -f /proc/device-tree/ocp/interconnectt\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/LDO6/rohm,,no-regulator-enable-control ;echo $?'
+WAAJJFKPPH1
+WAAJJFKPPH 0
+root@arm:~# echo 'AULE''SENZQC'
+AULESENZQC
+root@arm:~# MARKER='VFGG''MTJFMH' run 'i2cget -y -f 1 0x4b 0x1d'
+VFGGMTJFMH0x89
+VFGGMTJFMH 0
+root@arm:~# echo 'YWPY''XVUKMO'
+YWPYXVUKMO
+root@arm:~# MARKER='XTBW''UOHCYK' run 'echo 900000 900000 > /sys/kernel/mva_test//regulators/buck12_set'
+XTBWUOHCYKXTBWUOHCYK 0
+root@arm:~# echo 'COHU''NYYMWN'
+COHUNYYMWN
+root@arm:~# MARKER='BNJG''OELTGZ' run 'i2cget -y -f 1 0x4b 0x1d'
+BNJGOELTGZ0x80
+BNJGOELTGZ 0
+root@arm:~# echo 'YFWX''XLKQGK'
+YFWXXLKQGK
+root@arm:~# MARKER='HZLC''HKMXGX' run 'echo 890000 890000 > /sys/kernel/mva_test//regulators/buck12_set'
+HZLCHKMXGXsh: echo: I/O error
+HZLCHKMXGX 1
+root@arm:~# echo 'OMZX''QFEZGC'
+OMZXQFEZGC
+root@arm:~# MARKER='HTPU''YSTSMA' run 'i2cget -y -f 1 0x4b 0x1d'
+HTPUYSTSMA0x80
+HTPUYSTSMA 0
+root@arm:~# echo 'SUAF''YNLNUK'
+SUAFYNLNUK
+root@arm:~# MARKER='QEOL''HZZWMW' run 'echo 1800000 1800000 > /sys/kernel/mva_tesst/regulators/buck12_set'
+QEOLHZZWMWQEOLHZZWMW 0
+root@arm:~# echo 'LNBU''KFCNWS'
+LNBUKFCNWS
+root@arm:~# MARKER='VSLJ''AVXOPM' run 'i2cget -y -f 1 0x4b 0x1d'
+VSLJAVXOPM0x89
+VSLJAVXOPM 0
+root@arm:~# echo 'GTSY''UEOUPE'
+GTSYUEOUPE
+root@arm:~# MARKER='XTNP''BTPVQH' run 'echo 1810000 1810000 > /sys/kernel/mva_tesst/regulators/buck12_set'
+XTNPBTPVQHsh: echo: I/O error
+XTNPBTPVQH 1
+root@arm:~# echo 'AQBJ''CQBQTK'
+AQBJCQBQTK
+root@arm:~# MARKER='HPXW''EQBFMW' run 'i2cget -y -f 1 0x4b 0x1d'
+HPXWEQBFMW0x89
+HPXWEQBFMW 0
+root@arm:~# Labgrid Console Logfile for main
+Logfile started at 2024-12-19 14:18:53.842832
+=== Log starts here ===
+
+root@arm:~# run() { echo -n "$MARKER"; sh -c "$@"; echo "$MARKER $?"; }
+root@arm:~# echo 'BXQN''KVPHNQ'
+BXQNKVPHNQ
+root@arm:~# MARKER='JQFK''EBLPHU' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+JQFKEBLPHU/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+JQFKEBLPHU 0
+root@arm:~# echo 'XNSK''TWSPLC'
+XNSKTWSPLC
+root@arm:~# MARKER='PJJS''WEGPZF' run 'xxd -p /proc/device-tree/ocp/interconnect\\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/BUCK1/regu lator-ramp-delay'
+PJJSWEGPZF00002710
+PJJSWEGPZF 0
+root@arm:~# echo 'OTVH''BQWYBK'
+OTVHBQWYBK
+root@arm:~# MARKER='BONG''AJOFFZ' run 'i2cget -y -f 1 0x4b 0x5'
+BONGAJOFFZ0x02
+BONGAJOFFZ 0
+root@arm:~# echo 'QKPY''KUBBTU'
+QKPYKUBBTU
+root@arm:~# MARKER='EACH''BMUJYP' run 'grep -r -l rohm,bd71847 /proc/device-tree  | sed '"'"'s![^/]*$!!'"'"''
+EACHBMUJYP/proc/device-tree/ocp/interconnect@48000000/segment@0/target-module@2a000/i2c@0/pmic@4b/
+EACHBMUJYP 0
+root@arm:~# echo 'PEFT''QABJYP'
+PEFTQABJYP
+root@arm:~# MARKER='NGOT''MZJXWF' run 'xxd -p /proc/device-tree/ocp/interconnect\\@48000000/segment\@0/target-module\@2a000/i2c\@0/pmic\@4b/regulators/BUCK2/regullator-ramp-delay'
+NGOTMZJXWF00001388
+NGOTMZJXWF 0
+root@arm:~# echo 'ZXVN''YHVMQT'
+ZXVNYHVMQT
+root@arm:~# MARKER='AJGB''VESZNK' run 'i2cget -y -f 1 0x4b 0x6'
+AJGBVESZNK0x43
+AJGBVESZNK 0
+root@arm:~# 
